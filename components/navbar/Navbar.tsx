@@ -1,14 +1,24 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 import React, { useState } from "react";
 import { MAIN_NAV_LINKS } from "@/lib/navigation";
 
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
+const isLinkActive = (href: string, pathname: string) => {
+  if (!pathname) return false;
+  if (href === "/") {
+    return pathname === "/";
+  }
+  return pathname === href || pathname.startsWith(`${href}`);
+};
+
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <>
@@ -21,7 +31,7 @@ export const Navbar: React.FC = () => {
 
       <header className="fixed w-full p-2 z-50 ">
         <div className="">
-          <div className="w-full p-2 liquid-glass flex justify-between items-center max-w-hd mx-auto">
+          <div className="w-full p-2 liquid-glass flex justify-between items-center max-w-hd mx-auto lg:px-68">
             <div className="w-full relative flex justify-between items-center">
               <Link
                 href="/"
@@ -29,8 +39,8 @@ export const Navbar: React.FC = () => {
               >
                 <Image
                   src={"/logorp.avif"}
-                  width={75}
-                  height={75}
+                  width={95}
+                  height={95}
                   alt="Logo Ranczo Patataj"
                   className="opacity-90"
                   priority
@@ -69,16 +79,22 @@ export const Navbar: React.FC = () => {
             >
               <div className="max-w-6xl mx-auto px-6 py-3">
                 <ul className="flex gap-6 justify-around">
-                  {MAIN_NAV_LINKS.map((link) => (
-                    <li key={link.href}>
-                      <Link
-                        href={link.href}
-                        className="relative pb-1 transition-colors hover:text-amber-500 font-ultra text-xl"
-                      >
-                        {link.label}
-                      </Link>
-                    </li>
-                  ))}
+                  {MAIN_NAV_LINKS.map((link) => {
+                    const active = isLinkActive(link.href, pathname);
+                    return (
+                      <li key={link.href}>
+                        <Link
+                          href={link.href}
+                          aria-current={active ? "page" : undefined}
+                          className={`relative pb-1 transition-colors hover:text-amber-300 font-ultra text-xl ${
+                            active && "text-amber-600"
+                          }`}
+                        >
+                          {link.label}
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </nav>
@@ -95,17 +111,22 @@ export const Navbar: React.FC = () => {
                 className="w-full shadow-lg md:hidden backdrop-blur-xl rounded"
               >
                 <ul className="flex justify-around ">
-                  {MAIN_NAV_LINKS.map((link) => (
-                    <li key={link.href}>
-                      <Link
-                        href={link.href}
-                        className="block rounded-lg px-3 py-4 transition hover:bg-amber-50 transition-colors hover:text-amber-500 text-xs font-ultra"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        {link.label}
-                      </Link>
-                    </li>
-                  ))}
+                  {MAIN_NAV_LINKS.map((link) => {
+                    const active = isLinkActive(link.href, pathname);
+                    return (
+                      <li key={link.href}>
+                        <Link
+                          href={link.href}
+                          aria-current={active ? "page" : undefined}
+                          className={`block rounded-lg px-3 py-4 transition hover:bg-amber-50 transition-colors hover:text-amber-500 text-xs font-ultra ${
+                            active && "text-amber-600"
+                          }`}
+                        >
+                          {link.label}
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </ul>
               </motion.nav>
             )}
