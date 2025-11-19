@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --c-accent: #fff2d2;
+  --c-primary: #a6741d;
+  --c-secondary: #46acf0;
+}
+
+@theme {
+  --max-w-hd: 1920px;
+  --h128: 32rem;
+}
+
+@layer utilities {
+  .max-w-hd {
+    max-width: var(--max-w-hd);
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-asset: var(--font-asset);
+  --font-ultra: var(--font-ultra);
+  --font-poppins: var(--font-poppins);
+  --font-moonrock: var(--font-moonrock);
+  --font-playwrite: var(--font-playwrite);
+  --font-amatic: var(--font-amatic);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.liquid-glass {
+  border-radius: var(--radius-2xl);
+  background-color: var(--c-primary); /* lekka mgła */
+  border: 1px solid var(--c-primary);
+  box-shadow: var(--shadow-md);
+
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+.glass2 {
+  backdrop-filter: blur(8px) saturate(140%);
+  -webkit-backdrop-filter: blur(8px) saturate(140%);
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+}
+
+.glass {
+  background: linear-gradient(to right, var(--c-accent) var(--c-primary));
+  -webkit-backdrop-filter: blur(12px) saturate(120%);
+  backdrop-filter: blur(12px) saturate(120%);
+  box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.35);
+  border-radius: 2rem;
+}
+
+.liquid-glass {
+  border-radius: var(--radius-2xl);
+  background-color: color-mix(in oklch, white 10%, transparent);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  backdrop-filter: blur(18px) saturate(160%);
+  background-image: radial-gradient(
+    circle at top left,
+    color-mix(in oklch, white 22%, transparent) 0,
+    transparent 55%
+  );
+  background-blend-mode: screen;
+}
+
+/* Wersja dostrojona do dark mode (jeśli używasz `class="dark"` na <html>) */
+.dark .liquid-glass {
+  background-color: color-mix(in oklch, black 35%, transparent);
+  border-color: color-mix(in oklch, white 18%, transparent);
+  box-shadow: var(--shadow-xl);
+}
