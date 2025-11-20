@@ -88,3 +88,11 @@ body {
   border-color: color-mix(in oklch, white 18%, transparent);
   box-shadow: var(--shadow-xl);
 }
+
+.glow-amber {
+  box-shadow: 6px 0 15px rgba(245, 158, 11, 0.55);
+}
+
+.glow-blue {
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.55);
+}
