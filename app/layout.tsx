@@ -27,7 +27,7 @@ export default function RootLayout({
       >
         <Navbar />
 
-        <main className="grid place-items-center min-h-screen max-w-hd mx-auto">
+        <main className="grid place-items-center min-h-screen max-w-7xl mx-auto">
           {children}
         </main>
       </body>

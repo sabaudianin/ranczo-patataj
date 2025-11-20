@@ -31,7 +31,7 @@ export const Navbar: React.FC = () => {
 
       <header className="fixed w-full p-2 z-50 ">
         <div className="">
-          <div className="w-full p-2 liquid-glass flex justify-between items-center max-w-hd mx-auto lg:px-68">
+          <div className="w-full p-2 liquid-glass flex justify-between items-center max-w-hd mx-auto 2xl:px-72">
             <div className="w-full relative flex justify-between items-center">
               <Link
                 href="/"
