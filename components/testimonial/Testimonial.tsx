@@ -1,4 +1,8 @@
+"use client";
 import { MdFormatQuote } from "react-icons/md";
+import { motion } from "motion/react";
+
+import { MagicText } from "@/ui/magicText/MagicText";
 
 type Opinion = {
   text: string;
@@ -11,32 +15,38 @@ const OPINIONS: Opinion[] = [
   {
     text: "Ranczo Patataj to wspaniałe miejsce dla dzieciaków. Ogromny plus za dużą, otwartą przestrzeń, gdzie dzieciaki mogą się wybiegać. Zwierzęta są bardzo zadbane i lubią kontakt z ludźmi. Warsztaty kulinarne i artystyczne to strzał w dziesiątkę i widać było, że dzieciaki były zadowolone. Pan Właściciel to wspaniały człowiek, który stara się żeby każdy dobrze się tam czuł. Duża polecajka! Nasza klasa na pewno wróci ☺️",
     name: "Katarzyna K",
-    color: "bg-red-300",
-    font: "font-playwrite ",
+    color: "bg-red-700",
+    font: "font-playwrite text-sm",
   },
   {
     text: "Rewelacyjne miejsce zarówno dla wycieczek szkolnych, jak i indywidualnych wypadów. Zwierzęta udomowione, gospodarze mili i życzliwie nastawieni do gości. Czas płynie szybko i aktywnie. Zajęcia dla dzieci - pełen profesjonalizm. Gorąco polecam. Rewelacja!!!",
     name: "Ewelina P",
-    color: "bg-blue-300",
+    color: "bg-blue-700",
     font: "font-playwrite tracking-widest",
   },
   {
     text: "Gorąco polecam Ranczo Patataj!Super rodzinna atmosfera i przecudowny gospodarze ☺️Idealne miejsce na wypoczynek z rodziną. Dzieci bardzo zadowolone z możliwości karmienia i przytulania zwierzątek oraz warsztatów kulinarnych i manualnych ❤️Cisza, spokój, duża przestrzeń.Idealne miejsce na wycieczki szkolne i przedszkolne oraz imprezy okolicznościowe.Jeszcze raz bardzo dziękujemy za miło spędzony dzień i jeszcze nie raz wrócimy 🥰",
     name: "Kamila K",
-    color: "bg-green-300",
-    font: "font-amatic font-2xl tracking-widest font-bold",
+    color: "bg-green-700",
+    font: "font-amatic text-base tracking-wider font-extrabold",
   },
   {
     text: "SUPER miejsce.Wszystko nowe i czyste.Zajęcia edukacyjne kulinarne.Zabawy ze zwierzętami.Klimat z dala od miasta.Fantastyczni gospodarze.",
     name: "Marek J",
-    color: "bg-yellow-300",
+    color: "bg-yellow-700",
     font: "font-playwrite tracking-widest",
   },
   {
     text: "Urokliwe miejsce w zaciszu pól i lasów.Zwierzęta nauczone pracy z dziećmi, bardzo przyjaźnie nastawione(lama rozdaje buziaki).Warsztaty cieszyły się ogromnym zainteresowaniem zarówno dzieci jak i rodziców 😊Polecam to miejsce wszystkim. ",
     name: "Tomasz G",
-    color: "bg-indigo-300",
-    font: "font-amatic font-2xl tracking-[.15em] font-bold",
+    color: "bg-indigo-700",
+    font: "font-amatic text-lg tracking-[.15em] font-bold",
+  },
+  {
+    text: "Bardzo, fajne miejsce z potencjałem, brakowało czegoś takiego w okolicy. Szczerze polecam dla dzieci i dla dorosłych. można wynająć przestrzeń na imprezy, mają bazę noclegową.",
+    name: "Jarek G",
+    color: "bg-lime-700",
+    font: "font-playwrite tracking-wider",
   },
 ];
 
@@ -45,26 +55,50 @@ export const Testimonial = () => {
     <section
       id="opinie"
       aria-labelledby="opinions-heading"
-      className="px-1 md:px-4 max-w-7xl mx-auto py-12"
+      className="px-1 md:px-8 max-w-7xl mx-auto py-12"
     >
-      <h2
+      <motion.h2
         id="opinions-heading"
-        className="text-center font-ultra text-2xl md:text-3xl py-4"
+        className="text-center font-ultra text-2xl md:text-3xl pb-2"
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
       >
         Nasi goście o nas :{" "}
-      </h2>
+      </motion.h2>
+      <motion.p
+        className="text-center text-sm font-poppins mx-auto mb-8 font-semibold text-xs"
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.45, ease: "easeOut", delay: 0.1 }}
+      >
+        Opinie rodzin, szkół i przyjaciół, którzy odwiedzili Ranczo Patataj -
+        gospodarstwo edukacyjne z alpakami, końmi i innymi zwierzętami.
+      </motion.p>
       <div className="grid gap-4 grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(260px,1fr))]">
-        {OPINIONS.map((opinion) => (
-          <article
+        {OPINIONS.map((opinion, index) => (
+          <motion.article
             key={opinion.name}
-            className={`border rounded-xl ${opinion.font}  p-4 flex flex-col glow-amber`}
+            className={` text-sm border rounded-xl ${opinion.font}  p-4 flex flex-col glow-amber`}
             itemScope
             itemType="https://schema.org/Review"
+            initial={{ opacity: 0, y: 20, scale: 0.96 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{
+              duration: 0.45,
+              ease: "easeOut",
+              delay: 0.08 * index,
+            }}
+            whileHover={{ y: -4, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
           >
-            <p className={`flex-1  text-xs`}>
-              <MdFormatQuote />
-              &nbsp; {opinion.text} <MdFormatQuote className="inline-block" />
-            </p>
+            <div className={`flex-1  `}>
+              <MagicText text={opinion.text} />
+            </div>
+
             <div className="flex items-center gap-4 p-4">
               {" "}
               <span
@@ -80,7 +114,7 @@ export const Testimonial = () => {
                 {opinion.name}
               </span>
             </div>
-          </article>
+          </motion.article>
         ))}
       </div>
     </section>

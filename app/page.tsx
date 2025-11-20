@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { Hero } from "@/components/hero/Hero";
 import { Testimonial } from "@/components/testimonial/Testimonial";
+import { Features } from "@/components/features/Features";
 
 export default function Home() {
   return (
-    <section className="px-1 py-32 dark:bg-black bg-[var(--c-accent)] max-w-hd mx-auto">
+    <section className="px-1 py-32 md:py-4 dark:bg-black bg-[var(--c-accent)] max-w-hd mx-auto">
       <Hero />
+      <Features />
       <Testimonial />
       <div className=" max-w-7xl mx-auto">
         <p className="font-poppins p-2">

@@ -29,7 +29,7 @@ export const Navbar: React.FC = () => {
         Przejdź do treści
       </a>
 
-      <header className="fixed w-full p-2 z-50 ">
+      <header className="fixed md:sticky w-full p-2 z-50 ">
         <div className="">
           <div className="w-full p-2 liquid-glass flex justify-between items-center max-w-hd mx-auto 2xl:px-72">
             <div className="w-full relative flex justify-between items-center">
@@ -39,10 +39,10 @@ export const Navbar: React.FC = () => {
               >
                 <Image
                   src={"/logorp.avif"}
-                  width={95}
-                  height={95}
+                  width={65}
+                  height={65}
                   alt="Logo Ranczo Patataj"
-                  className="opacity-90"
+                  className=" md:h-24 md:w-24"
                   priority
                 />
               </Link>
