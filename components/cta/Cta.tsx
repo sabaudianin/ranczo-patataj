@@ -25,7 +25,16 @@ const SLIDES = [
 
 export const Cta = () => {
   return (
-    <section className=" w-full max-w-hd mx-auto">
+    <section className="relative w-full max-w-hd mx-auto">
+      <div>
+        <button
+          type="button"
+          role="button"
+          className="absolute right-0 z-50 top-4 font-lime  py-2 px-4 bg-[var(--c-primary)]/70 shadow-lg shadow-amber-400/30 rounded-xl  hover:shadow-amber-400/50 shiny-btn text-xs font-semibold "
+        >
+          Zarezerwuj Termin
+        </button>
+      </div>
       <BgSlider
         slides={SLIDES}
         className="absolute inset-0 h-64 md:h-100 mx-auto w-full  "

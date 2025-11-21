@@ -15,13 +15,27 @@ export const metadata: Metadata = {
   description: "Gospodarstwo edukacyjne",
 };
 
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Ranczo Patataj - Gospodarstwo Edukacyjne",
+  url: "https://twojadomena.pl",
+  logo: "https://twojadomena.pl/logo.png",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pl">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
+      </head>
       <body
         className={` ${poppins.variable} ${ultra.variable} ${asset.variable} ${moonrock.variable} ${playwrite.variable} ${amatic.variable} antialiased`}
       >
