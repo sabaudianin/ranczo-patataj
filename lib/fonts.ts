@@ -10,7 +10,7 @@ import {
 export const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "700", "900"],
 });
 
 export const ultra = Ultra({

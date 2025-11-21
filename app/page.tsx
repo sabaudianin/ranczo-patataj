@@ -14,7 +14,7 @@ export default function Home() {
       <Features />
       <Testimonial />
       <div className=" max-w-7xl mx-auto">
-        <p className="font-poppins p-2">
+        <p className="font-poppins p-2 text-xs">
           🌿 Krótkie, chwytliwe slogany (idealne do hero) “Ranczo, które łączy
           naturę, edukację i zabawę.” <br />
           “Miejsce, gdzie spotykasz zwierzęta, a zostajesz dla wspomnień.”{" "}
