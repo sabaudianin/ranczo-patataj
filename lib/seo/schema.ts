@@ -46,3 +46,39 @@ export const createContactPageJsonLd = (data: ContactPageData) => ({
   "@type": "ContactPage",
   ...data,
 });
+
+//oferta
+type ServiceItem = {
+  name: string;
+  description?: string;
+};
+
+export const createServicesItemListJsonLd = (items: ServiceItem[]) => ({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: items.map((item, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    item: {
+      "@type": "Service",
+      ...item,
+    },
+  })),
+});
+
+// Gallery
+export const createGalleryPageJsonLd = (data: {
+  name: string;
+  url: string;
+}) => ({
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  ...data,
+});
+
+// O nas
+export const createAboutPageJsonLd = (data: { name: string; url: string }) => ({
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  ...data,
+});

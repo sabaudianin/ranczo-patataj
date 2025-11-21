@@ -1,13 +1,17 @@
-// app/onas/page.tsx
 import Script from "next/script";
+import { createAboutPageJsonLd } from "@/lib/seo/schema";
+
+export const metadata = {
+  title: "O nas  Ranczo Patataj",
+  description:
+    "Poznaj historię Rancza Patataj, nasze wartości i misję gospodarstwa edukacyjnego.",
+};
 
 export default function Ranczo() {
-  const aboutJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "AboutPage",
-    name: "O nas – Nazwa Twojej Firmy",
+  const aboutJsonLd = createAboutPageJsonLd({
+    name: "O nas - Ranczo Patataj - Gospodarstwo Edukacyjne",
     url: "https://twojadomena.pl/onas",
-  };
+  });
 
   return (
     <>

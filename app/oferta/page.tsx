@@ -1,23 +1,29 @@
 import Script from "next/script";
+import { createServicesItemListJsonLd } from "@/lib/seo/schema";
+
+export const metadata = {
+  title: "Oferta - Ranczo Patataj",
+  description: "Zajęcia edukacyjne, warsztaty i atrakcje na Ranczo Patataj.",
+};
 
 export default function Oferta() {
-  const servicesJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "Oferta - Ranczo Patataj Gospodarstwo Edukacyjne",
-    itemListElement: [
-      {
-        "@type": "Service",
-        name: "Usługa 1",
-        description: "Krótki opis usługi 1...",
-      },
-      {
-        "@type": "Service",
-        name: "Usługa 2",
-        description: "Krótki opis usługi 2...",
-      },
-    ],
-  };
+  const servicesJsonLd = createServicesItemListJsonLd([
+    {
+      name: "Zajęcia edukacyjne dla szkół i przedszkoli",
+      description:
+        "Program dostosowany do wieku dzieci, kontakt ze zwierzętami, zabawy ruchowe.",
+    },
+    {
+      name: "Warsztaty tematyczne na ranczu",
+      description:
+        "Zajęcia o życiu na wsi, opiece nad zwierzętami i przyrodzie.",
+    },
+    {
+      name: "Urodziny na ranczu",
+      description:
+        "Organizacja przyjęć urodzinowych z animacjami i atrakcjami na świeżym powietrzu.",
+    },
+  ]);
 
   return (
     <>

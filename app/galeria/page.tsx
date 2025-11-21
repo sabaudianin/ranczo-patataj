@@ -1,13 +1,16 @@
-// app/gallery/page.tsx
 import Script from "next/script";
+import { createGalleryPageJsonLd } from "@/lib/seo/schema";
+
+export const metadata = {
+  title: "Galeria - Ranczo Patataj",
+  description: "Zdjęcia z zajęć, warsztatów i życia na Ranczo Patataj.",
+};
 
 export default function GalleryPage() {
-  const galleryJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: "Galeria – Nazwa Twojej Firmy",
+  const galleryJsonLd = createGalleryPageJsonLd({
+    name: "Galeria - Ranczo Patataj - Gospodarstwo Edukacyjne",
     url: "https://twojadomena.pl/gallery",
-  };
+  });
 
   return (
     <>

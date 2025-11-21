@@ -8,19 +8,13 @@ import {
   amatic,
 } from "@/lib/fonts";
 import "../styles/globals.css";
+import { orgJsonLd } from "@/lib/seo/schema";
 import { Navbar } from "@/components/navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Ranczo Patataj",
   description: "Gospodarstwo edukacyjne",
-};
-
-const orgJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Ranczo Patataj - Gospodarstwo Edukacyjne",
-  url: "https://twojadomena.pl",
-  logo: "https://twojadomena.pl/logo.png",
+  //opengraph , icons...
 };
 
 export default function RootLayout({
@@ -33,6 +27,7 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
+          // globalny Organization JSON-LD
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
         />
       </head>
