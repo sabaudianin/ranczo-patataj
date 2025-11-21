@@ -27,9 +27,7 @@ export default function RootLayout({
       >
         <Navbar />
 
-        <main className="grid place-items-center min-h-screen max-w-7xl mx-auto">
-          {children}
-        </main>
+        <main className="">{children}</main>
         <footer className="bg-[var(--c-primary)]/20 py-4 border border-[var(--c-primary)]">
           <p className="text-center">
             {" "}

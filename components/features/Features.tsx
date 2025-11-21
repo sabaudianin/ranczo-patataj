@@ -65,7 +65,7 @@ export const Features = () => {
         wiele więcej.
       </motion.p>
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
+      <div className="grid grid-cols-1 gap-2  md:grid-cols-2 md:gap-6">
         {ANIMAL_FEATURES.map((item, index) => {
           const isEven = index % 2 === 0;
 
@@ -73,7 +73,7 @@ export const Features = () => {
             <motion.div
               key={item.label}
               className={[
-                "flex items-center gap-3 ",
+                "flex items-center gap-3 rounded-full border border-emerald-700/50 bg-gradient-to-t from-green-600/90 via-emerald-600/90 to-sky-400 shadow-emerald-500/30 ring-1 ring-white/60 backdrop-blur-md",
 
                 isEven ? "flex-row" : "flex-row-reverse",
 
@@ -97,7 +97,7 @@ export const Features = () => {
                 alt={item.alt}
                 className="object-contain h-50 w-50 md:h-60  md:w-60 "
               />
-              <span className="font-ultra  text-sm md:text-lg leading-snug">
+              <span className="font-ultra  font-light md:text-lg leading-snug px-2">
                 {item.label}
               </span>
             </motion.div>

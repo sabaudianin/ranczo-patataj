@@ -1,6 +1,5 @@
 import { BgSlider } from "../bgSlider/BgSlider";
 import { SiOllama } from "react-icons/si";
-import { FaHorse } from "react-icons/fa";
 
 const SLIDES = [
   { src: "/images/lamawest.jpg", alt: "Ranczo o zachodzie słońca" },
@@ -11,7 +10,7 @@ const SLIDES = [
 
 export const Hero = () => {
   return (
-    <section className="relative w-full ">
+    <section className="relative w-full mt-64">
       <div className="w-full flex justify-center items-center text-4xl gap-4">
         <SiOllama className="text-amber-700" />
         <SiOllama className="text-amber-500" />

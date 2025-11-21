@@ -21,7 +21,7 @@ export const ultra = Ultra({
 export const asset = Asset({
   variable: "--font-asset",
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400"],
 });
 
 export const moonrock = Rubik_Moonrocks({
