@@ -6,12 +6,14 @@ import { motion, AnimatePresence } from "motion/react";
 type Slide = {
   src: string;
   alt: string;
+  label: string;
 };
 
 type BgSliderProps = {
   slides: Slide[];
   interval?: 500;
   className?: string;
+  label?: string;
 };
 
 export const BgSlider: React.FC<BgSliderProps> = ({
@@ -35,7 +37,7 @@ export const BgSlider: React.FC<BgSliderProps> = ({
 
   return (
     <section
-      className={`relative overflow-hidden  ${className}`}
+      className={`relative overflow-hidden rounded ${className}`}
       aria-hidden="true"
     >
       <AnimatePresence>
@@ -57,6 +59,16 @@ export const BgSlider: React.FC<BgSliderProps> = ({
                 sizes="100vh"
                 className="object-contain object-cover"
               />
+              <motion.span
+                className="w-full absolute z-50 text-center font-ultra bottom-2 text-shadow text-white md:text-xl"
+                initial={{ opacity: 0, scale: 0.52 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.98 }}
+                transition={{ duration: 1.4, ease: "easeInOut" }}
+              >
+                {slide.label}
+              </motion.span>
             </motion.div>
           ) : null
         )}

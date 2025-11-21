@@ -1,10 +1,26 @@
 import { BgSlider } from "../bgSlider/BgSlider";
 
 const SLIDES = [
-  { src: "/images/car1.jpg", alt: "Ranczo o zachodzie słońca" },
-  { src: "/images/car2.jpg", alt: "Konie na sniegu" },
-  { src: "/images/car5.jpg", alt: "Impreza urodzinowa" },
-  { src: "/images/car10.jpg", alt: "Przygotowania do warsztatów " },
+  {
+    src: "/images/car1.jpg",
+    alt: "Ranczo o zachodzie słońca",
+    label: "Tu celebrujemy najważniejsze chwile - rodzinnie i z sercem.",
+  },
+  {
+    src: "/images/car2.jpg",
+    alt: "Konie na sniegu",
+    label: "Zabawa, która uczy. Edukacja, która inspiruje",
+  },
+  {
+    src: "/images/car5.jpg",
+    alt: "Impreza urodzinowa",
+    label: "Warsztaty, zwierzęta, gry terenowe i imprezy pod gołym niebem",
+  },
+  {
+    src: "/images/car10.jpg",
+    alt: "Przygotowania do warsztatów ",
+    label: "Dzieci odkrywają naturę — dorośli odkrywają spokój",
+  },
 ];
 
 export const Cta = () => {
@@ -17,3 +33,13 @@ export const Cta = () => {
     </section>
   );
 };
+
+// Zabawa, która uczy. Edukacja, która inspiruje.
+
+// Dzieci odkrywają naturę — dorośli odkrywają spokój
+
+// Tu celebrujemy najważniejsze chwile — rodzinnie i z sercem.”
+
+// Ranczo, które łączy edukację, naturę i prawdziwe wiejskie życie — idealne dla rodzin, szkół i miłośników zwierząt
+
+// Warsztaty, zwierzęta, gry terenowe i imprezy pod gołym niebem — wszystko w jednej, magicznej przestrzeni.
