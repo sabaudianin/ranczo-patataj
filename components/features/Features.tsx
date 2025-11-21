@@ -4,34 +4,29 @@ import { motion } from "motion/react";
 
 const ANIMAL_FEATURES = [
   {
-    src: "/avatar/brownFrontAlpaca.avif",
-    alt: "Brązowa alpaka z przodu na ranczu edukacyjnym",
+    src: "/images/tbrown.avif",
+    alt: "Kura w zagrodzie w otoczeniu natury",
     label: "Zakochaj się w alpakach 😍",
   },
   {
-    src: "/avatar/lamaFront.avif",
-    alt: "Lama z profilu na wybiegu",
+    src: "/images/tlam.avif",
+    alt: "Kura w zagrodzie w otoczeniu natury",
     label: "Zachwyć lamami🤗",
   },
   {
-    src: "/avatar/darkSideAlpaca.avif",
-    alt: "Ciemna alpaka z profilu podczas spaceru",
-    label: "Poznaj alpakoterapię 🥰",
-  },
-  {
-    src: "/avatar/horses.avif",
-    alt: "Konie na padoku w gospodarstwie edukacyjnym",
+    src: "/images/tduo.avif",
+    alt: "Kura w zagrodzie w otoczeniu natury",
     label: "Zaprzyjaźnij się z końmi💛",
   },
   {
-    src: "/avatar/goat.avif",
-    alt: "Koza na wybiegu na ranczu",
-    label: "Odnajdź równowagę w obecności zwierząt⚖️",
+    src: "/images/tblack.avif",
+    alt: "Kura w zagrodzie w otoczeniu natury",
+    label: "Poznaj alpakoterapię 🥰",
   },
   {
-    src: "/avatar/hen.avif",
+    src: "/images/trio.avif",
     alt: "Kura w zagrodzie w otoczeniu natury",
-    label: "Odkryj świat zwierząt z bliska🦚",
+    label: "Odnajdź równowagę w obecności zwierząt⚖️",
   },
 ];
 
@@ -54,7 +49,7 @@ export const Features = () => {
         jako pierwsze.
       </motion.h2>
       <motion.p
-        className="text-center mx-auto mb-8 font-poppins font-bold text-sm"
+        className="text-center mx-auto mb-8 font-poppins font-bold text-sm "
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
@@ -65,7 +60,7 @@ export const Features = () => {
         wiele więcej.
       </motion.p>
 
-      <div className="grid grid-cols-1 gap-2  md:grid-cols-2 md:gap-6">
+      <div className="grid grid-cols-1  md:grid-cols-2 md:gap-6">
         {ANIMAL_FEATURES.map((item, index) => {
           const isEven = index % 2 === 0;
 
@@ -73,7 +68,7 @@ export const Features = () => {
             <motion.div
               key={item.label}
               className={[
-                "flex items-center gap-3 rounded-full border border-emerald-700/50 bg-gradient-to-t from-green-600/90 via-emerald-600/90 to-sky-400 shadow-emerald-500/30 ring-1 ring-white/60 backdrop-blur-md",
+                "flex items-center gap-3 rounded-full bg-[radial-gradient(circle_at_center,_rgba(34,197,94,0.7)_0,_rgba(34,197,94,0.3)_40%,_transparent_75%)]",
 
                 isEven ? "flex-row" : "flex-row-reverse",
 
@@ -95,11 +90,21 @@ export const Features = () => {
                 width={120}
                 height={120}
                 alt={item.alt}
-                className="object-contain h-50 w-50 md:h-60  md:w-60 "
+                className="object-contain h-50 w-50 md:h-80  md:w-80 rounded-2xl "
               />
-              <span className="font-ultra  font-light md:text-lg leading-snug px-2">
+              <motion.span
+                className="font-ultra  font-light md:text-lg leading-snug px-2 "
+                initial={{ opacity: 0, y: 100, scale: 0.5 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{
+                  duration: 0.95,
+                  ease: "easeOut",
+                  delay: 0.2 * index,
+                }}
+              >
                 {item.label}
-              </span>
+              </motion.span>
             </motion.div>
           );
         })}
