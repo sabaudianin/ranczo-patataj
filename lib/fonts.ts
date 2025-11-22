@@ -1,10 +1,11 @@
 import {
   Ultra,
   Asset,
-  Rubik_Moonrocks,
   Playwrite_PL,
   Poppins,
   Amatic_SC,
+  Special_Elite,
+  Courier_Prime,
 } from "next/font/google";
 
 export const poppins = Poppins({
@@ -18,14 +19,14 @@ export const ultra = Ultra({
   subsets: ["latin"],
   weight: "400",
 });
-export const asset = Asset({
-  variable: "--font-asset",
+export const curier = Courier_Prime({
+  variable: "--font-curier",
   subsets: ["latin"],
   weight: ["400"],
 });
 
-export const moonrock = Rubik_Moonrocks({
-  variable: "--font-moonrock",
+export const special = Special_Elite({
+  variable: "--font-special",
   subsets: ["latin"],
   weight: "400",
 });

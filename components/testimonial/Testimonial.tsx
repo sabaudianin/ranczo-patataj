@@ -1,6 +1,7 @@
 "use client";
 import { MdFormatQuote } from "react-icons/md";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 import { MagicText } from "@/ui/magicText/MagicText";
 
@@ -108,6 +109,153 @@ export const Testimonial = () => {
               <span
                 itemProp="author"
                 className="text-xs font-medium "
+              >
+                {opinion.name}
+              </span>
+            </div>
+          </motion.article>
+        ))}
+
+        {OPINIONS.map((opinion, index) => (
+          <motion.article
+            key={opinion.name}
+            className={`
+      relative text-sm text-black ${opinion.font}
+      border border-amber-900/40 rounded-md
+      bg-[#f7f0dc]
+      shadow-[0_12px_30px_rgba(0,0,0,0.45)]
+      p-4 flex flex-col gap-3
+     
+      
+    `}
+            itemScope
+            itemType="https://schema.org/Review"
+            initial={{ opacity: 0, y: 20, scale: 0.96 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{
+              duration: 0.45,
+              ease: "easeOut",
+              delay: 0.08 * index,
+            }}
+          >
+            {/* Treść listu */}
+            <div
+              className="flex-1"
+              itemProp="reviewBody text-black"
+            >
+              <MagicText text={opinion.text} />
+            </div>
+
+            {/* Linia jak na końcu listu */}
+            <div
+              className="mt-2 h-px w-24 bg-amber-900/40"
+              aria-hidden="true"
+            />
+
+            {/* “Podpis” + inicjał jak pieczęć */}
+            <div className="flex items-center gap-4 pt-2">
+              {/* pieczęć / okrągły znaczek */}
+              <span
+                className={`h-7 w-7 rounded-full text-[0.7rem] te font-poppins font-bold flex items-center justify-center shadow-md shadow-black/40 ${opinion.color}`}
+                aria-hidden="true"
+              >
+                {opinion.name[0]}
+              </span>
+
+              {/* kolorowy podpis – tu używamy opinion.color */}
+              <span
+                itemProp="author"
+                className={`
+          text-xs font-medium italic tracking-wide
+          
+        `}
+              >
+                {opinion.name}
+              </span>
+            </div>
+          </motion.article>
+        ))}
+
+        {OPINIONS.map((opinion, index) => (
+          <motion.article
+            key={opinion.name}
+            className={`
+      relative text-sm ${opinion.font}
+      border border-amber-900/40 rounded-md
+      bg-[#f7f0dc]
+      shadow-[0_12px_30px_rgba(0,0,0,0.45)]
+      p-4 flex flex-col gap-3
+      bg-[repeating-linear-gradient(
+        to_bottom,
+        rgba(0,0,0,0.06) 0px,
+        rgba(0,0,0,0.06) 1px,
+        transparent 1px,
+        transparent 5px
+      )]
+      glow-amber
+    `}
+            itemScope
+            itemType="https://schema.org/Review"
+            initial={{ opacity: 0, y: 20, scale: 0.96 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{
+              duration: 0.45,
+              ease: "easeOut",
+              delay: 0.08 * index,
+            }}
+          >
+            {/* TREŚĆ LISTU + ZNACZEK W ROGU */}
+            <div className="flex-1 relative">
+              {/* znaczek / postarzone logo w prawym górnym rogu */}
+              <div className="float-right ml-3 mb-2">
+                <Image
+                  src="/logorp.avif" // wrzuć swoje logo do /public i podmień ścieżkę
+                  width={80}
+                  height={80}
+                  alt="Logo Ranczo Patataj"
+                  className="
+            w-14 h-14
+            opacity-60
+            sepia-[0.4] contrast-110 brightness-95
+            drop-shadow-sm
+            -rotate-3
+          "
+                />
+              </div>
+
+              <div itemProp="reviewBody">
+                <MagicText text={opinion.text} />
+              </div>
+
+              {/* czyścimy float, żeby podpis nie “wpływał” w logo */}
+              <div className="clear-both" />
+            </div>
+
+            {/* LINIA JAK NA KOŃCU LISTU */}
+            <div
+              className="mt-2 h-px w-24 bg-amber-900/40"
+              aria-hidden="true"
+            />
+
+            {/* PODPIS NA DOLE – JAK BYŁ */}
+            <div className="flex items-center gap-4 pt-2">
+              {/* pieczęć z inicjałem */}
+              <span
+                className="h-7 w-7 rounded-full bg-amber-900/70 text-[0.7rem] text-amber-50 font-poppins font-bold flex items-center justify-center shadow-md shadow-black/40"
+                aria-hidden="true"
+              >
+                {opinion.name[0]}
+              </span>
+
+              {/* kolorowy podpis – opinion.color jako kolor tekstu */}
+              <span
+                itemProp="author"
+                className={`
+          text-xs font-medium italic tracking-wide
+          ${opinion.color}
+        `}
               >
                 {opinion.name}
               </span>
