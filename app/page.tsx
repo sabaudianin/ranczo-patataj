@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { Hero } from "@/components/hero/Hero";
 import { Testimonial } from "@/components/testimonial/Testimonial";
-import { Features } from "@/components/features/Features";
+import { Features } from "@/components/featury/Features";
 import { Cta } from "@/components/cta/Cta";
 import { Banner } from "@/components/banner/Banner";
+import { Eventy } from "@/components/eventy/Eventy";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Banner />
       <Features />
       <Testimonial />
+      <Eventy />
       <div className=" max-w-7xl mx-auto">
         <p className="font-poppins p-2 text-xs">
           🌿 Krótkie, chwytliwe slogany (idealne do hero) “Ranczo, które łączy

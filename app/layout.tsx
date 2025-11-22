@@ -10,6 +10,7 @@ import {
 import "../styles/globals.css";
 import { orgJsonLd } from "@/lib/seo/schema";
 import { Navbar } from "@/components/navbar/Navbar";
+import { Footer } from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Ranczo Patataj",
@@ -37,19 +38,7 @@ export default function RootLayout({
         <Navbar />
 
         <main className="">{children}</main>
-        <footer className="bg-[var(--c-primary)]/20 py-4 border border-[var(--c-primary)]">
-          <p className="text-center">
-            {" "}
-            Ranczo Patataj - Gospodarstwo Edukacyjne
-          </p>
-          <hr className="text-[var(--c-primary)] m-2" />
-          <p className="text-center text-xs">
-            © {new Date().getFullYear()} Ranczo Patataj. All rights reserved.
-          </p>
-          <p className="text-xs text-center py-2">
-            Design And Develop rafbobbob@gmail.com
-          </p>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

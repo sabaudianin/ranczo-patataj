@@ -92,8 +92,6 @@ export const Testimonial = () => {
               ease: "easeOut",
               delay: 0.08 * index,
             }}
-            whileHover={{ y: -4, scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
           >
             <div className={`flex-1  `}>
               <MagicText text={opinion.text} />
