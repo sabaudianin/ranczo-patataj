@@ -5,28 +5,33 @@ import { motion } from "motion/react";
 const ANIMAL_FEATURES = [
   {
     src: "/images/tbrown.avif",
-    alt: "Kura w zagrodzie w otoczeniu natury",
+    alt: "Brązowa alpaka stojąca na wybiegu w Ranczo Patataj",
     label: "Zakochaj się w alpakach 😍",
+    fact: "Alpaki koją napięcie i działają jak naturalna terapia wyciszająca.",
   },
   {
     src: "/images/tlam.avif",
-    alt: "Kura w zagrodzie w otoczeniu natury",
+    alt: "Lama spacerująca po zagrodzie w otoczeniu natury",
     label: "Zachwyć lamami🤗",
+    fact: "Lamy uczą cierpliwości i obecności, świetnie wspierając pracę z emocjami.",
   },
   {
     src: "/images/tduo.avif",
-    alt: "Kura w zagrodzie w otoczeniu natury",
+    alt: "Dwa konie na padoku w gospodarstwie edukacyjnym",
     label: "Zaprzyjaźnij się z końmi💛",
+    fact: "Kontakt z końmi poprawia pewność siebie i pomaga redukować stres.",
   },
   {
     src: "/images/tblack.avif",
-    alt: "Kura w zagrodzie w otoczeniu natury",
+    alt: "Ciemna alpaka patrząca w obiektyw na tle zagrody",
     label: "Poznaj alpakoterapię 🥰",
+    fact: "Alpakoterapia wspiera wyciszenie i pomaga przy napięciu emocjonalnym.",
   },
   {
     src: "/images/trio.avif",
-    alt: "Kura w zagrodzie w otoczeniu natury",
+    alt: "Grupa zwierząt gospodarskich razem na wybiegu",
     label: "Odnajdź równowagę w obecności zwierząt⚖️",
+    fact: "Obcowanie ze zwierzętami obniża poziom kortyzolu i poprawia samopoczucie.",
   },
 ];
 
@@ -49,14 +54,14 @@ export const Features = () => {
         jako pierwsze.
       </motion.h2>
       <motion.p
-        className="text-center mx-auto mb-8 font-poppins font-bold text-sm "
+        className="text-center mx-auto mb-8 font-special  text-sm "
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.45, ease: "easeOut", delay: 0.1 }}
       >
         Gospodarstwo edukacyjne blisko Warszawy, w którym dzieci i dorośli
-        poznają zwierzęta z bliska: alpaki, lamy, konie, kozy, kury pawie i
+        poznają zwierzęta z bliska, alpaki, lamy, konie, kozy, kury pawie i
         wiele więcej.
       </motion.p>
 
@@ -100,12 +105,11 @@ export const Features = () => {
                 <div className="relative overflow-hidden bg-neutral-900/70 aspect-[4/3] w-40 md:w-full">
                   <Image
                     src={item.src}
-                    width={256}
-                    height={192}
+                    fill
                     alt={item.alt}
                     className="
-          w-full h-full object-cover
-          sepia-[0.8] contrast-125 brightness-90
+         object-cover
+          
           hover:scale-105 transition-transform duration-500
         "
                   />
@@ -126,18 +130,7 @@ export const Features = () => {
               {/* Stara gazeta o zwierzętach – tekst obok / pod */}
               <motion.span
                 className="
-      font-ultra font-light md:text-sm leading-snug px-3 py-2
-      bg-[#f5ebd5] text-neutral-800
-      border border-neutral-300 rounded
-      shadow-sm shadow-black/20
-      md:mt-4
-      bg-[repeating-linear-gradient(
-        to_bottom,
-        rgba(0,0,0,0.06) 0px,
-        rgba(0,0,0,0.06) 1px,
-        transparent 1px,
-        transparent 5px
-      )]
+       px-3 py-2 bg-[#f5ebd5] text-neutral-800 rounded shadow-sm shadow-black/20 font-curier font-semibold text-xs
     "
                 initial={{ opacity: 0, y: 100, scale: 0.5 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -148,7 +141,7 @@ export const Features = () => {
                   delay: 0.2 * index,
                 }}
               >
-                {item.label}
+                {item.fact}
               </motion.span>
             </motion.div>
           );

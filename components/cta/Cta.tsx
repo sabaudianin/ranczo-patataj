@@ -36,7 +36,7 @@ export const Cta = () => {
 
         <a
           href="tel:+48507526916"
-          className="absolute right-1 top-4 z-20  py-2 px-4 bg-[var(--c-primary)]/70 hover:scale-105 transition-all duration  rounded-xl text-xs md:text-xl font-semibold text-white font-curier"
+          className="absolute right-1 top-4 z-20  py-2 px-4 bg-[var(--c-primary)]/30 hover:scale-105 transition-all duration border border-[var(--c-primary)] rounded-xl text-xs md:text-xl font-semibold text-white font-curier"
           aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
         >
           Zarezerwuj termin
@@ -61,7 +61,7 @@ export const Cta = () => {
         <div className="flex justify-center items-center p-4">
           <a
             href="tel:+48507526916"
-            className="inline-flex items-center gap-2 shadow-md shadow-amber-600 rounded-xl hover:shadow-md  font-poppins font-black md:text-xl px-4 py-2 hover:text-emerald-400 hover:shadow-emerald-600 transition-all duration"
+            className="inline-flex items-center gap-2 hover:shadow-md  font-special font-black md:text-xl px-4 py-2 hover:text-emerald-200  transition-all duration"
             aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
           >
             <FaPhone className="self-start animate-pulse" />
@@ -70,7 +70,7 @@ export const Cta = () => {
         </div>
 
         <MiniGallery />
-        <p className="text-xs md:text-sm max-w-md mx-auto font-semibold">
+        <p className="text-xs md:text-sm max-w-md mx-auto font-semibold font-curier">
           Zadzwoń, aby umówić zajęcia edukacyjne, warsztaty, zarezerować ranczo
           na imprezę firmową, rodzinną lub wizytę grupową.
         </p>

@@ -9,6 +9,7 @@ export const Banner = () => {
           src="/images/wigilia.avif"
           fill
           alt="oferta wigilijna"
+          className="sepia"
         />
       </div>
     </section>

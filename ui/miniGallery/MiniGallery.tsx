@@ -1,3 +1,6 @@
+"use client";
+import { useState } from "react";
+
 import Image from "next/image";
 
 const SLIDES = [
@@ -32,42 +35,79 @@ const SLIDES = [
 ];
 
 export const MiniGallery = () => {
+  const [stopScroll, setStopScroll] = useState(false);
+
   return (
     <div className="flex gap-2 justify-center md:gap-4">
-      {SLIDES.map((slide, index) => {
-        const isHiddenOnMobile = index >= 4 ? "hidden md:flex" : "flex";
+      <style>{`
+                .marquee-inner {
+                    animation: marqueeScroll linear infinite;
+                }
 
-        const tilt = index % 2 === 0 ? "-rotate-2" : "rotate-1";
+                @keyframes marqueeScroll {
+                    0% {
+                        transform: translateX(0%);
+                    }
 
-        return (
-          <figure
-            key={slide.alt}
-            className={[
-              isHiddenOnMobile,
-              "w-24 h-28 md:w-36 md:h-40",
-              "bg-[#fdf3e1] border border-neutral-300 rounded-sm",
-              "shadow-lg shadow-black/30 p-2",
-              "flex flex-col items-center justify-between",
-              "transform transition-transform duration-300",
-              tilt,
-              "hover:rotate-0 hover:-translate-y-1",
-            ].join(" ")}
-          >
-            <div className="w-full h-full overflow-hidden bg-neutral-900/10">
-              <Image
-                src={slide.src}
-                width={80}
-                height={80}
-                alt={slide.alt}
-                className="w-full h-full object-cover block"
-              />
-            </div>
-            <figcaption className="mt-1 text-[0.65rem] text-center leading-tight text-neutral-800">
-              {slide.alt}
-            </figcaption>
-          </figure>
-        );
-      })}
+                    100% {
+                        transform: translateX(-50%);
+                    }
+                }
+            `}</style>
+
+      <div
+        className="overflow-hidden w-full relative max-w-6xl mx-auto "
+        onMouseEnter={() => setStopScroll(true)}
+        onMouseLeave={() => setStopScroll(false)}
+      >
+        <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-amber-500/20 to-transparent" />
+        <div
+          className="marquee-inner flex w-fit "
+          style={{
+            animationPlayState: stopScroll ? "paused" : "running",
+            animationDuration: SLIDES.length * 20500 + "ms",
+          }}
+        >
+          <div className="flex">
+            {[...SLIDES, ...SLIDES].map((card, index) => (
+              <div
+                key={index}
+                className="mx-4 w-56 group"
+              >
+                {/* POLAROIDOWA RAMKA */}
+                <div className="relative h-[12rem] bg-[#fdf7e5] border border-neutral-300 rounded-sm shadow-lg shadow-black/40 p-3 pb-8 transform -rotate-2 group-hover:rotate-1 group-hover:-translate-y-1 group-hover:scale-95 transition-transform duration-300">
+                  {/* WŁAŚCIWE "ZDJĘCIE" */}
+                  <div className="relative h-full overflow-hidden bg-neutral-900/70">
+                    <Image
+                      src={card.src}
+                      title="card"
+                      fill
+                      alt={card.alt}
+                      className="w-full h-full object-cover sepia brightness-90 contrast-125 group-hover:scale-105 transition-transform duration-500"
+                    />
+
+                    {/* Delikatne przyciemnienie / vintydżowy overlay */}
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/40 mix-blend-multiply" />
+
+                    {/* Twój overlay z tytułem przy hoverze */}
+                    <div className="absolute inset-0 flex items-center justify-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <p className="text-white text-lg font-semibold text-center drop-shadow">
+                        {card.alt}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* PODPIS JAK NA POLAROIDZIE */}
+                  <p className="mt-2 text-center text-xs font-semibold uppercase tracking-[0.2em] text-neutral-700 font-amatic">
+                    {card.alt}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-amber-500/20  to-transparent" />
+      </div>
     </div>
   );
 };

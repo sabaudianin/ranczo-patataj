@@ -1,12 +1,5 @@
 import type { Metadata } from "next";
-import {
-  poppins,
-  ultra,
-  special,
-  playwrite,
-  amatic,
-  curier,
-} from "@/lib/fonts";
+import { play, ultra, special, playwrite, amatic, curier } from "@/lib/fonts";
 import "../styles/globals.css";
 import { orgJsonLd } from "@/lib/seo/schema";
 import { Navbar } from "@/components/navbar/Navbar";
@@ -33,7 +26,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={` ${poppins.variable} ${ultra.variable} ${curier.variable} ${special.variable} ${playwrite.variable} ${amatic.variable} antialiased`}
+        className={` ${play.variable} ${ultra.variable} ${curier.variable} ${special.variable} ${playwrite.variable} ${amatic.variable} antialiased`}
       >
         <Navbar />
 

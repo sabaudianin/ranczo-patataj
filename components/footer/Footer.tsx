@@ -23,7 +23,7 @@ export const Footer = () => {
       <div className="flex justify-center items-center gap-4 p-2">
         <a
           href="tel:+48507526916"
-          className="inline-flex items-center gap-2 font-poppins  hover:text-emerald-400 0 transition-all duration text-xs justify-start"
+          className="inline-flex items-center gap-2 font-poppins  hover:text-emerald-400 0 transition-all duration text-xs justify-start font-curier"
           aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
         >
           <FaPhone className="self-start animate-pulse text-emerald-500" />

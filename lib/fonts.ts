@@ -1,15 +1,14 @@
 import {
   Ultra,
-  Asset,
   Playwrite_PL,
-  Poppins,
   Amatic_SC,
   Special_Elite,
   Courier_Prime,
+  Playfair_Display,
 } from "next/font/google";
 
-export const poppins = Poppins({
-  variable: "--font-poppins",
+export const play = Playfair_Display({
+  variable: "--font-play",
   subsets: ["latin"],
   weight: ["400", "700", "900"],
 });

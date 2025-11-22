@@ -11,11 +11,7 @@ const SLIDES = [
 export const Hero = () => {
   return (
     <section className="relative w-full py-4">
-      <div className="w-full flex justify-center items-center text-4xl gap-4">
-        <SiOllama className="text-amber-700" />
-        <SiOllama className="text-amber-500" />
-        <SiOllama className="text-amber-600" />
-      </div>
+      <div className="w-full flex justify-center items-center text-4xl gap-4"></div>
       <h2 className=" p-4 font-ultra text-[var(--c-primary)] uppercase text-center md:text-2xl">
         Twoje ulubione miejsce na rodzinny wypad poza miasto, tylko 45 minut od
         Warszawy.
