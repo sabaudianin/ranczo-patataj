@@ -7,11 +7,19 @@ export const Footer = () => {
     <footer
       className="bg-[var(--c-primary)]/10 py-4 border border-[var(--c-primary)] font-poppins"
       aria-label="Stopka strony Ranczo Patataj"
+      itemScope
+      itemType="https://schema.org/LocalBusiness"
     >
       <p className="text-center font-amatic font-semibold">
         {" "}
         Ranczo Patataj - Gospodarstwo Edukacyjne
       </p>
+
+      <meta
+        itemProp="url"
+        content="https://twoja-domena.pl"
+      />
+
       <div className="flex justify-center items-center gap-4 p-2">
         <a
           href="tel:+48507526916"
@@ -27,6 +35,7 @@ export const Footer = () => {
           aria-label="Profil Ranczo Patataj na Instagramie"
           target="_blank"
           rel="noopener noreferrer"
+          itemProp="sameAs"
         >
           <p
             className="bg-[url('/icons/ig.avif')] w-6 h-6 bg-cover"
@@ -39,6 +48,7 @@ export const Footer = () => {
           aria-label="Profil Ranczo Patataj na Facebooku"
           target="_blank"
           rel="noopener noreferrer"
+          itemProp="sameAs"
         >
           <p
             className="bg-[url('/icons/fb.avif')] w-6 h-6 bg-cover "
@@ -75,7 +85,7 @@ export const Footer = () => {
           aria-label="Przejdź do portfolio twórcy strony – rafbob"
         >
           {" "}
-          Design And Develop rafbob
+          Design &amp; Develop rafbob
         </a>
       </p>
     </footer>

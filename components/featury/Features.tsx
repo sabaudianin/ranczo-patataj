@@ -82,8 +82,6 @@ export const Features = () => {
                 ease: "easeOut",
                 delay: 0.1 * index,
               }}
-              whileHover={{ y: -4, scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
             >
               <Image
                 src={item.src}
