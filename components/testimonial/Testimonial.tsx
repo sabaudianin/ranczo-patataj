@@ -1,5 +1,5 @@
 "use client";
-import { MdFormatQuote } from "react-icons/md";
+
 import { motion } from "motion/react";
 import Image from "next/image";
 
