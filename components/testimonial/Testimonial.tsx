@@ -69,7 +69,7 @@ export const Testimonial = () => {
         Nasi goście o nas :{" "}
       </motion.h2>
       <motion.p
-        className="text-center text-sm font-curier mx-auto mb-8 font-semibold text-xs"
+        className="text-center text-sm font-curier mx-auto mb-8 font-semibold text-xs md:text-lg"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
@@ -82,15 +82,8 @@ export const Testimonial = () => {
         {OPINIONS.map((opinion, index) => (
           <motion.article
             key={opinion.name}
-            className={`
-      relative text-sm text-black ${opinion.font}
-      border border-amber-900/40 rounded-md
-      bg-[#f7f0dc]
-      shadow-[0_12px_30px_rgba(0,0,0,0.45)]
-      p-4 flex flex-col gap-3
-     
-      
-    `}
+            className={`relative text-sm text-black ${opinion.font}
+      border border-amber-900/40 rounded-md bg-[#f7f0dc] shadow-[0_12px_30px_rgba(0,0,0,0.45)] p-4 flex flex-col gap-3 `}
             itemScope
             itemType="https://schema.org/Review"
             initial={{ opacity: 0, y: 20, scale: 0.96 }}
@@ -103,14 +96,13 @@ export const Testimonial = () => {
             }}
           >
             <div className="flex-1 relative">
-              {/* znaczek / postarzone logo w prawym górnym rogu */}
               <div className="float-right ml-3 mb-2">
                 <Image
-                  src="/logorp.avif" // wrzuć swoje logo do /public i podmień ścieżkę
+                  src="/logorp.avif"
                   width={80}
                   height={80}
                   alt="Logo Ranczo Patataj"
-                  className={`w-14 h-14sepia ${opinion.color} rounded-xl`}
+                  className={`w-14 h-14sepia rounded-xl grayscale`}
                 />
               </div>
 
@@ -118,19 +110,16 @@ export const Testimonial = () => {
                 <MagicText text={opinion.text} />
               </div>
 
-              {/* czyścimy float, żeby podpis nie “wpływał” w logo */}
+              {/* czysci float*/}
               <div className="clear-both" />
             </div>
 
-            {/* Linia jak na końcu listu */}
             <div
-              className="mt-2 h-px w-24 bg-amber-900/40"
+              className="mt-2 h-px bg-amber-900/40"
               aria-hidden="true"
             />
 
-            {/* “Podpis” + inicjał jak pieczęć */}
             <div className="flex items-center gap-4 pt-2">
-              {/* pieczęć / okrągły znaczek */}
               <span
                 className={`h-7 w-7 rounded-full text-[0.7rem] te font-poppins font-bold flex items-center justify-center shadow-md shadow-black/40 ${opinion.color}`}
                 aria-hidden="true"
@@ -138,7 +127,6 @@ export const Testimonial = () => {
                 {opinion.name[0]}
               </span>
 
-              {/* kolorowy podpis – tu używamy opinion.color */}
               <span
                 itemProp="author"
                 className={`

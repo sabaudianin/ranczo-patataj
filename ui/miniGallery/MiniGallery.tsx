@@ -38,7 +38,7 @@ export const MiniGallery = () => {
   const [stopScroll, setStopScroll] = useState(false);
 
   return (
-    <div className="flex gap-2 justify-center md:gap-4">
+    <div className="flex gap-2 justify-center md:gap-4 py-4">
       <style>{`
                 .marquee-inner {
                     animation: marqueeScroll linear infinite;

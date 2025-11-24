@@ -37,7 +37,7 @@ export const BgSlider: React.FC<BgSliderProps> = ({
 
   return (
     <section
-      className={`relative overflow-hidden rounded ${className}`}
+      className={`relative overflow-hidden ${className}`}
       aria-hidden="true"
     >
       <AnimatePresence>

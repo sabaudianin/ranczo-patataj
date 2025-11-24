@@ -44,16 +44,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.liquid-glass {
-  border-radius: var(--radius-2xl);
-  background-color: var(--c-primary); /* lekka mgła */
-  border: 1px solid var(--c-primary);
-  box-shadow: var(--shadow-md);
-
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-}
-
 .glass2 {
   backdrop-filter: blur(8px) saturate(140%);
   -webkit-backdrop-filter: blur(8px) saturate(140%);
@@ -71,9 +61,8 @@ body {
 }
 
 .liquid-glass {
-  border-radius: var(--radius-2xl);
-  background-color: color-mix(in oklch, white 10%, transparent);
   -webkit-backdrop-filter: blur(18px) saturate(160%);
+  background-color: color-mix(in oklch, white 10%, transparent);
   backdrop-filter: blur(18px) saturate(160%);
   background-image: radial-gradient(
     circle at top left,
