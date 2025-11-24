@@ -77,7 +77,7 @@ export const Features = () => {
             <motion.div
               key={item.label}
               className={[
-                "relative mx-4 flex items-center gap-3 md:justify-center md:justify-self-center",
+                "relative mx-4 flex items-center gap-3 md:justify-center ",
                 isEven
                   ? "flex-row md:flex-col"
                   : "flex-row-reverse md:flex-col",
@@ -95,7 +95,7 @@ export const Features = () => {
               {/* POLAROID – postarzone zdjęcie */}
               <div
                 className={[
-                  "relative bg-[#fdf3e1] border border-neutral-300 rounded-sm",
+                  "relative bg-[#fdf3e1] rounded-sm",
                   "shadow-lg shadow-black/40 p-3 pb-7",
                   "transform transition-transform duration-300",
                   isEven ? "-rotate-2 md:-rotate-3" : "rotate-2 md:rotate-3",
@@ -105,13 +105,10 @@ export const Features = () => {
                 <div className="relative overflow-hidden bg-neutral-900/70 aspect-[4/3] w-40 md:w-full">
                   <Image
                     src={item.src}
-                    fill
+                    width={256}
+                    height={192}
                     alt={item.alt}
-                    className="
-         object-cover
-          
-          hover:scale-105 transition-transform duration-500
-        "
+                    className=" w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
 
                   {/* lekko brudne / przydymione brzegi */}
@@ -121,17 +118,15 @@ export const Features = () => {
                   <div className="pointer-events-none absolute inset-0 opacity-40 mix-blend-soft-light " />
                 </div>
 
-                {/* podpis jak na polaroidzie */}
-                <p className="mt-2 text-center font-bold tracking-[0.25em] uppercase text-neutral-700 font-special">
+                {/* podpis e */}
+                <p className="mt-2 text-center font-bold tracking-[0.25em] uppercase text-black/90 font-special">
                   {item.label}
                 </p>
               </div>
 
-              {/* Stara gazeta o zwierzętach – tekst obok / pod */}
+              {/*  SIDE TEXT*/}
               <motion.span
-                className="
-       px-3 py-2 bg-[#f5ebd5] text-neutral-800 rounded shadow-sm shadow-black/20 font-curier font-semibold text-xs
-    "
+                className="p-2 bg-[#f5ebd5] text-neutral-800 rounded shadow-sm shadow-black/20 font-curier font-semibold text-xs"
                 initial={{ opacity: 0, y: 100, scale: 0.5 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true, amount: 0.3 }}

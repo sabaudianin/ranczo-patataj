@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type PolaroidCardProps = {
   src: string;
   alt: string;
@@ -25,9 +27,11 @@ export const PolaroidCard = ({
       `}
     >
       <div className="aspect-[3/4] w-48 overflow-hidden bg-neutral-200 ">
-        <img
+        <Image
           src={src}
           alt={alt}
+          width={200}
+          height={200}
           className="h-full w-full object-cover rounded"
         />
       </div>
