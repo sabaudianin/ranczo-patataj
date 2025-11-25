@@ -11,6 +11,7 @@ import { Cta } from "@/components/cta/Cta";
 import { Banner } from "@/components/banner/Banner";
 import { Final } from "@/components/final/Final";
 import { MiniGallery } from "@/ui/miniGallery/MiniGallery";
+import { RelaxText } from "@/ui/relaxText/RelaxText";
 
 export default function Home() {
   const webPageJsonLd = createWebPageJsonLd({
@@ -65,6 +66,7 @@ export default function Home() {
         <MiniGallery />
         <Hero />
         <Features />
+        <RelaxText />
         <Testimonial />
         <Final />
       </section>
