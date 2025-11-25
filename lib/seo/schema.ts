@@ -82,3 +82,15 @@ export const createAboutPageJsonLd = (data: { name: string; url: string }) => ({
   "@type": "AboutPage",
   ...data,
 });
+
+type WebPageData = {
+  name: string;
+  url: string;
+  description?: string;
+};
+
+export const createWebPageJsonLd = (data: WebPageData) => ({
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  ...data,
+});
