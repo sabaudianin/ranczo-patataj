@@ -52,7 +52,7 @@ export const MiniGallery = () => {
 
       {/* Dostępna dla czytników ekranu lista opisów zdjęć */}
       <ul className="sr-only">
-        {SLIDES.map((card, index) => (
+        {[...SLIDES, ...SLIDES].map((card, index) => (
           <li key={index}>{card.alt}</li>
         ))}
       </ul>
@@ -71,7 +71,7 @@ export const MiniGallery = () => {
             className="marquee-inner flex w-fit "
             style={{
               animationPlayState: stopScroll ? "paused" : "running",
-              animationDuration: SLIDES.length * 10500 + "ms",
+              animationDuration: SLIDES.length * 20500 + "ms",
             }}
           >
             <div className="flex">
@@ -87,8 +87,10 @@ export const MiniGallery = () => {
                       <Image
                         src={card.src}
                         fill
+                        sizes="auto"
                         alt={card.alt}
-                        className="w-full h-full object-cover sepia brightness-90 contrast-125 group-hover:scale-105 transition-transform duration-500"
+                        loading="eager"
+                        className=" object-cover sepia brightness-90 contrast-125 group-hover:scale-105 transition-transform duration-500"
                       />
 
                       {/* Delikatne przyciemnienie / vintydżowy overlay */}
