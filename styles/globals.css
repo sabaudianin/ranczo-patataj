@@ -62,13 +62,13 @@ body {
 
 .liquid-glass {
   -webkit-backdrop-filter: blur(18px) saturate(160%);
-  background-color: color-mix(in oklch, white 10%, transparent);
+  /* background-color: color-mix(in oklch, white 10%, transparent); */
   backdrop-filter: blur(18px) saturate(160%);
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     circle at top left,
     color-mix(in oklch, white 22%, transparent) 0,
     transparent 55%
-  );
+  ); */
   background-blend-mode: screen;
 }
 

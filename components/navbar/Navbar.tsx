@@ -29,10 +29,10 @@ export const Navbar: React.FC = () => {
         Przejdź do treści
       </a>
 
-      <header className="fixed md:sticky w-full z-50 ">
+      <header className="fixed md:sticky w-full z-50 bg-[var(--c-primary)]/10">
         <div className="">
-          <div className="w-full p-2 liquid-glass flex rounded justify-between items-center max-w-hd mx-auto 2xl:px-72">
-            <div className="w-full relative flex justify-between items-center">
+          <div className="w-full p-2 liquid-glass flex rounded justify-between items-center max-w-hd mx-auto  border border-[var(--c-primary)]">
+            <div className="w-full relative flex justify-between items-center ">
               <Link
                 href="/"
                 className="flex items-center gap-2"
@@ -42,7 +42,7 @@ export const Navbar: React.FC = () => {
                   width={65}
                   height={65}
                   alt="Logo Ranczo Patataj"
-                  className=" md:h-24 md:w-24"
+                  className=" md:h-24 md:w-24 rounded-full shadow-xl"
                   priority
                 />
               </Link>

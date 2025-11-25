@@ -15,7 +15,7 @@ export const PolaroidCard = ({
 }: PolaroidCardProps) => {
   return (
     <figure
-      className={`bg-slate-100 te shadow-lg shadow-black/20 rounded border border-neutral-200 p-3 pb-6 inline-block transform hover:-translate-y-1 hover:rotate-1 transition-transform duration-300
+      className={`bg-slate-100 te shadow-lg shadow-black/20 rounded border border-neutral-200 p-3 pb-6 transform hover:-translate-y-1 hover:rotate-1 transition-transform duration-300
         ${className}
       `}
     >

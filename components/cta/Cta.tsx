@@ -33,14 +33,6 @@ export const Cta = () => {
           slides={SLIDES}
           className="absolute inset-0 w-full h-full "
         />
-
-        <a
-          href="tel:+48507526916"
-          className="absolute right-1 top-4 z-20  py-2 px-4 bg-[var(--c-primary)]/30 hover:scale-105 transition-all duration border border-[var(--c-primary)] rounded-xl text-xs md:text-xl font-semibold text-white font-curier"
-          aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
-        >
-          Zarezerwuj termin
-        </a>
       </div>
       <div className="relative z-10 flex flex-col  md:p-6 py-4  text-center max-w-6xl mx-auto">
         <h2

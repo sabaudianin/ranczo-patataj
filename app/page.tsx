@@ -9,7 +9,7 @@ import { MiniGallery } from "@/ui/miniGallery/MiniGallery";
 
 export default function Home() {
   return (
-    <section className="relative px-1 pt-24 md:pt-0 dark:bg-black bg-[var(--c-accent)] mx-auto">
+    <section className="relative px-2 pt-24 md:pt-0 dark:bg-black bg-[var(--c-accent)] mx-auto">
       <Banner />
       <Cta />
       <MiniGallery />
