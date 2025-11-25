@@ -19,7 +19,7 @@ export const PolaroidCard = ({
         ${className}
       `}
     >
-      <div className="aspect-[3/4] w-48 overflow-hidden bg-neutral-200 ">
+      <div className="aspect-[3/4] w-48 md:w-64 overflow-hidden bg-neutral-200 ">
         <Image
           src={src}
           alt={alt}

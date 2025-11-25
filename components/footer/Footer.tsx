@@ -1,5 +1,6 @@
 import { FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import { MdAttachEmail } from "react-icons/md";
 
 export const Footer = () => {
   return (
@@ -9,7 +10,7 @@ export const Footer = () => {
       itemScope
       itemType="https://schema.org/LocalBusiness"
     >
-      <p className="text-center font-amatic font-semibold">
+      <p className="text-center font-amatic font-semibold md:text-xl">
         {" "}
         Ranczo Patataj - Gospodarstwo Edukacyjne
       </p>
@@ -19,41 +20,52 @@ export const Footer = () => {
         content="https://twoja-domena.pl"
       />
 
-      <div className="flex justify-center items-center gap-4 p-2">
-        <a
-          href="tel:+48507526916"
-          className="inline-flex items-center gap-2 font-poppins  hover:text-emerald-400 0 transition-all duration text-xs justify-start font-curier"
-          aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
-        >
-          <FaPhone className="self-start animate-pulse text-emerald-500" />
-          <span itemProp="telephone">+48 507 526 916</span>
-        </a>
-        <a
-          href="https://www.instagram.com/ranczopatataj"
-          className="p-2"
-          aria-label="Profil Ranczo Patataj na Instagramie"
-          target="_blank"
-          rel="noopener noreferrer"
-          itemProp="sameAs"
-        >
-          <p
-            className="bg-[url('/icons/ig.avif')] w-6 h-6 bg-cover"
-            aria-hidden="true"
-          />{" "}
-        </a>
-        <a
-          href="https://www.facebook.com/PatatajRanczo/"
-          className="p-2"
-          aria-label="Profil Ranczo Patataj na Facebooku"
-          target="_blank"
-          rel="noopener noreferrer"
-          itemProp="sameAs"
-        >
-          <p
-            className="bg-[url('/icons/fb.avif')] w-6 h-6 bg-cover "
-            aria-hidden="true"
-          />{" "}
-        </a>
+      <div className="flex items-center justify-between md:justify-around items-center gap-4 p-2 py-8">
+        <div className="text-center ">
+          <a
+            href="tel:+48507526916"
+            className="flex items-center gap-2 font-poppins  hover:text-emerald-400 0 transition-all duration text-xs md:text-base justify-start font-curier py-2"
+            aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
+          >
+            <FaPhone className="self-start animate-pulse text-emerald-500" />
+            <span itemProp="telephone">+48 507 526 916</span>
+          </a>
+          <a
+            href="mailto:ranczopatataj@gmail.com"
+            className="flex items-center gap-2  hover:text-[var(--c-primary)] text-xs md:text-base "
+          >
+            <MdAttachEmail className="self-end animate-pulse text-blue-500" />
+            <span itemProp="email">ranczopatataj@gmail.com</span>
+          </a>
+        </div>
+        <div className="flex justify-between">
+          <a
+            href="https://www.instagram.com/ranczopatataj"
+            className="p-2"
+            aria-label="Profil Ranczo Patataj na Instagramie"
+            target="_blank"
+            rel="noopener noreferrer"
+            itemProp="sameAs"
+          >
+            <p
+              className="bg-[url('/icons/ig.avif')] w-8 h-8 md:h-12 md:w-12 bg-cover"
+              aria-hidden="true"
+            />{" "}
+          </a>
+          <a
+            href="https://www.facebook.com/PatatajRanczo/"
+            className="p-2"
+            aria-label="Profil Ranczo Patataj na Facebooku"
+            target="_blank"
+            rel="noopener noreferrer"
+            itemProp="sameAs"
+          >
+            <p
+              className="bg-[url('/icons/fb.avif')] w-8 h-8 md:h-12 md:w-12 bg-cover "
+              aria-hidden="true"
+            />{" "}
+          </a>
+        </div>
       </div>
       <address
         className="text-xs text-center flex justify-center items-center gap-2 not-italic"
