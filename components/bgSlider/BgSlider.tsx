@@ -11,15 +11,17 @@ type Slide = {
 
 type BgSliderProps = {
   slides: Slide[];
-  interval?: 500;
+  interval?: number;
   className?: string;
   label?: string;
+  ariaHidden?: boolean;
 };
 
 export const BgSlider: React.FC<BgSliderProps> = ({
   slides,
-  interval = 6000,
+  interval = 5000,
   className = "",
+  ariaHidden = true,
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -38,7 +40,8 @@ export const BgSlider: React.FC<BgSliderProps> = ({
   return (
     <section
       className={`relative overflow-hidden ${className}`}
-      aria-hidden="true"
+      aria-hidden={ariaHidden}
+      role={ariaHidden ? "presentation" : "group"}
     >
       <AnimatePresence>
         {slides.map((slide, index) =>
@@ -56,8 +59,8 @@ export const BgSlider: React.FC<BgSliderProps> = ({
                 alt={slide.alt}
                 fill
                 priority={index === 0}
-                sizes="100vh"
-                className="object-contain object-cover"
+                sizes="100vw"
+                className="object-cover"
               />
               <motion.span
                 className="w-full absolute z-50 text-center font-ultra bottom-2 text-shadow text-white md:text-xl"
@@ -66,6 +69,7 @@ export const BgSlider: React.FC<BgSliderProps> = ({
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.98 }}
                 transition={{ duration: 1.4, ease: "easeInOut" }}
+                aria-hidden={ariaHidden}
               >
                 {slide.label}
               </motion.span>

@@ -27,8 +27,15 @@ const SLIDES = [
 
 export const Cta = () => {
   return (
-    <section className="relative w-full max-w-hd mx-auto py-4">
-      <div className="relative h-64 md:h-120 w-full overflow-hidden  aspect-ratio[16/9]">
+    <section
+      className="relative w-full max-w-hd mx-auto py-4"
+      aria-labelledby="cta-heading"
+      role="region"
+    >
+      <div
+        className="relative h-64 md:h-120 w-full overflow-hidden  aspect-[16/9]"
+        aria-hidden="true"
+      >
         <BgSlider
           slides={SLIDES}
           className="absolute inset-0 w-full h-full "
@@ -44,10 +51,15 @@ export const Cta = () => {
         <div className="flex justify-center items-center p-2">
           <a
             href="tel:+48507526916"
-            className="inline-flex items-center gap-2 hover:shadow-md  font-special font-black md:text-xl px-4 py-2 hover:text-emerald-200  transition-all duration"
+            className="inline-flex items-center gap-2 hover:shadow-md font-special font-black md:text-xl px-4 py-2 hover:text-emerald-200  transition-all duration focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] "
             aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
+            itemProp="telephone"
           >
-            <FaPhone className="self-start animate-pulse" />
+            <FaPhone
+              className="self-start animate-pulse"
+              aria-hidden="true"
+              focusable="false"
+            />
             <span>+48 507 526 916</span>
           </a>
         </div>

@@ -64,7 +64,6 @@ export default function Home() {
         <Cta />
         <MiniGallery />
         <Hero />
-
         <Features />
         <Testimonial />
         <Final />

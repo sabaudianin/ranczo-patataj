@@ -88,7 +88,7 @@ export const Banner: React.FC = () => {
 
             <a
               href="tel:+48507526916"
-              className="absolute right-2 -bottom-14 z-20  py-2 px-4 bg-[var(--c-primary)]/50 hover:scale-105 transition-all duration border border-[var(--c-primary)] rounded-xl text-xs md:text-xl font-semibold text-white font-curier"
+              className="absolute right-2 -bottom-14 z-20  py-2 px-4 bg-[var(--c-primary)]/50 hover:scale-105 transition-all duration border border-[var(--c-primary)] rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]  text-xs md:text-xl font-semibold text-white font-curier "
               aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
               itemProp="telephone"
             >
@@ -117,7 +117,7 @@ export const Banner: React.FC = () => {
           >
             <a
               href="https://www.instagram.com/ranczopatataj"
-              className="p-4"
+              className="p-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] rounded-full"
               aria-label="Profil Ranczo Patataj na Instagramie"
               target="_blank"
               rel="noopener noreferrer"
@@ -130,7 +130,7 @@ export const Banner: React.FC = () => {
             </a>
             <a
               href="https://www.facebook.com/PatatajRanczo/"
-              className="p-4"
+              className="p-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] rounded-full"
               aria-label="Profil Ranczo Patataj na Facebooku"
               target="_blank"
               rel="noopener noreferrer"
