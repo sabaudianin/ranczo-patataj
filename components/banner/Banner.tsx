@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import { FaPhone } from "react-icons/fa";
+import { CONTACT, PHONETO } from "@/config/contact/Contact";
 
 export const metadata: Metadata = {
   // Podstawowy tytuł strony głównej
@@ -87,7 +88,7 @@ export const Banner: React.FC = () => {
             </h1>
 
             <a
-              href="tel:+48507526916"
+              href={PHONETO}
               className="absolute right-2 -bottom-14 z-20  py-2 px-4 bg-[var(--c-primary)]/50 hover:scale-105 transition-all duration border border-[var(--c-primary)] rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]  text-xs md:text-xl font-semibold text-white font-curier "
               aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
               itemProp="telephone"
@@ -100,7 +101,9 @@ export const Banner: React.FC = () => {
                 <span className="ml-2">
                   <span className="inline lg:hidden">Zarezerwuj termin</span>
 
-                  <span className="hidden lg:inline">+48 507 526 916</span>
+                  <span className="hidden lg:inline">
+                    {CONTACT.phoneDisplay}
+                  </span>
                 </span>
               </div>
             </a>

@@ -1,5 +1,5 @@
 import { SiOllama } from "react-icons/si";
-
+import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
 import Image from "next/image";
 
 export const Hero = () => {
@@ -17,10 +17,10 @@ export const Hero = () => {
         <span className="font-curier py-4 text-base md:text-xl">
           📧{" "}
           <a
-            href="mailto:ranczopatataj@gmail.com"
+            href={MAILTO}
             className="underline underline-offset-2 hover:text-[var(--c-primary)] font-bold"
           >
-            ranczopatataj@gmail.com
+            {CONTACT.email}
           </a>
         </span>
       </h2>
@@ -42,7 +42,7 @@ export const Hero = () => {
       </p>
 
       <h3 className=" p-4 font-ultra text-[var(--c-primary)] uppercase text-center md:text-2xl">
-        Twoje ulubione miejsce na rodzinny wypad poza miasto, tylko 55 minut od
+        Twoje ulubione miejsce na rodzinny wypad poza miasto, tylko godzinę od
         Warszawy.
       </h3>
       <div

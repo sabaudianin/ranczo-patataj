@@ -1,6 +1,7 @@
 import { FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdAttachEmail } from "react-icons/md";
+import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
 
 export const Footer = () => {
   return (
@@ -23,19 +24,19 @@ export const Footer = () => {
       <div className="flex items-center justify-between md:justify-around items-center gap-4 p-2 py-8">
         <div className="text-center ">
           <a
-            href="tel:+48507526916"
+            href={PHONETO}
             className="flex items-center gap-2 font-poppins  hover:text-emerald-400 0 transition-all duration text-xs md:text-base justify-start font-curier py-2"
             aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
           >
             <FaPhone className="self-start animate-pulse text-emerald-500" />
-            <span itemProp="telephone">+48 507 526 916</span>
+            <span itemProp="telephone">{CONTACT.phoneDisplay}</span>
           </a>
           <a
-            href="mailto:ranczopatataj@gmail.com"
+            href={MAILTO}
             className="flex items-center gap-2  hover:text-[var(--c-primary)] text-xs md:text-base "
           >
             <MdAttachEmail className="self-end animate-pulse text-blue-500" />
-            <span itemProp="email">ranczopatataj@gmail.com</span>
+            <span itemProp="email">{CONTACT.email}</span>
           </a>
         </div>
         <div className="flex justify-between">

@@ -1,5 +1,5 @@
 import { FaPhone } from "react-icons/fa";
-
+import { CONTACT, PHONETO } from "@/config/contact/Contact";
 import { BgSlider } from "../bgSlider/BgSlider";
 
 const SLIDES = [
@@ -50,7 +50,7 @@ export const Cta = () => {
         </h2>
         <div className="flex justify-center items-center p-2">
           <a
-            href="tel:+48507526916"
+            href={PHONETO}
             className="inline-flex items-center gap-2 hover:shadow-md font-special font-black md:text-xl px-4 py-2 hover:text-emerald-200  transition-all duration focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] "
             aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
             itemProp="telephone"
@@ -60,7 +60,7 @@ export const Cta = () => {
               aria-hidden="true"
               focusable="false"
             />
-            <span>+48 507 526 916</span>
+            <span>{CONTACT.phoneDisplay}</span>
           </a>
         </div>
 
@@ -72,13 +72,3 @@ export const Cta = () => {
     </section>
   );
 };
-
-// Zabawa, która uczy. Edukacja, która inspiruje.
-
-// Dzieci odkrywają naturę — dorośli odkrywają spokój
-
-// Tu celebrujemy najważniejsze chwile — rodzinnie i z sercem.”
-
-// Ranczo, które łączy edukację, naturę i prawdziwe wiejskie życie — idealne dla rodzin, szkół i miłośników zwierząt
-
-// Warsztaty, zwierzęta, gry terenowe i imprezy pod gołym niebem — wszystko w jednej, magicznej przestrzeni.
