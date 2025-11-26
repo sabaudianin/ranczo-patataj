@@ -3,6 +3,7 @@ import {
   createLocalBusinessJsonLd,
   createWebPageJsonLd,
 } from "@/lib/seo/schema";
+import { CONTACT } from "@/config/contact/Contact";
 
 import { Hero } from "@/components/hero/Hero";
 import { Testimonial } from "@/components/testimonial/Testimonial";
@@ -24,7 +25,7 @@ export default function Home() {
   const localBusinessJsonLd = createLocalBusinessJsonLd({
     name: "Ranczo Patataj - Gospodarstwo Edukacyjne",
     url: "https://twojadomena.pl",
-    telephone: "+48507526916",
+    telephone: CONTACT.phoneRaw,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Jastrzębia Stara 9",

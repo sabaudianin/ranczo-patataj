@@ -1,3 +1,5 @@
+import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
+
 export const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
