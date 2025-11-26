@@ -4,7 +4,7 @@ export type NavLink = {
 };
 
 export const MAIN_NAV_LINKS: NavLink[] = [
-  { href: "/nasze-ranczo", label: "Ranczo" },
+  { href: "/ranczo", label: "Ranczo" },
   { href: "/oferta", label: "Oferta" },
   // { href: "/galeria", label: "Galeria" },
   { href: "/kontakt", label: "Kontakt" },

@@ -22,8 +22,10 @@ export default function Ranczo() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
       />
 
-      <section className="grid place-items-center">
-        NASZE RANCZO - O NAS{" "}
+      <section className="py-24 md:py-4 max-w-7xl mx-auto px-8">
+        <div>
+          <h2>Witajcie na naszym Ranczu</h2>
+        </div>
       </section>
     </>
   );

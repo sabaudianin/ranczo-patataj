@@ -20,10 +20,11 @@ export const ContactForm = () => {
   };
 
   return (
-    <section className="font-special ">
+    <section className="font-special py-4 md:w-1/2">
+      <h2 className="text-center">Zapraszamy do kontaktu </h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className=" relative max-w-3xl mx-auto border rounded border-[var(--c-primary)] p-2 flex flex-col items-center justify-center gap-2 "
+        className="w-full  relative max-w-3xl mx-auto border rounded border-[var(--c-primary)] p-2 flex flex-col items-center justify-center gap-2 shadow-md "
       >
         {" "}
         <div className="absolute top-2 right-2 z-50">
