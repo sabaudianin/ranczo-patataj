@@ -121,6 +121,7 @@ export const Navbar: React.FC = () => {
                           className={`block rounded-lg px-3 py-4 transition hover:bg-amber-50 transition-colors hover:text-amber-500 text-xs font-ultra ${
                             active && "text-amber-600"
                           }`}
+                          onClick={() => setIsOpen(false)}
                         >
                           {link.label}
                         </Link>
