@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { play, ultra, special, playwrite, amatic, curier } from "@/lib/fonts";
+import { ultra, special, playwrite, amatic, curier } from "@/lib/fonts";
 import "../styles/globals.css";
 import { orgJsonLd } from "@/lib/seo/schema";
 import { Navbar } from "@/components/navbar/Navbar";
@@ -26,7 +26,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={` ${play.variable} ${ultra.variable} ${curier.variable} ${special.variable} ${playwrite.variable} ${amatic.variable} antialiased`}
+        className={` ${ultra.variable} ${curier.variable} ${special.variable} ${playwrite.variable} ${amatic.variable} antialiased`}
       >
         <Navbar />
 

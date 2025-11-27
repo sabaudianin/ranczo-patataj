@@ -70,6 +70,7 @@ export const Hero = () => {
             <a
               href={MAILTO}
               className="underline underline-offset-2 hover:text-[var(--c-primary)]"
+              aria-label="Napisz wiadomość e-mail do Ranczo Patataj"
             >
               {CONTACT.email}
             </a>

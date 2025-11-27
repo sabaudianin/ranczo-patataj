@@ -1,9 +1,12 @@
 import Script from "next/script";
 import { createServicesItemListJsonLd } from "@/lib/seo/schema";
+import { FaPhone } from "react-icons/fa";
+import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
 
 export const metadata = {
   title: "Oferta - Ranczo Patataj",
-  description: "Zajęcia edukacyjne, warsztaty i atrakcje na Ranczo Patataj.",
+  description:
+    "Zajęcia edukacyjne, warsztaty, urodziny wśród zwierzaków i oferta dla firm na Ranczo Patataj.",
 };
 
 export default function Oferta() {
@@ -11,20 +14,24 @@ export default function Oferta() {
     {
       name: "Zajęcia edukacyjne dla szkół i przedszkoli",
       description:
-        "Program dostosowany do wieku dzieci, kontakt ze zwierzętami, zabawy ruchowe.",
+        "Wycieczki edukacyjne na ranczo, kontakt ze zwierzętami, warsztaty kulinarne i manualne, gry terenowe oraz ognisko.",
     },
     {
-      name: "Warsztaty tematyczne na ranczu",
+      name: "Urodziny wśród zwierzaków na ranczu",
       description:
-        "Zajęcia o życiu na wsi, opiece nad zwierzętami i przyrodzie.",
+        "Organizacja przyjęć urodzinowych z alpakami i innymi zwierzętami, animacjami, zabawami na świeżym powietrzu i strefą zdjęć.",
     },
     {
-      name: "Urodziny na ranczu",
+      name: "Oferta integracyjna i eventy firmowe",
       description:
-        "Organizacja przyjęć urodzinowych z animacjami i atrakcjami na świeżym powietrzu.",
+        "Kameralne eventy firmowe w naturze: obiekt na wyłączność, kontakt ze zwierzętami, przejażdżka bryczką, ognisko i rustykalna sala.",
+    },
+    {
+      name: "Oferta szyta na miarę",
+      description:
+        "Sesje zdjęciowe, imprezy okolicznościowe, zaręczyny, pikniki rodzinne oraz wynajem przestrzeni na wydarzenia specjalne.",
     },
   ]);
-
   return (
     <>
       <Script
@@ -37,22 +44,79 @@ export default function Oferta() {
       <section
         className="py-24 md:py-12 max-w-7xl mx-auto px-4"
         id="oferta"
+        aria-label="Oferta Ranczo Patataj"
+        aria-labelledby="oferta-heading"
+        aria-describedby="oferta-lead"
+        itemScope
+        itemType="https://schema.org/OfferCatalog"
       >
-        <h2 className="text-center font-ultra text-2xl mb-2">
+        <h2
+          id="oferta-heding"
+          itemProp="name"
+          className="text-center font-ultra text-2xl mb-2"
+        >
           Nasza aktualna oferta
         </h2>
-        <p className="font-semibold py-2 text-center">
-          🚌 Każdy pakiet możemy wzbogacić o transport - przyjedziemy prosto do
+        <p
+          id="oferta-lead"
+          className="font-special py-2 text-center"
+          itemProp="description"
+        >
+          🚌 Każdy pakiet możemy wzbogacić o transport, przyjedziemy prosto po
           Was! (oferta ustalana indywidualnie)
         </p>
 
-        <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {/* KARTA: SZKOŁY I PRZEDSZKOLA */}
-          <article className="rounded-3xl border border-[var(--c-primary)]/40 p-5 shadow-md flex flex-col">
-            <h3 className="font-ultra text-lg mb-1 text-[var(--c-primary)]">
+        <div
+          className="flex flex-col justify-center items-center"
+          aria-label="Kontakt w sprawie oferty"
+        >
+          <a
+            href={PHONETO}
+            className="inline-flex items-center gap-2 hover:shadow-md font-special font-black md:text-xl px-4 py-2 hover:text-emerald-200  transition-all duration focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] "
+            aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
+            itemProp="telephone"
+          >
+            <FaPhone
+              className="self-start animate-pulse"
+              aria-hidden="true"
+              focusable="false"
+            />
+            <span>{CONTACT.phoneDisplay}</span>
+          </a>
+          <a
+            href={MAILTO}
+            className="underline underline-offset-2 hover:text-[var(--c-primary)]"
+            aria-label="Napisz wiadomość e-mail do Ranczo Patataj"
+          >
+            {CONTACT.email}
+          </a>
+        </div>
+
+        <div
+          className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3"
+          role="list"
+          aria-label="Lista dostępnych pakietw"
+        >
+          {/* SZKOŁY I PRZEDSZKOLA */}
+          <article
+            className="rounded-3xl border border-amber-300/70 p-5 shadow-md flex flex-col"
+            role="listitem"
+            aria-labelledby="oferta-szkoly-heading"
+            itemProp="itemListElement"
+            itemScope
+            itemType="https://schema.org/Service"
+          >
+            <h3
+              className="font-ultra text-lg mb-1 text-[var(--c-primary)] text-center"
+              itemProp="name"
+              id="oferta-szkoly-heading"
+            >
               Dla szkół i przedszkoli
             </h3>
-            <p className="text-sm italic mb-3 font-special">
+            <p
+              className="text-sm italic py-3 font-special"
+              itemProp="description"
+            >
               Edukacyjne wycieczki w naturę - nauka przez doświadczenie, ruch i
               kontakt ze zwierzętami.
             </p>
@@ -76,17 +140,32 @@ export default function Oferta() {
               <li>🗸 Gry i zabawy terenowe na świeżym powietrzu</li>
               <li>🗸 Ognisko z pieczeniem kiełbasek lub pianek</li>
             </ul>
-            <p className="mt-4 text-xs  font-special">
+            <hr className="m-2 text-amber-300/70" />
+            <p className=" text-xs  font-special">
               Idealne na wycieczki, zielone szkoły i integrację grup.
             </p>
           </article>
 
-          {/* KARTA: URODZINY DZIECIĘCE */}
-          <article className="rounded-3xl border border-pink-300/70 p-5 shadow-md flex flex-col">
-            <h3 className="font-ultra text-lg mb-1 text-pink-600">
+          {/*  URODZINY  */}
+          <article
+            className="rounded-3xl border border-pink-300/70 p-5 shadow-md flex flex-col"
+            role="listitem"
+            aria-labelledby="oferta-urodziny-heading"
+            itemProp="itemListElement"
+            itemScope
+            itemType="https://schema.org/Service"
+          >
+            <h3
+              className="font-ultra text-lg mb-1 text-pink-600 text-center"
+              id="oferta-urodziny-heading"
+              itemProp="name"
+            >
               Urodziny wśród zwierzaków
             </h3>
-            <p className="text-sm italic mb-3 font-special">
+            <p
+              className="text-sm italic py-3 font-special"
+              itemProp="description"
+            >
               Magiczne przyjęcie urodzinowe na ranczu - więcej natury, w
               otoczeniu zwierząt, maksimum radości!
             </p>
@@ -101,18 +180,33 @@ export default function Oferta() {
               <li>🥳 Plac zabaw, boisko i dużo przestrzeni do biegania</li>
               <li>🥳 Kameralna, rodzinna atmosfera w otoczeniu natury</li>
             </ul>
-            <p className="mt-4 text-xs font-special">
+            <hr className="m-2 text-amber-300/70" />
+            <p className=" text-xs font-special">
               Możliwość zamówienia tortu, poczęstunku oraz personalizowanych
               atrakcji.
             </p>
           </article>
 
-          {/* KARTA: OFERTA DLA FIRM */}
-          <article className=" rounded-3xl border border-emerald-300/70 p-5 shadow-md flex flex-col">
-            <h3 className="font-ultra text-lg mb-1 text-emerald-700">
+          {/* OFERTA DLA FIRM */}
+          <article
+            className="rounded-3xl border border-emerald-300/70 p-5 shadow-md flex flex-col"
+            role="listitem"
+            aria-labelledby="oferta-firmy-heading"
+            itemProp="itemListElement"
+            itemScope
+            itemType="https://schema.org/Service"
+          >
+            <h3
+              className="font-ultra text-lg mb-1 text-emerald-700 text-center"
+              id="oferta-firmy-heading"
+              itemProp="name"
+            >
               Oferta dla firm
             </h3>
-            <p className="text-sm italic mb-3 font-special">
+            <p
+              className="text-sm italic py-3 font-special"
+              itemProp="description"
+            >
               Integracja, którą uczestnicy naprawdę zapamiętają. Idealne miejsce
               na eventy firmowe, integracje i spotkania w stylu slow!
             </p>
@@ -125,18 +219,33 @@ export default function Oferta() {
               <li>🌿 Zimowy ogród i zielona przestrzeń zewnętrzna</li>
               <li>🤝 Programy integracyjne dopasowane do zespołu</li>
             </ul>
-            <p className="mt-4 text-xs font-special">
+            <hr className="m-2 text-emerald-300/70" />
+            <p className=" text-xs font-special">
               Świetna propozycja na integracje, małe eventy firmowe i spotkania
               w stylu slow.
             </p>
           </article>
 
           {/* KARTA: OFERTA SZYTA NA MIARĘ */}
-          <article className=" rounded-3xl border border-amber-300/70 p-5 shadow-md flex flex-col md:col-span-2 xl:col-span-3">
-            <h3 className="font-ultra text-lg mb-1 text-amber-700">
+          <article
+            className=" rounded-3xl border border-blue-300/70 p-5 shadow-md flex flex-col  xl:col-span-3"
+            role="listitem"
+            aria-labelledby="oferta-szyta-heading"
+            itemProp="itemListElement"
+            itemScope
+            itemType="https://schema.org/Service"
+          >
+            <h3
+              className="font-ultra text-lg mb-1 text-blue-300 text-center"
+              id="oferta-szyta-heading"
+              itemProp="name"
+            >
               Oferta szyta na miarę
             </h3>
-            <p className="text-sm italic mb-3 font-special">
+            <p
+              className="text-sm italic py-3 font-special"
+              itemProp="description"
+            >
               Masz swój pomysł na wyjątkowy dzień na ranczu? Chętnie go
               zrealizujemy!
             </p>
@@ -145,12 +254,13 @@ export default function Oferta() {
                 📸 Sesje zdjęciowe z alpakami (rodzinne, narzeczeńskie,
                 dziecięce)
               </li>
-              <li>🎉 Imprezy okolicznościowe – chrzciny, komunie, rocznice</li>
+              <li>🎉 Imprezy okolicznościowe - chrzciny, komunie, rocznice</li>
               <li>💍 Romantyczne zaręczyny w otoczeniu natury</li>
               <li>🎬 Wynajem przestrzeni do nagrań i projektów kreatywnych</li>
               <li>🌳 Pikniki rodzinne i kameralne spotkania w plenerze</li>
             </ul>
-            <p className="mt-4 font-special">
+            <hr className="m-2 text-blue-300/70" />
+            <p className=" font-special">
               Napisz do nas, opowiedz o swoich potrzebach, a my przygotujemy
               indywidualną propozycję, dopasowaną do liczby osób, wieku
               uczestników i budżetu.
