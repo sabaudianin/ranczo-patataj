@@ -71,7 +71,7 @@ export const MiniGallery = () => {
             className="marquee-inner flex w-fit "
             style={{
               animationPlayState: stopScroll ? "paused" : "running",
-              animationDuration: SLIDES.length * 20500 + "ms",
+              animationDuration: SLIDES.length * 2500 + "ms",
             }}
           >
             <div className="flex">

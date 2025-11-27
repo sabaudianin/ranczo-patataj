@@ -19,7 +19,7 @@ type BgSliderProps = {
 
 export const BgSlider: React.FC<BgSliderProps> = ({
   slides,
-  interval = 5000,
+  interval = 3000,
   className = "",
   ariaHidden = true,
 }) => {

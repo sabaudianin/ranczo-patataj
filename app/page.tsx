@@ -13,6 +13,9 @@ import { Banner } from "@/components/banner/Banner";
 import { Final } from "@/components/final/Final";
 import { MiniGallery } from "@/ui/miniGallery/MiniGallery";
 import { RelaxText } from "@/ui/relaxText/RelaxText";
+import { Social } from "@/components/social/Social";
+import { Poster } from "@/components/poster/Poster";
+import { AlpakoTerapy } from "@/components/alpakoterapy/AlpakoTerapy";
 
 export default function Home() {
   const webPageJsonLd = createWebPageJsonLd({
@@ -63,9 +66,12 @@ export default function Home() {
       />
       <section className="relative px-2 pt-24 md:pt-0 dark:bg-black bg-[var(--c-accent)] mx-auto">
         <Banner />
+        <AlpakoTerapy />
+        <Social />
         <Cta />
         <MiniGallery />
         <Hero />
+        <Poster />
         <Features />
         <RelaxText />
         <Testimonial />

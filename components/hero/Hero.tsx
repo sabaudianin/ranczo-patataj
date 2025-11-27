@@ -9,38 +9,6 @@ export const Hero = () => {
       aria-labelledby="schools-offer-heading"
       role="region"
     >
-      <h2
-        className="text-center text-xl md:text-2xl text-[var(--c-primary)] font-ultra pb-6  "
-        id="schools-offer-heading"
-      >
-        Zapytaj o naszą nową ofertę dla szkół i przedszkoli: <br />
-        <span className="font-curier py-4 text-base md:text-xl">
-          📧{" "}
-          <a
-            href={MAILTO}
-            className="underline underline-offset-2 hover:text-[var(--c-primary)] font-bold"
-          >
-            {CONTACT.email}
-          </a>
-        </span>
-      </h2>
-
-      <div
-        className="bg-[url('/images/pole.avif')] bg-cover bg-center bg-no-repeat object-scale-down h-100 "
-        aria-hidden="true"
-      >
-        <div className=" relative w-full p-1  mx-auto font-special text-center font-bold bg-black/50 text-white md:text-2xl">
-          <h2> Zapraszamy szkoły i przedszkola na Ranczo Patataj!</h2>
-          <p className="">
-            Idealna propozycja na wycieczkę edukacyjną, dzień integracji czy
-            tematyczne warsztaty.
-          </p>
-        </div>
-      </div>
-      <p className=" text-center font-ultra bg-emerald-300/30 p-2">
-        Atrakcyjne pakiety dla szkół !!!
-      </p>
-
       <h3 className=" p-4 font-ultra text-[var(--c-primary)] uppercase text-center md:text-2xl">
         Twoje ulubione miejsce na rodzinny wypad poza miasto, tylko godzinę od
         Warszawy.
@@ -64,14 +32,14 @@ export const Hero = () => {
           alt=""
           width={100}
           height={100}
-          className="w-20 md:w-40 h-auto object-cover roundedject-cover rounded"
+          className="w-20 md:w-40 h-auto object-cover rounded oject-cover"
         />
         <Image
           src="/images/g2.avif"
           alt=""
           width={100}
           height={100}
-          className="w-20 md:w-40 h-auto object-cover roundedded "
+          className="w-20 md:w-40 h-auto object-cover rounded "
         />
         <Image
           src="/images/g3.avif"
@@ -90,6 +58,23 @@ export const Hero = () => {
         <SiOllama className="text-5xl text-[var(--c-primary)]" />
         <SiOllama className="text-3xl text-[var(--c-primary)]" />
         <SiOllama className="text-xl text-[var(--c-primary)]" />
+      </div>
+      <div className="pt-10">
+        <h2
+          className="text-center  md:text-xl font-ultra pb-6  "
+          id="schools-offer-heading"
+        >
+          Zapytaj o naszą nową ofertę dla szkół i przedszkoli: <br />
+          <span className="font-special  text-base md:text-xl">
+            📧{" "}
+            <a
+              href={MAILTO}
+              className="underline underline-offset-2 hover:text-[var(--c-primary)]"
+            >
+              {CONTACT.email}
+            </a>
+          </span>
+        </h2>
       </div>
     </section>
   );

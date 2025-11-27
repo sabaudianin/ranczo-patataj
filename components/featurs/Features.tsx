@@ -62,7 +62,7 @@ export const Features = () => {
         transition={{ duration: 0.45, ease: "easeOut", delay: 0.1 }}
       >
         Gospodarstwo edukacyjne blisko Warszawy, w którym dzieci i dorośli
-        poznają zwierzęta z bliska - alpaki, lamy, konie, kozy, kury pawie i
+        poznają zwierzęta z bliska - alpaki, lamy, konie, kozy, kury, pawie i
         wiele więcej.
       </motion.p>
 
