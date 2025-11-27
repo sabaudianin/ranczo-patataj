@@ -1,27 +1,27 @@
 import { FaPhone } from "react-icons/fa";
 import { CONTACT, PHONETO } from "@/config/contact/Contact";
-import { BgSlider } from "../bgSlider/BgSlider";
+import { BgSlider } from "@/ui/bgSlider/BgSlider";
 
 const SLIDES = [
   {
     src: "/images/car1.jpg",
     alt: "Ranczo o zachodzie słońca",
-    label: "Tu celebrujemy najważniejsze chwile - rodzinnie i z sercem.",
-  },
-  {
-    src: "/images/car2.jpg",
-    alt: "Konie na sniegu",
     label: "Zabawa, która uczy. Edukacja, która inspiruje",
   },
   {
     src: "/images/car5.jpg",
     alt: "Impreza urodzinowa",
-    label: "Warsztaty, zwierzęta, gry terenowe i imprezy pod gołym niebem",
+    label: "W sercu wiejskiej przygody.",
   },
   {
     src: "/images/car10.jpg",
     alt: "Przygotowania do warsztatów ",
-    label: "Dzieci odkrywają naturę — dorośli odkrywają spokój",
+    label: "Tworzymy wspomnienia.",
+  },
+  {
+    src: "/images/car2.jpg",
+    alt: "Konie na sniegu",
+    label: "Poczuj bliskośc zwierząt.",
   },
 ];
 

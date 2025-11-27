@@ -29,6 +29,7 @@ type LocalBusinessData = {
   telephone?: string;
   address?: PostalAddress;
   openingHoursSpecification?: OpeningHoursSpecification[];
+  sameAs?: string[];
 };
 
 export const createLocalBusinessJsonLd = (data: LocalBusinessData) => ({

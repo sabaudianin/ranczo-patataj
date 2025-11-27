@@ -40,14 +40,7 @@ export const Footer = () => {
             <span itemProp="email">{CONTACT.email}</span>
           </a>
         </div>
-        <iframe
-          id="mapa"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2474.053794512001!2d20.75453567767068!3d51.67715837185244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471904e4c6dda33f%3A0x62b7aa2c83ef1bda!2sJastrz%C4%99bia%20Stara%209%2C%2005-640%20Jastrz%C4%99bia%20Stara!5e0!3m2!1spl!2spl!4v1763727884546!5m2!1spl!2spl"
-          width="30%"
-          height="100"
-          loading="lazy"
-          className="rounded hidden md:block "
-        ></iframe>
+
         <div className="flex justify-between">
           <a
             href="https://www.instagram.com/ranczopatataj"
@@ -77,6 +70,14 @@ export const Footer = () => {
           </a>
         </div>
       </div>
+      <iframe
+        id="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2474.053794512001!2d20.75453567767068!3d51.67715837185244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f11!3m3!1m2!1s0x471904e4c6dda33f%3A0x62b7aa2c83ef1bda!2sJastrz%C4%99bia%20Stara%209%2C%2005-640%20Jastrz%C4%99bia%20Stara!5e0!3m2!1spl!2spl!4v1763727884546!5m2!1spl!2spl"
+        width="50%%"
+        height="140"
+        loading="lazy"
+        className="rounded hidden md:block mx-auto"
+      ></iframe>
       <Link href="/kontakt#mapa">
         <address
           className="text-xs text-center flex justify-center items-center gap-2 underline"

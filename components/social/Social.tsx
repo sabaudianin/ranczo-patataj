@@ -5,7 +5,7 @@ export const Social = () => {
     <section>
       <div className="py-4">
         <p className="px-1 text-center font-ultra ">
-          Aktualne oferta i promocje - sprawdź nasze social media:
+          Aktualna oferta i promocje - sprawdź nasze social media:
         </p>
         <nav
           className="flex items-center justify-center gap-8"

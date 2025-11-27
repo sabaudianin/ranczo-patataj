@@ -6,7 +6,7 @@ import Image from "next/image";
 const SLIDES = [
   {
     src: "/images/stol.jpg",
-    alt: "Stół na ranczu",
+    alt: "Ogród Zimowy",
   },
   {
     src: "/images/ognisko.avif",
@@ -17,12 +17,12 @@ const SLIDES = [
     alt: "Warszaty Kulinarne",
   },
   {
-    src: "/images/pierogi.avif",
-    alt: "Warszaty z dziecmi",
+    src: "/images/manual.avif",
+    alt: "Warszaty Manualne",
   },
   {
     src: "/images/lilo.avif",
-    alt: "Impreza urodzinowa",
+    alt: "Imprezy urodzinowe",
   },
   {
     src: "/images/sala.jpg",
@@ -31,6 +31,10 @@ const SLIDES = [
   {
     src: "/images/woz.avif",
     alt: "Przejażdzka bryczką",
+  },
+  {
+    src: "/images/plac.avif",
+    alt: "Plac zabaw",
   },
 ];
 

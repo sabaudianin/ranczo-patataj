@@ -31,6 +31,10 @@ export default function Contact() {
         closes: "16:00",
       },
     ],
+    sameAs: [
+      "https://www.facebook.com/PatatajRanczo/",
+      "https://www.instagram.com/ranczopatataj",
+    ],
   });
 
   return (
@@ -51,9 +55,9 @@ export default function Contact() {
       />
       <section
         id="contact"
-        className="py-24 md:py-4 max-w-7xl mx-auto px-8"
+        className="pt-24 md:py-12  max-w-7xl mx-auto p-2"
       >
-        <h2 className="py-2 text-xl font-special text-center">
+        <h2 className=" text-xl font-special text-center">
           Gospodarstwo Edukacyjne - RANCZO PATATAJ
         </h2>
 

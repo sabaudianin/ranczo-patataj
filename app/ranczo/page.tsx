@@ -25,7 +25,7 @@ export default function Ranczo() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
       />
 
-      <section className="pt-24 md:py-4 max-w-7xl mx-auto px-3">
+      <section className="pt-24 md:py-12 max-w-7xl mx-auto px-3">
         <h1
           id="ranczo-heading"
           className="font-ultra text-2xl md:text-3xl text-center mb-4"

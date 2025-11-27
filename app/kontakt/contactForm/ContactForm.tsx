@@ -20,8 +20,8 @@ export const ContactForm = () => {
   };
 
   return (
-    <section className="font-special py-4 md:w-1/2">
-      <h2 className="text-center">Zapraszamy do kontaktu </h2>
+    <section className=" py-4 md:w-1/2">
+      <h2 className="text-center pb-2 font-special">Zapraszamy do kontaktu </h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="w-full  relative max-w-3xl mx-auto border rounded border-[var(--c-primary)] p-2 flex flex-col items-center justify-center gap-2 shadow-md "
@@ -39,7 +39,7 @@ export const ContactForm = () => {
         <div className="w-full pb-4">
           <label className="">Imię :</label>
           <input
-            placeholder="Tu wpisz swoje Imię..."
+            placeholder="Wpisz swoje Imię..."
             className="ml-4"
             {...register("name")}
           />
@@ -51,7 +51,7 @@ export const ContactForm = () => {
           <label className="">Email :</label>
           <input
             className="ml-2"
-            placeholder="Tu podaj swój email..."
+            placeholder="Podaj swój email tutaj..."
             {...register("email")}
           />
           {errors.email && (
@@ -72,7 +72,7 @@ export const ContactForm = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className=" border border-[var(--c-primary)] rounded px-4 py-2 font-bold tracking-widest disabled:opacity-60 hover:scale-105 duration transition"
+          className=" border border-[var(--c-primary)] bg-emerald-300/70 rounded px-4 py-2 font-bold tracking-widest disabled:opacity-60 hover:scale-105 duration transition"
         >
           {isSubmitting ? "Wysyłanie" : "Wyślij"}
         </button>

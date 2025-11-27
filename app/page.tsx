@@ -44,7 +44,12 @@ export default function Home() {
         closes: "16:00",
       },
     ],
+    sameAs: [
+      "https://www.facebook.com/PatatajRanczo/",
+      "https://www.instagram.com/ranczopatataj",
+    ],
   });
+
   return (
     <>
       <Script
@@ -64,7 +69,7 @@ export default function Home() {
           __html: JSON.stringify(localBusinessJsonLd),
         }}
       />
-      <section className="relative px-2 pt-24 md:pt-0 dark:bg-black bg-[var(--background)] mx-auto">
+      <section className="relative px-2 pt-24 md:pt-0 pb-4 dark:bg-black bg-[var(--background)] mx-auto">
         <Banner />
         <AlpakoTerapy />
         <Social />

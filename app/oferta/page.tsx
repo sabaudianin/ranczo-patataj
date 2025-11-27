@@ -42,7 +42,7 @@ export default function Oferta() {
       />
 
       <section
-        className="py-24 md:py-12 max-w-7xl mx-auto px-4"
+        className="pt-24 md:py-12 max-w-7xl mx-auto px-4"
         id="oferta"
         aria-label="Oferta Ranczo Patataj"
         aria-labelledby="oferta-heading"
@@ -166,8 +166,8 @@ export default function Oferta() {
               className="text-sm italic py-3 font-special"
               itemProp="description"
             >
-              Magiczne przyjęcie urodzinowe na ranczu - więcej natury, w
-              otoczeniu zwierząt, maksimum radości!
+              Magiczne przyjęcie urodzinowe na ranczu wśród natury, w otoczeniu
+              zwierząt, zapewniamy maksimum radości!
             </p>
             <ul className="font-special text-sm space-y-1">
               <li>
@@ -211,7 +211,7 @@ export default function Oferta() {
               na eventy firmowe, integracje i spotkania w stylu slow!
             </p>
             <ul className="font-special text-sm space-y-1">
-              <li>🏡 Obiekt na wyłączność - prywatna, kameralna przestrzeń</li>
+              <li>🏡 Obiekt na wyłączność, prywatna, kameralna przestrzeń</li>
               <li>🦙 Kontakt ze zwierzętami i spacery po zagrodzie</li>
               <li>🚃 Przejażdżka bryczką lub wozem</li>
               <li>🔥 Ognisko i strefa relaksu na świeżym powietrzu</li>
