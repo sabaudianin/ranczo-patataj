@@ -29,7 +29,7 @@ const OPINIONS: Opinion[] = [
     text: "Gorąco polecam Ranczo Patataj!Super rodzinna atmosfera i przecudowny gospodarze ☺️Idealne miejsce na wypoczynek z rodziną. Dzieci bardzo zadowolone z możliwości karmienia i przytulania zwierzątek oraz warsztatów kulinarnych i manualnych ❤️Cisza, spokój, duża przestrzeń.Idealne miejsce na wycieczki szkolne i przedszkolne oraz imprezy okolicznościowe.Jeszcze raz bardzo dziękujemy za miło spędzony dzień i jeszcze nie raz wrócimy 🥰",
     name: "Kamila K",
     color: "bg-green-700",
-    font: "font-amatic text-base tracking-wider font-extrabold",
+    font: "font-playwrite text-base ",
   },
   {
     text: "SUPER miejsce.Wszystko nowe i czyste.Zajęcia edukacyjne kulinarne.Zabawy ze zwierzętami.Klimat z dala od miasta.Fantastyczni gospodarze.",
@@ -41,7 +41,7 @@ const OPINIONS: Opinion[] = [
     text: "Urokliwe miejsce w zaciszu pól i lasów.Zwierzęta nauczone pracy z dziećmi, bardzo przyjaźnie nastawione(lama rozdaje buziaki).Warsztaty cieszyły się ogromnym zainteresowaniem zarówno dzieci jak i rodziców 😊Polecam to miejsce wszystkim. ",
     name: "Tomasz G",
     color: "bg-indigo-700",
-    font: "font-amatic text-lg tracking-[.15em] font-bold",
+    font: "font-playwrite text-lg tracking-[.15em] font-bold",
   },
   {
     text: "Bardzo, fajne miejsce z potencjałem, brakowało czegoś takiego w okolicy. Szczerze polecam dla dzieci i dla dorosłych. można wynająć przestrzeń na imprezy, mają bazę noclegową.",
@@ -60,7 +60,7 @@ export const Testimonial = () => {
     >
       <motion.h2
         id="opinions-heading"
-        className="text-center font-play  font-bold text-2xl md:text-3xl pb-2"
+        className="text-center font-special  font-bold text-2xl md:text-3xl pb-2"
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}

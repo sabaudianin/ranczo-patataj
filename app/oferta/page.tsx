@@ -99,7 +99,7 @@ export default function Oferta() {
         >
           {/* SZKOŁY I PRZEDSZKOLA */}
           <article
-            className="rounded-3xl border border-amber-300/70 p-5 shadow-md flex flex-col"
+            className="rounded-3xl border border-amber-300/70 p-5 shadow-md flex flex-col bg-amber-300/10"
             role="listitem"
             aria-labelledby="oferta-szkoly-heading"
             itemProp="itemListElement"
@@ -148,7 +148,7 @@ export default function Oferta() {
 
           {/*  URODZINY  */}
           <article
-            className="rounded-3xl border border-pink-300/70 p-5 shadow-md flex flex-col"
+            className="rounded-3xl border border-pink-300/70 p-5 shadow-md flex flex-col bg-pink-300/10"
             role="listitem"
             aria-labelledby="oferta-urodziny-heading"
             itemProp="itemListElement"
@@ -189,7 +189,7 @@ export default function Oferta() {
 
           {/* OFERTA DLA FIRM */}
           <article
-            className="rounded-3xl border border-emerald-300/70 p-5 shadow-md flex flex-col"
+            className="rounded-3xl border border-emerald-300/70 p-5 shadow-md flex flex-col bg-emerald-300/10"
             role="listitem"
             aria-labelledby="oferta-firmy-heading"
             itemProp="itemListElement"
@@ -228,7 +228,7 @@ export default function Oferta() {
 
           {/* KARTA: OFERTA SZYTA NA MIARĘ */}
           <article
-            className=" rounded-3xl border border-blue-300/70 p-5 shadow-md flex flex-col  xl:col-span-3"
+            className=" rounded-3xl border border-blue-300/70 p-5 shadow-md flex flex-col  xl:col-span-3 bg-blue-300/10"
             role="listitem"
             aria-labelledby="oferta-szyta-heading"
             itemProp="itemListElement"

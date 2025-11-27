@@ -12,7 +12,7 @@ export const Footer = () => {
       itemScope
       itemType="https://schema.org/LocalBusiness"
     >
-      <p className="text-center font-amatic font-semibold md:text-2xl">
+      <p className="text-center font-special font-semibold md:text-2xl">
         {" "}
         Ranczo Patataj - Gospodarstwo Edukacyjne
       </p>
@@ -26,7 +26,7 @@ export const Footer = () => {
         <div className="">
           <a
             href={PHONETO}
-            className="flex items-center gap-2 font-poppins  hover:text-emerald-400 0 transition-all duration text-xs md:text-base justify-start font-curier py-2"
+            className="flex items-center gap-2 font-curier  hover:text-emerald-400  transition-all duration text-xs md:text-base justify-start font-curier py-2"
             aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
           >
             <FaPhone className="self-start animate-pulse text-emerald-500" />
@@ -34,7 +34,7 @@ export const Footer = () => {
           </a>
           <a
             href={MAILTO}
-            className="flex items-center gap-2  hover:text-[var(--c-primary)] text-xs md:text-base "
+            className="flex items-center gap-2  hover:text-[var(--c-primary)] text-xs md:text-base font-curier"
           >
             <MdAttachEmail className="self-end animate-pulse text-blue-500" />
             <span itemProp="email">{CONTACT.email}</span>

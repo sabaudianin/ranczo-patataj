@@ -1,7 +1,6 @@
 import {
   Ultra,
   Playwrite_PL,
-  Amatic_SC,
   Special_Elite,
   Courier_Prime,
 } from "next/font/google";
@@ -22,11 +21,7 @@ export const special = Special_Elite({
   subsets: ["latin"],
   weight: "400",
 });
-export const amatic = Amatic_SC({
-  variable: "--font-amatic",
-  subsets: ["latin"],
-  weight: "400",
-});
+
 export const playwrite = Playwrite_PL({
   variable: "--font-playwrite",
   weight: "400",

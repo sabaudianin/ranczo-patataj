@@ -29,7 +29,7 @@ export const PolaroidCard = ({
         />
       </div>
       {caption && (
-        <figcaption className="mt-2 text-center font-bold font-amatic text-black md:text-xl">
+        <figcaption className="mt-2 text-center font-bold font-special text-black md:text-xl">
           {caption}
         </figcaption>
       )}

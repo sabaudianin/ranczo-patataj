@@ -71,7 +71,7 @@ export const MiniGallery = () => {
             className="marquee-inner flex w-fit "
             style={{
               animationPlayState: stopScroll ? "paused" : "running",
-              animationDuration: SLIDES.length * 2500 + "ms",
+              animationDuration: SLIDES.length * 4500 + "ms",
             }}
           >
             <div className="flex">
@@ -105,7 +105,7 @@ export const MiniGallery = () => {
                     </div>
 
                     {/* PODPIS JAK NA POLAROIDZIE */}
-                    <p className="mt-2 text-center text-xs font-semibold uppercase tracking-[0.2em] text-neutral-700 font-amatic">
+                    <p className="mt-2 text-center text-xs font-semibold uppercase tracking-[0.2em] text-neutral-700 font-special">
                       {card.alt}
                     </p>
                   </div>

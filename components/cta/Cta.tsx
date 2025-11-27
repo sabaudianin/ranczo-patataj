@@ -51,7 +51,7 @@ export const Cta = () => {
         <div className="flex justify-center items-center p-2">
           <a
             href={PHONETO}
-            className="inline-flex items-center gap-2 hover:shadow-md font-special font-black md:text-xl px-4 py-2 hover:text-emerald-200  transition-all duration focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] "
+            className="inline-flex items-center gap-2  font-black md:text-xl px-4 py-2 hover:text-emerald-500  transition-all duration focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] font-special"
             aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
             itemProp="telephone"
           >
