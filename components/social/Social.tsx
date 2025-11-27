@@ -3,9 +3,9 @@ import React from "react";
 export const Social = () => {
   return (
     <section>
-      <div className="">
-        <p className="px-1 py-2 text-center font-ultra bg-amber-300/30">
-          Aktualne promocje - sprawdź nasze social media:
+      <div className="py-4">
+        <p className="px-1 text-center font-ultra ">
+          Aktualne oferta i promocje - sprawdź nasze social media:
         </p>
         <nav
           className="flex items-center justify-center gap-8"
