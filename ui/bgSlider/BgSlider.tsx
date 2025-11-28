@@ -58,9 +58,9 @@ export const BgSlider: React.FC<BgSliderProps> = ({
                 src={slide.src}
                 alt={slide.alt}
                 fill
-                priority={index === 0}
                 sizes="100vw"
                 className="object-cover"
+                loading="lazy"
               />
               <motion.span
                 className="w-full absolute z-50 text-center font-ultra bottom-2 text-shadow text-white md:text-xl"

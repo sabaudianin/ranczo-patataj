@@ -101,6 +101,7 @@ export default function Contact() {
             height="200"
             loading="lazy"
             className="rounded md:h-100"
+            title="Mapa Dojazdu do Rancza Patataj"
           ></iframe>
         </div>
       </section>

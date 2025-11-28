@@ -24,7 +24,7 @@ export const Navbar: React.FC = () => {
     <>
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[60] focus:rounded-md focus:bg-white focus:px-3 focus:py-2"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:rounded-md focus:bg-white focus:px-3 focus:py-2 focus:outline-none"
       >
         Przejdź do treści
       </a>
@@ -37,14 +37,16 @@ export const Navbar: React.FC = () => {
                 href="/"
                 className="flex items-center gap-2"
               >
-                <Image
-                  src={"/logorp.avif"}
-                  width={65}
-                  height={65}
-                  alt="Logo Ranczo Patataj"
-                  className=" md:h-24 md:w-24 rounded-full shadow-xl"
-                  priority
-                />
+                <div className="relative h-16 w-16 md:h-24 md:w-24">
+                  <Image
+                    src="/logorp.avif"
+                    alt="Logo Ranczo Patataj"
+                    fill
+                    sizes="auto"
+                    className="rounded-full shadow-xl object-cover"
+                    priority
+                  />
+                </div>
               </Link>
 
               <button
@@ -108,7 +110,7 @@ export const Navbar: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -120 }}
                 transition={{ duration: 0.3 }}
-                className="w-full shadow-lg md:hidden backdrop-blur-xl"
+                className="w-full shadow-lg md:hidden backdrop-blur-xl bg-white/30 dark:bg-black/30"
               >
                 <ul className="flex justify-around ">
                   {MAIN_NAV_LINKS.map((link) => {

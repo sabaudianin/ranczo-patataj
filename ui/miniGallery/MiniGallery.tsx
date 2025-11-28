@@ -93,7 +93,6 @@ export const MiniGallery = () => {
                         fill
                         sizes="auto"
                         alt={card.alt}
-                        loading="eager"
                         className=" object-cover sepia brightness-90 contrast-125 group-hover:scale-105 transition-transform duration-500"
                       />
 

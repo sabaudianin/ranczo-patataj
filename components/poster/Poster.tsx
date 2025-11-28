@@ -5,18 +5,17 @@ export const Poster = () => {
   return (
     <section className="relative max-w-6xl mx-auto">
       <div
-        className="bg-cover bg-center bg-no-repeat object-scale-down h-100 "
+        className="relative bg-cover bg-center bg-no-repeat object-scale-down h-100 "
         aria-hidden="true"
       >
-        <div className="">
-          <Image
-            src="/images/lamaClose.avif"
-            fill
-            alt="Pyszczek Lamy z Bliska"
-            sizes="100vw"
-            className="object-cover max-h-100"
-          />
-        </div>
+        <Image
+          src="/images/lamaClose.avif"
+          fill
+          alt="Pyszczek Lamy z Bliska"
+          sizes="100vw"
+          className="object-cover max-h-100"
+        />
+
         <div className=" relative w-full p-1  mx-auto font-special text-center font-bold bg-black/50 text-white md:text-2xl">
           <h2> Zapraszamy szkoły i przedszkola na Ranczo Patataj!</h2>
           <p className="">

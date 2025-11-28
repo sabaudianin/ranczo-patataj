@@ -77,6 +77,7 @@ export const Footer = () => {
         height="140"
         loading="lazy"
         className="rounded hidden md:block mx-auto"
+        title="Mapa Dojazdu do Rancza Patataj"
       ></iframe>
       <Link href="/kontakt#mapa">
         <address

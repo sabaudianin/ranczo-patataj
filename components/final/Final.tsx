@@ -15,6 +15,7 @@ export const Final = () => {
           height="200"
           loading="lazy"
           className="rounded"
+          title="Mapa Dojazdu do Rancza Patataj"
         ></iframe>
       </div>
 
