@@ -29,9 +29,9 @@ export const Navbar: React.FC = () => {
         Przejdź do treści
       </a>
 
-      <header className="fixed top-0 left-0  z-50 bg-[var(--c-primary)]/10">
+      <header className="w-full fixed md:sticky mx-auto z-50 bg-[var(--c-primary)]/10 ">
         <div className="">
-          <div className="w-full p-2 liquid-glass flex rounded justify-between items-center max-w-hd mx-auto  fixed top-0 left-0 border border-[var(--c-primary)]">
+          <div className="w-full p-2 liquid-glass flex rounded justify-between items-center max-w-hd mx-auto border border-[var(--c-primary)]">
             <div className="w-full relative flex justify-between items-center ">
               <Link
                 href="/"

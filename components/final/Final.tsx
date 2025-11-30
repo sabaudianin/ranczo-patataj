@@ -3,7 +3,7 @@ import { PolaroidCard } from "@/ui/polaroid/Polaroid";
 
 export const Final = () => {
   return (
-    <section className="pb-4">
+    <section className="pt-8">
       <div className="md:hidden pb-4">
         <p className="text-center font-special pb-1 font-semibold">
           🌍 Gdzie znajduję się nasze Ranczo ?
@@ -19,20 +19,13 @@ export const Final = () => {
         ></iframe>
       </div>
 
-      <div className="flex justify-center items-center gap-4">
-        <SiOllama className=" text-[var(--c-primary)]" />
-        <SiOllama className="text-xl text-[var(--c-primary)]" />
-        <SiOllama className="text-3xl text-[var(--c-primary)]" />
-        <SiOllama className="text-5xl text-[var(--c-primary)]" />
+      <div className="flex justify-center items-center gap-4 py-8">
         <PolaroidCard
           src="/images/lamawest.jpg"
           alt="Zachód słońca na Ranczo Patataj"
           caption="Czekamy na Ciebie🤗😍"
+          className="md:w-1/2"
         />
-        <SiOllama className="text-5xl text-[var(--c-primary)]" />
-        <SiOllama className="text-3xl text-[var(--c-primary)]" />
-        <SiOllama className="text-xl text-[var(--c-primary)]" />
-        <SiOllama className=" text-[var(--c-primary)]" />
       </div>
     </section>
   );

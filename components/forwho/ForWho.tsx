@@ -2,13 +2,9 @@ import React from "react";
 
 export const ForWho = () => {
   return (
-    <section className="relative max-w-5xl mx-auto">
-      <div
-        className="pointer-events-none absolute -top-20 -right-20
-           h-72 w-72 rounded-full opacity-70 blur-3xl
-           bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))]
-           from-fuchsia-500 via-purple-500 to-transparent"
-      ></div>
+    <section className=" max-w-5xl mx-auto">
+      <div className=""></div>
+
       <div className="w-full ">
         <p className="text-xl font-ultra text-center p-2">
           Dla kogo jest Ranczo Patataj?
