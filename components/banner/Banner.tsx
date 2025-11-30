@@ -101,7 +101,7 @@ export const Banner: React.FC = () => {
             </span>
           </h1>
         </div>
-        <div className="w-full p-2 md:w-1/2 mx-auto">
+        <div className="mt-4 p-2 w-1/2 mx-auto">
           <a
             href={PHONETO}
             className="inline-flex w-full items-center justify-center gap-2 py-2 px-4 bg-emerald-500/50 hover:bg-emerald-500 hover:scale-105 transition-transform duration-200 border border-[var(--c-primary)] rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] text-xs md:text-xl font-semibold text-white font-curier"

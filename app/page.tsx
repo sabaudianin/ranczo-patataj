@@ -16,6 +16,9 @@ import { RelaxText } from "@/ui/relaxText/RelaxText";
 import { Social } from "@/components/social/Social";
 import { Poster } from "@/components/poster/Poster";
 import { AlpakoTerapy } from "@/components/alpakoterapy/AlpakoTerapy";
+import { Atrakcje } from "../components/atrakcje/Atrakcje";
+import { ForWho } from "@/components/forwho/ForWho";
+import { Visit } from "@/components/visit/Visit";
 
 export default function Home() {
   const webPageJsonLd = createWebPageJsonLd({
@@ -71,15 +74,18 @@ export default function Home() {
       />
       <section className="relative px-2 pt-24 md:pt-0 pb-4 dark:bg-black bg-[var(--background)] mx-auto">
         <Banner />
-        <AlpakoTerapy />
-        <Social />
-        <Cta />
-        <MiniGallery />
         <Hero />
+        <Atrakcje />
+        <Cta />
+        <AlpakoTerapy />
+        <MiniGallery />
+        <ForWho />
         <Poster />
+        <Social />
         <Features />
         <RelaxText />
         <Testimonial />
+        <Visit />
         <Final />
       </section>
     </>

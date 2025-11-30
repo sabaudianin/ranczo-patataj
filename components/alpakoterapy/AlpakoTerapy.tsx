@@ -22,7 +22,7 @@ export const AlpakoTerapy = () => {
     <section
       id="alpakoterapia"
       aria-labelledby="alpakoterapia-title"
-      className="max-w-5xl mx-auto pt-4 px-2 md:px-0"
+      className="max-w-5xl mx-auto py-4 px-2 "
     >
       <motion.div
         variants={container}
@@ -78,14 +78,14 @@ export const AlpakoTerapy = () => {
 
         <motion.div
           variants={item}
-          className="relative w-full aspect-[4/3] md:aspect-[3/4] max-h-[420px] mx-auto rounded-2xl"
+          className="relative w-full aspect-[4/3] md:aspect-[3/4] max-h-[420px] mx-auto   p-2"
         >
           <Image
             src="/images/lamastar.avif"
             fill
             alt="Ładna lama patrzy na Ciebie"
             sizes="(min-width: 768px) 50vw, 100vw"
-            className="object-contain rounded-2xl"
+            className="object-cover rounded-2xl"
           />
         </motion.div>
       </motion.div>

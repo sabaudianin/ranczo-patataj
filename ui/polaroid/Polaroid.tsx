@@ -15,16 +15,15 @@ export const PolaroidCard = ({
 }: PolaroidCardProps) => {
   return (
     <figure
-      className={`bg-slate-100 te shadow-lg shadow-black/20 rounded border border-neutral-200 p-3 pb-6 transform hover:-translate-y-1 hover:rotate-1 transition-transform duration-300
+      className={`max-w-2xl p-3 pb-6 bg-slate-100 shadow-lg shadow-black/20 rounded border border-neutral-200   transform hover:-translate-y-1 hover:rotate-1 transition-transform duration-300
         ${className}
       `}
     >
-      <div className="aspect-[3/4] w-48 md:w-64 overflow-hidden bg-neutral-200 ">
+      <div className="relative aspect-[4/3] w-full  overflow-hidden bg-neutral-200 ">
         <Image
           src={src}
           alt={alt}
-          width={200}
-          height={200}
+          fill
           className="h-full w-full object-cover rounded"
         />
       </div>
