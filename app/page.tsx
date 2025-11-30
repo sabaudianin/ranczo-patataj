@@ -16,6 +16,9 @@ import { RelaxText } from "@/ui/relaxText/RelaxText";
 import { Social } from "@/components/social/Social";
 import { Poster } from "@/components/poster/Poster";
 import { AlpakoTerapy } from "@/components/alpakoterapy/AlpakoTerapy";
+import { Atrakcje } from "../components/atrakcje/Atrakcje";
+import { ForWho } from "@/components/forwho/ForWho";
+import { Visit } from "@/components/visit/Visit";
 
 export default function Home() {
   const webPageJsonLd = createWebPageJsonLd({
@@ -74,8 +77,11 @@ export default function Home() {
         <AlpakoTerapy />
         <Social />
         <Cta />
+        <Atrakcje />
         <MiniGallery />
+        <ForWho />
         <Hero />
+        <Visit />
         <Poster />
         <Features />
         <RelaxText />
