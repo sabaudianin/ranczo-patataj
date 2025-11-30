@@ -22,55 +22,73 @@ export const AlpakoTerapy = () => {
     <section
       id="alpakoterapia"
       aria-labelledby="alpakoterapia-title"
-      className="max-w-5xl mx-auto pt-4"
+      className="max-w-5xl mx-auto pt-4 px-2 md:px-0"
     >
       <motion.div
         variants={container}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
-        className="text-center font-special p-2 md:text-xl
-      "
+        viewport={{ once: true, amount: 0.3 }}
+        className="grid md:grid-cols-2 gap-6 md:gap-10 items-center"
       >
-        <motion.p
+        {/* LEWA KOLUMNA – TEKST */}
+        <div className="text-center md:text-left font-special md:text-xl">
+          <motion.h2
+            id="alpakoterapia-title"
+            variants={item}
+            className="text-[var(--c-primary)] font-semibold"
+          >
+            Czy znacie alpakoterapię?
+          </motion.h2>
+
+          <motion.p
+            variants={item}
+            className="text-[var(--c-primary)] font-bold"
+          >
+            Nie? Nasze alpaki są w tym najlepsze!
+          </motion.p>
+
+          <motion.div
+            variants={item}
+            className="font-curier text-xs md:text-base py-2 space-y-2"
+          >
+            <p>
+              <b>Alpakoterapia</b> to naturalna forma wsparcia emocjonalnego i
+              wyciszenia zarówno dla dzieci, jak i dorosłych.
+            </p>
+
+            <p>Bliski kontakt z alpakami:</p>
+            <ul className="list-disc list-inside text-left text-[0.7rem] md:text-sm">
+              <li>pomaga redukować stres,</li>
+              <li>poprawia samopoczucie,</li>
+              <li>wspiera równowagę psychiczną,</li>
+              <li>zachęca do otwartości i buduje poczucie bezpieczeństwa.</li>
+            </ul>
+          </motion.div>
+
+          <motion.p
+            variants={item}
+            className="font-curier text-xs md:text-base"
+          >
+            Alpakoterapia to łagodna i bezpieczna terapia oparta na obcowaniu ze
+            zwierzętami, idealna dla osób które potrzebują chwili wytchnienia,
+            relaksu oraz harmonii z naturą.
+          </motion.p>
+        </div>
+
+        <motion.div
           variants={item}
-          className="text-[var(--c-primary)] font-semibold"
+          className="relative w-full aspect-[4/3] md:aspect-[3/4] max-h-[420px] mx-auto rounded-2xl"
         >
-          Czy znacie Alpakoterapię ?
-        </motion.p>
-        <motion.p
-          variants={item}
-          className="text-[var(--c-primary)] font-bold"
-        >
-          {" "}
-          - Nie?? Nasze Alpaki są w tym najlepsze{" "}
-        </motion.p>
-        <motion.p
-          variants={item}
-          className="font-curier text-xs md:text-base py-2"
-        >
-          <b>Alpakoterapia</b> - naturalna forma wsparcia emocjonalnego,
-          wyciszenia dla dzieci i dorosłych. Bliski kontakt z alpakami pomaga
-          redukować stres, poprawia samopoczucie i wspiera równowagę psychiczną.
-        </motion.p>
-        <motion.p
-          variants={item}
-          className="font-curier text-xs md:text-base"
-        >
-          Alpakoterapia to łagodna i bezpieczna terapia oparta na obcowaniu z
-          alpakami, idealne dla osób potrzebujących wytchnienia, relaksu oraz
-          chwili harmonii z naturą.{" "}
-        </motion.p>
+          <Image
+            src="/images/lamastar.avif"
+            fill
+            alt="Ładna lama patrzy na Ciebie"
+            sizes="(min-width: 768px) 50vw, 100vw"
+            className="object-contain rounded-2xl"
+          />
+        </motion.div>
       </motion.div>
-      <div className="relative h-100 flex">
-        <Image
-          src="/images/lamastar.avif"
-          fill
-          alt="Ładna lama patrzy na Ciebie"
-          sizes="100vw"
-          className="object-contain  max-h-100 rounded-2xl "
-        />
-      </div>
     </section>
   );
 };

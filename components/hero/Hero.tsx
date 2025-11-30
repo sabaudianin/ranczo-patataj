@@ -1,5 +1,4 @@
-import { SiOllama } from "react-icons/si";
-import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
+import { CONTACT, MAILTO } from "@/config/contact/Contact";
 import Image from "next/image";
 
 export const Hero = () => {
@@ -17,9 +16,6 @@ export const Hero = () => {
         className="flex items-center justify-center gap-1 "
         aria-hidden="true"
       >
-        <SiOllama className="text-xl text-[var(--c-primary)]" />
-        <SiOllama className="text-3xl text-[var(--c-primary)]" />
-        <SiOllama className="text-5xl text-[var(--c-primary)]" />
         <Image
           src="/images/g1.avif"
           alt=""
@@ -55,9 +51,6 @@ export const Hero = () => {
           height={100}
           className="hidden md:block w-20 md:w-40 h-auto object-cover rounded"
         />
-        <SiOllama className="text-5xl text-[var(--c-primary)]" />
-        <SiOllama className="text-3xl text-[var(--c-primary)]" />
-        <SiOllama className="text-xl text-[var(--c-primary)]" />
       </div>
       <div className="pt-10">
         <h2

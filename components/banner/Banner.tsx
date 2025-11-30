@@ -74,7 +74,7 @@ export const Banner: React.FC = () => {
           className="bg-[url('/images/polewies.avif')] bg-cover bg-center bg-no-repeat object-scale-down h-100 "
           aria-hidden="true"
         > */}
-        <div className="h-100 relative">
+        <div className="h-120 relative">
           <Image
             src="/images/polewies.avif"
             alt=""
@@ -86,37 +86,38 @@ export const Banner: React.FC = () => {
         <div className="absolute top-0 bg-black/50 px-2 py-4 w-full">
           <h1
             id="promo-heading"
-            className=" font-ultra text-center text-[var(--c-primary)] text-xl md:text-2xl xl:text-3xl mx-auto "
+            className=" font-ultra text-center text-[var(--c-primary)]  md:text-2xl xl:text-3xl mx-auto "
             itemProp="name"
           >
             <span className="block ">
-              Ranczo Patataj - gospodarstwo edukacyjne
+              Ranczo Patataj - gospodarstwo edukacyjne dla szkół, rodzin i grup
+              zorganizowanych
             </span>
             <span className="block text-sm md:text-base xl:text-lg  text-white pt-1">
-              dla szkół, rodzin i grup zorganizowanych
+              Twoje ulubione miejsce na rodzinny wypad poza miasto – tylko
+              godzinę od Warszawy. Zapraszamy przedszkola, szkoły, rodziny i
+              grupy na spotkania ze zwierzętami, warsztaty, ogniska i wyjątkowe
+              wydarzenia wśród natury.
             </span>
           </h1>
-
+        </div>
+        <div className="w-full p-2 md:w-1/2 mx-auto">
           <a
             href={PHONETO}
-            className="absolute right-2 -bottom-14 z-20  py-2 px-4 bg-[var(--c-primary)]/50 hover:scale-105 transition-all duration border border-[var(--c-primary)] rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]  text-xs md:text-xl font-semibold text-white font-curier "
-            aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
+            className="inline-flex w-full items-center justify-center gap-2 py-2 px-4 bg-emerald-500/50 hover:bg-emerald-500 hover:scale-105 transition-transform duration-200 border border-[var(--c-primary)] rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] text-xs md:text-xl font-semibold text-white font-curier"
+            aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby zarezerwować termin w Ranczo Patataj`}
             itemProp="telephone"
           >
-            <div className="flex justify-center items-center">
-              <FaPhone
-                className="self-start animate-pulse"
-                aria-hidden="true"
-              />
-              <span className="ml-2">
-                <span className="inline lg:hidden">Zarezerwuj termin</span>
-
-                <span className="hidden lg:inline">{CONTACT.phoneDisplay}</span>
-              </span>
-            </div>
+            <FaPhone
+              className="animate-pulse"
+              aria-hidden="true"
+            />
+            <span className="ml-1">
+              <span className="inline lg:hidden">Zarezerwuj termin</span>
+              <span className="hidden lg:inline">{CONTACT.phoneDisplay}</span>
+            </span>
           </a>
         </div>
-        {/* </div> */}
       </article>
     </section>
   );
