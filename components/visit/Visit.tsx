@@ -1,9 +1,11 @@
+"use client";
+
 export const Visit = () => {
   return (
     <section
       id="jak-wyglada-wizyta"
       aria-labelledby="wizyta-title"
-      className="max-w-5xl mx-auto pt-8"
+      className="max-w-5xl mx-auto py-4 px-4 md:px-0"
     >
       <div className="text-center mb-6">
         <h2
@@ -12,37 +14,41 @@ export const Visit = () => {
         >
           Jak wygląda wizyta na Ranczu Patataj?
         </h2>
-        <p className="font-curier text-xs md:text-base mt-2">
-          Każda wizyta jest trochę inna zależy od pory roku, pogody i Waszych
-          oczekiwań ale najczęściej przebiega według podobnego, spokojnego
-          rytmu.
+
+        <p className="font-curier text-xs md:text-base mt-2 max-w-2xl mx-auto">
+          Każda wizyta przebiega w spokojnym rytmie i dopasowana jest do Was –
+          niezależnie od tego, czy przyjeżdżacie sami, z rodziną, znajomymi czy
+          większą grupą.
         </p>
       </div>
 
       <div className="font-curier text-xs md:text-base space-y-4">
         <ul className="list-disc list-inside space-y-2">
           <li>
-            Spacer po ranczu poznajecie zwierzęta, ich historie i zwyczaje,
-            zaglądacie w różne zakątki gospodarstwa.
+            Poznajecie naszą przestrzeń i zwierzęta w swoim tempie, z
+            możliwością bliskiego kontaktu, rozmów i zdjęć.
           </li>
+
           <li>
-            Bliski kontakt ze zwierzętami karmienie, głaskanie, wspólne zdjęcia,
-            obserwowanie zachowań z bliska.
+            Bierzecie udział w wybranych aktywnościach, takich jak warsztaty,
+            spotkania ze zwierzętami czy zajęcia tematyczne.
           </li>
+
           <li>
-            Zajęcia tematyczne w zależności od ustaleń mogą to być warsztaty
-            kulinarne, manualne lub inne.
+            Jest czas na odpoczynek, piknik, ognisko lub swobodną chwilę na
+            świeżym powietrzu.
           </li>
+
           <li>
-            Przerwa na odpoczynek chwila na piknik, ognisko lub inna aktywność
-            na zewnątrz, mozna jeszcze poprzytulać się do alpak albo zrobić
-            jeszcze kilka zdjęć
+            A na koniec zostaje moment na to, co lubicie najbardziej czyli
+            zabawę, relaks, poprzytulanie alpak albo po prostu bycie blisko
+            natury.
           </li>
         </ul>
 
-        <p>
-          Program i tempo wizyty zawsze dostosowujemy do Was niezależnie od
-          tego, czy przyjeżdżasz sam, z rodziną, znajomymi czy większą grupą.
+        <p className="mt-4 max-w-xl mx-auto">
+          Program każdej wizyty układamy tak, aby był przyjemny, spokojny i
+          komfortowy,niezależnie od wieku i potrzeb odwiedzających.
         </p>
       </div>
     </section>
