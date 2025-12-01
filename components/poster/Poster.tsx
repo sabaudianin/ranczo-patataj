@@ -5,7 +5,7 @@ import { CONTACT, MAILTO } from "@/config/contact/Contact";
 export const Poster = () => {
   return (
     <section className="relative max-w-6xl mx-auto py-4">
-      <div
+      {/* <div
         className="relative bg-cover bg-center bg-no-repeat object-scale-down h-100 "
         aria-hidden="true"
       >
@@ -24,7 +24,7 @@ export const Poster = () => {
             tematyczne warsztaty.
           </p>
         </div>
-      </div>
+      </div> */}
       {/* <p className=" text-center font-ultra bg-emerald-300/30 p-2">
         Atrakcyjne pakiety dla szkół !!!
       </p> */}

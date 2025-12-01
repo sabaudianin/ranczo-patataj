@@ -74,18 +74,18 @@ export default function Home() {
       />
       <section className="relative px-2 pt-24 md:pt-0 pb-4 dark:bg-black bg-[var(--background)] mx-auto">
         <Banner />
-        <ForWho />
-        <MiniGallery />
-        <Cta />
         <Atrakcje />
+        <AlpakoTerapy />
+        <MiniGallery />
+        <Visit />
+        {/* <ForWho /> */}
+        <Cta />
         {/* <Hero /> */}
         <Poster />
         <Social />
-        <AlpakoTerapy />
         <Features />
         <Testimonial />
-        <Visit />
-        <RelaxText />
+        {/* <RelaxText /> */}
         <Final />
       </section>
     </>

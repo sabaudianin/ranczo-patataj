@@ -37,18 +37,18 @@ const OPINIONS: Opinion[] = [
     color: "bg-yellow-700",
     font: "font-playwrite tracking-widest",
   },
-  {
-    text: "Urokliwe miejsce w zaciszu pól i lasów.Zwierzęta nauczone pracy z dziećmi, bardzo przyjaźnie nastawione(lama rozdaje buziaki).Warsztaty cieszyły się ogromnym zainteresowaniem zarówno dzieci jak i rodziców 😊Polecam to miejsce wszystkim. ",
-    name: "Tomasz G",
-    color: "bg-indigo-700",
-    font: "font-playwrite text-lg tracking-[.15em] font-bold",
-  },
-  {
-    text: "Bardzo, fajne miejsce z potencjałem, brakowało czegoś takiego w okolicy. Szczerze polecam dla dzieci i dla dorosłych. można wynająć przestrzeń na imprezy, mają bazę noclegową.",
-    name: "Jarek G",
-    color: "bg-lime-700",
-    font: "font-playwrite tracking-wider",
-  },
+  // {
+  //   text: "Urokliwe miejsce w zaciszu pól i lasów.Zwierzęta nauczone pracy z dziećmi, bardzo przyjaźnie nastawione(lama rozdaje buziaki).Warsztaty cieszyły się ogromnym zainteresowaniem zarówno dzieci jak i rodziców 😊Polecam to miejsce wszystkim. ",
+  //   name: "Tomasz G",
+  //   color: "bg-indigo-700",
+  //   font: "font-playwrite text-lg tracking-[.15em] font-bold",
+  // },
+  // {
+  //   text: "Bardzo, fajne miejsce z potencjałem, brakowało czegoś takiego w okolicy. Szczerze polecam dla dzieci i dla dorosłych. można wynająć przestrzeń na imprezy, mają bazę noclegową.",
+  //   name: "Jarek G",
+  //   color: "bg-lime-700",
+  //   font: "font-playwrite tracking-wider",
+  // },
 ];
 
 export const Testimonial = () => {
