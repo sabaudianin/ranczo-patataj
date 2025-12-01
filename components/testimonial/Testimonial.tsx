@@ -60,7 +60,7 @@ export const Testimonial = () => {
     >
       <motion.h2
         id="opinions-heading"
-        className="text-center font-special  font-bold text-2xl md:text-3xl pb-2"
+        className="pb-2 text-center font-special  font-bold text-2xl md:text-3xl text-[var(--c-primary)]"
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}

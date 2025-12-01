@@ -32,16 +32,7 @@ export const Cta = () => {
       aria-labelledby="cta-heading"
       role="region"
     >
-      <div
-        className="relative h-64 md:h-120 w-full overflow-hidden  aspect-[16/9]"
-        aria-hidden="true"
-      >
-        <BgSlider
-          slides={SLIDES}
-          className="absolute inset-0 w-full h-full "
-        />
-      </div>
-      <div className="relative z-10 flex flex-col  md:p-6 py-4  text-center max-w-6xl mx-auto">
+      <div className="relative z-10 flex flex-col md:p-6 text-center max-w-6xl mx-auto">
         <h2
           id="cta-heading"
           className="text-lg md:text-2xl font-ultra tracking-wider text-[var(--c-primary)]"
@@ -68,6 +59,15 @@ export const Cta = () => {
           Zadzwoń, aby umówić zajęcia edukacyjne, warsztaty, zarezerować ranczo
           na imprezę firmową, rodzinną lub wizytę grupową.
         </p>
+      </div>
+      <div
+        className="relative h-64 md:h-120 w-full overflow-hidden  aspect-[16/9]"
+        aria-hidden="true"
+      >
+        <BgSlider
+          slides={SLIDES}
+          className="absolute inset-0 w-full h-full "
+        />
       </div>
     </section>
   );

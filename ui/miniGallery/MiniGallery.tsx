@@ -38,7 +38,7 @@ const SLIDES = [
 export const MiniGallery = () => {
   return (
     <section
-      className=""
+      className="py-4"
       aria-labelledby="mini-gallery-heading"
       role="region"
     >

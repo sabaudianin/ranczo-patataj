@@ -8,10 +8,6 @@ export const Hero = () => {
       aria-labelledby="schools-offer-heading"
       role="region"
     >
-      <h3 className=" p-4 font-ultra text-[var(--c-primary)] uppercase text-center md:text-2xl">
-        Twoje ulubione miejsce na rodzinny wypad poza miasto, tylko godzinę od
-        Warszawy.
-      </h3>
       <div
         className="flex items-center justify-center gap-1 "
         aria-hidden="true"
@@ -52,6 +48,31 @@ export const Hero = () => {
           className="hidden md:block w-20 md:w-40 h-auto object-cover rounded"
         />
       </div>
+      <section className="relative max-w-6xl mx-auto py-8">
+        <div
+          className="relative bg-cover bg-center bg-no-repeat object-scale-down h-100 "
+          aria-hidden="true"
+        >
+          <Image
+            src="/images/lamaClose.avif"
+            fill
+            alt="Pyszczek Lamy z Bliska"
+            sizes="100vw"
+            className="object-cover max-h-100"
+          />
+
+          <div className=" relative w-full p-1  mx-auto font-special text-center font-bold bg-black/50 text-white md:text-2xl">
+            <h2> Zapraszamy szkoły i przedszkola na Ranczo Patataj!</h2>
+            <p className="">
+              Idealna propozycja na wycieczkę edukacyjną, dzień integracji czy
+              tematyczne warsztaty.
+            </p>
+          </div>
+        </div>
+        <p className=" text-center font-ultra bg-emerald-300/30 p-2">
+          Atrakcyjne pakiety dla szkół !!!
+        </p>
+      </section>
       <div className="pt-10">
         <h2
           className="text-center  md:text-xl font-ultra pb-6  "

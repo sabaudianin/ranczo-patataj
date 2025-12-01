@@ -3,7 +3,7 @@ import React from "react";
 export const Social = () => {
   return (
     <section>
-      <div className="py-4">
+      <div className="pb-4">
         <p className="px-1 text-center font-ultra ">
           Aktualna oferta i promocje - sprawdź nasze social media:
         </p>

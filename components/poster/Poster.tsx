@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import { CONTACT, MAILTO } from "@/config/contact/Contact";
 
 export const Poster = () => {
   return (
-    <section className="relative max-w-6xl mx-auto">
+    <section className="relative max-w-6xl mx-auto py-4">
       <div
         className="relative bg-cover bg-center bg-no-repeat object-scale-down h-100 "
         aria-hidden="true"
@@ -24,9 +25,28 @@ export const Poster = () => {
           </p>
         </div>
       </div>
-      <p className=" text-center font-ultra bg-emerald-300/30 p-2">
+      {/* <p className=" text-center font-ultra bg-emerald-300/30 p-2">
         Atrakcyjne pakiety dla szkół !!!
-      </p>
+      </p> */}
+
+      <div className="py-2">
+        <h2
+          className="text-center  md:text-xl font-ultra pt-4 "
+          id="schools-offer-heading"
+        >
+          Zapytaj o naszą nową ofertę dla szkół i przedszkoli: <br />
+          <span className="font-special  text-base md:text-xl">
+            📧{" "}
+            <a
+              href={MAILTO}
+              className="underline underline-offset-2 hover:text-[var(--c-primary)]"
+              aria-label="Napisz wiadomość e-mail do Ranczo Patataj"
+            >
+              {CONTACT.email}
+            </a>
+          </span>
+        </h2>
+      </div>
     </section>
   );
 };
