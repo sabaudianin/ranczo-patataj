@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 export const Atrakcje = () => {
   return (
     <section
@@ -18,6 +18,46 @@ export const Atrakcje = () => {
           Zapraszamy rodziny, szkoły i grupy na dzień pełen prawdziwych
           doświadczeń wśród zwierząt, zieleni i rustykalnych wnętrz.
         </p>
+      </div>
+      <div
+        className="flex items-center justify-center gap-1 pb-4 mb-4 "
+        aria-hidden="true"
+      >
+        <Image
+          src="/images/g1.avif"
+          alt=""
+          width={100}
+          height={100}
+          className="hidden md:block w-20 md:w-40 h-auto object-cover rounded"
+        />
+        <Image
+          src="/images/g7.avif"
+          alt=""
+          width={100}
+          height={100}
+          className="w-20 md:w-40 h-auto object-cover rounded oject-cover"
+        />
+        <Image
+          src="/images/g2.avif"
+          alt=""
+          width={100}
+          height={100}
+          className="w-20 md:w-40 h-auto object-cover rounded "
+        />
+        <Image
+          src="/images/g3.avif"
+          alt="a"
+          width={100}
+          height={100}
+          className="w-20 md:w-40 h-auto object-cover rounded"
+        />
+        <Image
+          src="/images/g5.avif"
+          alt=""
+          width={100}
+          height={100}
+          className="hidden md:block w-20 md:w-40 h-auto object-cover rounded"
+        />
       </div>
 
       <div className="space-y-5 md:space-y-6 font-curier text-xs md:text-base">
@@ -57,9 +97,9 @@ export const Atrakcje = () => {
               Warsztaty kulinarne i manualne
             </h3>
             <p>
-              Pieczenie, proste przepisy, praca z naturalnymi składnikami,
-              lepienie, tworzenie własnych pamiątek oraz eko-warsztaty. Dzieci
-              uczą się przez działanie dużo śmiechu, kreatywności i zero nudy.
+              Proste przepisy, praca z naturalnymi składnikami, lepienie,
+              tworzenie własnych pamiątek oraz eko-warsztaty. Dzieci uczą się
+              przez działanie dużo śmiechu, kreatywności i zero nudy.
             </p>
           </div>
         </div>
@@ -71,9 +111,9 @@ export const Atrakcje = () => {
               Ognisko i piknik na świeżym powietrzu
             </h3>
             <p>
-              Przygotowujemy miejsce na ognisko, patyki, ławki i przestrzeń do
-              pikniku. To idealne zwieńczenie wycieczki, rodzinnego wyjazdu lub
-              integracji przy wspólnym pieczeniu i rozmowach.
+              Przygotowujemy miejsce na ognisko i przestrzeń do pikniku. To
+              idealne zwieńczenie wycieczki, rodzinnego wyjazdu lub integracji
+              przy wspólnym pieczeniu i rozmowach.
             </p>
           </div>
         </div>
@@ -87,8 +127,8 @@ export const Atrakcje = () => {
             <p>
               Organizujemy urodziny wśród zwierząt, rodzinne spotkania oraz
               kameralne imprezy firmowe. Możemy połączyć atrakcje ze
-              zwierzętami, warsztaty, swobodną zabawę i ognisko tworząc
-              scenariusz dopasowany do Waszej grupy.
+              zwierzętami, warsztaty, swobodną zabawę, tworząc scenariusz
+              dopasowany do Waszej grupy.
             </p>
           </div>
         </div>

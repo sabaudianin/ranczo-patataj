@@ -3,7 +3,7 @@ import { PolaroidCard } from "@/ui/polaroid/Polaroid";
 
 export const Final = () => {
   return (
-    <section className="pt-8">
+    <section className="py-4">
       <div className="md:hidden pb-4">
         <p className="text-center font-special pb-1 font-semibold">
           🌍 Gdzie znajduję się nasze Ranczo ?

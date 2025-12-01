@@ -63,7 +63,7 @@ export const metadata: Metadata = {
 export const Banner: React.FC = () => {
   return (
     <section
-      className=""
+      className="pb-4"
       aria-labelledby="promo-heading"
       role="banner"
       itemScope
@@ -94,14 +94,18 @@ export const Banner: React.FC = () => {
               zorganizowanych
             </span>
             <span className="block text-sm md:text-base xl:text-lg  text-white pt-1">
-              Twoje ulubione miejsce na rodzinny wypad poza miasto – tylko
+              Twoje ulubione miejsce na rodzinny wypad poza miasto, tylko
               godzinę od Warszawy. Zapraszamy przedszkola, szkoły, rodziny i
               grupy na spotkania ze zwierzętami, warsztaty, ogniska i wyjątkowe
               wydarzenia wśród natury.
             </span>
           </h1>
         </div>
-        <div className="mt-4 p-2 w-1/2 mx-auto">
+        <h3 className=" p-4 font-ultra text-[var(--c-primary)] uppercase text-center md:text-2xl">
+          Twoje ulubione miejsce na rodzinny wypad poza miasto, tylko godzinę od
+          Warszawy.
+        </h3>
+        <div className=" p-2 md:w-1/2 lg:w-1/4 mx-auto">
           <a
             href={PHONETO}
             className="inline-flex w-full items-center justify-center gap-2 py-2 px-4 bg-emerald-500/50 hover:bg-emerald-500 hover:scale-105 transition-transform duration-200 border border-[var(--c-primary)] rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] text-xs md:text-xl font-semibold text-white font-curier"
