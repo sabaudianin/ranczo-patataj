@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 import { FaPhone } from "react-icons/fa";
 import { CONTACT, PHONETO } from "@/config/contact/Contact";
@@ -70,57 +71,65 @@ export const Banner: React.FC = () => {
       itemType="https://schema.org/LocalBusiness"
     >
       <article className="max-w-hd mx-auto relative">
-        {/* <div
-          className="bg-[url('/images/polewies.avif')] bg-cover bg-center bg-no-repeat object-scale-down h-100 "
-          aria-hidden="true"
-        > */}
         <div className="h-120 relative">
           <Image
             src="/images/polewies.avif"
-            alt=""
+            alt="Pejzaż Pół i lasów"
             fill
             priority
             className="object-cover object-center"
           />
         </div>
-        <div className="absolute top-0 bg-black/50 px-2 py-4 w-full">
-          <h1
-            id="promo-heading"
-            className=" font-ultra text-center text-[var(--c-primary)]  md:text-2xl xl:text-3xl mx-auto "
-            itemProp="name"
-          >
-            <span className="block ">
-              Ranczo Patataj - gospodarstwo edukacyjne dla szkół, rodzin i grup
-              zorganizowanych
-            </span>
-            <span className="block text-sm md:text-base xl:text-lg  text-white pt-1">
-              Twoje ulubione miejsce na rodzinny wypad poza miasto, tylko
-              godzinę od Warszawy. Zapraszamy przedszkola, szkoły, rodziny i
-              grupy na spotkania ze zwierzętami, warsztaty, ogniska i wyjątkowe
-              wydarzenia wśród natury.
-            </span>
-          </h1>
-        </div>
-        <h3 className=" p-4 font-ultra text-[var(--c-primary)] uppercase text-center md:text-2xl">
-          Twoje ulubione miejsce na rodzinny wypad poza miasto, tylko godzinę od
-          Warszawy.
-        </h3>
-        <div className=" p-2 md:w-1/2 lg:w-1/4 mx-auto">
-          <a
-            href={PHONETO}
-            className="inline-flex w-full items-center justify-center gap-2 py-2 px-4 bg-emerald-500/50 hover:bg-emerald-500 hover:scale-105 transition-transform duration-200 border border-[var(--c-primary)] rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] text-xs md:text-xl font-semibold text-white font-curier"
-            aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby zarezerwować termin w Ranczo Patataj`}
-            itemProp="telephone"
-          >
-            <FaPhone
-              className="animate-pulse"
-              aria-hidden="true"
-            />
-            <span className="ml-1">
-              <span className="inline lg:hidden">Zarezerwuj termin</span>
-              <span className="hidden lg:inline">{CONTACT.phoneDisplay}</span>
-            </span>
-          </a>
+
+        <div className="absolute inset-0 bg-black/45">
+          <div className="flex h-full flex-col items-center justify-center px-4 py-6 text-center">
+            <h1
+              id="promo-heading"
+              className="font-ultra text-[var(--c-primary)] text-lg md:text-2xl xl:text-3xl max-w-3xl mx-auto"
+              itemProp="name"
+            >
+              Ranczo Patataj - gospodarstwo edukacyjne i rekreacyjne pod
+              Warszawą
+            </h1>
+
+            <p className="mt-2 text-[0.75rem] md:text-base xl:text-lg text-white max-w-3xl font-curier">
+              Spotkania ze zwierzętami, alpakoterapia, warsztaty, ogniska,
+              zabawa i odpoczynek dla rodzin, szkół, grup zorganizowanych i
+              wszystkich, którzy chcą odetchnąć od codzienności. Tylko godzinę
+              drogi od Warszawy.
+            </p>
+
+            <div className="mt-4 flex flex-col sm:flex-row gap-3 w-full sm:w-auto justify-center">
+              <Link
+                href="/oferta"
+                className="inline-flex items-center justify-center px-5 py-2 rounded-xl bg-emerald-500/80 hover:bg-emerald-500 border border-[var(--c-primary)] text-xs md:text-sm lg:text-base font-semibold text-white font-curier hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
+              >
+                Zobacz ofertę
+              </Link>
+
+              <Link
+                href="/ranczo"
+                className="inline-flex items-center justify-center px-5 py-2 rounded-xl bg-white/80 hover:bg-white border border-[var(--c-primary)] text-xs md:text-sm lg:text-base font-semibold text-[var(--c-primary)] font-curier hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
+              >
+                Poznaj Ranczo
+              </Link>
+            </div>
+
+            <div className="mt-3">
+              <a
+                href={PHONETO}
+                className="inline-flex items-center justify-center gap-2 text-[0.7rem] md:text-sm text-white/90 font-curier underline-offset-2 hover:underline"
+                aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby zarezerwować termin w Ranczo Patataj`}
+                itemProp="telephone"
+              >
+                <FaPhone
+                  className="animate-pulse"
+                  aria-hidden="true"
+                />
+                <span>Zadzwoń: {CONTACT.phoneDisplay}</span>
+              </a>
+            </div>
+          </div>
         </div>
       </article>
     </section>
