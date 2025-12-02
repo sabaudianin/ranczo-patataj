@@ -20,11 +20,11 @@ export const ContactForm = () => {
   };
 
   return (
-    <section className=" py-4 md:w-1/2">
+    <section className="p-4 md:w-1/2">
       <h2 className="text-center pb-2 font-special">Zapraszamy do kontaktu </h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="w-full  relative max-w-3xl mx-auto border rounded border-[var(--c-primary)] p-2 flex flex-col items-center justify-center gap-2 shadow-md "
+        className="w-full  relative max-w-3xl mx-auto border rounded border-[var(--c-primary)] p-2 flex flex-col items-center justify-center gap-2 shadow-md font-curier"
       >
         {" "}
         <div className="absolute top-2 right-2 z-50">
@@ -37,10 +37,10 @@ export const ContactForm = () => {
           />
         </div>
         <div className="w-full pb-4">
-          <label className="">Imię :</label>
+          <label className="">Imię:</label>
           <input
             placeholder="Wpisz swoje Imię..."
-            className="ml-4"
+            className="ml-4 "
             {...register("name")}
           />
           {errors.name && (
@@ -48,10 +48,10 @@ export const ContactForm = () => {
           )}
         </div>
         <div className="w-full">
-          <label className="">Email :</label>
+          <label className="">Email:</label>
           <input
             className="ml-2"
-            placeholder="Podaj swój email tutaj..."
+            placeholder="Podaj swój email ..."
             {...register("email")}
           />
           {errors.email && (
@@ -60,7 +60,7 @@ export const ContactForm = () => {
         </div>
         <div className="w-full">
           <textarea
-            className="border rounded indent-2 w-full p-1"
+            className="border rounded indent-2 w-full p-1 border-emerald-800"
             placeholder="Tu wpisz wiadomość..."
             rows={5}
             {...register("message")}
@@ -72,7 +72,7 @@ export const ContactForm = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className=" border border-[var(--c-primary)] bg-emerald-300/70 rounded px-4 py-2 font-bold tracking-widest disabled:opacity-60 hover:scale-105 duration transition"
+          className="px-4 py-2  border border-[var(--c-primary)] rounded bg-emerald-800/70 disabled:opacity-60 hover:scale-105 duration transition font-bold  tracking-widest text-xs font-curier"
         >
           {isSubmitting ? "Wysyłanie" : "Wyślij"}
         </button>
