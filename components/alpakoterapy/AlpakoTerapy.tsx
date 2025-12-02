@@ -71,7 +71,7 @@ export const AlpakoTerapy = () => {
             className="font-curier text-xs md:text-base"
           >
             Alpakoterapia to łagodna i bezpieczna terapia oparta na obcowaniu ze
-            zwierzętami, idealna dla osób które potrzebują chwili wytchnienia,
+            zwierzętami, idealna dla osób, które potrzebują chwili wytchnienia,
             relaksu oraz harmonii z naturą.
           </motion.p>
         </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Final = () => {
   return (
-    <section className="">
+    <section className="py-4">
       <article>
         <div className="flex flex-col gap-3 w-full items-center justify-center">
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -21,26 +21,27 @@ export const Final = () => {
             >
               Poznaj nasze Ranczo
             </Link>
-          </div>
-          <div className="">
-            <a
-              href={PHONETO}
-              className="inline-flex items-center justify-center gap-2 p-2 border rounded-xl border-[var(--c-primary)] bg-stone-800/70 text-[0.7rem] md:text-sm text-white/90 font-curier underline-offset-2 hover:underline"
-              aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby zarezerwować termin w Ranczo Patataj`}
-              itemProp="telephone"
-            >
-              <FaPhone
-                className="animate-pulse"
-                aria-hidden="true"
-              />
-              <span>Zarezerwuj termin: {CONTACT.phoneDisplay}</span>
-            </a>
+
+            <div className="">
+              <a
+                href={PHONETO}
+                className="inline-flex items-center justify-center gap-2 p-2 border rounded-xl border-[var(--c-primary)] bg-stone-800/70 text-[0.7rem] md:text-sm text-white/90 font-curier underline-offset-2 hover:underline"
+                aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby zarezerwować termin w Ranczo Patataj`}
+                itemProp="telephone"
+              >
+                <FaPhone
+                  className="animate-pulse"
+                  aria-hidden="true"
+                />
+                <span>Zadzwoń teraz: {CONTACT.phoneDisplay}</span>
+              </a>
+            </div>
           </div>
         </div>
       </article>
       <div className="md:hidden py-4">
         <p className="text-center font-special pb-1 font-semibold">
-          🌍 Gdzie znajduję się nasze Ranczo ?
+          🌍 Gdzie znajduje się nasze Ranczo ?
         </p>
         <iframe
           id="mapa"

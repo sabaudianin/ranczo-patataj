@@ -29,9 +29,9 @@ export const Poster = () => {
         Atrakcyjne pakiety dla szkół !!!
       </p> */}
 
-      <div className="py-2">
+      <div className="">
         <h2
-          className="text-center  md:text-xl font-ultra pt-4 "
+          className="text-center md:text-xl font-ultra"
           id="schools-offer-heading"
         >
           Zapytaj o naszą nową ofertę dla szkół i przedszkoli: <br />

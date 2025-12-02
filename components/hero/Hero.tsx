@@ -58,7 +58,7 @@ export const Hero = () => {
             fill
             alt="Pyszczek Lamy z Bliska"
             sizes="100vw"
-            className="object-cover max-h-100"
+            className="object-cover max-h-100 sepia-[0.4] contrast-125 brightness-90 saturate-75"
           />
 
           <div className=" relative w-full p-1  mx-auto font-special text-center font-bold bg-black/50 text-white md:text-2xl">

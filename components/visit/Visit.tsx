@@ -16,7 +16,7 @@ export const Visit = () => {
         </h2>
 
         <p className="font-curier text-xs md:text-base mt-2 max-w-2xl mx-auto">
-          Każda wizyta przebiega w spokojnym rytmie i dopasowana jest do Was –
+          Każda wizyta przebiega w spokojnym rytmie i jest dopasowana do Was,
           niezależnie od tego, czy przyjeżdżacie sami, z rodziną, znajomymi czy
           większą grupą.
         </p>
@@ -48,7 +48,7 @@ export const Visit = () => {
 
         <p className="mt-4 max-w-xl mx-auto">
           Program każdej wizyty układamy tak, aby był przyjemny, spokojny i
-          komfortowy,niezależnie od wieku i potrzeb odwiedzających.
+          komfortowy, niezależnie od wieku i potrzeb odwiedzających.
         </p>
       </div>
     </section>

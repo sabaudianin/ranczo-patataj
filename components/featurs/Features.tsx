@@ -12,7 +12,7 @@ const ANIMAL_FEATURES = [
   {
     src: "/images/tlam.avif",
     alt: "Lama spacerująca po zagrodzie w otoczeniu natury",
-    label: "Zachwyć lamami🤗",
+    label: "Zachwyć się lamami🤗",
     fact: "Lamy uczą cierpliwości i obecności, świetnie wspierając pracę z emocjami.",
   },
   {

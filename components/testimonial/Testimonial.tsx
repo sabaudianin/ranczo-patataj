@@ -56,7 +56,7 @@ export const Testimonial = () => {
     <section
       id="opinie"
       aria-labelledby="opinions-heading"
-      className="px-1 md:px-8 max-w-7xl mx-auto py-12"
+      className="px-1 md:px-8 max-w-7xl mx-auto py-4"
     >
       <motion.h2
         id="opinions-heading"
@@ -82,8 +82,7 @@ export const Testimonial = () => {
         {OPINIONS.map((opinion, index) => (
           <motion.article
             key={opinion.name}
-            className={`relative text-sm text-black ${opinion.font}
-      border border-amber-900/40 rounded-md bg-[#f7f0dc] shadow-[0_12px_30px_rgba(0,0,0,0.45)] p-4 flex flex-col gap-3 `}
+            className={`relative p-4 flex flex-col gap-3 border border-amber-900/40 rounded-md bg-[#f7f0dc] shadow-[0_12px_30px_rgba(0,0,0,0.45)]  text-sm text-black ${opinion.font}`}
             itemScope
             itemType="https://schema.org/Review"
             initial={{ opacity: 0, y: 20, scale: 0.96 }}

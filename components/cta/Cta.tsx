@@ -56,17 +56,17 @@ export const Cta = () => {
         </div>
 
         <p className="text-xs md:text-sm max-w-md mx-auto font-semibold font-curier">
-          Zadzwoń, aby umówić zajęcia edukacyjne, warsztaty, zarezerować ranczo
+          Zadzwoń, aby umówić zajęcia edukacyjne, warsztaty, zarezerwować ranczo
           na imprezę firmową, rodzinną lub wizytę grupową.
         </p>
       </div>
       <div
-        className="relative h-64 md:h-120 w-full overflow-hidden  aspect-[16/9]"
+        className="relative h-64 md:h-120 w-full overflow-hidden  aspect-[16/9] mt-4"
         aria-hidden="true"
       >
         <BgSlider
           slides={SLIDES}
-          className="absolute inset-0 w-full h-full "
+          className="absolute inset-0 w-full h-full"
         />
       </div>
     </section>
