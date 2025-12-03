@@ -88,8 +88,7 @@ export const Banner: React.FC = () => {
               className=" max-w-3xl mx-auto mt-8 font-ultra text-[var(--c-primary)] text-lg md:text-2xl xl:text-3xl"
               itemProp="name"
             >
-              Ranczo Patataj - gospodarstwo edukacyjne i rekreacyjne pod
-              Warszawą
+              Ranczo Patataj - gospodarstwo edukacyjne.
             </h1>
 
             <p className="mt-2 text-[0.75rem] md:text-base xl:text-lg text-white max-w-3xl font-curier">
@@ -103,14 +102,14 @@ export const Banner: React.FC = () => {
               <div>
                 <Link
                   href="/oferta"
-                  className="mr-1 inline-flex items-center justify-center px-5 py-2 rounded-xl bg-emerald-500/70 hover:bg-emerald-500 border border-[var(--c-primary)] text-xs md:text-sm lg:text-base font-semibold text-white font-curier hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
+                  className="mr-1 inline-flex items-center justify-center px-5 py-2 rounded-xl bg-emerald-900/70 hover:bg-emerald-500 border border-emerald-700/90 shadow-md  hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]  text-xs md:text-sm lg:text-base text-white font-curier"
                 >
                   Zobacz ofertę
                 </Link>
 
                 <Link
                   href="/ranczo"
-                  className="ml-1 inline-flex items-center justify-center px-5 py-2 rounded-xl bg-white/90 hover:bg-white border border-[var(--c-primary)] text-xs md:text-sm lg:text-base font-semibold text-[var(--c-primary)] font-curier hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
+                  className="ml-1 inline-flex items-center justify-center px-5 py-2 rounded-xl bg-slate-900/90 hover:bg-white border border-slate-700 shadow-md hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] text-xs md:text-sm lg:text-base  font-curier "
                 >
                   Poznaj Ranczo
                 </Link>
@@ -118,7 +117,7 @@ export const Banner: React.FC = () => {
 
               <a
                 href={PHONETO}
-                className="inline-flex items-center justify-center gap-2 px-5 py-2 border rounded-xl border-[var(--c-primary)] bg-stone-800/70 hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2  hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] text-xs md:text-sm lg:text-base  font-semibold font-curier"
+                className="inline-flex items-center justify-center gap-2 px-5 py-2 border rounded-xl border-stone-900 bg-stone-800/80 hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2  hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] text-xs md:text-sm lg:text-base  font-semibold font-curier"
                 aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby zarezerwować termin w Ranczo Patataj`}
                 itemProp="telephone"
               >
