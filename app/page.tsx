@@ -74,7 +74,7 @@ export default function Home() {
       />
       <section className="relative px-2 pt-24 md:pt-0 pb-4 dark:bg-black bg-[var(--background)] mx-auto ">
         {/* gradient po lewej */}
-        <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-amber-500/15 to-transparent z-10" />
+        <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-amber-500/5 to-transparent z-10" />
         {/* gradient po prawej */}
         <div className="pointer-events-none absolute right-0 top-0 h-full w-20 md:w-40 bg-gradient-to-l from-amber-500/15 to-transparent z-10" />
         <Banner />

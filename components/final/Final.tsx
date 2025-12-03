@@ -6,18 +6,18 @@ export const Final = () => {
   return (
     <section className="py-4">
       <article>
-        <div className="flex flex-col gap-3 w-full items-center justify-center">
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+        <div className="flex flex-col gap-3 w-full ">
+          <div className="flex flex-col md:flex-row gap-4  py-12">
             <Link
               href="/oferta"
-              className="inline-flex items-center justify-center px-5 py-2 rounded-xl bg-emerald-500/70 hover:bg-emerald-500 border border-[var(--c-primary)] text-xs md:text-sm lg:text-base font-semibold text-white font-curier hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
+              className="inline-flex items-center justify-center px-5 py-2 rounded-xl bg-emerald-900/70 hover:bg-emerald-500 border border-emerald-700 text-xs md:text-sm lg:text-base font-semibold text-white font-curier hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
             >
               Zobacz szczegółową ofertę
             </Link>
 
             <Link
               href="/ranczo"
-              className="inline-flex items-center justify-center px-5 py-2 rounded-xl bg-white/90 hover:bg-white border border-[var(--c-primary)] text-xs md:text-sm lg:text-base font-semibold text-[var(--c-primary)] font-curier hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
+              className="inline-flex items-center justify-center px-5 py-2 rounded-xl bg-white/90 hover:bg-white border border-[var(--c-primary)] shadow-lg hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] text-xs md:text-sm lg:text-base font-semibold  font-curier text-black"
             >
               Poznaj nasze Ranczo
             </Link>
@@ -25,7 +25,7 @@ export const Final = () => {
             <div className="">
               <a
                 href={PHONETO}
-                className="inline-flex items-center justify-center gap-2 p-2 border rounded-xl border-[var(--c-primary)] bg-stone-800/70 text-[0.7rem] md:text-sm text-white/90 font-curier underline-offset-2 hover:underline"
+                className="inline-flex items-center justify-center gap-2 p-2 border rounded-xl border-[var(--c-primary)] bg-stone-800/70 text-xs md:text-sm text-white/90 font-curier underline-offset-2 hover:underline"
                 aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby zarezerwować termin w Ranczo Patataj`}
                 itemProp="telephone"
               >
