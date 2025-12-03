@@ -99,34 +99,35 @@ export const Banner: React.FC = () => {
               drogi od Warszawy.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 items-center justify-center">
-              <Link
-                href="/oferta"
-                className="inline-flex items-center justify-center px-5 py-2 rounded-xl bg-emerald-500/70 hover:bg-emerald-500 border border-[var(--c-primary)] text-xs md:text-sm lg:text-base font-semibold text-white font-curier hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
-              >
-                Zobacz ofertę
-              </Link>
-
-              <Link
-                href="/ranczo"
-                className="inline-flex items-center justify-center px-5 py-2 rounded-xl bg-white/90 hover:bg-white border border-[var(--c-primary)] text-xs md:text-sm lg:text-base font-semibold text-[var(--c-primary)] font-curier hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
-              >
-                Poznaj Ranczo
-              </Link>
-              <div className="">
-                <a
-                  href={PHONETO}
-                  className="inline-flex items-center justify-center gap-2 py-2 px-4 border rounded-xl border-[var(--c-primary)] bg-stone-800/70 hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 md:text-sm lg:text-base  font-semibold font-curier"
-                  aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby zarezerwować termin w Ranczo Patataj`}
-                  itemProp="telephone"
+            <div className="flex flex-col sm:flex-row gap-2 items-center justify-center pb-1">
+              <div>
+                <Link
+                  href="/oferta"
+                  className="mr-1 inline-flex items-center justify-center px-5 py-2 rounded-xl bg-emerald-500/70 hover:bg-emerald-500 border border-[var(--c-primary)] text-xs md:text-sm lg:text-base font-semibold text-white font-curier hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
                 >
-                  <FaPhone
-                    className="animate-pulse"
-                    aria-hidden="true"
-                  />
-                  <span>Zadzwoń: {CONTACT.phoneDisplay}</span>
-                </a>
+                  Zobacz ofertę
+                </Link>
+
+                <Link
+                  href="/ranczo"
+                  className="ml-1 inline-flex items-center justify-center px-5 py-2 rounded-xl bg-white/90 hover:bg-white border border-[var(--c-primary)] text-xs md:text-sm lg:text-base font-semibold text-[var(--c-primary)] font-curier hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
+                >
+                  Poznaj Ranczo
+                </Link>
               </div>
+
+              <a
+                href={PHONETO}
+                className="inline-flex items-center justify-center gap-2 px-5 py-2 border rounded-xl border-[var(--c-primary)] bg-stone-800/70 hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2  hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] text-xs md:text-sm lg:text-base  font-semibold font-curier"
+                aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby zarezerwować termin w Ranczo Patataj`}
+                itemProp="telephone"
+              >
+                <FaPhone
+                  className="animate-pulse"
+                  aria-hidden="true"
+                />
+                <span>Zadzwoń: {CONTACT.phoneDisplay}</span>
+              </a>
             </div>
           </div>
         </div>
