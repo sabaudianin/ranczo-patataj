@@ -5,7 +5,7 @@ export const Visit = () => {
     <section
       id="jak-wyglada-wizyta"
       aria-labelledby="wizyta-title"
-      className="max-w-5xl mx-auto py-4 px-4 md:px-0"
+      className="max-w-5xl mx-auto py-4 px-4 md:px-0 relative"
     >
       <div className="text-center mb-6">
         <h2

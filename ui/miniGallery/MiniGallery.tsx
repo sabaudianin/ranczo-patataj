@@ -56,17 +56,18 @@ export const MiniGallery = () => {
         ))}
       </ul>
 
-      <div className="flex gap-2 justify-center md:gap-4 py-4">
+      <div className="relative flex gap-2 justify-center md:gap-4 py-4 max-w-6xl mx-auto  ">
         <div
-          className="overflow-hidden w-full relative max-w-6xl mx-auto  overflow-x-auto overflow-y-hidden
-            flex items-stretch snap-x snap-mandatory no-scrollbar touch-pan-x"
+          className="overflow-hidden w-full overflow-x-auto overflow-y-hidden flex items-stretch snap-x snap-mandatory no-scrollbar touch-pan-x"
           aria-hidden="true"
         >
-          <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-amber-500/20 to-transparent" />
+          {/* gradient po lewej */}
+          <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-amber-500/20 to-transparent z-10" />
+          {/* gradient po prawej */}
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-20 md:w-40 bg-gradient-to-l from-amber-500/20 to-transparent z-10" />
 
-          {/* <div className="marquee-inner flex w-fit "> */}
-          <div className="flex scrollbar-none">
-            {SLIDES.map((card, index) => (
+          <div className="flex scrollbar-none marquee-track">
+            {[...SLIDES, ...SLIDES].map((card, index) => (
               <div
                 key={index}
                 className="mx-4 w-56 group"
