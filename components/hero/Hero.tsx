@@ -17,7 +17,7 @@ export const Hero = () => {
           alt=""
           width={100}
           height={100}
-          className="hidden md:block w-20 md:w-40 h-auto object-cover rounded"
+          className="w-10 md:w-40 h-auto object-cover rounded"
         />
         <Image
           src="/images/g7.avif"
@@ -45,7 +45,7 @@ export const Hero = () => {
           alt=""
           width={100}
           height={100}
-          className="hidden md:block w-20 md:w-40 h-auto object-cover rounded"
+          className="w-10 md:w-40 h-auto object-cover rounded"
         />
       </div>
       <section className="relative max-w-6xl mx-auto py-8">
