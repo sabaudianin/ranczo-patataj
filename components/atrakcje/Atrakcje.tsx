@@ -87,7 +87,7 @@ export const Atrakcje = () => {
           alt=""
           width={100}
           height={100}
-          className="hidden md:block w-20 md:w-40 h-auto object-cover rounded sepia-[0.4] contrast-125 brightness-90 saturate-75"
+          className=" md:block w-10 md:w-40 h-auto object-cover rounded sepia-[0.4] contrast-125 brightness-90 saturate-75"
         />
         <Image
           src="/images/g7.avif"
@@ -115,7 +115,7 @@ export const Atrakcje = () => {
           alt=""
           width={100}
           height={100}
-          className="hidden md:block w-20 md:w-40 h-auto object-cover rounded sepia-[0.1] contrast-125 brightness-90 saturate-75"
+          className="md:block w-10 md:w-40 h-auto object-cover rounded sepia-[0.1] contrast-125 brightness-90 saturate-75"
         />
       </div>
 
