@@ -266,7 +266,7 @@ export const Atrakcje = () => {
                 {item.description}
               </p>
 
-              {item.tags && (
+              {/* {item.tags && (
                 <div className="flex flex-wrap gap-1 mt-3">
                   {item.tags.map((tag) => (
                     <span
@@ -278,7 +278,7 @@ export const Atrakcje = () => {
                     </span>
                   ))}
                 </div>
-              )}
+              )} */}
             </div>
           </article>
         ))}
