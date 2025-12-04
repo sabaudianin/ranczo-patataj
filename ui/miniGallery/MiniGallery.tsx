@@ -62,9 +62,9 @@ export const MiniGallery = () => {
           aria-hidden="true"
         >
           {/* gradient po lewej */}
-          <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-amber-500/20 to-transparent z-10" />
+          {/* <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-amber-500/20 to-transparent z-10" /> */}
           {/* gradient po prawej */}
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-20 md:w-40 bg-gradient-to-l from-amber-500/20 to-transparent z-10" />
+          {/* <div className="pointer-events-none absolute right-0 top-0 h-full w-20 md:w-40 bg-gradient-to-l from-amber-500/20 to-transparent z-10" /> */}
 
           <div className="flex scrollbar-none marquee-track">
             {[...SLIDES, ...SLIDES].map((card, index) => (
@@ -95,7 +95,7 @@ export const MiniGallery = () => {
             ))}
           </div>
         </div>
-        <div className="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-amber-500/20  to-transparent" />
+        {/* <div className="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-amber-500/20  to-transparent" /> */}
       </div>
     </section>
   );

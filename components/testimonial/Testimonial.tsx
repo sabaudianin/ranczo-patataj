@@ -37,18 +37,18 @@ const OPINIONS: Opinion[] = [
     color: "bg-yellow-700",
     font: "font-playwrite tracking-widest",
   },
-  // {
-  //   text: "Urokliwe miejsce w zaciszu pól i lasów.Zwierzęta nauczone pracy z dziećmi, bardzo przyjaźnie nastawione(lama rozdaje buziaki).Warsztaty cieszyły się ogromnym zainteresowaniem zarówno dzieci jak i rodziców 😊Polecam to miejsce wszystkim. ",
-  //   name: "Tomasz G",
-  //   color: "bg-indigo-700",
-  //   font: "font-playwrite text-lg tracking-[.15em] font-bold",
-  // },
-  // {
-  //   text: "Bardzo, fajne miejsce z potencjałem, brakowało czegoś takiego w okolicy. Szczerze polecam dla dzieci i dla dorosłych. można wynająć przestrzeń na imprezy, mają bazę noclegową.",
-  //   name: "Jarek G",
-  //   color: "bg-lime-700",
-  //   font: "font-playwrite tracking-wider",
-  // },
+  {
+    text: "Urokliwe miejsce w zaciszu pól i lasów.Zwierzęta nauczone pracy z dziećmi, bardzo przyjaźnie nastawione(lama rozdaje buziaki).Warsztaty cieszyły się ogromnym zainteresowaniem zarówno dzieci jak i rodziców 😊Polecam to miejsce wszystkim. ",
+    name: "Tomasz G",
+    color: "bg-indigo-700",
+    font: "font-playwrite text-lg tracking-[.15em] font-bold",
+  },
+  {
+    text: "Bardzo, fajne miejsce z potencjałem, brakowało czegoś takiego w okolicy. Szczerze polecam dla dzieci i dla dorosłych. można wynająć przestrzeń na imprezy, mają bazę noclegową.",
+    name: "Jarek G",
+    color: "bg-lime-700",
+    font: "font-playwrite tracking-wider",
+  },
 ];
 
 export const Testimonial = () => {
@@ -78,7 +78,9 @@ export const Testimonial = () => {
         Opinie rodzin, szkół i przyjaciół, którzy odwiedzili Ranczo Patataj -
         gospodarstwo edukacyjne z alpakami, końmi i innymi zwierzętami.
       </motion.p>
-      <div className="grid gap-4 grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(260px,1fr))]">
+
+      {/* DESKTOP */}
+      <div className="hidden md:grid gap-4 grid-cols-1 grid-cols-[repeat(auto-fit,minmax(260px,1fr))]">
         {OPINIONS.map((opinion, index) => (
           <motion.article
             key={opinion.name}
@@ -137,6 +139,62 @@ export const Testimonial = () => {
               </span>
             </div>
           </motion.article>
+        ))}
+      </div>
+
+      {/*Mobile*/}
+      <div className=" md:hidden gap-4 flex overflow-x-auto snap-x snap-mandatory pb-4 -mx-4 px-4">
+        {OPINIONS.map((opinion, index) => (
+          <article
+            key={opinion.name}
+            className={`snap-center min-w-[260px] max-w-[280px]
+        flex-shrink-0    relative p-4 flex flex-col gap-3 border border-amber-900/40 rounded-md bg-[#f7f0dc] shadow-[0_12px_30px_rgba(0,0,0,0.45)]  text-sm text-black ${opinion.font}`}
+            itemScope
+            itemType="https://schema.org/Review"
+          >
+            <div className="flex-1 relative">
+              <div className="float-right ml-3 mb-2">
+                <Image
+                  src="/logorp.avif"
+                  width={80}
+                  height={80}
+                  alt="Logo Ranczo Patataj"
+                  className={`w-14 h-14sepia rounded-xl grayscale`}
+                />
+              </div>
+
+              <div itemProp="reviewBody">
+                <MagicText text={opinion.text} />
+              </div>
+
+              {/* czysci float*/}
+              <div className="clear-both" />
+            </div>
+
+            <div
+              className="mt-2 h-px bg-amber-900/40"
+              aria-hidden="true"
+            />
+
+            <div className="flex items-center gap-4 pt-2">
+              <span
+                className={`h-7 w-7 rounded-full text-[0.7rem] te font-poppins font-bold flex items-center justify-center shadow-md shadow-black/40 ${opinion.color}`}
+                aria-hidden="true"
+              >
+                {opinion.name[0]}
+              </span>
+
+              <span
+                itemProp="author"
+                className={`
+          text-xs font-medium italic tracking-wide
+          
+        `}
+              >
+                {opinion.name}
+              </span>
+            </div>
+          </article>
         ))}
       </div>
     </section>

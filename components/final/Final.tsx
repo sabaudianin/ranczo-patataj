@@ -6,8 +6,8 @@ export const Final = () => {
   return (
     <section className="py-4">
       <article>
-        <div className="flex flex-col gap-3 w-full ">
-          <div className="flex flex-col md:flex-row gap-4  py-12">
+        <div className="flex flex-col gap-3 w-full items-center justify-center">
+          <div className="flex flex-col md:flex-row gap-4 py-12 items-stretch md:items-center justify-center">
             <Link
               href="/oferta"
               className="inline-flex items-center justify-center px-5 py-2 rounded-xl bg-emerald-900/70 hover:bg-emerald-500 border border-emerald-700 text-xs md:text-sm lg:text-base font-semibold text-white font-curier hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
