@@ -42,7 +42,7 @@ export default function Oferta() {
       />
 
       <section
-        className="pt-24 md:py-12 max-w-7xl mx-auto px-4"
+        className="pt-24 md:py-12 max-w-7xl mx-auto px-4 pb-8"
         id="oferta"
         aria-label="Oferta Ranczo Patataj"
         aria-labelledby="oferta-heading"
@@ -53,9 +53,9 @@ export default function Oferta() {
         <h2
           id="oferta-heding"
           itemProp="name"
-          className="text-center font-ultra text-2xl mb-2"
+          className="text-center font-ultra text-2xl mt-6  pb-2"
         >
-          Nasza aktualna oferta
+          Nasza oferta :
         </h2>
         <p
           id="oferta-lead"
@@ -67,7 +67,7 @@ export default function Oferta() {
         </p>
 
         <div
-          className="flex flex-col justify-center items-center"
+          className="flex flex-col justify-center items-center pb-4"
           aria-label="Kontakt w sprawie oferty"
         >
           <a
@@ -107,7 +107,7 @@ export default function Oferta() {
             itemType="https://schema.org/Service"
           >
             <h3
-              className="font-ultra text-lg mb-1 text-[var(--c-primary)] text-center"
+              className="font-ultra text-lg mb-1 text-amber-300/90 text-center"
               itemProp="name"
               id="oferta-szkoly-heading"
             >
@@ -148,7 +148,7 @@ export default function Oferta() {
 
           {/*  URODZINY  */}
           <article
-            className="rounded-3xl border border-pink-300/70 p-5 shadow-md flex flex-col bg-pink-300/10"
+            className="rounded-3xl border border-pink-300/70 p-5 shadow-md flex flex-col bg-pink-100/10"
             role="listitem"
             aria-labelledby="oferta-urodziny-heading"
             itemProp="itemListElement"
@@ -156,7 +156,7 @@ export default function Oferta() {
             itemType="https://schema.org/Service"
           >
             <h3
-              className="font-ultra text-lg mb-1 text-pink-600 text-center"
+              className="font-ultra text-lg mb-1 text-pink-300/90 text-center"
               id="oferta-urodziny-heading"
               itemProp="name"
             >
@@ -189,7 +189,7 @@ export default function Oferta() {
 
           {/* OFERTA DLA FIRM */}
           <article
-            className="rounded-3xl border border-emerald-300/70 p-5 shadow-md flex flex-col bg-emerald-300/10"
+            className="rounded-3xl border border-emerald-300/70 p-5 shadow-md flex flex-col bg-emerald-700/10"
             role="listitem"
             aria-labelledby="oferta-firmy-heading"
             itemProp="itemListElement"
@@ -197,7 +197,7 @@ export default function Oferta() {
             itemType="https://schema.org/Service"
           >
             <h3
-              className="font-ultra text-lg mb-1 text-emerald-700 text-center"
+              className="font-ultra text-lg mb-1 text-emerald-300/90 text-center"
               id="oferta-firmy-heading"
               itemProp="name"
             >

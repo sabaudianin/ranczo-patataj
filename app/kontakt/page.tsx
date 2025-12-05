@@ -55,9 +55,9 @@ export default function Contact() {
       />
       <section
         id="contact"
-        className="pt-24 md:py-12  max-w-7xl mx-auto p-2"
+        className="pt-24 md:py-12  max-w-7xl mx-auto p-2 pb-8"
       >
-        <h2 className=" text-xl font-special text-center">
+        <h2 className=" text-xl font-special text-center pt-8">
           Gospodarstwo Edukacyjne - RANCZO PATATAJ
         </h2>
 
