@@ -22,7 +22,7 @@ export const Footer = () => {
         content="https://twoja-domena.pl"
       />
 
-      <div className="flex items-center justify-between md:justify-evenly items-center gap-4 p-2 py-8">
+      <div className="flex items-center justify-between md:justify-evenly items-center gap-4 p-6 py-8">
         <div className="">
           <a
             href={PHONETO}
@@ -89,7 +89,7 @@ export const Footer = () => {
             className="text-red-400"
             aria-hidden="true"
           />
-          <p>
+          <p className="p-4">
             <span itemProp="streetAddress">Jastrzębia Stara 9</span>,{" "}
             <span itemProp="postalCode">05-640</span>{" "}
             <span itemProp="addressLocality">Mogielnica</span>,{" "}

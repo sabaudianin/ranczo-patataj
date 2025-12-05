@@ -28,7 +28,7 @@ export default function Ranczo() {
       <section className="pt-24 md:py-12 max-w-7xl mx-auto px-3">
         <h1
           id="ranczo-heading"
-          className="font-ultra text-2xl md:text-3xl text-center mb-4"
+          className="font-ultra text-2xl md:text-3xl text-center mb-4 pt-"
         >
           Ranczo Patataj to miejsce, do którego chce się wracać
         </h1>
@@ -38,18 +38,18 @@ export default function Ranczo() {
           To przestrzeń stworzona do odpoczynku, zabawy oraz mądrego poznawania
           świata przez dzieci i dorosłych.
         </p>
-        <div className=" w-full text-center">
+        <div className=" w-full text-center pt-4">
           <Image
             src="/avatar/horseSide.avif"
-            height={100}
-            width={100}
+            height={150}
+            width={150}
             alt="Avatar dwóch koni"
             className="mx-auto h-auto w-auto"
           />
         </div>
         {/* MISJA  */}
         <article
-          className="grid gap-8 md:grid-cols-2 items-start mb-12"
+          className="grid gap-8 md:grid-cols-2 items-start mb-12 pt-8"
           aria-label="Misja i wartości Rancza"
         >
           <div>
