@@ -1,96 +1,139 @@
-import { CONTACT, MAILTO } from "@/config/contact/Contact";
+import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import type { Metadata } from "next";
+import { FaPhone } from "react-icons/fa";
+import { CONTACT, PHONETO } from "@/config/contact/Contact";
 
-export const Hero = () => {
+export const metadata: Metadata = {
+  // Podstawowy tytuł strony głównej
+  title: "Ranczo Patataj - gospodarstwo edukacyjne dla szkół i rodzin",
+  description:
+    "Ranczo Patataj to gospodarstwo edukacyjne w Jastrzębi Starej koło Mogielnicy. Organizujemy warsztaty, spotkania ze zwierzętami, gry terenowe, ogniska i imprezy okolicznościowe dla szkół, przedszkoli i rodzin.",
+
+  // Żeby Google wiedział który URL jest kanoniczny dla Home
+  alternates: {
+    canonical: "https://twojadomena.pl/",
+  },
+
+  // OG
+  openGraph: {
+    type: "website",
+    url: "https://twojadomena.pl/",
+    siteName: "Ranczo Patataj - Gospodarstwo Edukacyjne",
+    title: "Ranczo Patataj - gospodarstwo edukacyjne dla szkół i rodzin",
+    description:
+      "Gospodarstwo edukacyjne w Jastrzębi Starej koło Mogielnicy. Warsztaty, spotkania ze zwierzętami, gry terenowe, ogniska i imprezy okolicznościowe dla szkół, przedszkoli i rodzin.",
+    images: [
+      {
+        url: "https://twojadomena.pl/og-image-home.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Dzieci uczestniczące w warsztatach na Ranczo Patataj - gospodarstwo edukacyjne",
+      },
+    ],
+  },
+
+  // Twitter card
+  twitter: {
+    card: "summary_large_image",
+    title: "Ranczo Patataj - gospodarstwo edukacyjne dla szkół i rodzin",
+    description:
+      "Warsztaty edukacyjne, spotkania ze zwierzętami, gry terenowe i ogniska dla szkół, przedszkoli i rodzin w Ranczo Patataj.",
+    images: ["https://twojadomena.pl/og-image-home.jpg"],
+  },
+
+  // sygnał dla robotów
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  // opcj frazy kluczowe
+  keywords: [
+    "gospodarstwo edukacyjne",
+    "warsztaty dla szkół",
+    "wycieczki szkolne",
+    "wyjazd integracyjny",
+    "rodzinne atrakcje",
+    "Ranczo Patataj",
+    "Mogielnica",
+  ],
+};
+
+export const Hero: React.FC = () => {
   return (
     <section
-      className="relative w-full py-4 max-w-hd mx-auto"
-      aria-labelledby="schools-offer-heading"
-      role="region"
+      className="pb-4"
+      aria-labelledby="promo-heading"
+      role="banner"
+      itemScope
+      itemType="https://schema.org/LocalBusiness"
     >
-      <div
-        className="flex items-center justify-center gap-1 "
-        aria-hidden="true"
-      >
-        <Image
-          src="/images/g1.avif"
-          alt=""
-          width={100}
-          height={100}
-          className="w-10 md:w-40 h-auto object-cover rounded"
-        />
-        <Image
-          src="/images/g7.avif"
-          alt=""
-          width={100}
-          height={100}
-          className="w-20 md:w-40 h-auto object-cover rounded oject-cover"
-        />
-        <Image
-          src="/images/g2.avif"
-          alt=""
-          width={100}
-          height={100}
-          className="w-20 md:w-40 h-auto object-cover rounded "
-        />
-        <Image
-          src="/images/g3.avif"
-          alt="a"
-          width={100}
-          height={100}
-          className="w-20 md:w-40 h-auto object-cover rounded"
-        />
-        <Image
-          src="/images/g5.avif"
-          alt=""
-          width={100}
-          height={100}
-          className="w-10 md:w-40 h-auto object-cover rounded"
-        />
-      </div>
-      <section className="relative max-w-6xl mx-auto py-8">
-        <div
-          className="relative bg-cover bg-center bg-no-repeat object-scale-down h-100 "
-          aria-hidden="true"
+      <article className="max-w-hd mx-auto relative">
+        <h1
+          id="promo-heading"
+          className="max-w-3xl mx-auto md:mt-8 md:mb-4 font-ultra text-[var(--c-primary)] text-lg md:text-2xl xl:text-3xl text-center"
+          itemProp="name"
         >
-          <Image
-            src="/images/lamaClose.avif"
-            fill
-            alt="Pyszczek Lamy z Bliska"
-            sizes="100vw"
-            className="object-cover max-h-100 sepia-[0.4] contrast-125 brightness-90 saturate-75"
-          />
+          Ranczo Patataj - gospodarstwo edukacyjne.
+        </h1>
 
-          <div className=" relative w-full p-1  mx-auto font-special text-center font-bold bg-black/50 text-white md:text-2xl">
-            <h2> Zapraszamy szkoły i przedszkola na Ranczo Patataj!</h2>
-            <p className="">
-              Idealna propozycja na wycieczkę edukacyjną, dzień integracji czy
-              tematyczne warsztaty.
-            </p>
+        <div className="relative w-full h-48 md:h-80 lg:h-120 overflow-hidden rounded-xl">
+          <video
+            className="w-full h-full rounded-2xl"
+            src="/videos/heroMovie.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+        </div>
+
+        <div className="">
+          <div className="flex h-full flex-col items-center justify-between text-center gap-4">
+            <div className="rounded-xl bg-slate-950 shadow-xl p-2 m-4">
+              <p className="md:py-4 pb-4 text-xs  xl:text-lg  max-w-3xl font-curier">
+                Spotkania ze zwierzętami, alpakoterapia, warsztaty, ogniska,
+                zabawa i odpoczynek dla rodzin, szkół, grup zorganizowanych i
+                wszystkich, którzy chcą odetchnąć od codzienności. Tylko godzinę
+                drogi od Warszawy.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-2 items-center justify-center pb-1">
+              <div>
+                <Link
+                  href="/oferta"
+                  className="mr-1 inline-flex items-center justify-center px-5 py-2 rounded-xl bg-emerald-900/70 hover:bg-emerald-800/70 border border-emerald-700/90 shadow-md  hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]  text-xs md:text-sm lg:text-base text-white font-curier"
+                >
+                  Zobacz ofertę
+                </Link>
+
+                <Link
+                  href="/ranczo"
+                  className="ml-1 inline-flex items-center justify-center px-5 py-2 rounded-xl bg-slate-900/90 hover:bg-slate-800/90 border border-slate-700 shadow-md hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] text-xs md:text-sm lg:text-base  font-curier text-white"
+                >
+                  Poznaj Ranczo
+                </Link>
+              </div>
+
+              <a
+                href={PHONETO}
+                className="inline-flex items-center justify-center gap-2 px-5 py-2 border rounded-xl border-stone-900 bg-stone-800/80 hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2  hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] text-xs md:text-sm lg:text-base  font-semibold font-curier text-white"
+                aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby zarezerwować termin w Ranczo Patataj`}
+                itemProp="telephone"
+              >
+                <FaPhone
+                  className="animate-pulse"
+                  aria-hidden="true"
+                />
+                <span>Zadzwoń: {CONTACT.phoneDisplay}</span>
+              </a>
+            </div>
           </div>
         </div>
-        <p className=" text-center font-ultra bg-emerald-300/30 p-2">
-          Atrakcyjne pakiety dla szkół !!!
-        </p>
-      </section>
-      <div className="pt-10">
-        <h2
-          className="text-center  md:text-xl font-ultra pb-6  "
-          id="schools-offer-heading"
-        >
-          Zapytaj o naszą nową ofertę dla szkół i przedszkoli: <br />
-          <span className="font-special  text-base md:text-xl">
-            📧{" "}
-            <a
-              href={MAILTO}
-              className="underline underline-offset-2 hover:text-[var(--c-primary)]"
-              aria-label="Napisz wiadomość e-mail do Ranczo Patataj"
-            >
-              {CONTACT.email}
-            </a>
-          </span>
-        </h2>
-      </div>
+      </article>
     </section>
   );
 };

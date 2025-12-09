@@ -8,7 +8,7 @@ import { CONTACT } from "@/config/contact/Contact";
 import { Testimonial } from "@/components/testimonial/Testimonial";
 import { Features } from "@/components/featurs/Features";
 import { Cta } from "@/components/cta/Cta";
-import { Banner } from "@/components/banner/Banner";
+
 import { Final } from "@/components/final/Final";
 import { MiniGallery } from "@/ui/miniGallery/MiniGallery";
 
@@ -18,6 +18,7 @@ import { AlpakoTerapy } from "@/components/alpakoterapy/AlpakoTerapy";
 import { Atrakcje } from "../components/atrakcje/Atrakcje";
 
 import { Visit } from "@/components/visit/Visit";
+import { Hero } from "@/components/hero/Hero";
 
 export default function Home() {
   const webPageJsonLd = createWebPageJsonLd({
@@ -72,7 +73,7 @@ export default function Home() {
         }}
       />
       <section className="relative px-2 pt-24 md:pt-0 pb-4 dark:bg-black bg-[var(--background)] mx-auto ">
-        <Banner />
+        <Hero />
         <Atrakcje />
         <AlpakoTerapy />
         <MiniGallery />
