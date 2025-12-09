@@ -41,8 +41,8 @@ export default function Ranczo() {
         <div className=" w-full text-center pt-4">
           <Image
             src="/avatar/horseSide.avif"
-            height={150}
-            width={150}
+            height={120}
+            width={120}
             alt="Avatar dwóch koni"
             className="mx-auto h-auto w-auto"
           />

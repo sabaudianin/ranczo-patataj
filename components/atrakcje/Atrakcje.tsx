@@ -1,5 +1,7 @@
-// "use client";
+"use client";
+import { MiniCarousel } from "@/ui/miniCarousel/MiniCarousel";
 import Image from "next/image";
+
 // import { useState } from "react";
 
 // const FILTERS = [
@@ -78,47 +80,7 @@ export const Atrakcje = () => {
         </p>
       </div>
 
-      <div
-        className="flex items-center justify-center gap-1 pb-4 mb-4"
-        aria-hidden="true"
-      >
-        <Image
-          src="/images/g1.avif"
-          alt=""
-          width={100}
-          height={100}
-          className=" md:block w-10 md:w-40 h-auto object-cover rounded sepia-[0.4] contrast-125 brightness-90 saturate-75"
-        />
-        <Image
-          src="/images/g7.avif"
-          alt=""
-          width={100}
-          height={100}
-          className="w-20 md:w-40 h-auto object-cover rounded sepia-[0.3] contrast-125 brightness-90 saturate-75"
-        />
-        <Image
-          src="/images/g2.avif"
-          alt=""
-          width={100}
-          height={100}
-          className="w-20 md:w-40 h-auto object-cover rounded sepia-[0.2] contrast-125 brightness-90 saturate-75"
-        />
-        <Image
-          src="/images/g3.avif"
-          alt=""
-          width={100}
-          height={100}
-          className="w-20 md:w-40 h-auto object-cover rounded sepia-[0.1] contrast-125 brightness-90 saturate-75"
-        />
-        <Image
-          src="/images/g5.avif"
-          alt=""
-          width={100}
-          height={100}
-          className="md:block w-10 md:w-40 h-auto object-cover rounded sepia-[0.1] contrast-125 brightness-90 saturate-75"
-        />
-      </div>
-
+      <MiniCarousel />
       <div className="text-center mb-6 max-w-3xl mx-auto">
         <p className="font-special  md:text-base ">
           Możecie wpaść tylko na chwilę albo zostać na cały dzień. Wybierzcie

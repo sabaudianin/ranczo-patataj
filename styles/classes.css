@@ -72,3 +72,7 @@
   width: max-content;
   animation: marqueeScroll 40s linear infinite;
 }
+
+.carousel-fade {
+  animation: carouselFadeIn 700ms ease-in-out;
+}
