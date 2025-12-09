@@ -82,7 +82,7 @@ export const Hero: React.FC = () => {
         <div className="relative w-full h-48 md:h-80 lg:h-120 overflow-hidden rounded-xl">
           <video
             className="w-full h-full rounded-2xl"
-            src="/videos/heroMovie.mp4"
+            src="/videos/heroVideo.mp4"
             autoPlay
             muted
             loop
