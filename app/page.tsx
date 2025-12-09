@@ -5,19 +5,18 @@ import {
 } from "@/lib/seo/schema";
 import { CONTACT } from "@/config/contact/Contact";
 
-import { Hero } from "@/components/hero/Hero";
 import { Testimonial } from "@/components/testimonial/Testimonial";
 import { Features } from "@/components/featurs/Features";
 import { Cta } from "@/components/cta/Cta";
 import { Banner } from "@/components/banner/Banner";
 import { Final } from "@/components/final/Final";
 import { MiniGallery } from "@/ui/miniGallery/MiniGallery";
-import { RelaxText } from "@/ui/relaxText/RelaxText";
+
 import { Social } from "@/components/social/Social";
 import { Poster } from "@/components/poster/Poster";
 import { AlpakoTerapy } from "@/components/alpakoterapy/AlpakoTerapy";
 import { Atrakcje } from "../components/atrakcje/Atrakcje";
-import { ForWho } from "@/components/forwho/ForWho";
+
 import { Visit } from "@/components/visit/Visit";
 
 export default function Home() {
@@ -73,23 +72,16 @@ export default function Home() {
         }}
       />
       <section className="relative px-2 pt-24 md:pt-0 pb-4 dark:bg-black bg-[var(--background)] mx-auto ">
-        {/* gradient po lewej */}
-        <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-amber-500/5 to-transparent z-10" />
-        {/* gradient po prawej */}
-        <div className="pointer-events-none absolute right-0 top-0 h-full w-20 md:w-40 bg-gradient-to-l from-amber-500/15 to-transparent z-10" />
         <Banner />
         <Atrakcje />
         <AlpakoTerapy />
         <MiniGallery />
         <Visit />
-        {/* <ForWho /> */}
         <Cta />
-        {/* <Hero /> */}
         <Poster />
         <Social />
         <Features />
         <Testimonial />
-        {/* <RelaxText /> */}
         <Final />
       </section>
     </>
