@@ -71,27 +71,28 @@ export const Banner: React.FC = () => {
       itemType="https://schema.org/LocalBusiness"
     >
       <article className="max-w-hd mx-auto relative">
-        <div className="h-120 relative">
-          <Image
-            src="/images/polewies.avif"
-            alt="Pejzaż Pół i lasów"
-            fill
-            priority
-            className="object-cover object-center"
+        <h1
+          id="promo-heading"
+          className="max-w-3xl mx-auto md:mt-8 md:mb-4 font-ultra text-[var(--c-primary)] text-lg md:text-2xl xl:text-3xl text-center"
+          itemProp="name"
+        >
+          Ranczo Patataj - gospodarstwo edukacyjne.
+        </h1>
+
+        <div className="relative w-full h-48 md:h-80 lg:h-120 overflow-hidden">
+          <video
+            className="w-full h-full rounded"
+            src="/videos/heroVideo.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
           />
         </div>
 
-        <div className="absolute inset-0 bg-black/45">
-          <div className="flex h-full flex-col items-center justify-between px-4  text-center">
-            <h1
-              id="promo-heading"
-              className=" max-w-3xl mx-auto mt-8 font-ultra text-[var(--c-primary)] text-lg md:text-2xl xl:text-3xl"
-              itemProp="name"
-            >
-              Ranczo Patataj - gospodarstwo edukacyjne.
-            </h1>
-
-            <p className="mt-2 text-[0.75rem] md:text-base xl:text-lg text-white max-w-3xl font-curier">
+        <div className="">
+          <div className="flex h-full flex-col items-center justify-between  text-center">
+            <p className="md:py-4 pb-4 text-xs  xl:text-lg  max-w-3xl font-curier">
               Spotkania ze zwierzętami, alpakoterapia, warsztaty, ogniska,
               zabawa i odpoczynek dla rodzin, szkół, grup zorganizowanych i
               wszystkich, którzy chcą odetchnąć od codzienności. Tylko godzinę
