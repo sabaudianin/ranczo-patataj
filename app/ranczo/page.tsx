@@ -3,6 +3,7 @@ import Image from "next/image";
 import { createAboutPageJsonLd } from "@/lib/seo/schema";
 import { FaPhone } from "react-icons/fa";
 import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
+import { Card } from "@/ui/card/Card";
 
 export const metadata = {
   title: "O nas  Ranczo Patataj",
@@ -25,19 +26,19 @@ export default function Ranczo() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
       />
 
-      <section className="pt-24 md:py-12 max-w-7xl mx-auto px-3">
+      <section className="pt-24 md:py-12 max-w-7xl mx-auto px-4">
         <h1
           id="ranczo-heading"
-          className="font-ultra text-2xl md:text-3xl text-center mb-4 pt-"
+          className="font-ultra text-2xl md:text-3xl text-center mb-4"
         >
           Ranczo Patataj to miejsce, do którego chce się wracać
         </h1>
-        <p className="font-special text-center max-w-3xl mx-auto text-sm md:text-base">
+        <Card className="font-special text-center max-w-3xl mx-auto text-sm md:text-base">
           Ranczo Patataj to kameralne, rodzinne miejsce, w którym łączymy
           bliskość natury, kontakt ze zwierzętami i spokojną, sielską atmosferę.
           To przestrzeń stworzona do odpoczynku, zabawy oraz mądrego poznawania
           świata przez dzieci i dorosłych.
-        </p>
+        </Card>
         <div className=" w-full text-center pt-4">
           <Image
             src="/avatar/horseSide.avif"
@@ -53,7 +54,7 @@ export default function Ranczo() {
           aria-label="Misja i wartości Rancza"
         >
           <div>
-            <h2 className="font-ultra text-xl mb-3">Nasza misja</h2>
+            <h2 className="mb-3 font-ultra text-xl text-center">Nasza misja</h2>
 
             <p className="font-special text-sm md:text-base mb-3">
               Wierzymy, że kontakt z naturą i zwierzętami wycisza, uczy
@@ -198,11 +199,11 @@ export default function Ranczo() {
           <h2 className="font-ultra text-xl mb-2 text-center">
             Chcesz nas odwiedzić?
           </h2>
-          <p className="font-special text-center text-sm md:text-base mb-4 max-w-2xl mx-auto">
+          <Card className="font-special text-center text-sm md:text-base mb-4 max-w-2xl mx-auto">
             Napisz lub zadzwoń, opowiedz nam o swojej grupie, a my pomożemy
             zaplanować idealną wizytę na Ranczo Patataj, niezależnie, czy
             szukasz wycieczki, urodzin, czy kameralnego spotkania w naturze.
-          </p>
+          </Card>
 
           <div className="flex flex-col justify-center items-center gap-2">
             <a

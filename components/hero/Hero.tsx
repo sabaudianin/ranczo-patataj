@@ -1,9 +1,10 @@
 import React from "react";
-import Image from "next/image";
+
 import Link from "next/link";
 import type { Metadata } from "next";
 import { FaPhone } from "react-icons/fa";
 import { CONTACT, PHONETO } from "@/config/contact/Contact";
+import { Card } from "@/ui/card/Card";
 
 export const metadata: Metadata = {
   // Podstawowy tytuł strony głównej
@@ -82,24 +83,25 @@ export const Hero: React.FC = () => {
         <div className="relative w-full h-48 md:h-80 lg:h-120 overflow-hidden rounded-xl">
           <video
             className="w-full h-full rounded-2xl"
-            src="/videos/heroVideo.mp4"
+            src="/videos/Film.mp4"
             autoPlay
             muted
             loop
             playsInline
+            poster="/images/picture.avif"
           />
         </div>
 
         <div className="">
           <div className="flex h-full flex-col items-center justify-between text-center gap-4">
-            <div className="rounded-xl bg-slate-950 shadow-xl p-2 m-4">
-              <p className="md:py-4 pb-4 text-xs  xl:text-lg  max-w-3xl font-curier">
+            <Card>
+              <p className="md:py-4 text-xs md:text-base xl:text-lg  max-w-5xl font-curier">
                 Spotkania ze zwierzętami, alpakoterapia, warsztaty, ogniska,
                 zabawa i odpoczynek dla rodzin, szkół, grup zorganizowanych i
                 wszystkich, którzy chcą odetchnąć od codzienności. Tylko godzinę
                 drogi od Warszawy.
               </p>
-            </div>
+            </Card>
 
             <div className="flex flex-col sm:flex-row gap-2 items-center justify-center pb-1">
               <div>
