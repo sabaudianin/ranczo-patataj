@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
+import { Card } from "@/ui/card/Card";
 
 import { MagicText } from "@/ui/magicText/MagicText";
 
@@ -68,16 +69,18 @@ export const Testimonial = () => {
       >
         Nasi goście o nas :{" "}
       </motion.h2>
-      <motion.p
+      <motion.div
         className="text-center text-sm font-curier mx-auto mb-8 font-semibold text-xs md:text-lg"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.45, ease: "easeOut", delay: 0.1 }}
       >
-        Opinie rodzin, szkół i przyjaciół, którzy odwiedzili Ranczo Patataj -
-        gospodarstwo edukacyjne z alpakami, końmi i innymi zwierzętami.
-      </motion.p>
+        <Card>
+          Opinie rodzin, szkół i przyjaciół, którzy odwiedzili Ranczo Patataj -
+          gospodarstwo edukacyjne z alpakami, końmi i innymi zwierzętami.
+        </Card>
+      </motion.div>
 
       {/* DESKTOP */}
       <div className="hidden md:grid gap-4 grid-cols-1 grid-cols-[repeat(auto-fit,minmax(260px,1fr))]">

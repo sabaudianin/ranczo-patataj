@@ -57,7 +57,9 @@ export const AlpakoTerapy = () => {
               wyciszenia zarówno dla dzieci, jak i dorosłych.
             </Card>
 
-            <p>Bliski kontakt z alpakami:</p>
+            <p className="text-[var(--c-primary)] font-bold text-[var(--c-primary)] font-special ">
+              Co daje bliski kontakt z alpakami ?
+            </p>
             <ul className="list-disc list-inside text-left text-[0.7rem] md:text-sm">
               <li>pomaga redukować stres,</li>
               <li>poprawia samopoczucie,</li>
@@ -80,14 +82,14 @@ export const AlpakoTerapy = () => {
 
         <motion.div
           variants={item}
-          className="relative w-full aspect-[4/3] md:aspect-[3/4] max-h-[420px] mx-auto   p-2"
+          className="relative w-full aspect-[4/3] md:aspect-[3/4] max-h-[420px] mx-auto p-2 "
         >
           <Image
             src="/images/lamastar.avif"
             fill
             alt="Ładna lama patrzy na Ciebie"
             sizes="(min-width: 768px) 50vw, 100vw"
-            className="object-cover rounded-2xl"
+            className="object-cover rounded-2xl shadow-xl"
           />
         </motion.div>
       </motion.div>

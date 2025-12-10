@@ -66,7 +66,7 @@ export const Cta = () => {
       >
         <BgSlider
           slides={SLIDES}
-          className="absolute inset-0 w-full h-full"
+          className="absolute inset-0 w-full h-full shadow-xl"
         />
       </div>
     </section>

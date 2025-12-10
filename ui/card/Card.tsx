@@ -11,7 +11,7 @@ export const Card = ({ children, className = "" }: RanczoCardProps) => {
     <article
       className={`my-4
         relative flex flex-col gap-3
-        rounded-2xl bg-stone-100/90 dark:bg-stone-900/80
+        rounded-2xl bg-stone-0/90 dark:bg-stone-900/80
         shadow-[3px_3px_10px_0_rgba(0,0,0,0.2)]
         dark:shadow-[0_3px_10px_0_rgba(255,255,255,0.2)]
         backdrop-blur-sm

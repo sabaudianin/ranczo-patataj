@@ -77,10 +77,7 @@ export const BgSlider: React.FC<BgSliderProps> = ({
           ) : null
         )}
       </AnimatePresence>
-      <div
-        className=" absolute inset-0 pointer-events-none mix-blend-multiply
-    bg-[radial-gradient(circle_at_0%_0%,rgba(0,0,0,0.35),transparent_60%),radial-gradient(circle_at_100%_100%,rgba(0,0,0,0.3),transparent_60%),linear-gradient(to_bottom,rgba(255,244,214,0.55),rgba(214,176,112,0.55))]"
-      ></div>
+      <div className=" absolute inset-0 pointer-events-none mix-blend-multiply bg-[radial-gradient(circle_at_0%_0%,rgba(0,0,0,0.35),transparent_60%),radial-gradient(circle_at_100%_100%,rgba(0,0,0,0.3),transparent_60%),linear-gradient(to_bottom,rgba(255,244,214,0.55),rgba(214,176,112,0.55))]"></div>
     </section>
   );
 };

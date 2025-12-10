@@ -3,11 +3,12 @@ import { FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdAttachEmail } from "react-icons/md";
 import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
+import { Card } from "@/ui/card/Card";
 
 export const Footer = () => {
   return (
     <footer
-      className="bg-[var(--c-primary)]/10 py-4 border border-[var(--c-primary)] max-w-hd mx-auto"
+      className="relative bg-[var(--c-primary)]/10 py-4 border border-[var(--c-primary)] rounded-t-2xl max-w-hd mx-auto    shadow-[3px_0_9px_0_rgba(0,0,0,0.2)] dark:shadow-[0_3px_10px_0_rgba(255,255,255,0.2)] backdrop-blur-sm"
       aria-label="Stopka strony Ranczo Patataj"
       itemScope
       itemType="https://schema.org/LocalBusiness"
@@ -21,7 +22,8 @@ export const Footer = () => {
         itemProp="url"
         content="https://twoja-domena.pl"
       />
-
+      <div className="pointer-events-none absolute inset-x-4 top-0 h-px bg-gradient-to-r from-emerald-300/0 via-emerald-300/80 to-amber-300/0" />
+      <div className="pointer-events-none absolute inset-x-4 bottom-0 h-px bg-gradient-to-r from-emerald-300/0 via-emerald-300/80 to-amber-300/0" />
       <div className="flex items-center justify-between md:justify-evenly items-center gap-4 p-6 py-8">
         <div className="">
           <a

@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "motion/react";
+import { Card } from "@/ui/card/Card";
 
 const ANIMAL_FEATURES = [
   {
@@ -45,7 +46,7 @@ export const Features = () => {
     >
       <motion.h2
         id="features-heading"
-        className="text-center font-ultra text-2xl md:text-3xl text-[var(--c-primary)] mb-2"
+        className="text-center font-ultra text-2xl md:text-3xl text-[var(--c-primary)] mb-8"
         initial={{ opacity: 0, x: -100, scale: 0.2 }}
         whileInView={{ opacity: 1, x: 0, scale: 1 }}
         viewport={{ once: true, margin: "-50px" }}
@@ -54,17 +55,19 @@ export const Features = () => {
         Alpaki, konie, lamy… u nas zwierzęta mówią &bdquo;Dzień Dobry&rdquo;
         jako pierwsze.
       </motion.h2>
-      <motion.p
-        className="text-center mx-auto mb-8 font-special  text-sm "
+      <motion.div
+        className="text-center mx-auto font-special text-sm "
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.45, ease: "easeOut", delay: 0.1 }}
       >
-        Gospodarstwo edukacyjne blisko Warszawy, w którym dzieci i dorośli
-        poznają zwierzęta z bliska - alpaki, lamy, konie, kozy, kury, pawie i
-        wiele więcej.
-      </motion.p>
+        <Card className="md:text-base mb-12">
+          Gospodarstwo edukacyjne blisko Warszawy, w którym dzieci i dorośli
+          poznają zwierzęta z bliska - alpaki, lamy, konie, kozy, kury, pawie i
+          wiele więcej.
+        </Card>
+      </motion.div>
 
       <ul
         className="grid grid-cols-1 md:grid-cols-2 md:gap-6

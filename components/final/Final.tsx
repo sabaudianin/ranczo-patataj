@@ -1,11 +1,12 @@
 import { FaPhone } from "react-icons/fa";
 import { CONTACT, PHONETO } from "@/config/contact/Contact";
 import Link from "next/link";
+import { Card } from "@/ui/card/Card";
 
 export const Final = () => {
   return (
     <section className="py-4">
-      <article>
+      {/* <Card>
         <div className="flex flex-col gap-3 w-full items-center justify-center">
           <div className="flex flex-col md:flex-row gap-4 py-12 items-stretch md:items-center justify-center">
             <Link
@@ -38,7 +39,73 @@ export const Final = () => {
             </div>
           </div>
         </div>
-      </article>
+      </Card> */}
+
+      <Card className="w-full max-w-6xl mx-auto text-center">
+        <div className="flex flex-col gap-6 w-full items-center text-center md:text-left py-8 md:py-10 px-4 md:px-6">
+          <div className="space-y-2 max-w-xl font-curier">
+            <p className="text-xs font-semibold uppercase tracking-[2px]">
+              Zarezerwuj wizytę
+            </p>
+            <h2 className="md:text-lg font-semibold tracking-tight ">
+              Gotowi na spotkanie z naszym Ranczem?
+            </h2>
+            <p className="text-sm md:text-base text-stone-500">
+              Wybierz, co chcesz zrobić jako pierwsze - zobaczyć ofertę, poznać
+              miejsce albo od razu zadzwonić i zarezerwować termin.
+            </p>
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-3 w-full md:w-auto items-stretch md:items-center justify-center md:justify-start">
+            <Link
+              href="/oferta"
+              className="inline-flex w-full md:w-auto items-center justify-center px-5 py-2.5 rounded-xl
+                bg-emerald-900/90 hover:bg-emerald-700
+                 border border-emerald-800
+                 text-xs md:text-sm lg:text-base font-semibold text-white font-curier
+                 hover:scale-[1.02] active:scale-[0.99]
+                 transition-all duration-150
+                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-600"
+            >
+              Zobacz szczegółową ofertę
+            </Link>
+
+            <Link
+              href="/ranczo"
+              className="inline-flex w-full md:w-auto items-center justify-center px-5 py-2.5 rounded-xl
+                 bg-white/90 hover:bg-white
+                 border border-[var(--c-primary)]
+                 shadow-sm
+                 text-xs md:text-sm lg:text-base font-semibold font-curier text-stone-900
+                 hover:scale-[1.02] active:scale-[0.99]
+                 transition-all duration-150
+                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
+            >
+              Poznaj nasze Ranczo
+            </Link>
+
+            <a
+              href={PHONETO}
+              className="inline-flex w-full md:w-auto items-center justify-center gap-2 px-4 py-2.5 rounded-xl
+                 border border-[var(--c-primary)]
+                 bg-stone-900/90 text-xs md:text-sm text-white/90 font-curier
+                 hover:bg-stone-800 hover:scale-[1.02] active:scale-[0.99]
+                 transition-all duration-150
+                 underline-offset-2
+                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
+              aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby zarezerwować termin w Ranczo Patataj`}
+              itemProp="telephone"
+            >
+              <FaPhone
+                className="animate-pulse"
+                aria-hidden="true"
+              />
+              <span>Zadzwoń teraz: {CONTACT.phoneDisplay}</span>
+            </a>
+          </div>
+        </div>
+      </Card>
+
       <div className="md:hidden py-4">
         <p className="text-center font-special pb-1 font-semibold">
           🌍 Gdzie znajduje się nasze Ranczo ?
@@ -49,7 +116,7 @@ export const Final = () => {
           width="100%"
           height="200"
           loading="lazy"
-          className="rounded"
+          className="rounded shadow-xl"
           title="Mapa Dojazdu do Rancza Patataj"
         ></iframe>
       </div>
