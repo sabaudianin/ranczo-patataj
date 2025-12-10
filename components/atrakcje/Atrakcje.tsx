@@ -1,16 +1,7 @@
 "use client";
 import { MiniCarousel } from "@/ui/miniCarousel/MiniCarousel";
-import Image from "next/image";
+import { Card } from "@/ui/card/Card";
 
-// import { useState } from "react";
-
-// const FILTERS = [
-//   "Wszystko",
-//   "Dla dzieci",
-//   "Na zewnątrz",
-//   "Warsztaty",
-//   "Imprezy",
-// ] as const;
 const ATTRACTIONS = [
   {
     icon: "🌿",
@@ -54,85 +45,37 @@ const ATTRACTIONS = [
   },
 ];
 export const Atrakcje = () => {
-  // const [activeFilter, setActiveFilter] = useState<(typeof FILTERS)[number]>("Wszystko");
-
-  // const filtered = ATTRACTIONS.filter((item) =>
-  //   activeFilter === "Wszystko" ? true : item.tags?.includes(activeFilter)
-  // );
-
   return (
     <section
       id="atrakcje"
       aria-labelledby="atrakcje-title"
-      className="max-w-5xl mx-auto py-4 px-4 md:px-0"
+      className="max-w-5xl mx-auto "
     >
-      <div className="text-center mb-6">
-        <h2
-          id="atrakcje-title"
-          className="text-[var(--c-primary)] font-ultra tracking-wide text-base md:text-2xl"
-        >
-          Co u nas przeżyjesz?
-        </h2>
-        <p className="font-curier text-xs md:text-base mt-2 max-w-2xl mx-auto">
-          Zapraszamy na dzień pełen prawdziwych doświadczeń, wśród zwierząt,
-          zieleni i przytulnych rustykalnych wnętrz. Bez pośpiechu, za to z dużą
-          dawką natury i dobrej energii.
-        </p>
-      </div>
-
-      <MiniCarousel />
-      <div className="text-center mb-6 max-w-3xl mx-auto">
-        <p className="font-special  md:text-base ">
-          Możecie wpaść tylko na chwilę albo zostać na cały dzień. Wybierzcie
-          to, co najbardziej pasuje do Was, a my zajmiemy się resztą.
-        </p>
-      </div>
-
-      {/* <div className="grid gap-4 md:gap-6 md:grid-cols-2 text-xs md:text-base font-curier">
-        {ATTRACTIONS.map((item) => (
-          <div
-            key={item.title}
-            className={`
-            flex gap-3 p-3 md:p-4 rounded-2xl shadow-sm
-            sepia-[0.3] contrast-125 brightness-90 saturate-75
-            ${item.className}
-          `}
+      <Card>
+        <div className="text-center">
+          <h2
+            id="atrakcje-title"
+            className="text-[var(--c-primary)] font-ultra tracking-wide text-base md:text-2xl"
           >
-            <div className="text-2xl md:text-3xl mt-1">{item.icon}</div>
-            <div>
-              <h3 className="font-ultra  py-2 ">{item.title}</h3>
-              <p>{item.description}</p>
-            </div>
-          </div>
-        ))}
-      </div> */}
+            Co u nas przeżyjesz?
+          </h2>
+          <p className="font-curier text-xs md:text-base mt-2 max-w-2xl mx-auto">
+            Zapraszamy na dzień pełen prawdziwych doświadczeń, wśród zwierząt,
+            zieleni i przytulnych rustykalnych wnętrz. Bez pośpiechu, za to z
+            dużą dawką natury i dobrej energii.
+          </p>
+        </div>
 
-      {/* <div className="flex flex-wrap gap-2 justify-center mb-6">
-        {FILTERS.map((filter) => {
-          const isActive = activeFilter === filter;
-          return (
-            <button
-              key={filter}
-              onClick={() => setActiveFilter(filter)}
-              className={`
-                text-xs md:text-sm px-3 py-1 rounded-full border
-                transition-all duration-200
-                ${
-                  isActive
-                    ? "bg-[var(--c-primary)] text-white border-[var(--c-primary)] shadow-sm"
-                    : "bg-white/60 text-slate-800 border-slate-200 hover:bg-white"
-                }
-              `}
-            >
-              {filter}
-            </button>
-          );
-        })}
-      </div> */}
+        <MiniCarousel />
+        <div className="text-center mb-6 max-w-3xl mx-auto">
+          <p className="font-special  md:text-base ">
+            Możecie wpaść tylko na chwilę albo zostać na cały dzień. Wybierzcie
+            to, co najbardziej pasuje do Was, a my zajmiemy się resztą.
+          </p>
+        </div>
+      </Card>
 
-      {/* GRID KART */}
-
-      <div className="md:hidden flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 -mx-4 px-4">
+      <div className="md:hidden flex gap-4 overflow-x-auto snap-x snap-mandatory my-8">
         {ATTRACTIONS.map((item) => (
           <article
             key={item.title}

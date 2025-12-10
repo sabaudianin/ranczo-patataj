@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "motion/react";
+import { Card } from "@/ui/card/Card";
 
 const container = {
   hidden: { opacity: 0 },
@@ -22,8 +23,22 @@ export const AlpakoTerapy = () => {
     <section
       id="alpakoterapia"
       aria-labelledby="alpakoterapia-title"
-      className="max-w-5xl mx-auto py-4 px-2 relative"
+      className="max-w-5xl mx-auto md:py-12 px-2 relative"
     >
+      <motion.h2
+        id="alpakoterapia-title"
+        variants={item}
+        className="text-[var(--c-primary)] font-semibold font-special text-center md:text-xl"
+      >
+        Czy znacie alpakoterapię?
+      </motion.h2>
+
+      <motion.p
+        variants={item}
+        className="text-[var(--c-primary)] font-bold font-special text-center md:text-xl"
+      >
+        - Nie? Nasze alpaki są w tym najlepsze!
+      </motion.p>
       <motion.div
         variants={container}
         initial="hidden"
@@ -33,29 +48,14 @@ export const AlpakoTerapy = () => {
       >
         {/* LEWA KOLUMNA – TEKST */}
         <div className="text-center md:text-left font-special md:text-xl">
-          <motion.h2
-            id="alpakoterapia-title"
-            variants={item}
-            className="text-[var(--c-primary)] font-semibold"
-          >
-            Czy znacie alpakoterapię?
-          </motion.h2>
-
-          <motion.p
-            variants={item}
-            className="text-[var(--c-primary)] font-bold"
-          >
-            Nie? Nasze alpaki są w tym najlepsze!
-          </motion.p>
-
           <motion.div
             variants={item}
             className="font-curier text-xs md:text-base py-2 space-y-2"
           >
-            <p>
+            <Card>
               <b>Alpakoterapia</b> to naturalna forma wsparcia emocjonalnego i
               wyciszenia zarówno dla dzieci, jak i dorosłych.
-            </p>
+            </Card>
 
             <p>Bliski kontakt z alpakami:</p>
             <ul className="list-disc list-inside text-left text-[0.7rem] md:text-sm">
@@ -66,14 +66,16 @@ export const AlpakoTerapy = () => {
             </ul>
           </motion.div>
 
-          <motion.p
+          <motion.div
             variants={item}
             className="font-curier text-xs md:text-base"
           >
-            Alpakoterapia to łagodna i bezpieczna terapia oparta na obcowaniu ze
-            zwierzętami, idealna dla osób, które potrzebują chwili wytchnienia,
-            relaksu oraz harmonii z naturą.
-          </motion.p>
+            <Card>
+              Alpakoterapia to łagodna i bezpieczna terapia oparta na obcowaniu
+              ze zwierzętami, idealna dla osób, które potrzebują chwili
+              wytchnienia, relaksu oraz harmonii z naturą.
+            </Card>
+          </motion.div>
         </div>
 
         <motion.div

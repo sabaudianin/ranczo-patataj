@@ -1,10 +1,11 @@
 import React from "react";
+import { Card } from "@/ui/card/Card";
 
 export const Social = () => {
   return (
-    <section>
-      <div className="pb-4">
-        <p className="px-1 text-center font-ultra ">
+    <section className="mx-auto max-w-6xl">
+      <Card className="">
+        <p className="text-center font-ultra ">
           Aktualna oferta i promocje - sprawdź nasze social media:
         </p>
         <nav
@@ -38,7 +39,7 @@ export const Social = () => {
             />{" "}
           </a>
         </nav>
-      </div>
+      </Card>
       <div className="">
         <p className=" md:text-xl max-w-5xl mx-auto text-xs font-special tracking-wide text-center font-semibold">
           Zapraszamy rodziny, szkoły i grupy na warsztaty kulinarne i manualne,

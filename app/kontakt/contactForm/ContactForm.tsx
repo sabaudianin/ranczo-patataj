@@ -24,7 +24,7 @@ export const ContactForm = () => {
       <h2 className="text-center pb-2 font-special">Zapraszamy do kontaktu </h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="w-full  relative max-w-3xl mx-auto border rounded border-[var(--c-primary)] p-2 flex flex-col items-center justify-center gap-2 shadow-md font-curier"
+        className="w-full relative max-w-3xl mx-auto border rounded border-[var(--c-primary)] p-4 flex flex-col items-center justify-center gap-2 shadow-md font-curier text-xs md:text-base"
       >
         {" "}
         <div className="absolute top-2 right-2 z-50">
@@ -36,7 +36,7 @@ export const ContactForm = () => {
             className={`w-10 h-10  rounded-xl `}
           />
         </div>
-        <div className="w-full pb-4">
+        <div className="w-full pb-4 ">
           <label className="">Imię:</label>
           <input
             placeholder="Wpisz swoje Imię..."

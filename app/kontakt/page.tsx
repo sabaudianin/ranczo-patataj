@@ -5,6 +5,8 @@ import {
 } from "@/lib/seo/schema";
 import { CONTACT, MAILTO, PHONETO } from "@/config/contact/Contact";
 import { ContactForm } from "./contactForm/ContactForm";
+import { Card } from "@/ui/card/Card";
+import { Social } from "@/components/social/Social";
 
 export default function Contact() {
   const contactJsonLd = createContactPageJsonLd({
@@ -61,29 +63,59 @@ export default function Contact() {
           Gospodarstwo Edukacyjne - RANCZO PATATAJ
         </h2>
 
-        <div className="md:flex md:flex-row md:justify-around  items-center py-4">
-          <address className="text-center pb-2 ">
-            <p className="text-center pb-2">Skontaktuj się z nami :</p>
-            <a
-              href={PHONETO}
-              className="block hover:text-emerald-400 0 transition-all duration text-xs md:text-base font-curier "
-              aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
-            >
-              <span itemProp="telephone">📞 {CONTACT.phoneDisplay}</span>
-            </a>
-            <a
-              href={MAILTO}
-              className="block hover:text-[var(--c-primary)] text-xs md:text-base font-curier py-2"
-            >
-              <span itemProp="email">📧&nbsp;&nbsp;{CONTACT.email}</span>
-            </a>
-            <p className="py-2 text-xs md:text-base">
-              📍 Jastrzębia Stara 9, 05-640 Mogielnica, Polska
-            </p>
+        <div className="md:flex md:flex-row md:justify-around items-center ">
+          <address className="text-center">
+            <Card>
+              <p className="text-center pb-2">Skontaktuj się z nami :</p>
+              <a
+                href={PHONETO}
+                className="block hover:text-emerald-400 0 transition-all duration text-xs md:text-base font-curier "
+                aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
+              >
+                <span itemProp="telephone">📞 {CONTACT.phoneDisplay}</span>
+              </a>
+              <a
+                href={MAILTO}
+                className="block hover:text-[var(--c-primary)] text-xs md:text-base font-curier py-2"
+              >
+                <span itemProp="email">📧&nbsp;&nbsp;{CONTACT.email}</span>
+              </a>
+              <p className="py-2 text-xs md:text-base">
+                📍 Jastrzębia Stara 9, 05-640 Mogielnica, Polska
+              </p>
+            </Card>
           </address>
-
+          <div className="flex justify-center items-center gap-8">
+            <a
+              href="https://www.instagram.com/ranczopatataj"
+              className="p-2"
+              aria-label="Profil Ranczo Patataj na Instagramie"
+              target="_blank"
+              rel="noopener noreferrer"
+              itemProp="sameAs"
+            >
+              <p
+                className="bg-[url('/icons/ig.avif')] w-8 h-8 md:h-12 md:w-12 bg-cover"
+                aria-hidden="true"
+              />{" "}
+            </a>
+            <a
+              href="https://www.facebook.com/PatatajRanczo/"
+              className="p-2"
+              aria-label="Profil Ranczo Patataj na Facebooku"
+              target="_blank"
+              rel="noopener noreferrer"
+              itemProp="sameAs"
+            >
+              <p
+                className="bg-[url('/icons/fb.avif')] w-8 h-8 md:h-12 md:w-12 bg-cover "
+                aria-hidden="true"
+              />{" "}
+            </a>
+          </div>
           <ContactForm />
         </div>
+
         <div
           id="mapa"
           className="py-2"
