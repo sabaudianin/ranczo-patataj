@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const SLIDES = [
   {
-    src: "/images/stol.jpg",
+    src: "/images/stol.avif",
     alt: "Ogród Zimowy",
   },
   {
@@ -22,7 +22,7 @@ const SLIDES = [
     alt: "Imprezy urodzinowe",
   },
   {
-    src: "/images/sala.jpg",
+    src: "/images/sala.avif",
     alt: "Sala na warsztaty",
   },
   {

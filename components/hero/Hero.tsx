@@ -88,7 +88,7 @@ export const Hero: React.FC = () => {
             muted
             loop
             playsInline
-            poster="/images/picture.avif"
+            poster="/images/trioAlpak.avif"
           />
         </div>
 

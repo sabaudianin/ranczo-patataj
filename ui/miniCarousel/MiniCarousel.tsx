@@ -28,7 +28,7 @@ const SLOTS = [
   },
   {
     // środkowy
-    wrapperClass: "relative overflow-hidden rounded w-20 h-40 md:w-40 md:h-40",
+    wrapperClass: "relative overflow-hidden rounded w-20 h-40 md:w-40 md:h-50",
     imageClass:
       "object-cover sepia-[0.2] contrast-125 brightness-90 saturate-75 carousel-fade",
   },
@@ -53,7 +53,7 @@ export const MiniCarousel = () => {
   useEffect(() => {
     const interval = setInterval(
       () => setOffset((prev) => (prev + 1) % IMAGES.length),
-      3000 // zmiana co 3 sek
+      3000
     );
     return () => clearInterval(interval);
   }, []);
@@ -63,7 +63,7 @@ export const MiniCarousel = () => {
       className="pb-4 mb-4"
       aria-hidden="true"
     >
-      {/* klucz powoduje ponowny mount -> animacja leci od nowa */}
+      {/* klucz powoduje ponowny mount ,animacja leci od nowa */}
       <div
         key={offset}
         className="flex items-center justify-center gap-1"
