@@ -91,7 +91,7 @@ export const Hero: React.FC = () => {
           </p>
         </Card>
 
-        <div className="relative w-full h-48 md:h-80 lg:h-120 overflow-hidden rounded-xl">
+        <div className="relative w-full h-48 md:h-80  overflow-hidden rounded-xl">
           <video
             className="w-full h-full rounded-2xl shadow-xl"
             src="/videos/Film.mp4"
@@ -102,15 +102,7 @@ export const Hero: React.FC = () => {
             poster="/images/trioAlpak.avif"
             aria-hidden="true"
             tabIndex={-1}
-          >
-            <track
-              kind="captions"
-              src="/videos/film-pl.vtt"
-              srcLang="pl"
-              label="Polskie napisy"
-              default
-            />
-          </video>
+          ></video>
         </div>
 
         <div className="flex h-full flex-col items-center justify-between text-center gap-4 mt-4 md:mt-8">

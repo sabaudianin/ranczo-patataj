@@ -170,9 +170,19 @@ export default function Alpakoterapia() {
           </div>
         </article>
 
+        <div className="relative w-full h-56 md:h-80 lg:h-96">
+          <Image
+            src="/images/lamawest.jpg"
+            fill
+            alt="Alpaki na wybiegu podczas zajęć alpakoterapii w Ranczo Patataj"
+            className="rounded-2xl object-cover shadow-xl"
+            sizes="(min-width: 1024px) 40vw, (min-width: 768px) 50vw, 100vw"
+          />
+        </div>
+
         {/* JAK WYGLĄDA SPOTKANIE */}
         <article
-          className="mb-10"
+          className="my-10"
           aria-label="Jak wygląda spotkanie z alpakami?"
         >
           <h2 className="font-ultra text-xl mb-3 text-center">
@@ -218,10 +228,28 @@ export default function Alpakoterapia() {
             </div>
           </div>
         </article>
+        <div className="flex justfiy-center">
+          <div className="relative w-full h-56 md:h-80  rounded-2xl">
+            <Image
+              src="/images/tbrown.avif"
+              fill
+              alt="Alpaki na wybiegu podczas zajęć alpakoterapii w Ranczo Patataj"
+              className="rounded-2xl object-contain shadow-xl"
+            />
+          </div>
+          <div className="relative w-full h-56 md:h-80">
+            <Image
+              src="/images/tblack.avif"
+              fill
+              alt="Alpaki na wybiegu podczas zajęć alpakoterapii w Ranczo Patataj"
+              className="rounded-2xl object-contain shadow-xl"
+            />
+          </div>
+        </div>
 
         {/* DLA KOGO / DLA SZKÓŁ */}
         <article
-          className="mb-10"
+          className="my-10"
           aria-label="Dla kogo jest alpakoterapia w Ranczo Patataj?"
         >
           <h2 className="font-ultra text-xl mb-3 text-center">
@@ -276,9 +304,19 @@ export default function Alpakoterapia() {
           </div>
         </article>
 
+        <div className="relative w-full h-56 md:h-80">
+          <Image
+            src="/images/lamaCLose.avif"
+            fill
+            alt="Alpaki na wybiegu podczas zajęć alpakoterapii w Ranczo Patataj"
+            className="rounded-2xl object-cover shadow-xl"
+            sizes="(min-width: 1024px) 40vw, (min-width: 768px) 50vw, 100vw"
+          />
+        </div>
+
         {/* FAQ */}
         <article
-          className="mb-10"
+          className="my-10"
           aria-label="Najczęstsze pytania o alpakoterapię"
         >
           <h2 className="font-ultra text-xl mb-3 text-center">

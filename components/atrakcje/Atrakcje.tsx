@@ -83,18 +83,13 @@ export const Atrakcje = () => {
         {ATTRACTIONS.map((item) => (
           <article
             key={item.title}
-            className={` snap-center min-w-[260px] max-w-[280px]
-        flex-shrink-0
+            className={` snap-center min-w-[260px] max-w-[280px] flex-shrink-0
               group relative flex gap-3 p-3 md:p-4 rounded-2xl
               shadow-[0_10px_30px_rgba(15,23,42,0.08)]
               backdrop-blur-sm
-              transition-all duration-300
-              hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(15,23,42,0.18)]
-                sepia-[0.2] contrast-125 brightness-95 saturate-75
-              ${item.className}
-            `}
+              transition-all duration-300 ${item.className}`}
           >
-            <div className="pointer-events-none absolute inset-x-4 bottom-0 h-1 bg-gradient-to-r from-black/10 via-black/0 to-black/10 opacity-0 group-hover:opacity-100 blur-xl" />
+            <div className="pointer-events-none absolute inset-x-4 bottom-0 h-1 bg-gradient-to-r from-black/10 via-black/0 to-black/10 opacity-0  blur-xl" />
 
             <div className="relative z-10">
               <div className="inline-flex items-center justify-center rounded-full bg-white/70 backdrop-blur px-3 py-1 text-xl md:text-2xl shadow-sm mb-2">
@@ -105,7 +100,7 @@ export const Atrakcje = () => {
                 {item.title}
               </h3>
 
-              <p className="text-[11px] md:text-[15px] leading-relaxed line-clamp-4 md:line-clamp-none font-curier">
+              <p className="text-xs line- md:line-clamp-none font-curier">
                 {item.description}
               </p>
             </div>
@@ -124,7 +119,7 @@ export const Atrakcje = () => {
               shadow-[0_10px_30px_rgba(15,23,42,0.08)]
               backdrop-blur-sm
               transition-all duration-300
-              hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(15,23,42,0.18)]
+              hover:scale-101 
               ${item.className}
             `}
           >

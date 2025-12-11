@@ -36,10 +36,9 @@ export const AlpakoTerapy = () => {
 
       <motion.p
         variants={item}
-        className="text-[var(--c-primary)] font-bold font-special text-center md:text-xl"
+        className=" font-special text-center md:text-xl"
       >
-        Nie znacie alpakoterapii? Nasze alpaki w mazowieckim są w tym naprawdę
-        najlepsze!
+        - Nie znacie alpakoterapii? Nasze alpaki są w tym naprawdę najlepsze!
       </motion.p>
       <motion.div
         variants={container}
