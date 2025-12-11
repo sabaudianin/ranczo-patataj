@@ -306,7 +306,7 @@ export default function Alpakoterapia() {
 
         <div className="relative w-full h-56 md:h-80">
           <Image
-            src="/images/lamaCLose.avif"
+            src="/images/lamaClose.avif"
             fill
             alt="Alpaki na wybiegu podczas zajęć alpakoterapii w Ranczo Patataj"
             className="rounded-2xl object-cover shadow-xl"
