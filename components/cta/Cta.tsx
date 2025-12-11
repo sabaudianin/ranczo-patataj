@@ -4,24 +4,34 @@ import { BgSlider } from "@/ui/bgSlider/BgSlider";
 
 const SLIDES = [
   {
-    src: "/images/car1.jpg",
-    alt: "Ranczo o zachodzie słońca",
+    src: "/images/car1.avif",
+    alt: "Dzieci Karmią Lame",
     label: "Zabawa, która uczy. Edukacja, która inspiruje",
   },
   {
-    src: "/images/car5.jpg",
+    src: "/images/car5.avif",
     alt: "Impreza urodzinowa",
     label: "W sercu wiejskiej przygody.",
   },
   {
-    src: "/images/car10.jpg",
-    alt: "Przygotowania do warsztatów ",
+    src: "/images/lamaHorse.avif",
+    alt: "Koń i Lama na Padoku",
     label: "Tworzymy wspomnienia.",
   },
   {
-    src: "/images/car2.jpg",
-    alt: "Konie na sniegu",
+    src: "/images/car2.avif",
+    alt: "Lama z Bliska",
     label: "Poczuj bliskośc zwierząt.",
+  },
+  {
+    src: "/images/niceBok.avif",
+    alt: "Ranczo Widok z boku",
+    label: "Po prostu Relax",
+  },
+  {
+    src: "/images/salaGit.avif",
+    alt: "Ogród Zimowy w środku",
+    label: "Klimat którego długo nie zapomnisz",
   },
 ];
 
