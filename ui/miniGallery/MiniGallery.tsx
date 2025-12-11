@@ -26,12 +26,24 @@ const SLIDES = [
     alt: "Sala na warsztaty",
   },
   {
-    src: "/images/woz.avif",
+    src: "/images/bryczka.avif",
     alt: "Przejażdzka bryczką",
   },
   {
     src: "/images/plac.avif",
     alt: "Plac zabaw",
+  },
+  {
+    src: "/images/altana.avif",
+    alt: "Altana na zewnątrz",
+  },
+  {
+    src: "/images/domBokNew.avif",
+    alt: "Zaciszna przestrzeń",
+  },
+  {
+    src: "/images/lamawest.jpg",
+    alt: "Wybieg dla zwierząt",
   },
 ];
 

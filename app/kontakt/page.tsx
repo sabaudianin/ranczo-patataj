@@ -1,4 +1,5 @@
 import Script from "next/script";
+import Image from "next/image";
 import {
   createLocalBusinessJsonLd,
   createContactPageJsonLd,
@@ -6,7 +7,6 @@ import {
 import { CONTACT, MAILTO, PHONETO } from "@/config/contact/Contact";
 import { ContactForm } from "./contactForm/ContactForm";
 import { Card } from "@/ui/card/Card";
-import { Social } from "@/components/social/Social";
 
 export default function Contact() {
   const contactJsonLd = createContactPageJsonLd({
@@ -60,8 +60,16 @@ export default function Contact() {
         className="pt-24 md:py-12  max-w-7xl mx-auto p-2 pb-8"
       >
         <h2 className=" text-xl font-special text-center pt-8">
-          Gospodarstwo Edukacyjne - RANCZO PATATAJ
+          Gospodarstwo Edukacyjne
         </h2>
+        <div className="w-full relative h-20">
+          <Image
+            src="/images/ranczoZnak.avif"
+            alt="Znak Ranczo"
+            fill
+            className="object-contain filter sepia-[0.6] contrast-125 brightness-90 saturate-75 rounded-2xl"
+          />
+        </div>
 
         <div className="md:flex md:flex-row md:justify-around items-center ">
           <address className="text-center">
@@ -123,6 +131,7 @@ export default function Contact() {
           <h3 className="p-2 text-xl font-curier font-semibold text-center">
             Znajdz nas na mapie:
           </h3>
+
           <address className="text-center pb-2 ">
             <p>Jastrzębia Stara 9, 05-640 Mogielnica, Polska</p>
           </address>
@@ -135,6 +144,14 @@ export default function Contact() {
             className="rounded md:h-100"
             title="Mapa Dojazdu do Rancza Patataj"
           ></iframe>
+        </div>
+        <div className="w-full relative h-40 rounded-2xl mt-8">
+          <Image
+            src="/images/rancz.avif"
+            alt="Ranczo widok z ulicy"
+            fill
+            className="object-cover filter sepia-[0.6] contrast-125 brightness-90 saturate-75 rounded-2xl"
+          />
         </div>
       </section>
     </>

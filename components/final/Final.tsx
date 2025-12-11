@@ -107,7 +107,7 @@ export const Final = () => {
       </Card>
 
       <div className="md:hidden py-4">
-        <p className="text-center font-special pb-1 font-semibold">
+        <p className="text-center font-special pb-4 font-semibold">
           🌍 Gdzie znajduje się nasze Ranczo ?
         </p>
         <iframe
@@ -121,13 +121,15 @@ export const Final = () => {
         ></iframe>
       </div>
 
-      <article className="max-w-hd mx-auto py-4">
-        <div className="relative h-60 w-full bg-[url('/images/bele.avif')] bg-cover bg-center  flex items-center justify-center">
+      <article className="max-w-hd mx-auto pb-4">
+        <p className=" font-special md:text-xl text-white font-bold  max-w-3xl rounded p-2 text-center">
+          Przyjedź do nas i znajdź chwilę dla siebie.
+        </p>
+        <div className="relative h-60 w-full bg-[url('/images/koza.avif')] bg-cover bg-center  flex items-center justify-center">
           <div className="absolute bg-black/40 w-full h-full"></div>
-          <span className="absolute block font-special md:text-xl text-white font-bold text-center max-w-3xl  rounded p-2">
-            Przyjedź do Rancza Patataj i znajdź chwilę dla siebie. <br />
-            Wystarczy kilka godzin wśród zwierząt i zieleni, by poczuć, jak
-            napięcie znika, a w głowie robi się lżej.
+          <span className="absolute bottom-0 block font-special md:text-xl text-white font-bold text-center max-w-3xl  rounded p-2">
+            Wystarczy chwila wśród zwierząt i zieleni, by poczuć jak napięcie
+            znika, a w głowie robi się lżej.
           </span>
         </div>
       </article>

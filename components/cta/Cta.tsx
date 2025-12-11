@@ -24,7 +24,7 @@ const SLIDES = [
     label: "Poczuj bliskośc zwierząt.",
   },
   {
-    src: "/images/domBokNew.avif",
+    src: "/images/niceBok.avif",
     alt: "Ranczo Widok z boku",
     label: "Po prostu Relax",
   },

@@ -39,13 +39,12 @@ export default function Ranczo() {
           To przestrzeń stworzona do odpoczynku, zabawy oraz mądrego poznawania
           świata przez dzieci i dorosłych.
         </Card>
-        <div className=" w-full text-center pt-4">
+        <div className="relative w-full h-40 text-center pt-4">
           <Image
-            src="/avatar/horseSide.avif"
-            height={120}
-            width={120}
-            alt="Avatar dwóch koni"
-            className="mx-auto h-auto w-auto"
+            src="/images/domBokNew.avif"
+            fill
+            alt="Ranczo widok z ulicy"
+            className="mx-auto h-auto w-auto rounded-xl"
           />
         </div>
         {/* MISJA  */}

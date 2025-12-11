@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 // Treść – obrazki, które mają się “kręcić”
 const IMAGES = [
-  "/images/g1.avif",
+  "/images/palenisko.avif",
   "/images/g7.avif",
   "/images/g2.avif",
   "/images/g3.avif",
