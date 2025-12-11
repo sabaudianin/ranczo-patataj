@@ -6,41 +6,6 @@ import { Card } from "@/ui/card/Card";
 export const Final = () => {
   return (
     <section className="py-4">
-      {/* <Card>
-        <div className="flex flex-col gap-3 w-full items-center justify-center">
-          <div className="flex flex-col md:flex-row gap-4 py-12 items-stretch md:items-center justify-center">
-            <Link
-              href="/oferta"
-              className="inline-flex items-center justify-center px-5 py-2 rounded-xl bg-emerald-900/70 hover:bg-emerald-500 border border-emerald-700 text-xs md:text-sm lg:text-base font-semibold text-white font-curier hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
-            >
-              Zobacz szczegółową ofertę
-            </Link>
-
-            <Link
-              href="/ranczo"
-              className="inline-flex items-center justify-center px-5 py-2 rounded-xl bg-white/90 hover:bg-white border border-[var(--c-primary)] shadow-lg hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] text-xs md:text-sm lg:text-base font-semibold  font-curier text-black"
-            >
-              Poznaj nasze Ranczo
-            </Link>
-
-            <div className="">
-              <a
-                href={PHONETO}
-                className="inline-flex items-center justify-center gap-2 p-2 border rounded-xl border-[var(--c-primary)] bg-stone-800/70 text-xs md:text-sm text-white/90 font-curier underline-offset-2 hover:underline"
-                aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby zarezerwować termin w Ranczo Patataj`}
-                itemProp="telephone"
-              >
-                <FaPhone
-                  className="animate-pulse"
-                  aria-hidden="true"
-                />
-                <span>Zadzwoń teraz: {CONTACT.phoneDisplay}</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </Card> */}
-
       <Card className="w-full max-w-6xl mx-auto text-center">
         <div className="flex flex-col gap-6 w-full items-center text-center md:text-left py-8 md:py-10 px-4 md:px-6">
           <div className="space-y-2 max-w-xl font-curier">
@@ -125,7 +90,7 @@ export const Final = () => {
         <p className=" font-special md:text-xl text-white font-bold  max-w-3xl rounded p-2 text-center">
           Przyjedź do nas i znajdź chwilę dla siebie.
         </p>
-        <div className="relative h-60 w-full bg-[url('/images/koza.avif')] bg-cover bg-center  flex items-center justify-center">
+        <div className="relative h-60 w-full bg-[url('/images/koza.avif')] bg-cover bg-center flex items-center justify-center">
           <div className="absolute bg-black/40 w-full h-full"></div>
           <span className="absolute bottom-0 block font-special md:text-xl text-white font-bold text-center max-w-3xl  rounded p-2">
             Wystarczy chwila wśród zwierząt i zieleni, by poczuć jak napięcie

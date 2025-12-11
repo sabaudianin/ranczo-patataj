@@ -29,7 +29,7 @@ export const Navbar: React.FC = () => {
         Przejdź do treści
       </a>
 
-      <header className="w-full fixed md:sticky mx-auto z-50 bg-[var(--c-primary)]/10 ">
+      <header className="w-full fixed md:sticky mx-auto z-50 bg-[var(--c-primary)]/10">
         <div className="">
           <div className="w-full p-2 liquid-glass flex rounded justify-between items-center max-w-hd mx-auto border border-[var(--c-primary)]">
             <div className="w-full relative flex justify-between items-center ">
@@ -112,7 +112,7 @@ export const Navbar: React.FC = () => {
                 transition={{ duration: 0.3 }}
                 className="w-full shadow-lg md:hidden backdrop-blur-xl bg-white/30 dark:bg-black/30"
               >
-                <ul className="flex justify-around ">
+                <ul className="flex justify-around flex-wrap ">
                   {MAIN_NAV_LINKS.map((link) => {
                     const active = isLinkActive(link.href, pathname);
                     return (

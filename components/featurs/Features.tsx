@@ -6,33 +6,33 @@ import { Card } from "@/ui/card/Card";
 const ANIMAL_FEATURES = [
   {
     src: "/images/tbrown.avif",
-    alt: "Brązowa alpaka stojąca na wybiegu w Ranczo Patataj",
+    alt: "Brązowa alpaka stojąca na wybiegu w Ranczo Patataj, gospodarstwie edukacyjnym w mazowieckim",
     label: "Zakochaj się w alpakach 😍",
-    fact: "Alpaki koją napięcie i działają jak naturalna terapia wyciszająca.",
+    fact: "Alpaki koją napięcie i działają jak naturalna terapia wyciszająca szczególnie dla dzieci i dorosłych, którzy potrzebują chwili oddechu od miejskiego zgiełku.",
   },
   {
     src: "/images/tlam.avif",
-    alt: "Lama spacerująca po zagrodzie w otoczeniu natury",
-    label: "Zachwyć się lamami🤗",
-    fact: "Lamy uczą cierpliwości i obecności, świetnie wspierając pracę z emocjami.",
+    alt: "Lama spacerująca po zagrodzie w Ranczo Patataj w otoczeniu natury",
+    label: "Zachwyć się lamami 🤗",
+    fact: "Lamy uczą cierpliwości i uważności. Podczas wizyty w naszym gospodarstwie edukacyjnym wspierają pracę z emocjami w łagodny i bezpieczny sposób.",
   },
   {
     src: "/images/tduo.avif",
-    alt: "Dwa konie na padoku w gospodarstwie edukacyjnym",
-    label: "Zaprzyjaźnij się z końmi💛",
-    fact: "Kontakt z końmi poprawia pewność siebie i pomaga redukować stres.",
+    alt: "Dwa konie na padoku w gospodarstwie edukacyjnym Ranczo Patataj",
+    label: "Zaprzyjaźnij się z końmi 💛",
+    fact: "Kontakt z końmi poprawia pewność siebie, poczucie sprawczości i pomaga redukować stres, jest to świetny element programu wycieczki szkolnej lub wizyty przedszkola.",
   },
   {
     src: "/images/tblack.avif",
-    alt: "Ciemna alpaka patrząca w obiektyw na tle zagrody",
+    alt: "Ciemna alpaka patrząca w obiektyw podczas zajęć alpakoterapii na Ranczo Patataj",
     label: "Poznaj alpakoterapię 🥰",
-    fact: "Alpakoterapia wspiera wyciszenie i pomaga przy napięciu emocjonalnym.",
+    fact: "Alpakoterapia wspiera wyciszenie, pomaga przy napięciu emocjonalnym i buduje poczucie bezpieczeństwa, szczególnie u dzieci, młodzieży i osób wrażliwych.",
   },
   {
     src: "/images/trio.avif",
-    alt: "Grupa zwierząt gospodarskich razem na wybiegu",
-    label: "Odnajdź równowagę w obecności zwierząt⚖️",
-    fact: "Obcowanie ze zwierzętami obniża poziom kortyzolu i poprawia samopoczucie.",
+    alt: "Grupa zwierząt gospodarskich razem na wybiegu w Ranczo Patataj w Jastrzębi Starej koło Mogielnicy",
+    label: "Odnajdź równowagę w obecności zwierząt ⚖️",
+    fact: "Obcowanie ze zwierzętami obniża poziom kortyzolu i poprawia samopoczucie. Na Ranczo Patataj w mazowieckim łączymy relaks z edukacją dla szkół, przedszkoli, rodzin i grup zorganizowanych.",
   },
 ];
 
@@ -65,7 +65,8 @@ export const Features = () => {
         <Card className="md:text-base mb-12">
           Gospodarstwo edukacyjne blisko Warszawy, w którym dzieci i dorośli
           poznają zwierzęta z bliska - alpaki, lamy, konie, kozy, kury, pawie i
-          wiele więcej.
+          wiele więcej. Wszystko to podczas wycieczek szkolnych, wizyt
+          przedszkoli, rodzinnych odwiedzin i spotkań grup zorganizowanych.
         </Card>
       </motion.div>
 

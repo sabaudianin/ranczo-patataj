@@ -14,43 +14,51 @@ export const Visit = () => {
             id="wizyta-title"
             className="text-[var(--c-primary)] font-ultra tracking-wide text-base md:text-2xl"
           >
-            Jak wygląda wizyta na Ranczu Patataj?
+            Jak wygląda wizyta w gospodarstwie edukacyjnym Ranczo Patataj?
           </h2>
 
           <p className="font-curier text-xs md:text-base mt-2 max-w-2xl mx-auto">
-            Każda wizyta przebiega w spokojnym rytmie i jest dopasowana do Was,
-            niezależnie od tego, czy przyjeżdżacie sami, z rodziną, znajomymi
-            czy większą grupą.
+            Wizyta na Ranczo Patataj w Jastrzębi Starej koło Mogielnicy w
+            województwie mazowieckim jest zawsze dopasowana do Was niezależnie
+            od tego, czy przyjeżdżacie jako wycieczka szkolna, grupa z
+            przedszkola, rodzina czy zorganizowana grupa znajomych.
           </p>
         </div>
 
         <div className="font-curier text-xs md:text-base space-y-4">
           <ul className="list-disc list-inside space-y-2">
             <li>
-              Poznajecie naszą przestrzeń i zwierzęta w swoim tempie, z
-              możliwością bliskiego kontaktu, rozmów i zdjęć.
+              Po przyjeździe poznajecie naszą przestrzeń i zwierzęta w swoim
+              tempie, z możliwością bliskiego kontaktu, rozmów, karmienia oraz
+              robienia zdjęć. To idealny początek wycieczki szkolnej lub
+              rodzinnej wizyty w gospodarstwie edukacyjnym.
             </li>
 
             <li>
               Bierzecie udział w wybranych aktywnościach, takich jak warsztaty,
-              spotkania ze zwierzętami czy zajęcia tematyczne.
+              spotkania ze zwierzętami, zajęcia tematyczne czy elementy
+              alpakoterapii. Program dopasowujemy do wieku i potrzeb grupy:
+              dzieci, młodzieży, dorosłych.
             </li>
 
             <li>
               Jest czas na odpoczynek, piknik, ognisko lub swobodną chwilę na
-              świeżym powietrzu.
+              świeżym powietrzu. To ważny moment integracji dla klasy, grupy
+              przedszkolnej, rodziny lub firmowego wyjazdu.
             </li>
 
             <li>
-              A na koniec zostaje moment na to, co lubicie najbardziej czyli
-              zabawę, relaks, poprzytulanie alpak albo po prostu bycie blisko
-              natury.
+              Na koniec zostaje to, co wielu lubi najbardziej: zabawa, relaks,
+              poprzytulanie alpak, bycie blisko natury i spokojne zakończenie
+              dnia z dala od miejskiego hałasu.
             </li>
           </ul>
 
           <p className="text-center pt-4">
             Program każdej wizyty układamy tak, aby był przyjemny, spokojny i
-            komfortowy, niezależnie od wieku i potrzeb odwiedzających.
+            komfortowy, zarówno dla dzieci jak i dorosłych. To świetna
+            propozycja na wycieczki szkolne, wizyty przedszkoli i rodzinne
+            atrakcje dla osób z Warszawy, Grójca, Mogielnicy i całego Mazowsza.
           </p>
         </div>
       </Card>

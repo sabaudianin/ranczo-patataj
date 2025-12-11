@@ -5,33 +5,33 @@ import { BgSlider } from "@/ui/bgSlider/BgSlider";
 const SLIDES = [
   {
     src: "/images/car1.avif",
-    alt: "Dzieci Karmią Lame",
-    label: "Zabawa, która uczy. Edukacja, która inspiruje",
+    alt: "Dzieci karmią lamę na Ranczo Patataj podczas zajęć edukacyjnych ze zwierzętami",
+    label: "Zabawa, która uczy. Edukacja, która inspiruje.",
   },
   {
     src: "/images/car5.avif",
-    alt: "Impreza urodzinowa",
+    alt: "Impreza urodzinowa wśród zwierząt na Ranczo Patataj",
     label: "W sercu wiejskiej przygody.",
   },
   {
     src: "/images/lamaHorse.avif",
-    alt: "Koń i Lama na Padoku",
+    alt: "Koń i lama na padoku w gospodarstwie edukacyjnym Ranczo Patataj",
     label: "Tworzymy wspomnienia.",
   },
   {
     src: "/images/car2.avif",
-    alt: "Lama z Bliska",
-    label: "Poczuj bliskośc zwierząt.",
+    alt: "Lama z bliska podczas wizyty na Ranczo Patataj",
+    label: "Poczuj bliskość zwierząt.",
   },
   {
     src: "/images/niceBok.avif",
-    alt: "Ranczo Widok z boku",
-    label: "Po prostu Relax",
+    alt: "Ranczo Patataj widok gospodarstwa edukacyjnego z boku",
+    label: "Zrelaksuj się.",
   },
   {
     src: "/images/salaGit.avif",
-    alt: "Ogród Zimowy w środku",
-    label: "Klimat którego długo nie zapomnisz",
+    alt: "Ogród zimowy i sala warsztatowa na Ranczo Patataj w mazowieckim",
+    label: "Klimat, którego długo nie zapomnicie.",
   },
 ];
 
@@ -47,7 +47,7 @@ export const Cta = () => {
           id="cta-heading"
           className="text-lg md:text-2xl font-ultra tracking-wider text-[var(--c-primary)]"
         >
-          Zarezerwuj termin na wizytę w Ranczu Patataj
+          Zarezerwuj termin wizyty w gospodarstwie edukacyjnym Ranczo Patataj
         </h2>
         <div className="flex justify-center items-center p-2">
           <a
@@ -66,8 +66,10 @@ export const Cta = () => {
         </div>
 
         <p className="text-xs md:text-sm max-w-md mx-auto font-semibold font-curier">
-          Zadzwoń, aby umówić zajęcia edukacyjne, warsztaty, zarezerwować ranczo
-          na imprezę firmową, rodzinną lub wizytę grupową.
+          Zadzwoń, aby umówić wycieczkę szkolną, wizytę przedszkola, zajęcia
+          edukacyjne ze zwierzętami, alpakoterapię albo zarezerwować ranczo na
+          imprezę firmową, rodzinną lub wizytę grupową. Przyjmujemy grupy z
+          Warszawy, Grójca, Mogielnicy i całego Mazowsza.
         </p>
       </div>
       <div

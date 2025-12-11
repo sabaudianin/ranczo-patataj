@@ -8,6 +8,11 @@ export const Social = () => {
         <p className="text-center font-ultra ">
           Aktualna oferta i promocje - sprawdź nasze social media:
         </p>
+        <p className="text-center font-curier text-xs md:text-sm mt-1 max-w-2xl mx-auto">
+          Zobacz, co aktualnie dzieje się w naszym gospodarstwie edukacyjnym w
+          Jastrzębi Starej koło Mogielnicy, nowe warsztaty, wycieczki szkolne,
+          spotkania ze zwierzętami, ogniska i atrakcje dla rodzin.
+        </p>
         <nav
           className="flex items-center justify-center gap-8"
           aria-label="Media społecznościowe Ranczo Patataj"
@@ -42,9 +47,10 @@ export const Social = () => {
       </Card>
       <div className="">
         <p className=" md:text-xl max-w-5xl mx-auto text-xs font-special tracking-wide text-center font-semibold">
-          Zapraszamy rodziny, szkoły i grupy na warsztaty kulinarne i manualne,
-          spotkania ze zwierzętami, gry terenowe, ogniska, imprezy firmowe i
-          okolicznościowe.
+          Zapraszamy rodziny, szkoły, przedszkola i grupy zorganizowane na
+          warsztaty kulinarne i manualne, spotkania ze zwierzętami, gry
+          terenowe, ogniska, imprezy firmowe i okolicznościowe, w sercu
+          Mazowsza, blisko Warszawy, Grójca i Mogielnicy.
         </p>
       </div>
     </section>

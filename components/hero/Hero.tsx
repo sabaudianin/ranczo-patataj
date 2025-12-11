@@ -59,6 +59,7 @@ export const metadata: Metadata = {
     "rodzinne atrakcje",
     "Ranczo Patataj",
     "Mogielnica",
+    "Alpaki",
   ],
 };
 
@@ -81,15 +82,16 @@ export const Hero: React.FC = () => {
         </h1>
 
         <Card className="md:my-8">
-          <p className=" text-xs md:text-base xl:text-lg  max-w-5xl font-curier">
-            Spotkania ze zwierzętami, alpakoterapia, warsztaty, ogniska, zabawa
-            i odpoczynek dla rodzin, szkół, grup zorganizowanych i wszystkich,
-            którzy chcą odetchnąć od codzienności. Tylko godzinę drogi od
-            Warszawy.
+          <p className=" text-xs md:text-base xl:text-lg  max-w-5xl font-curier text-center">
+            Ranczo Patataj to gospodarstwo edukacyjne w Jastrzębi Starej koło
+            Mogielnicy, w województwie mazowieckim. Organizujemy wycieczki
+            szkolne, warsztaty edukacyjne, spotkania ze zwierzętami i
+            alpakoterapię dla szkół, przedszkoli, rodzin i grup zorganizowanych,
+            zaledwie godzinę drogi od Warszawy.
           </p>
         </Card>
 
-        <div className="relative w-full h-48 md:h-80 lg:h-120 overflow-hidden rounded-xl">
+        <div className="relative w-full h-48 md:h-80  overflow-hidden rounded-xl">
           <video
             className="w-full h-full rounded-2xl shadow-xl"
             src="/videos/Film.mp4"
@@ -100,15 +102,7 @@ export const Hero: React.FC = () => {
             poster="/images/trioAlpak.avif"
             aria-hidden="true"
             tabIndex={-1}
-          >
-            <track
-              kind="captions"
-              src="/videos/film-pl.vtt"
-              srcLang="pl"
-              label="Polskie napisy"
-              default
-            />
-          </video>
+          ></video>
         </div>
 
         <div className="flex h-full flex-col items-center justify-between text-center gap-4 mt-4 md:mt-8">
