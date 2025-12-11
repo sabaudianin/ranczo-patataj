@@ -4,9 +4,9 @@ import { FaPhone } from "react-icons/fa";
 import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
 
 export const metadata = {
-  title: "Oferta - Ranczo Patataj",
+  title: "Oferta - gospodarstwo edukacyjne Ranczo Patataj (Mazowieckie)",
   description:
-    "Zajęcia edukacyjne, warsztaty, urodziny wśród zwierzaków i oferta dla firm na Ranczo Patataj.",
+    "Wycieczki szkolne, zajęcia edukacyjne, alpakoterapia, urodziny wśród zwierząt i oferta dla firm w gospodarstwie edukacyjnym Ranczo Patataj w Jastrzębi Starej koło Mogielnicy (Mazowieckie).",
 };
 
 export default function Oferta() {
@@ -14,24 +14,25 @@ export default function Oferta() {
     {
       name: "Zajęcia edukacyjne dla szkół i przedszkoli",
       description:
-        "Wycieczki edukacyjne na ranczo, kontakt ze zwierzętami, warsztaty kulinarne i manualne, gry terenowe oraz ognisko.",
+        "Wycieczki edukacyjne na ranczo w Jastrzębi Starej koło Mogielnicy - kontakt ze zwierzętami, warsztaty kulinarne i manualne, gry terenowe oraz ognisko dla szkół i przedszkoli z Mazowsza.",
     },
     {
       name: "Urodziny wśród zwierzaków na ranczu",
       description:
-        "Organizacja przyjęć urodzinowych z alpakami i innymi zwierzętami, animacjami, zabawami na świeżym powietrzu i strefą zdjęć.",
+        "Organizacja przyjęć urodzinowych w gospodarstwie edukacyjnym z alpakami i innymi zwierzętami, animacjami, zabawami na świeżym powietrzu i strefą zdjęć - idealne dla dzieci i rodzin.",
     },
     {
       name: "Oferta integracyjna i eventy firmowe",
       description:
-        "Kameralne eventy firmowe w naturze: obiekt na wyłączność, kontakt ze zwierzętami, przejażdżka bryczką, ognisko i rustykalna sala.",
+        "Kameralne eventy firmowe w naturze w mazowieckim: obiekt na wyłączność, kontakt ze zwierzętami, przejażdżka bryczką, ognisko i rustykalna sala w Ranczo Patataj.",
     },
     {
       name: "Oferta szyta na miarę",
       description:
-        "Sesje zdjęciowe, imprezy okolicznościowe, zaręczyny, pikniki rodzinne oraz wynajem przestrzeni na wydarzenia specjalne.",
+        "Sesje zdjęciowe, imprezy okolicznościowe, zaręczyny, pikniki rodzinne oraz wynajem przestrzeni na wydarzenia specjalne w gospodarstwie edukacyjnym Ranczo Patataj w Mazowszu.",
     },
   ]);
+
   return (
     <>
       <Script
@@ -55,7 +56,8 @@ export default function Oferta() {
           itemProp="name"
           className="text-center font-ultra text-2xl mt-6  pb-2"
         >
-          Nasza oferta :
+          Oferta Ranczo Patataj to wycieczki szkolne, urodziny i wydarzenia w
+          gospodarstwie edukacyjnym
         </h2>
         <p
           id="oferta-lead"
@@ -105,20 +107,23 @@ export default function Oferta() {
             itemProp="itemListElement"
             itemScope
             itemType="https://schema.org/Service"
+            id="szkola"
           >
             <h3
               className="font-ultra text-lg mb-1 text-amber-300/90 text-center"
               itemProp="name"
               id="oferta-szkoly-heading"
             >
-              Dla szkół i przedszkoli
+              Dla szkół i przedszkoli wycieczki edukacyjne w naturze
             </h3>
             <p
               className="text-sm italic py-3 font-special"
               itemProp="description"
             >
-              Edukacyjne wycieczki w naturę - nauka przez doświadczenie, ruch i
-              kontakt ze zwierzętami.
+              Edukacyjne wycieczki w naturę do gospodarstwa edukacyjnego, nauka
+              przez doświadczenie, ruch i kontakt ze zwierzętami. Idealne dla
+              szkół i przedszkoli z Mazowsza, w tym z Warszawy, Grójca i
+              Mogielnicy.
             </p>
             <ul className="font-special text-sm space-y-1">
               <li>
@@ -142,7 +147,8 @@ export default function Oferta() {
             </ul>
             <hr className="m-2 text-amber-300/70" />
             <p className=" text-xs  font-special">
-              Idealne na wycieczki, zielone szkoły i integrację grup.
+              Idealne na wycieczki szkolne, zielone szkoły, dni adaptacyjne i
+              integrację klas oraz grup przedszkolnych.
             </p>
           </article>
 
@@ -154,20 +160,22 @@ export default function Oferta() {
             itemProp="itemListElement"
             itemScope
             itemType="https://schema.org/Service"
+            id="urodziny"
           >
             <h3
               className="font-ultra text-lg mb-1 text-pink-300/90 text-center"
               id="oferta-urodziny-heading"
               itemProp="name"
             >
-              Urodziny wśród zwierzaków
+              Urodziny wśród zwierzaków, przyjęcie na ranczu
             </h3>
             <p
               className="text-sm italic py-3 font-special"
               itemProp="description"
             >
-              Magiczne przyjęcie urodzinowe na ranczu wśród natury, w otoczeniu
-              zwierząt, zapewniamy maksimum radości!
+              Magiczne przyjęcie urodzinowe na ranczu wśród natury i zwierząt
+              alpaki, konie, kozy i inne zwierzaki tworzą wyjątkową atmosferę,
+              którą dzieci zapamiętają na długo.
             </p>
             <ul className="font-special text-sm space-y-1">
               <li>
@@ -183,7 +191,7 @@ export default function Oferta() {
             <hr className="m-2 text-amber-300/70" />
             <p className=" text-xs font-special">
               Możliwość zamówienia tortu, poczęstunku oraz personalizowanych
-              atrakcji.
+              atrakcji - ustalanych indywidualnie.
             </p>
           </article>
 
@@ -195,20 +203,21 @@ export default function Oferta() {
             itemProp="itemListElement"
             itemScope
             itemType="https://schema.org/Service"
+            id="firma"
           >
             <h3
               className="font-ultra text-lg mb-1 text-emerald-300/90 text-center"
               id="oferta-firmy-heading"
               itemProp="name"
             >
-              Oferta dla firm
+              Oferta dla firm - integracje i eventy w naturzem
             </h3>
             <p
               className="text-sm italic py-3 font-special"
               itemProp="description"
             >
               Integracja, którą uczestnicy naprawdę zapamiętają. Idealne miejsce
-              na eventy firmowe, integracje i spotkania w stylu slow!
+              na eventy firmowe i kameralne wyjazdy integracyjne w mazowieckim.
             </p>
             <ul className="font-special text-sm space-y-1">
               <li>🏡 Obiekt na wyłączność, prywatna, kameralna przestrzeń</li>
@@ -222,11 +231,11 @@ export default function Oferta() {
             <hr className="m-2 text-emerald-300/70" />
             <p className=" text-xs font-special">
               Świetna propozycja na integracje, małe eventy firmowe i spotkania
-              w stylu slow.
+              w stylu jaki lubicie - zaledwie godzinę drogi od Warszawy.
             </p>
           </article>
 
-          {/* KARTA: OFERTA SZYTA NA MIARĘ */}
+          {/* KCUSTOM  */}
           <article
             className=" rounded-3xl border border-blue-300/70 p-5 shadow-md flex flex-col  xl:col-span-3 bg-blue-300/10"
             role="listitem"
@@ -240,7 +249,7 @@ export default function Oferta() {
               id="oferta-szyta-heading"
               itemProp="name"
             >
-              Oferta szyta na miarę
+              Oferta szyta na miarę - wyjątkowe chwile na ranczu
             </h3>
             <p
               className="text-sm italic py-3 font-special"
@@ -254,10 +263,16 @@ export default function Oferta() {
                 📸 Sesje zdjęciowe z alpakami (rodzinne, narzeczeńskie,
                 dziecięce)
               </li>
-              <li>🎉 Imprezy okolicznościowe - chrzciny, komunie, rocznice</li>
+              <li>
+                🎉 Imprezy okolicznościowe - chrzciny, komunie, rocznice,
+                kameralne przyjęcia
+              </li>
               <li>💍 Romantyczne zaręczyny w otoczeniu natury</li>
               <li>🎬 Wynajem przestrzeni do nagrań i projektów kreatywnych</li>
-              <li>🌳 Pikniki rodzinne i kameralne spotkania w plenerze</li>
+              <li>
+                🌳 Pikniki rodzinne i kameralne spotkania w plenerze w sercu
+                Mazowsza
+              </li>
             </ul>
             <hr className="m-2 text-blue-300/70" />
             <p className=" font-special">

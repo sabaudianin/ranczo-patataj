@@ -30,14 +30,16 @@ export const AlpakoTerapy = () => {
         variants={item}
         className="text-[var(--c-primary)] font-semibold font-special text-center md:text-xl"
       >
-        Czy znacie alpakoterapię?
+        Alpakoterapia w Ranczo Patataj, to spotkania z alpakami dla dzieci i
+        dorosłych
       </motion.h2>
 
       <motion.p
         variants={item}
         className="text-[var(--c-primary)] font-bold font-special text-center md:text-xl"
       >
-        - Nie? Nasze alpaki są w tym najlepsze!
+        Nie znacie alpakoterapii? Nasze alpaki w mazowieckim są w tym naprawdę
+        najlepsze!
       </motion.p>
       <motion.div
         variants={container}
@@ -54,17 +56,24 @@ export const AlpakoTerapy = () => {
           >
             <Card>
               <b>Alpakoterapia</b> to naturalna forma wsparcia emocjonalnego i
-              wyciszenia zarówno dla dzieci, jak i dorosłych.
+              wyciszenia zarówno dla dzieci, jak i dorosłych. Na Ranczo Patataj
+              w Jastrzębi Starej koło Mogielnicy w województwie mazowieckim
+              spotkania z alpakami pomagają się zrelaksować, otworzyć i poczuć
+              bezpiecznie.
             </Card>
 
             <p className="text-[var(--c-primary)] font-bold text-[var(--c-primary)] font-special ">
-              Co daje bliski kontakt z alpakami ?
+              Co daje dzieciom i dorosłym alpakoterapia i bliski kontakt z
+              alpakami?
             </p>
             <ul className="list-disc list-inside text-left text-[0.7rem] md:text-sm">
               <li>pomaga redukować stres,</li>
               <li>poprawia samopoczucie,</li>
               <li>wspiera równowagę psychiczną,</li>
-              <li>zachęca do otwartości i buduje poczucie bezpieczeństwa.</li>
+              <li>
+                zachęca do otwartości i buduje poczucie bezpieczeństwa,
+                szczególnie u dzieci i osób wrażliwych.
+              </li>
             </ul>
           </motion.div>
 
@@ -73,9 +82,11 @@ export const AlpakoTerapy = () => {
             className="font-curier text-xs md:text-base"
           >
             <Card>
-              Alpakoterapia to łagodna i bezpieczna terapia oparta na obcowaniu
-              ze zwierzętami, idealna dla osób, które potrzebują chwili
-              wytchnienia, relaksu oraz harmonii z naturą.
+              Alpakoterapia w mazowieckim, którą prowadzimy na Ranczo Patataj,
+              to łagodna i bezpieczna forma terapii oparta na obcowaniu ze
+              zwierzętami. Jest idealna dla szkół, przedszkoli, rodzin i grup
+              zorganizowanych, które potrzebują chwili wytchnienia, relaksu oraz
+              bliskiego kontaktu z naturą.
             </Card>
           </motion.div>
         </div>
@@ -87,7 +98,7 @@ export const AlpakoTerapy = () => {
           <Image
             src="/images/lamastar.avif"
             fill
-            alt="Ładna lama patrzy na Ciebie"
+            alt="Alpaka na Ranczo Patataj podczas zajęć alpakoterapii w mazowieckim"
             sizes="(min-width: 768px) 50vw, 100vw"
             className="object-cover rounded-2xl shadow-xl"
           />

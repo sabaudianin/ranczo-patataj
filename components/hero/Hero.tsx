@@ -59,6 +59,7 @@ export const metadata: Metadata = {
     "rodzinne atrakcje",
     "Ranczo Patataj",
     "Mogielnica",
+    "Alpaki",
   ],
 };
 
@@ -81,11 +82,12 @@ export const Hero: React.FC = () => {
         </h1>
 
         <Card className="md:my-8">
-          <p className=" text-xs md:text-base xl:text-lg  max-w-5xl font-curier">
-            Spotkania ze zwierzętami, alpakoterapia, warsztaty, ogniska, zabawa
-            i odpoczynek dla rodzin, szkół, grup zorganizowanych i wszystkich,
-            którzy chcą odetchnąć od codzienności. Tylko godzinę drogi od
-            Warszawy.
+          <p className=" text-xs md:text-base xl:text-lg  max-w-5xl font-curier text-center">
+            Ranczo Patataj to gospodarstwo edukacyjne w Jastrzębi Starej koło
+            Mogielnicy, w województwie mazowieckim. Organizujemy wycieczki
+            szkolne, warsztaty edukacyjne, spotkania ze zwierzętami i
+            alpakoterapię dla szkół, przedszkoli, rodzin i grup zorganizowanych,
+            zaledwie godzinę drogi od Warszawy.
           </p>
         </Card>
 

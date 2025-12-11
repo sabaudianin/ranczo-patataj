@@ -1,4 +1,5 @@
 import Script from "next/script";
+import Link from "next/link";
 import Image from "next/image";
 import { createAboutPageJsonLd } from "@/lib/seo/schema";
 import { FaPhone } from "react-icons/fa";
@@ -6,9 +7,9 @@ import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
 import { Card } from "@/ui/card/Card";
 
 export const metadata = {
-  title: "O nas  Ranczo Patataj",
+  title: "O nas - Ranczo Patataj gospodarstwo edukacyjne (Mazowieckie)",
   description:
-    "Poznaj historię Rancza Patataj, nasze wartości i misję gospodarstwa edukacyjnego.",
+    "Poznaj historię i misję Rancza Patataj - kameralnego gospodarstwa edukacyjnego w Jastrzębi Starej koło Mogielnicy (Mazowieckie). Bliskość natury, alpaki, konie i atrakcje dla szkół, przedszkoli, rodzin oraz firm.",
 };
 
 export default function Ranczo() {
@@ -31,13 +32,15 @@ export default function Ranczo() {
           id="ranczo-heading"
           className="font-ultra text-2xl md:text-3xl text-center mb-4"
         >
-          Ranczo Patataj to miejsce, do którego chce się wracać
+          Ranczo Patataj - gospodarstwo edukacyjne w Jastrzębi Starej koło
+          Mogielnicy
         </h1>
         <Card className="font-special text-center max-w-3xl mx-auto text-sm md:text-base">
-          Ranczo Patataj to kameralne, rodzinne miejsce, w którym łączymy
+          Ranczo Patataj to kameralne, rodzinne gospodarstwo edukacyjne w
+          Jastrzębi Starej koło Mogielnicy, w województwie mazowieckim. Łączymy
           bliskość natury, kontakt ze zwierzętami i spokojną, sielską atmosferę.
           To przestrzeń stworzona do odpoczynku, zabawy oraz mądrego poznawania
-          świata przez dzieci i dorosłych.
+          świata przez dzieci i dorosłych. Mniej niż godzinę drogi od Warszawy.
         </Card>
         <div className="relative w-full h-40 text-center pt-4">
           <Image
@@ -71,7 +74,10 @@ export default function Ranczo() {
               <li>spędzić czas z alpakami, końmi i innymi zwierzętami,</li>
               <li>poczuć prawdziwą atmosferę wsi i gospodarstwa,</li>
               <li>doświadczyć spokoju, którego tak brakuje w mieście,</li>
-              <li>uczyć dzieci szacunku do przyrody i żywych istot.</li>
+              <li>
+                uczyć dzieci szacunku do przyrody i żywych istot podczas zajęć
+                edukacyjnych.
+              </li>
             </ul>
             <div className="clear-both" />
           </div>
@@ -96,7 +102,8 @@ export default function Ranczo() {
               <li>dodaje odwagi dzieciom nieśmiałym lub wrażliwym,</li>
               <li>ułatwia integrację grupy i buduje więzi,</li>
               <li>
-                sprawia, że każdy wyjazd staje się niezapomnianą przygodą.
+                sprawia, że każdy wyjazd szkolny, rodzinny czy firmowy, staje
+                się niezapomnianą przygodą.
               </li>
             </ul>
             <div className="clear-both" />
@@ -120,14 +127,29 @@ export default function Ranczo() {
                 Miejsce idealne na wycieczki edukacyjne, zielone szkoły i
                 wyjazdy integracyjne. Dzieci poznają życie na wsi, uczą się
                 poprzez zabawę i przeżywają prawdziwą przygodę w naturze.
+                Zajrzyj do{" "}
+                <Link
+                  href="/oferta#szkola"
+                  className="underline underline-offset-2 hover:text-[var(--c-primary)]"
+                >
+                  oferty dla szkół i przedszkoli
+                </Link>
+                , aby sprawdzić przykładowe programy.
               </p>
             </div>
             <div className="rounded-3xl border border-pink-300/60 p-4 h-full bg-pink-300/10">
               <h3 className="font-ultra text-base mb-2">Dla rodzin i dzieci</h3>
               <p>
                 Weekendowy wypad, rodzinny spacer z alpakami, urodziny wśród
-                zwierzaków, a to wszystko tworzy wyjątkowe wspomnienia i
-                zacieśnia relacje najbliższych.
+                zwierzaków, to wszystko tworzy wyjątkowe wspomnienia i zacieśnia
+                relacje najbliższych. Sprawdź{" "}
+                <Link
+                  href="/oferta#urodziny"
+                  className="underline underline-offset-2 hover:text-[var(--c-primary)]"
+                >
+                  urodziny wśród zwierząt i ofertę rodzinną
+                </Link>
+                .
               </p>
             </div>
             <div className="rounded-3xl border border-emerald-300/60 p-4 h-full bg-emerald-300/10">
@@ -135,9 +157,17 @@ export default function Ranczo() {
                 Dla firm i dorosłych
               </h3>
               <p>
-                Kameralne eventy, integracje w stylu slow, spotkania z dala od
-                biura. Przy ognisku, w rustykalnej sali lub w ogrodzie, tak
-                rodzą się dobre pomysły i lepsza atmosfera w zespole.
+                Kameralne eventy, integracje w stylu takim jak lubicie,
+                spotkania z dala od biura. Przy ognisku, w rustykalnej sali lub
+                w ogrodzie, tak rodzą się dobre pomysły i lepsza atmosfera w
+                zespole. Zobacz{" "}
+                <Link
+                  href="/oferta#firma"
+                  className="underline underline-offset-2 hover:text-[var(--c-primary)]"
+                >
+                  ofertę dla firm
+                </Link>
+                .
               </p>
             </div>
           </div>
@@ -164,7 +194,7 @@ export default function Ranczo() {
             </li>
             <li>
               Bliskość natury, łąki, przestrzeń, świeże powietrze i prawdziwy
-              spokój.
+              spokój Mazowsza.
             </li>
             <li>
               Zwierzęta, które znają ludzi i są przyzwyczajone do kontaktu z
@@ -172,7 +202,7 @@ export default function Ranczo() {
             </li>
             <li>
               Możliwość połączenia wypoczynku, edukacji i terapii przez kontakt
-              ze zwierzętami.
+              ze zwierzętami (w tym elementy alpakoterapii).
             </li>
             <li>
               Duża elastyczność - dopasowujemy program do wieku, potrzeb i
@@ -201,7 +231,8 @@ export default function Ranczo() {
           <Card className="font-special text-center text-sm md:text-base mb-4 max-w-2xl mx-auto">
             Napisz lub zadzwoń, opowiedz nam o swojej grupie, a my pomożemy
             zaplanować idealną wizytę na Ranczo Patataj, niezależnie, czy
-            szukasz wycieczki, urodzin, czy kameralnego spotkania w naturze.
+            szukasz wycieczki szkolnej, urodzin wśród zwierząt, czy kameralnego
+            spotkania w naturze w mazowieckim.
           </Card>
 
           <div className="flex flex-col justify-center items-center gap-2">
