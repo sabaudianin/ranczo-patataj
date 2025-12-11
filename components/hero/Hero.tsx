@@ -74,11 +74,20 @@ export const Hero: React.FC = () => {
       <article className="max-w-hd mx-auto relative">
         <h1
           id="promo-heading"
-          className="max-w-3xl mx-auto md:mt-8 md:mb-4 font-ultra text-[var(--c-primary)] text-lg md:text-2xl xl:text-3xl text-center"
+          className="max-w-3xl mx-auto md:mt-8 md:mb-4 font-ultra  text-slate-900 dark:text-slate-50 text-lg md:text-2xl xl:text-3xl text-center"
           itemProp="name"
         >
           Ranczo Patataj - gospodarstwo edukacyjne.
         </h1>
+
+        <Card className="md:my-8">
+          <p className=" text-xs md:text-base xl:text-lg  max-w-5xl font-curier">
+            Spotkania ze zwierzętami, alpakoterapia, warsztaty, ogniska, zabawa
+            i odpoczynek dla rodzin, szkół, grup zorganizowanych i wszystkich,
+            którzy chcą odetchnąć od codzienności. Tylko godzinę drogi od
+            Warszawy.
+          </p>
+        </Card>
 
         <div className="relative w-full h-48 md:h-80 lg:h-120 overflow-hidden rounded-xl">
           <video
@@ -89,50 +98,49 @@ export const Hero: React.FC = () => {
             loop
             playsInline
             poster="/images/trioAlpak.avif"
-          />
+            aria-hidden="true"
+            tabIndex={-1}
+          >
+            <track
+              kind="captions"
+              src="/videos/film-pl.vtt"
+              srcLang="pl"
+              label="Polskie napisy"
+              default
+            />
+          </video>
         </div>
 
-        <div className="">
-          <div className="flex h-full flex-col items-center justify-between text-center gap-4">
-            <Card>
-              <p className="md:py-4 text-xs md:text-base xl:text-lg  max-w-5xl font-curier">
-                Spotkania ze zwierzętami, alpakoterapia, warsztaty, ogniska,
-                zabawa i odpoczynek dla rodzin, szkół, grup zorganizowanych i
-                wszystkich, którzy chcą odetchnąć od codzienności. Tylko godzinę
-                drogi od Warszawy.
-              </p>
-            </Card>
-
-            <div className="flex flex-col sm:flex-row gap-2 items-center justify-center pb-1">
-              <div>
-                <Link
-                  href="/oferta"
-                  className="mr-1 inline-flex items-center justify-center px-5 py-2 rounded-xl bg-emerald-900/70 hover:bg-emerald-800/70 border border-emerald-700/90 shadow-md  hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]  text-xs md:text-sm lg:text-base text-white font-curier"
-                >
-                  Zobacz ofertę
-                </Link>
-
-                <Link
-                  href="/ranczo"
-                  className="ml-1 inline-flex items-center justify-center px-5 py-2 rounded-xl bg-slate-900/90 hover:bg-slate-800/90 border border-slate-700 shadow-md hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] text-xs md:text-sm lg:text-base  font-curier text-white"
-                >
-                  Poznaj Ranczo
-                </Link>
-              </div>
-
-              <a
-                href={PHONETO}
-                className="inline-flex items-center justify-center gap-2 px-5 py-2 border rounded-xl border-stone-900 bg-stone-800/80 hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2  hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] text-xs md:text-sm lg:text-base  font-semibold font-curier text-white"
-                aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby zarezerwować termin w Ranczo Patataj`}
-                itemProp="telephone"
+        <div className="flex h-full flex-col items-center justify-between text-center gap-4 mt-4 md:mt-8">
+          <div className="flex flex-col sm:flex-row gap-2 items-center justify-center pb-1">
+            <div>
+              <Link
+                href="/oferta"
+                className="mr-1 inline-flex items-center justify-center px-5 py-2 rounded-xl bg-emerald-800 hover:bg-emerald-700 border border-emerald-700/90 shadow-md hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]  text-xs md:text-sm lg:text-base text-white font-curier"
               >
-                <FaPhone
-                  className="animate-pulse"
-                  aria-hidden="true"
-                />
-                <span>Zadzwoń: {CONTACT.phoneDisplay}</span>
-              </a>
+                Zobacz ofertę
+              </Link>
+
+              <Link
+                href="/ranczo"
+                className="ml-1 inline-flex items-center justify-center px-5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 shadow-md hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] text-xs md:text-sm lg:text-base  font-curier text-white"
+              >
+                Poznaj Ranczo
+              </Link>
             </div>
+
+            <a
+              href={PHONETO}
+              className="inline-flex items-center justify-center gap-2 px-5 py-2 border rounded-xl border-stone-900 bg-stone-800/80 hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2  hover:scale-105 transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] text-xs md:text-sm lg:text-base  font-semibold font-curier text-white"
+              aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby zarezerwować termin w Ranczo Patataj`}
+              itemProp="telephone"
+            >
+              <FaPhone
+                className="animate-pulse"
+                aria-hidden="true"
+              />
+              <span>Zadzwoń: {CONTACT.phoneDisplay}</span>
+            </a>
           </div>
         </div>
       </article>
