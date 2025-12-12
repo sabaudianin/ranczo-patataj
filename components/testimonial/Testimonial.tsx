@@ -59,7 +59,7 @@ export const Testimonial = () => {
       aria-labelledby="opinions-heading"
       className="px-1 md:px-8 max-w-7xl mx-auto py-4"
     >
-      <motion.h2
+      <motion.h6
         id="opinions-heading"
         className="pb-2 text-center font-special  font-bold text-2xl md:text-3xl text-[var(--c-primary)]"
         initial={{ opacity: 0, y: 16 }}
@@ -68,7 +68,7 @@ export const Testimonial = () => {
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
         Nasi goście o nas :{" "}
-      </motion.h2>
+      </motion.h6>
       <motion.div
         className="text-center text-sm font-curier mx-auto mb-8 font-semibold text-xs md:text-lg"
         initial={{ opacity: 0, y: 10 }}

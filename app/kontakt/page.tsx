@@ -5,7 +5,7 @@ import {
   createContactPageJsonLd,
 } from "@/lib/seo/schema";
 import { CONTACT, MAILTO, PHONETO } from "@/config/contact/Contact";
-import { ContactForm } from "./contactForm/ContactForm";
+
 import { Card } from "@/ui/card/Card";
 
 export default function Contact() {
@@ -65,7 +65,7 @@ export default function Contact() {
         <div className="w-full relative h-20">
           <Image
             src="/images/ranczoZnak.avif"
-            alt="Znak Ranczo"
+            alt="Znak Ranczo Patataj z alpakami, w Jastrzębiej starej , koło Mogielnicy , w wojewódzstwie mazowieckim , niedaleko Warszawy"
             fill
             className="object-contain filter sepia-[0.6] contrast-125 brightness-90 saturate-75 rounded-2xl"
           />
@@ -121,7 +121,6 @@ export default function Contact() {
               />{" "}
             </a>
           </div>
-          <ContactForm />
         </div>
 
         <div

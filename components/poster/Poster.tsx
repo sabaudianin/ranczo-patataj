@@ -7,13 +7,13 @@ export const Poster = () => {
       aria-labelledby="schools-offer-heading"
     >
       <div>
-        <h2
+        <h6
           className="text-center md:text-xl font-ultra"
           id="schools-offer-heading"
         >
           Nowa oferta dla szkół i przedszkoli w gospodarstwie edukacyjnym Ranczo
           Patataj
-        </h2>
+        </h6>
 
         <p className="text-center text-xs md:text-base max-w-2xl mx-auto mt-2 font-curier">
           Organizujemy wycieczki szkolne, wizyty przedszkoli, warsztaty

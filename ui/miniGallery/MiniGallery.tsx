@@ -54,12 +54,12 @@ export const MiniGallery = () => {
       aria-labelledby="mini-gallery-heading"
       role="region"
     >
-      <h2
+      <h5
         id="mini-gallery-heading"
         className="text-center text-base md:text-xl font-ultra tracking-wide text-[var(--c-primary)] mb-2"
       >
         Zobacz, jak wyglądają nasze niektóre atrakcje:
-      </h2>
+      </h5>
 
       {/* Dostępna dla czytników ekranu lista opisów zdjęć */}
       <ul className="sr-only">

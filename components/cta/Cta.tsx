@@ -43,12 +43,12 @@ export const Cta = () => {
       role="region"
     >
       <div className="relative z-10 flex flex-col md:p-6 text-center max-w-6xl mx-auto">
-        <h2
+        <h6
           id="cta-heading"
           className="text-lg md:text-2xl font-ultra tracking-wider text-[var(--c-primary)]"
         >
           Zarezerwuj termin wizyty w gospodarstwie edukacyjnym Ranczo Patataj
-        </h2>
+        </h6>
         <div className="flex justify-center items-center p-2">
           <a
             href={PHONETO}

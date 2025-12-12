@@ -42,9 +42,8 @@ export const Navbar: React.FC = () => {
                     src="/logorp.avif"
                     alt="Logo Ranczo Patataj"
                     fill
-                    sizes="auto"
+                    sizes="(min-width: 768px) 96px, 64px"
                     className="rounded-full shadow-xl object-cover"
-                    priority
                   />
                 </div>
               </Link>

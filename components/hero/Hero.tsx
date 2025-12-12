@@ -1,67 +1,10 @@
 import React from "react";
 
 import Link from "next/link";
-import type { Metadata } from "next";
+
 import { FaPhone } from "react-icons/fa";
 import { CONTACT, PHONETO } from "@/config/contact/Contact";
 import { Card } from "@/ui/card/Card";
-
-export const metadata: Metadata = {
-  // Podstawowy tytuł strony głównej
-  title: "Ranczo Patataj - gospodarstwo edukacyjne dla szkół i rodzin",
-  description:
-    "Ranczo Patataj to gospodarstwo edukacyjne w Jastrzębi Starej koło Mogielnicy. Organizujemy warsztaty, spotkania ze zwierzętami, gry terenowe, ogniska i imprezy okolicznościowe dla szkół, przedszkoli i rodzin.",
-
-  // Żeby Google wiedział który URL jest kanoniczny dla Home
-  alternates: {
-    canonical: "https://twojadomena.pl/",
-  },
-
-  // OG
-  openGraph: {
-    type: "website",
-    url: "https://twojadomena.pl/",
-    siteName: "Ranczo Patataj - Gospodarstwo Edukacyjne",
-    title: "Ranczo Patataj - gospodarstwo edukacyjne dla szkół i rodzin",
-    description:
-      "Gospodarstwo edukacyjne w Jastrzębi Starej koło Mogielnicy. Warsztaty, spotkania ze zwierzętami, gry terenowe, ogniska i imprezy okolicznościowe dla szkół, przedszkoli i rodzin.",
-    images: [
-      {
-        url: "https://twojadomena.pl/og-image-home.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Dzieci uczestniczące w warsztatach na Ranczo Patataj - gospodarstwo edukacyjne",
-      },
-    ],
-  },
-
-  // Twitter card
-  twitter: {
-    card: "summary_large_image",
-    title: "Ranczo Patataj - gospodarstwo edukacyjne dla szkół i rodzin",
-    description:
-      "Warsztaty edukacyjne, spotkania ze zwierzętami, gry terenowe i ogniska dla szkół, przedszkoli i rodzin w Ranczo Patataj.",
-    images: ["https://twojadomena.pl/og-image-home.jpg"],
-  },
-
-  // sygnał dla robotów
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  // opcj frazy kluczowe
-  keywords: [
-    "gospodarstwo edukacyjne",
-    "warsztaty dla szkół",
-    "wycieczki szkolne",
-    "wyjazd integracyjny",
-    "rodzinne atrakcje",
-    "Ranczo Patataj",
-    "Mogielnica",
-    "Alpaki",
-  ],
-};
 
 export const Hero: React.FC = () => {
   return (
