@@ -1,4 +1,5 @@
 import Script from "next/script";
+import Image from "next/image";
 import { createServicesItemListJsonLd } from "@/lib/seo/schema";
 import { FaPhone } from "react-icons/fa";
 import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
@@ -281,6 +282,14 @@ export default function Oferta() {
               uczestników i budżetu.
             </p>
           </article>
+        </div>
+        <div className="relative w-full h-40 md:h-60 lg:h-96 text-center my-8">
+          <Image
+            src="/images/salaGit.avif"
+            fill
+            alt="Ranczo widok z ulicy"
+            className="mx-auto h-auto w-auto rounded-xl"
+          />
         </div>
       </section>
     </>

@@ -25,20 +25,20 @@ export const AlpakoTerapy = () => {
       aria-labelledby="alpakoterapia-title"
       className="max-w-5xl mx-auto md:py-12 px-2 relative"
     >
-      <motion.h2
+      <motion.h4
         id="alpakoterapia-title"
         variants={item}
         className="text-[var(--c-primary)] font-semibold font-special text-center md:text-xl"
       >
         Alpakoterapia w Ranczo Patataj, to spotkania z alpakami dla dzieci i
         dorosłych
-      </motion.h2>
+      </motion.h4>
 
       <motion.p
         variants={item}
         className=" font-special text-center md:text-xl"
       >
-        - Nie znacie alpakoterapii? Nasze alpaki są w tym naprawdę najlepsze!
+        - Nie znacie alpakoterapii? Nasze alpaki są w tym najlepsze!
       </motion.p>
       <motion.div
         variants={container}

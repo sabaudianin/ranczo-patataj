@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { Card } from "@/ui/card/Card";
 
 export const Visit = () => {
@@ -10,12 +11,12 @@ export const Visit = () => {
     >
       <Card>
         <div className="text-center mb-6">
-          <h2
+          <h6
             id="wizyta-title"
             className="text-[var(--c-primary)] font-ultra tracking-wide text-base md:text-2xl"
           >
             Jak wygląda wizyta w gospodarstwie edukacyjnym Ranczo Patataj?
-          </h2>
+          </h6>
 
           <p className="font-curier text-xs md:text-base mt-2 max-w-2xl mx-auto">
             Wizyta na Ranczo Patataj w Jastrzębi Starej koło Mogielnicy w
@@ -54,6 +55,14 @@ export const Visit = () => {
             </li>
           </ul>
 
+          <div className="relative w-full h-40 md:h-60 lg:h-96 text-center my-8">
+            <Image
+              src="/images/ranczoPalenisko.avif"
+              fill
+              alt="Ranczo widok z ulicy"
+              className="mx-auto h-auto w-auto rounded-xl"
+            />
+          </div>
           <p className="text-center pt-4">
             Program każdej wizyty układamy tak, aby był przyjemny, spokojny i
             komfortowy, zarówno dla dzieci jak i dorosłych. To świetna

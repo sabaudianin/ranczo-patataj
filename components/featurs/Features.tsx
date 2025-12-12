@@ -20,7 +20,7 @@ const ANIMAL_FEATURES = [
     src: "/images/tduo.avif",
     alt: "Dwa konie na padoku w gospodarstwie edukacyjnym Ranczo Patataj",
     label: "Zaprzyjaźnij się z końmi 💛",
-    fact: "Kontakt z końmi poprawia pewność siebie, poczucie sprawczości i pomaga redukować stres, jest to świetny element programu wycieczki szkolnej lub wizyty przedszkola.",
+    fact: "Kontakt z końmi poprawia pewność siebie i pomaga redukować stres, jest to świetny element programu wycieczki szkolnej lub wizyty przedszkola.",
   },
   {
     src: "/images/tblack.avif",
@@ -44,7 +44,7 @@ export const Features = () => {
       className="mx-auto max-w-7xl px-4 py-8 "
       role="region"
     >
-      <motion.h2
+      <motion.h6
         id="features-heading"
         className="text-center font-ultra text-2xl md:text-3xl text-[var(--c-primary)] mb-8"
         initial={{ opacity: 0, x: -100, scale: 0.2 }}
@@ -54,7 +54,7 @@ export const Features = () => {
       >
         Alpaki, konie, lamy… u nas zwierzęta mówią &bdquo;Dzień Dobry&rdquo;
         jako pierwsze.
-      </motion.h2>
+      </motion.h6>
       <motion.div
         className="text-center mx-auto font-special text-sm "
         initial={{ opacity: 0, y: 10 }}
@@ -85,7 +85,7 @@ export const Features = () => {
               <motion.div
                 key={item.label}
                 className={[
-                  "relative mx-4 flex items-center gap-3 md:justify-center ",
+                  "relative my-2 flex items-center gap-3 md:justify-center ",
                   isEven
                     ? "flex-row md:flex-col"
                     : "flex-row-reverse md:flex-col",
@@ -104,7 +104,7 @@ export const Features = () => {
                 <div
                   className={[
                     "relative bg-[#fdf3e1] rounded-sm",
-                    "shadow-lg shadow-black/40 p-3 pb-7",
+                    "shadow-lg shadow-black/40 p-2 pb-4",
                     "transform transition-transform duration-300",
                     isEven ? "-rotate-2 md:-rotate-3" : "rotate-2 md:rotate-3",
                     "hover:rotate-0 hover:-translate-y-1 hover:scale-[0.97]",
@@ -135,7 +135,7 @@ export const Features = () => {
 
                 {/*  SIDE TEXT*/}
                 <motion.span
-                  className="p-2 py-8 bg-[#f5ebd5] text-neutral-800 rounded shadow-sm shadow-black/20 font-curier font-semibold text-xs md:text-base"
+                  className="p-2 py-8 bg-[#f5ebd5] text-neutral-800 rounded shadow-sm shadow-black/20 font-curier text-xs md:text-base"
                   initial={{ opacity: 0, y: 100, scale: 0.5 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{ once: true, amount: 0.3 }}

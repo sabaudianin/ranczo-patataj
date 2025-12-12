@@ -72,9 +72,10 @@ export const Atrakcje = () => {
         <MiniCarousel />
         <div className="text-center mb-6 max-w-3xl mx-auto">
           <p className="font-special md:text-base ">
-            Możecie wpaść tylko na chwilę albo zostać na cały dzień. Wybierzcie
-            to, co najbardziej pasuje do Was - klasy szkolnej, przedszkola,
-            rodziny lub znajomych. My zajmiemy się resztą.
+            Nieważne, czy przyjeżdżacie jako rodzina, paczka znajomych, klasa
+            szkolna czy grupa firmowa, możecie wpaść tylko na chwilę albo zostać
+            na cały dzień. Wybierzcie to, co najbardziej pasuje do Was, a my
+            wraz z naszymi zwierzętami zajmiemy się resztą.
           </p>
         </div>
       </Card>

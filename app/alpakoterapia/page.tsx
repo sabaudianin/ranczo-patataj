@@ -235,6 +235,7 @@ export default function Alpakoterapia() {
               fill
               alt="Alpaki na wybiegu podczas zajęć alpakoterapii w Ranczo Patataj"
               className="rounded-2xl object-contain shadow-xl"
+              sizes="(min-width: 768px) 50vw, 100vw"
             />
           </div>
           <div className="relative w-full h-56 md:h-80">
@@ -243,6 +244,7 @@ export default function Alpakoterapia() {
               fill
               alt="Alpaki na wybiegu podczas zajęć alpakoterapii w Ranczo Patataj"
               className="rounded-2xl object-contain shadow-xl"
+              sizes="(min-width: 768px) 50vw, 100vw"
             />
           </div>
         </div>

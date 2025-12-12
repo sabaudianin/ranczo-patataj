@@ -42,7 +42,7 @@ export default function Ranczo() {
           To przestrzeń stworzona do odpoczynku, zabawy oraz mądrego poznawania
           świata przez dzieci i dorosłych. Mniej niż godzinę drogi od Warszawy.
         </Card>
-        <div className="relative w-full h-40 text-center pt-4">
+        <div className="relative w-full h-40 md:h-60 lg:h-96 text-center pt-4">
           <Image
             src="/images/domBokNew.avif"
             fill
@@ -172,6 +172,15 @@ export default function Ranczo() {
             </div>
           </div>
         </article>
+
+        <div className="relative w-full h-40 md:h-80 lg:h-96 text-center my-8">
+          <Image
+            src="/images/ranczoPalenisko.avif"
+            fill
+            alt="Ranczo widok z ulicy"
+            className="mx-auto h-auto w-auto rounded-xl"
+          />
+        </div>
 
         {/* ATMOSFERA */}
         <article
