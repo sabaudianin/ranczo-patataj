@@ -38,7 +38,7 @@ export const metadata: Metadata = {
       "Gospodarstwo edukacyjne w Jastrzębi Starej koło Mogielnicy. Warsztaty, spotkania ze zwierzętami, gry terenowe, ogniska i imprezy okolicznościowe dla szkół, przedszkoli i rodzin.",
     images: [
       {
-        url: "/og.jpg",
+        url: "https://twojadomena.pl/og.jpg",
         width: 1200,
         height: 630,
         alt: "Ranczo Patataj - gospodarstwo edukacyjne z alpakami, mazowieckie niedaleko Warszawy",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: "Ranczo Patataj - gospodarstwo edukacyjne dla szkół i rodzin",
     description:
       "Warsztaty edukacyjne, spotkania ze zwierzętami, gry terenowe i ogniska dla szkół, przedszkoli i rodzin w Ranczo Patataj.",
-    images: ["/og.jpg"],
+    images: ["https://twojadomena.pl/og.jpg"],
   },
 
   // sygnał dla robotów

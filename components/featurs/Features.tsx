@@ -62,7 +62,11 @@ export const Features = () => {
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.45, ease: "easeOut", delay: 0.1 }}
       >
-        <Card className="md:text-base mb-12">
+        <Card
+          className="md:text-base mb-12 break-words leading-relaxed  text-left
+  md:text-justify
+  hyphens-auto"
+        >
           Gospodarstwo edukacyjne blisko Warszawy, w którym dzieci i dorośli
           poznają zwierzęta z bliska - alpaki, lamy, konie, kozy, kury, pawie i
           wiele więcej. Wszystko to podczas wycieczek szkolnych, wizyt

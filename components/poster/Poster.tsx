@@ -15,7 +15,7 @@ export const Poster = () => {
           Patataj
         </h6>
 
-        <p className="text-center text-xs md:text-base max-w-2xl mx-auto mt-2 font-curier">
+        <p className="text-center text-xs md:text-base max-w-4xl mx-auto mt-2 font-curier">
           Organizujemy wycieczki szkolne, wizyty przedszkoli, warsztaty
           edukacyjne oraz spotkania ze zwierzętami w Jastrzębi Starej koło
           Mogielnicy, w województwie mazowieckim. Napisz do nas, aby otrzymać
