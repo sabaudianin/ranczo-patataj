@@ -60,7 +60,7 @@ export const Atrakcje = () => {
           >
             Atrakcje na Ranczo Patataj, czyli co u nas przeżyjesz?
           </h2>
-          <p className="font-curier text-xs md:text-base mt-2 max-w-2xl mx-auto">
+          <p className="font-curier text-xs md:text-base mt-2 max-w-4xl mx-auto text-justify">
             Ranczo Patataj to gospodarstwo edukacyjne w Jastrzębi Starej koło
             Mogielnicy, w województwie mazowieckim. Podczas wycieczek szkolnych,
             wizyt przedszkoli, rodzin i grup zorganizowanych czekają na Was

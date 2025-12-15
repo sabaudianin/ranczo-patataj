@@ -11,7 +11,7 @@ export const Final = () => {
           Zarezerwuj wizytę
         </p>
         <div className="py-4 md:px-6 flex flex-col gap-6 w-full items-center text-center ">
-          <div className="space-y-2 max-w-xl font-curier">
+          <div className="space-y-2 max-w-4xl font-curier">
             <h6 className="md:text-lg font-semibold tracking-tight ">
               Gotowi na spotkanie z naszym Ranczem?
             </h6>

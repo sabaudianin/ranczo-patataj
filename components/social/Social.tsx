@@ -8,10 +8,10 @@ export const Social = () => {
         <p className="text-center font-ultra ">
           Aktualna oferta i promocje - sprawdź nasze social media:
         </p>
-        <p className="text-center font-curier text-xs md:text-sm mt-1 max-w-2xl mx-auto">
+        <p className="text-center font-curier text-xs md:text-sm mt-1 max-w-3xl mx-auto">
           Zobacz, co aktualnie dzieje się w naszym gospodarstwie edukacyjnym w
           Jastrzębi Starej koło Mogielnicy, nowe warsztaty, wycieczki szkolne,
-          spotkania ze zwierzętami, ogniska i atrakcje dla rodzin.
+          spotkania ze zwierzętami, ogniska i atrakcje dla rodzin i firm.
         </p>
         <nav
           className="flex items-center justify-center gap-8"

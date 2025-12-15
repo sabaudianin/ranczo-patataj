@@ -36,9 +36,9 @@ export const AlpakoTerapy = () => {
 
       <motion.p
         variants={item}
-        className=" font-special text-center md:text-xl"
+        className=" font-special text-center md:text-xl pt-2"
       >
-        - Nie znacie alpakoterapii? Nasze alpaki są w tym najlepsze!
+        - Nie znacie alpakoterapi? Nasze alpaki są w tym najlepsze!
       </motion.p>
       <motion.div
         variants={container}
@@ -54,11 +54,14 @@ export const AlpakoTerapy = () => {
             className="font-curier text-xs md:text-base py-2 space-y-2"
           >
             <Card>
-              <b>Alpakoterapia</b> to naturalna forma wsparcia emocjonalnego i
-              wyciszenia zarówno dla dzieci, jak i dorosłych. Na Ranczo Patataj
-              w Jastrzębi Starej koło Mogielnicy w województwie mazowieckim
-              spotkania z alpakami pomagają się zrelaksować, otworzyć i poczuć
-              bezpiecznie.
+              <b className="text-center">Alpakoterapia</b>
+              <span className="text-left">
+                to naturalna forma wsparcia emocjonalnego i wyciszenia zarówno
+                dla dzieci, jak i dorosłych. Na Ranczo Patataj w Jastrzębi
+                Starej koło Mogielnicy w województwie mazowieckim spotkania z
+                alpakami pomagają się zrelaksować, otworzyć i poczuć
+                bezpiecznie.
+              </span>
             </Card>
 
             <p className="text-[var(--c-primary)] font-bold text-[var(--c-primary)] font-special ">
@@ -80,7 +83,7 @@ export const AlpakoTerapy = () => {
             variants={item}
             className="font-curier text-xs md:text-base"
           >
-            <Card>
+            <Card className="text-left">
               Alpakoterapia w mazowieckim, którą prowadzimy na Ranczo Patataj,
               to łagodna i bezpieczna forma terapii oparta na obcowaniu ze
               zwierzętami. Jest idealna dla szkół, przedszkoli, rodzin i grup

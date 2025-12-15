@@ -88,7 +88,7 @@ export const MiniCarousel = () => {
           return (
             <div
               key={slot.wrapperClass + src}
-              className={`${slot.wrapperClass} border border-stone-100 border-2 border-b-8`}
+              className={`${slot.wrapperClass} shadow-md shadow-white/20`}
             >
               <Image
                 src={src}

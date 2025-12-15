@@ -65,7 +65,7 @@ export const Cta = () => {
           </a>
         </div>
 
-        <p className="text-xs md:text-sm max-w-md mx-auto font-semibold font-curier">
+        <p className="text-xs md:text-sm max-w-4xl mx-auto font-semibold font-curier">
           Zadzwoń, aby umówić wycieczkę szkolną, wizytę przedszkola, zajęcia
           edukacyjne ze zwierzętami, alpakoterapię albo zarezerwować ranczo na
           imprezę firmową, rodzinną lub wizytę grupową. Przyjmujemy grupy z
