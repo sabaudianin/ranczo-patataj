@@ -4,6 +4,7 @@ import {
   createLocalBusinessJsonLd,
   createWebPageJsonLd,
 } from "@/lib/seo/schema";
+import { SITE } from "@/lib/seo/site";
 import { CONTACT } from "@/config/contact/Contact";
 import { Testimonial } from "@/components/testimonial/Testimonial";
 import { Features } from "@/components/featurs/Features";
@@ -25,20 +26,20 @@ export const metadata: Metadata = {
 
   // Żeby Google wiedział który URL jest kanoniczny dla Home
   alternates: {
-    canonical: "https://twojadomena.pl/",
+    canonical: "/",
   },
 
   // OG
   openGraph: {
     type: "website",
-    url: "https://twojadomena.pl/",
+    url: "/",
     siteName: "Ranczo Patataj - Gospodarstwo Edukacyjne",
     title: "Ranczo Patataj - gospodarstwo edukacyjne dla szkół i rodzin",
     description:
       "Gospodarstwo edukacyjne w Jastrzębi Starej koło Mogielnicy. Warsztaty, spotkania ze zwierzętami, gry terenowe, ogniska i imprezy okolicznościowe dla szkół, przedszkoli i rodzin.",
     images: [
       {
-        url: "https://twojadomena.pl/og.jpg",
+        url: "/og.jpg",
         width: 1200,
         height: 630,
         alt: "Ranczo Patataj - gospodarstwo edukacyjne z alpakami, mazowieckie niedaleko Warszawy",
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
     title: "Ranczo Patataj - gospodarstwo edukacyjne dla szkół i rodzin",
     description:
       "Warsztaty edukacyjne, spotkania ze zwierzętami, gry terenowe i ogniska dla szkół, przedszkoli i rodzin w Ranczo Patataj.",
-    images: ["https://twojadomena.pl/og.jpg"],
+    images: ["/og.jpg"],
   },
 
   // sygnał dla robotów
@@ -77,15 +78,17 @@ export const metadata: Metadata = {
 export default function Home() {
   const webPageJsonLd = createWebPageJsonLd({
     name: "Ranczo Patataj - Gospodarstwo Edukacyjne",
-    url: "https://twojadomena.pl/",
+    url: `${SITE.url}/`,
     description:
       "Ranczo Patataj to gospodarstwo edukacyjne dla szkół, rodzin i grup zorganizowanych. Warsztaty, spotkania ze zwierzętami, gry terenowe, ogniska i imprezy okolicznościowe.",
   });
 
   const localBusinessJsonLd = createLocalBusinessJsonLd({
     name: "Ranczo Patataj - Gospodarstwo Edukacyjne",
-    url: "https://twojadomena.pl",
+    url: `${SITE.url}/`,
     telephone: CONTACT.phoneRaw,
+    email: CONTACT.email,
+    image: `${SITE.url}${SITE.og.defaultImage}`,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Jastrzębia Stara 9",
@@ -112,7 +115,7 @@ export default function Home() {
       <Script
         id="home-webpage-jsonld"
         type="application/ld+json"
-        strategy="afterInteractive"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(webPageJsonLd),
         }}
@@ -121,7 +124,7 @@ export default function Home() {
       <Script
         id="home-localbusiness-jsonld"
         type="application/ld+json"
-        strategy="afterInteractive"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(localBusinessJsonLd),
         }}

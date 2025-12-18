@@ -2,9 +2,11 @@ export default function PolitykaPrywatnosci() {
   return (
     <section
       id="policy"
-      className="max-w-4xl mx-auto px-4 py-12 font-curier text-sm leading-relaxed"
+      className="max-w-4xl mx-auto px-4 py-24 font-curier text-sm leading-relaxed"
     >
-      <h1 className="text-2xl font-semibold mb-6">Polityka prywatności</h1>
+      <h1 className="text-2xl font-semibold mb-6 text-center">
+        Polityka prywatności
+      </h1>
 
       <ul className="space-y-4 list-disc list-inside">
         <li>
