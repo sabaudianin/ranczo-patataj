@@ -20,11 +20,14 @@ export const metadata: Metadata = {
     canonical: "/",
   },
 
+  manifest: "/site.webmanifest",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
     apple: "/apple-touch-icon.png",
   },
-
   openGraph: {
     type: "website",
     url: SITE.url,
@@ -54,7 +57,6 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          // globalny Organization JSON-LD
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
         />
       </head>

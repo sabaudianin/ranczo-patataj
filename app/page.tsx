@@ -4,6 +4,7 @@ import {
   createLocalBusinessJsonLd,
   createWebPageJsonLd,
 } from "@/lib/seo/schema";
+import { SITE } from "@/lib/seo/site";
 import { CONTACT } from "@/config/contact/Contact";
 import { Testimonial } from "@/components/testimonial/Testimonial";
 import { Features } from "@/components/featurs/Features";
@@ -77,17 +78,17 @@ export const metadata: Metadata = {
 export default function Home() {
   const webPageJsonLd = createWebPageJsonLd({
     name: "Ranczo Patataj - Gospodarstwo Edukacyjne",
-    url: "https://ranczopatataj.pl",
+    url: `${SITE.url}/`,
     description:
       "Ranczo Patataj to gospodarstwo edukacyjne dla szkół, rodzin i grup zorganizowanych. Warsztaty, spotkania ze zwierzętami, gry terenowe, ogniska i imprezy okolicznościowe.",
   });
 
   const localBusinessJsonLd = createLocalBusinessJsonLd({
     name: "Ranczo Patataj - Gospodarstwo Edukacyjne",
-    url: "https://ranczopatataj.pl",
+    url: `${SITE.url}/`,
     telephone: CONTACT.phoneRaw,
     email: CONTACT.email,
-    image: "https://ranczopatataj.pl/og.jpg",
+    image: `${SITE.url}${SITE.og.defaultImage}`,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Jastrzębia Stara 9",

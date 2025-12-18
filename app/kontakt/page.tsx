@@ -1,5 +1,7 @@
 import Script from "next/script";
 import Image from "next/image";
+import { SITE } from "@/lib/seo/site";
+
 import {
   createLocalBusinessJsonLd,
   createContactPageJsonLd,
@@ -8,15 +10,11 @@ import { CONTACT, MAILTO, PHONETO } from "@/config/contact/Contact";
 import { Card } from "@/ui/card/Card";
 
 export default function Contact() {
-  const contactJsonLd = createContactPageJsonLd({
-    name: "Kontakt - Ranczo Patataj - Gospodarstwo Edukacyjne",
-    url: "https://ranczopatataj.pl/kontakt",
-  });
-
   const localBusinessJsonLd = createLocalBusinessJsonLd({
-    name: "Ranczo Patataj - Gospodarstwo Edukacyjne",
-    url: "https://ranczopatataj.pl/",
+    name: SITE.legalName,
+    url: `${SITE.url}/`,
     telephone: CONTACT.phoneRaw,
+    email: CONTACT.email,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Jastrzębia Stara 9",
@@ -38,6 +36,14 @@ export default function Contact() {
     ],
   });
 
+  const contactJsonLd = {
+    ...createContactPageJsonLd({
+      name: "Kontakt - Ranczo Patataj",
+      url: `${SITE.url}/kontakt`,
+    }),
+    mainEntity: localBusinessJsonLd,
+  };
+
   return (
     <>
       <Script
@@ -46,14 +52,7 @@ export default function Contact() {
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}
       />
-      <Script
-        id="localbusiness-jsonld"
-        type="application/ld+json"
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(localBusinessJsonLd),
-        }}
-      />
+
       <section
         id="contact"
         className="pt-24 md:py-12  max-w-7xl mx-auto p-2 pb-8"
