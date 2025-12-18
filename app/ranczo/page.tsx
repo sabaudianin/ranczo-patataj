@@ -1,21 +1,42 @@
 import Script from "next/script";
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 import { createAboutPageJsonLd } from "@/lib/seo/schema";
 import { FaPhone } from "react-icons/fa";
 import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
 import { Card } from "@/ui/card/Card";
+import { SITE } from "@/lib/seo/site";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "O nas - Ranczo Patataj gospodarstwo edukacyjne (Mazowieckie)",
   description:
     "Poznaj historię i misję Rancza Patataj - kameralnego gospodarstwa edukacyjnego w Jastrzębi Starej koło Mogielnicy (Mazowieckie). Bliskość natury, alpaki, konie i atrakcje dla szkół, przedszkoli, rodzin oraz firm.",
+  alternates: { canonical: "/ranczo" },
+  openGraph: {
+    url: "/ranczo",
+    title: "O nas | Ranczo Patataj",
+    description:
+      "Historia i misja Rancza Patataj - alpaki, natura i edukacja w mazowieckim, blisko Warszawy.",
+    images: [
+      {
+        url: "/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Ranczo Patataj - o nas",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og.jpg"],
+  },
 };
 
 export default function Ranczo() {
   const aboutJsonLd = createAboutPageJsonLd({
     name: "O nas - Ranczo Patataj - Gospodarstwo Edukacyjne",
-    url: "https://twojadomena.pl/ranczo",
+    url: `${SITE.url}/ranczo`,
   });
 
   return (
@@ -23,7 +44,7 @@ export default function Ranczo() {
       <Script
         id="about-jsonld"
         type="application/ld+json"
-        strategy="afterInteractive"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
       />
 
@@ -47,7 +68,8 @@ export default function Ranczo() {
             src="/images/domBokNew.avif"
             fill
             alt="Ranczo widok z ulicy"
-            className="mx-auto h-auto w-auto rounded-xl"
+            className="rounded-xl object-cover"
+            sizes="(min-width: 1024px) 80vw, 100vw"
           />
         </div>
         {/* MISJA  */}

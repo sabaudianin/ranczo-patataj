@@ -3,11 +3,31 @@ import Image from "next/image";
 import { createServicesItemListJsonLd } from "@/lib/seo/schema";
 import { FaPhone } from "react-icons/fa";
 import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Oferta - gospodarstwo edukacyjne Ranczo Patataj (Mazowieckie)",
   description:
     "Wycieczki szkolne, zajęcia edukacyjne, alpakoterapia, urodziny wśród zwierząt i oferta dla firm w gospodarstwie edukacyjnym Ranczo Patataj w Jastrzębi Starej koło Mogielnicy (Mazowieckie).",
+  alternates: { canonical: "/oferta" },
+  openGraph: {
+    url: "/oferta",
+    title: "Oferta | Ranczo Patataj",
+    description:
+      "Wycieczki szkolne, urodziny, alpakoterapia i eventy firmowe - Mazowieckie, blisko Warszawy.",
+    images: [
+      {
+        url: "/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Oferta Ranczo Patataj",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og.jpg"],
+  },
 };
 
 export default function Oferta() {
@@ -39,7 +59,7 @@ export default function Oferta() {
       <Script
         id="services-jsonld"
         type="application/ld+json"
-        strategy="afterInteractive"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }}
       />
 
@@ -53,7 +73,7 @@ export default function Oferta() {
         itemType="https://schema.org/OfferCatalog"
       >
         <h2
-          id="oferta-heding"
+          id="oferta-heading"
           itemProp="name"
           className="text-center font-ultra text-2xl mt-6  pb-2"
         >
@@ -75,7 +95,7 @@ export default function Oferta() {
         >
           <a
             href={PHONETO}
-            className="inline-flex items-center gap-2 hover:shadow-md font-special font-black md:text-xl px-4 py-2 hover:text-emerald-200  transition-all duration focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] "
+            className="inline-flex items-center gap-2 hover:shadow-md font-special font-black md:text-xl px-4 py-2 hover:text-emerald-200  transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] "
             aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
             itemProp="telephone"
           >
@@ -98,7 +118,7 @@ export default function Oferta() {
         <div
           className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3"
           role="list"
-          aria-label="Lista dostępnych pakietw"
+          aria-label="Lista dostępnych pakietów"
         >
           {/* SZKOŁY I PRZEDSZKOLA */}
           <article
@@ -211,7 +231,7 @@ export default function Oferta() {
               id="oferta-firmy-heading"
               itemProp="name"
             >
-              Oferta dla firm - integracje i eventy w naturzem
+              Oferta dla firm - integracje i eventy w naturze
             </h3>
             <p
               className="text-sm italic py-3 font-special"
@@ -288,7 +308,8 @@ export default function Oferta() {
             src="/images/salaGit.avif"
             fill
             alt="Ranczo widok z ulicy"
-            className="mx-auto h-auto w-auto rounded-xl"
+            className="rounded-xl object-cover"
+            sizes="(min-width: 1024px) 80vw, 100vw"
           />
         </div>
       </section>

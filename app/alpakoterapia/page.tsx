@@ -1,14 +1,34 @@
 import Script from "next/script";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { FaPhone } from "react-icons/fa";
 import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
 import { Card } from "@/ui/card/Card";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Alpakoterapia  spotkania z alpakami w Ranczo Patataj (Mazowieckie)",
   description:
     "Alpakoterapia i spotkania z alpakami w gospodarstwie edukacyjnym Ranczo Patataj w Jastrzębi Starej koło Mogielnicy. Zajęcia dla szkół, przedszkoli, rodzin i grup z Mazowsza.",
+  alternates: { canonical: "/alpakoterapia" },
+  openGraph: {
+    url: "/alpakoterapia",
+    title: "Alpakoterapia - spotkania z alpakami | Ranczo Patataj",
+    description:
+      "Spokojne spotkania z alpakami i alpakoterapia dla szkół, rodzin i grup z Mazowsza.",
+    images: [
+      {
+        url: "/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Alpakoterapia w Ranczo Patataj",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og.jpg"],
+  },
 };
 
 const faqJsonLd = {
@@ -56,7 +76,7 @@ export default function Alpakoterapia() {
       <Script
         id="faq-alpakoterapia-jsonld"
         type="application/ld+json"
-        strategy="afterInteractive"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
@@ -228,7 +248,7 @@ export default function Alpakoterapia() {
             </div>
           </div>
         </article>
-        <div className="flex justfiy-center">
+        <div className="flex justify-center">
           <div className="relative w-full h-56 md:h-80  rounded-2xl">
             <Image
               src="/images/tbrown.avif"
@@ -325,6 +345,29 @@ export default function Alpakoterapia() {
             Najczęstsze pytania o alpakoterapię
           </h2>
           <div className="grid gap-4 md:grid-cols-2 font-special text-sm md:text-base">
+            <Card>
+              <h3 className="font-ultra text-base mb-1">
+                Czym jest alpakoterapia?
+              </h3>
+              <p>
+                Alpakoterapia to forma zajęć wspierających dobrostan emocjonalny
+                i rozwój społeczny w oparciu o kontakt z alpakami. Łagodne
+                zwierzęta pomagają się wyciszyć, redukują stres, wspierają
+                budowanie odwagi i poczucia bezpieczeństwa.
+              </p>
+            </Card>
+
+            <Card>
+              <h3 className="font-ultra text-base mb-1">
+                Czy alpakoterapia jest bezpieczna dla dzieci?
+              </h3>
+              <p>
+                Tak, nasze alpaki są przyzwyczajone do kontaktu z dziećmi i
+                grupami. Zajęcia odbywają się pod opieką doświadczonych
+                opiekunów, a program dostosowujemy do wieku i potrzeb
+                uczestników.
+              </p>
+            </Card>
             <Card>
               <h3 className="font-ultra text-base mb-1">
                 Czy trzeba mieć specjalne przygotowanie?
