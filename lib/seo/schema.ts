@@ -1,11 +1,9 @@
-import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
-
 export const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Ranczo Patataj - Gospodarstwo Edukacyjne",
-  url: "https://twojadomena.pl",
-  logo: "https://twojadomena.pl/logo.png",
+  url: "https://ranczopatataj.pl",
+  logo: "https://ranczopatataj.pl/logo.svg",
 };
 
 type PostalAddress = {
@@ -26,6 +24,8 @@ type OpeningHoursSpecification = {
 type LocalBusinessData = {
   name: string;
   url: string;
+  email?: string;
+  image?: string;
   telephone?: string;
   address?: PostalAddress;
   openingHoursSpecification?: OpeningHoursSpecification[];

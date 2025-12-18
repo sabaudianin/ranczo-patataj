@@ -3,7 +3,6 @@ import { FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdAttachEmail } from "react-icons/md";
 import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
-import { Card } from "@/ui/card/Card";
 
 export const Footer = () => {
   return (
@@ -100,6 +99,18 @@ export const Footer = () => {
         </address>
       </Link>
 
+      <div className="text-[8px] text-center">
+        <p>
+          Strona wykorzystuje pliki cookies podmiotów trzecich (Google Maps).
+        </p>
+        <Link
+          href="/polityka"
+          className="underline "
+        >
+          Polityka prywatności
+        </Link>
+      </div>
+
       <hr className="text-[var(--c-primary)] mx-4 my-1" />
       <p className="text-center text-xs">
         © {new Date().getFullYear()} Ranczo Patataj. All rights reserved.
@@ -109,7 +120,7 @@ export const Footer = () => {
           href="https://portfoliodev-hazel.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Przejdź do portfolio twórcy strony – rafbob"
+          aria-label="Przejdź do portfolio twórcy strony - rafbob"
         >
           {" "}
           Design &amp; Develop rafbob

@@ -5,18 +5,17 @@ import {
   createContactPageJsonLd,
 } from "@/lib/seo/schema";
 import { CONTACT, MAILTO, PHONETO } from "@/config/contact/Contact";
-
 import { Card } from "@/ui/card/Card";
 
 export default function Contact() {
   const contactJsonLd = createContactPageJsonLd({
     name: "Kontakt - Ranczo Patataj - Gospodarstwo Edukacyjne",
-    url: "https://twojadomena.pl/contact",
+    url: "https://ranczopatataj.pl/kontakt",
   });
 
   const localBusinessJsonLd = createLocalBusinessJsonLd({
     name: "Ranczo Patataj - Gospodarstwo Edukacyjne",
-    url: "https://twojadomena.pl",
+    url: "https://ranczopatataj.pl/",
     telephone: CONTACT.phoneRaw,
     address: {
       "@type": "PostalAddress",
@@ -44,13 +43,13 @@ export default function Contact() {
       <Script
         id="contact-jsonld"
         type="application/ld+json"
-        strategy="afterInteractive"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}
       />
       <Script
         id="localbusiness-jsonld"
         type="application/ld+json"
-        strategy="afterInteractive"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(localBusinessJsonLd),
         }}
