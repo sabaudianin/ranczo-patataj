@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   // Podstawowy tytuł strony głównej
   title: "Ranczo Patataj - gospodarstwo edukacyjne dla szkół i rodzin",
   description:
-    "Ranczo Patataj to gospodarstwo edukacyjne w Jastrzębi Starej koło Mogielnicy. Organizujemy warsztaty, spotkania ze zwierzętami, gry terenowe, ogniska i imprezy okolicznościowe dla szkół, przedszkoli i rodzin.",
+    "Ranczo Patataj to gospodarstwo edukacyjne w Jastrzębi Starej.Warsztaty,alpaki,ogniska,imprezy okolicznościowe dla szkół, przedszkoli i rodzin.",
 
   // Żeby Google wiedział który URL jest kanoniczny dla Home
   alternates: {

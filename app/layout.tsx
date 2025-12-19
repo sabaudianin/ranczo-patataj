@@ -1,10 +1,15 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { ultra, special, playwrite, curier } from "@/lib/fonts";
 import "../styles/globals.css";
 import { orgJsonLd } from "@/lib/seo/schema";
 import { SITE } from "@/lib/seo/site";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),

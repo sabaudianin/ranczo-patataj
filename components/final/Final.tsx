@@ -7,10 +7,10 @@ export const Final = () => {
   return (
     <section className="py-4">
       <Card className="w-full max-w-6xl mx-auto text-center">
-        <p className="text-xs font-semibold uppercase tracking-[2px]">
+        <p className=" font-semibold uppercase tracking-[2px]">
           Zarezerwuj wizytę
         </p>
-        <div className="py-4 md:px-6 flex flex-col gap-6 w-full items-center text-center ">
+        <div className="py-4 px-2 md:px-6 flex flex-col gap-6 w-full items-center text-center ">
           <div className="space-y-2 max-w-4xl font-curier">
             <h6 className="md:text-lg font-semibold tracking-tight ">
               Gotowi na spotkanie z naszym Ranczem?
@@ -21,13 +21,13 @@ export const Final = () => {
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-3 w-full md:w-auto items-stretch md:items-center justify-center md:justify-start">
+          <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto items-stretch md:items-center justify-center md:justify-start">
             <Link
               href="/oferta"
-              className="inline-flex w-full md:w-auto items-center justify-center px-5 py-2.5 rounded-xl
+              className="inline-flex w-full md:w-auto items-center justify-center px-5 py-3 rounded-xl
                 bg-emerald-900/90 hover:bg-emerald-700
                  border border-emerald-800
-                 text-xs md:text-sm lg:text-base font-semibold text-white font-curier
+                 md:text-sm lg:text-base font-semibold text-white font-curier
                  hover:scale-[1.02] active:scale-[0.99]
                  transition-all duration-150
                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-600"
@@ -37,11 +37,11 @@ export const Final = () => {
 
             <Link
               href="/ranczo"
-              className="inline-flex w-full md:w-auto items-center justify-center px-5 py-2.5 rounded-xl
+              className="inline-flex w-full md:w-auto items-center justify-center px-5 py-3 rounded-xl
                  bg-white/90 hover:bg-white
                  border border-[var(--c-primary)]
                  shadow-sm
-                 text-xs md:text-sm lg:text-base font-semibold font-curier text-stone-900
+                  md:text-sm lg:text-base font-semibold font-curier text-stone-900
                  hover:scale-[1.02] active:scale-[0.99]
                  transition-all duration-150
                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
@@ -51,7 +51,7 @@ export const Final = () => {
 
             <a
               href={PHONETO}
-              className="inline-flex w-full md:w-auto items-center justify-center gap-2 px-4 py-2.5 rounded-xl border border-[var(--c-primary)] bg-stone-900/90  hover:bg-stone-800 hover:scale-[1.02] active:scale-[0.99] transition-all duration-150 underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] font-curier text-xs md:text-sm text-white/90 "
+              className="inline-flex w-full md:w-auto items-center justify-center gap-2 px-4 py-3 rounded-xl border border-[var(--c-primary)] bg-stone-900/90  hover:bg-stone-800 hover:scale-[1.02] active:scale-[0.99] transition-all duration-150 underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] font-curier md:text-sm text-white/90 "
               aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby zarezerwować termin w Ranczo Patataj`}
               itemProp="telephone"
             >
@@ -59,7 +59,7 @@ export const Final = () => {
                 className="animate-pulse"
                 aria-hidden="true"
               />
-              <span>Zadzwoń teraz: {CONTACT.phoneDisplay}</span>
+              <span>Zadzwoń: {CONTACT.phoneDisplay}</span>
             </a>
           </div>
         </div>
