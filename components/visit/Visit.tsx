@@ -55,12 +55,13 @@ export const Visit = () => {
             </li>
           </ul>
 
-          <div className="relative w-full h-40 md:h-60 lg:h-96 text-center my-8">
+          <div className="relative w-full h-40 md:h-60 lg:h-96 text-center my-8 ">
             <Image
               src="/images/ranczoPalenisko.avif"
               fill
               alt="Ranczo widok z ulicy"
-              className="mx-auto h-auto w-auto rounded-xl"
+              className="object-cover rounded-xl"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
             />
           </div>
           <p className="text-center pt-4">
