@@ -18,7 +18,7 @@ export const Visit = () => {
             Jak wygląda wizyta w gospodarstwie edukacyjnym Ranczo Patataj?
           </h6>
 
-          <p className="font-curier text-xs md:text-base mt-2 max-w-2xl mx-auto">
+          <p className="font-curier mt-2 max-w-2xl mx-auto">
             Wizyta na Ranczo Patataj w Jastrzębi Starej koło Mogielnicy w
             województwie mazowieckim jest zawsze dopasowana do Was niezależnie
             od tego, czy przyjeżdżacie jako wycieczka szkolna, grupa z
@@ -26,7 +26,7 @@ export const Visit = () => {
           </p>
         </div>
 
-        <div className="font-curier text-xs md:text-base space-y-4">
+        <div className="font-curier  space-y-4">
           <ul className="list-disc list-inside space-y-2">
             <li>
               Po przyjeździe poznajecie naszą przestrzeń i zwierzęta w swoim

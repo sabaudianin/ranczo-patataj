@@ -25,7 +25,7 @@ export const Hero: React.FC = () => {
         </h1>
 
         <Card className="md:my-8">
-          <p className=" text-xs md:text-base xl:text-lg  max-w-5xl mx-auto font-curier text-center">
+          <p className="md:text-sm xl:text-lg  max-w-5xl mx-auto font-curier text-center">
             Ranczo Patataj to gospodarstwo edukacyjne w Jastrzębi Starej koło
             Mogielnicy, w województwie mazowieckim. Organizujemy wycieczki
             szkolne, warsztaty edukacyjne, spotkania ze zwierzętami i

@@ -101,7 +101,7 @@ export default function Alpakoterapia() {
               bezpieczeństwa - szczególnie u osób wrażliwych, nieśmiałych albo
               przebodźcowanych codziennym tempem życia.
             </Card>
-            <p className="font-special text-xs md:text-sm ">
+            <p className="font-special ">
               Zapraszamy grupy z Warszawy, Grójca, Mogielnicy i całego Mazowsza
               - w kameralnej, rodzinnej atmosferze gospodarstwa edukacyjnego.
             </p>
@@ -109,7 +109,7 @@ export default function Alpakoterapia() {
             <div className="mt-4 flex flex-col sm:flex-row gap-2 sm:items-center">
               <a
                 href={PHONETO}
-                className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-emerald-900/90 hover:bg-emerald-700 text-white font-special text-sm md:text-base transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-700"
+                className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-emerald-900/90 hover:bg-emerald-700 text-white font-special text-sm md:text-base transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-700"
                 aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby umówić alpakoterapię w Ranczo Patataj`}
               >
                 <FaPhone
@@ -120,7 +120,7 @@ export default function Alpakoterapia() {
               </a>
               <a
                 href={MAILTO}
-                className="text-xs md:text-sm underline underline-offset-2 hover:text-[var(--c-primary)] font-curier"
+                className=" underline underline-offset-2 hover:text-[var(--c-primary)] font-curier"
               >
                 lub napisz: {CONTACT.email}
               </a>
@@ -208,7 +208,7 @@ export default function Alpakoterapia() {
           <h2 className="font-ultra text-xl mb-3 text-center">
             Jak wygląda spotkanie z alpakami na Ranczo Patataj?
           </h2>
-          <div className="grid gap-4 md:grid-cols-4 font-special text-xs md:text-sm">
+          <div className="grid gap-4 md:grid-cols-4 font-special">
             <div className="rounded-3xl border border-emerald-200  p-4 h-full">
               <h3 className="font-ultra text-sm mb-1">1. Powitanie i zasady</h3>
               <p>

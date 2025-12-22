@@ -119,7 +119,7 @@ export const Navbar: React.FC = () => {
                         <Link
                           href={link.href}
                           aria-current={active ? "page" : undefined}
-                          className={`block rounded-lg px-3 py-4 transition hover:bg-amber-50 transition-colors hover:text-amber-500 text-xs font-ultra ${
+                          className={`block rounded-lg px-3 py-4 transition hover:bg-amber-50 transition-colors hover:text-amber-500 font-ultra ${
                             active && "text-amber-600"
                           }`}
                           onClick={() => setIsOpen(false)}

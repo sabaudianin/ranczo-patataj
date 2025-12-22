@@ -167,7 +167,7 @@ export default function Oferta() {
               <li>🗸 Ognisko z pieczeniem kiełbasek lub pianek</li>
             </ul>
             <hr className="m-2 text-amber-300/70" />
-            <p className=" text-xs  font-special">
+            <p className="font-special">
               Idealne na wycieczki szkolne, zielone szkoły, dni adaptacyjne i
               integrację klas oraz grup przedszkolnych.
             </p>
@@ -210,7 +210,7 @@ export default function Oferta() {
               <li>🥳 Kameralna, rodzinna atmosfera w otoczeniu natury</li>
             </ul>
             <hr className="m-2 text-amber-300/70" />
-            <p className=" text-xs font-special">
+            <p className="font-special">
               Możliwość zamówienia tortu, poczęstunku oraz personalizowanych
               atrakcji - ustalanych indywidualnie.
             </p>
@@ -250,7 +250,7 @@ export default function Oferta() {
               <li>🤝 Programy integracyjne dopasowane do zespołu</li>
             </ul>
             <hr className="m-2 text-emerald-300/70" />
-            <p className=" text-xs font-special">
+            <p className="font-special">
               Świetna propozycja na integracje, małe eventy firmowe i spotkania
               w stylu jaki lubicie - zaledwie godzinę drogi od Warszawy.
             </p>

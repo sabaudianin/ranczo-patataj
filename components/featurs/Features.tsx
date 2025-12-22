@@ -139,7 +139,7 @@ export const Features = () => {
 
                 {/*  SIDE TEXT*/}
                 <motion.span
-                  className="p-2 py-8 bg-[#f5ebd5] text-neutral-800 rounded shadow-sm shadow-black/20 font-curier text-xs md:text-base"
+                  className="p-2 py-8 bg-[#f5ebd5] text-neutral-800 rounded shadow-sm shadow-black/20 font-curier"
                   initial={{ opacity: 0, y: 100, scale: 0.5 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{ once: true, amount: 0.3 }}
