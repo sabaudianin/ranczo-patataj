@@ -51,7 +51,7 @@ export const AlpakoTerapy = () => {
         <div className="text-center md:text-left font-special md:text-xl">
           <motion.div
             variants={item}
-            className="font-curier text-xs md:text-base py-2 space-y-2"
+            className="font-curier  py-2 space-y-2"
           >
             <Card>
               <b className="text-center">Alpakoterapia</b>
@@ -81,7 +81,7 @@ export const AlpakoTerapy = () => {
 
           <motion.div
             variants={item}
-            className="font-curier text-xs md:text-base"
+            className="font-curier"
           >
             <Card className="text-left">
               Alpakoterapia w mazowieckim, którą prowadzimy na Ranczo Patataj,

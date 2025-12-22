@@ -75,18 +75,18 @@ export default function Contact() {
               <p className="text-center pb-2">Skontaktuj się z nami :</p>
               <a
                 href={PHONETO}
-                className="block hover:text-emerald-400 0 transition-all duration text-xs md:text-base font-curier "
+                className="block hover:text-emerald-400 0 transition-all duration font-curier "
                 aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
               >
                 <span itemProp="telephone">📞 {CONTACT.phoneDisplay}</span>
               </a>
               <a
                 href={MAILTO}
-                className="block hover:text-[var(--c-primary)] text-xs md:text-base font-curier py-2"
+                className="block hover:text-[var(--c-primary)] md:text-base font-curier py-3"
               >
                 <span itemProp="email">📧&nbsp;&nbsp;{CONTACT.email}</span>
               </a>
-              <p className="py-2 text-xs md:text-base">
+              <p className="py-2 md:text-base">
                 📍 Jastrzębia Stara 9, 05-640 Mogielnica, Polska
               </p>
             </Card>

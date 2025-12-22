@@ -70,7 +70,7 @@ export const Testimonial = () => {
         Nasi goście o nas :{" "}
       </motion.h6>
       <motion.div
-        className="text-center text-sm font-curier mx-auto mb-8 font-semibold text-xs md:text-lg"
+        className="text-center text-sm font-curier mx-auto mb-8 font-semibold md:text-lg"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
@@ -134,7 +134,7 @@ export const Testimonial = () => {
               <span
                 itemProp="author"
                 className={`
-          text-xs font-medium italic tracking-wide
+           font-medium italic tracking-wide
           
         `}
               >
@@ -190,7 +190,7 @@ export const Testimonial = () => {
               <span
                 itemProp="author"
                 className={`
-          text-xs font-medium italic tracking-wide
+         font-medium italic tracking-wide
           
         `}
               >
