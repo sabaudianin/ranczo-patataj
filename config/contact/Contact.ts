@@ -1,6 +1,6 @@
 export const CONTACT = {
-  name: "",
-  url: "https://twojadomena.pl",
+  name: "Ranczo Patataj",
+  url: "https://ranczopatataj.pl",
   email: "ranczopatataj@gmail.com",
   phoneRaw: "+48507526916",
   phoneDisplay: "+48 507 526 916",
