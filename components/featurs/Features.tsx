@@ -62,11 +62,7 @@ export const Features = () => {
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.45, ease: "easeOut", delay: 0.1 }}
       >
-        <Card
-          className="md:text-base mb-12 break-words leading-relaxed  text-left
-  md:text-justify
-  hyphens-auto"
-        >
+        <Card className="md:text-base mb-12 break-words leading-relaxed  text-left md:text-justify hyphens-auto">
           Gospodarstwo edukacyjne blisko Warszawy, w którym dzieci i dorośli
           poznają zwierzęta z bliska - alpaki, lamy, konie, kozy, kury, pawie i
           wiele więcej. Wszystko to podczas wycieczek szkolnych, wizyt
@@ -139,7 +135,7 @@ export const Features = () => {
 
                 {/*  SIDE TEXT*/}
                 <motion.span
-                  className="p-2 py-8 bg-[#f5ebd5] text-neutral-800 rounded shadow-sm shadow-black/20 font-curier"
+                  className="p-1 py-8 bg-[#f5ebd5] text-neutral-800 rounded shadow-sm shadow-black/20 font-curier text-sm"
                   initial={{ opacity: 0, y: 100, scale: 0.5 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{ once: true, amount: 0.3 }}
