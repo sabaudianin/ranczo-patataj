@@ -10,7 +10,7 @@ const SLIDES = [
     alt: "Ognisko na dworze",
   },
   {
-    src: "/images/work.avif",
+    src: "/images/sala.avif",
     alt: "Warszaty Kulinarne",
   },
   {
@@ -21,10 +21,7 @@ const SLIDES = [
     src: "/images/lilo.avif",
     alt: "Imprezy urodzinowe",
   },
-  {
-    src: "/images/sala.avif",
-    alt: "Sala na warsztaty",
-  },
+
   {
     src: "/images/bryczka.avif",
     alt: "Przejażdzka bryczką",
