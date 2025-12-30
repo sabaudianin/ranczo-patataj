@@ -49,10 +49,10 @@ export const Cta = () => {
         >
           Zarezerwuj termin wizyty w gospodarstwie edukacyjnym Ranczo Patataj
         </h6>
-        <div className="flex justify-center items-center p-2">
+        <div className="flex justify-center items-center p-2 py-4 ">
           <a
             href={PHONETO}
-            className="inline-flex items-center gap-2  font-black md:text-xl px-4 py-3 hover:text-emerald-500  transition-all duration focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] font-special"
+            className="inline-flex items-center gap-2  font-black md:text-xl px-4 py-4 hover:text-emerald-500 border rounded-2xl border-amber-300 transition-all duration focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] font-special"
             aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
             itemProp="telephone"
           >
