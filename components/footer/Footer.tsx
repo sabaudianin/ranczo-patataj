@@ -7,7 +7,7 @@ import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
 export const Footer = () => {
   return (
     <footer
-      className="relative bg-[var(--c-primary)]/10 py-4 border border-[var(--c-primary)] rounded-t-2xl max-w-hd mx-auto    shadow-[3px_0_9px_0_rgba(0,0,0,0.2)] dark:shadow-[0_3px_10px_0_rgba(255,255,255,0.2)] backdrop-blur-sm"
+      className="relative bg-[var(--c-primary)]/10 py-4 border border-[var(--c-primary)] rounded-t-2xl max-w-hd mx-auto shadow-[3px_0_9px_0_rgba(0,0,0,0.2)] dark:shadow-[0_3px_10px_0_rgba(255,255,255,0.2)] backdrop-blur-sm"
       aria-label="Stopka strony Ranczo Patataj"
       itemScope
       itemType="https://schema.org/LocalBusiness"
@@ -23,7 +23,7 @@ export const Footer = () => {
       />
       <div className="pointer-events-none absolute inset-x-4 top-0 h-px bg-gradient-to-r from-emerald-300/0 via-emerald-300/80 to-amber-300/0" />
       <div className="pointer-events-none absolute inset-x-4 bottom-0 h-px bg-gradient-to-r from-emerald-300/0 via-emerald-300/80 to-amber-300/0" />
-      <div className="flex items-center justify-between md:justify-evenly items-center gap-4 p-6 py-8">
+      <div className="flex items-center justify-between md:justify-evenly items-center gap-4 px-3 py-8">
         <div className="">
           <a
             href={PHONETO}
@@ -80,9 +80,10 @@ export const Footer = () => {
         className="rounded hidden md:block mx-auto"
         title="Mapa Dojazdu do Rancza Patataj"
       ></iframe>
+
       <Link href="/kontakt#mapa">
         <address
-          className=" text-center flex justify-center items-center gap-2 underline"
+          className="text-center flex justify-center items-center gap-2 underline"
           itemScope
           itemType="https://schema.org/PostalAddress"
         >
@@ -90,7 +91,7 @@ export const Footer = () => {
             className="text-red-400"
             aria-hidden="true"
           />
-          <p className="p-4">
+          <p className="py-4">
             <span itemProp="streetAddress">Jastrzębia Stara 9</span>,{" "}
             <span itemProp="postalCode">05-640</span>{" "}
             <span itemProp="addressLocality">Mogielnica</span>,{" "}

@@ -40,8 +40,7 @@ export const Final = () => {
               className="inline-flex w-full md:w-auto items-center justify-center px-5 py-3 rounded-xl
                  bg-white/90 hover:bg-white
                  border border-[var(--c-primary)]
-                 shadow-sm
-                  md:text-sm lg:text-base font-semibold font-curier text-stone-900
+                 shadow-sm md:text-sm lg:text-base font-semibold font-curier text-stone-900
                  hover:scale-[1.02] active:scale-[0.99]
                  transition-all duration-150
                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)]"
@@ -51,7 +50,7 @@ export const Final = () => {
 
             <a
               href={PHONETO}
-              className="inline-flex w-full md:w-auto items-center justify-center gap-2 px-4 py-3 rounded-xl border border-[var(--c-primary)] bg-stone-900/90  hover:bg-stone-800 hover:scale-[1.02] active:scale-[0.99] transition-all duration-150 underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] font-curier md:text-sm text-white/90 "
+              className="inline-flex w-full md:w-auto items-center justify-center gap-2 px-4 py-3 rounded-xl border border-[var(--c-primary)] bg-stone-900/90  hover:bg-stone-800 hover:scale-[1.02] active:scale-[0.99] transition-all duration-150 underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] font-curier md:text-sm lg:text-base text-white/90 "
               aria-label={`Zadzwoń pod numer ${CONTACT.phoneDisplay}, aby zarezerwować termin w Ranczo Patataj`}
               itemProp="telephone"
             >
