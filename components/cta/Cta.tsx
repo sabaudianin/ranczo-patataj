@@ -4,32 +4,32 @@ import { BgSlider } from "@/ui/bgSlider/BgSlider";
 
 const SLIDES = [
   {
-    src: "/images/car1.avif",
+    src: "/images/lama-karmienie-mogielnica.avif",
     alt: "Dzieci karmią lamę na Ranczo Patataj podczas zajęć edukacyjnych ze zwierzętami",
     label: "Zabawa, która uczy. Edukacja, która inspiruje.",
   },
   {
-    src: "/images/car5.avif",
+    src: "/images/imprezy-urodzinowe-mogielnica-kolo-grojca.avif",
     alt: "Impreza urodzinowa wśród zwierząt na Ranczo Patataj",
     label: "W sercu wiejskiej przygody.",
   },
   {
-    src: "/images/lamaHorse.avif",
+    src: "/images/lamy-konie-ranczo-patataj.avif",
     alt: "Koń i lama na padoku w gospodarstwie edukacyjnym Ranczo Patataj",
     label: "Tworzymy wspomnienia.",
   },
   {
-    src: "/images/car2.avif",
+    src: "/images/alpaki-mogielnica-mazowieckie.avif",
     alt: "Lama z bliska podczas wizyty na Ranczo Patataj",
     label: "Poczuj bliskość zwierząt.",
   },
   {
-    src: "/images/niceBok.avif",
+    src: "/images/miejsce-na-impreze-firmowa-mazowieckie.avif",
     alt: "Ranczo Patataj widok gospodarstwa edukacyjnego z boku",
     label: "Zrelaksuj się.",
   },
   {
-    src: "/images/salaGit.avif",
+    src: "/images/ogrod-zewnetrzny-imprezy-ranczo-patataj.avif",
     alt: "Ogród zimowy i sala warsztatowa na Ranczo Patataj w mazowieckim",
     label: "Klimat, którego długo nie zapomnicie.",
   },

@@ -57,7 +57,7 @@ export const Visit = () => {
 
           <div className="relative w-full h-40 md:h-60 lg:h-96 text-center my-8 ">
             <Image
-              src="/images/ranczoPalenisko.avif"
+              src="/images/imprezy-integracyjne-mogielnica.avif"
               fill
               alt="Ranczo widok z ulicy"
               className="object-cover rounded-xl"

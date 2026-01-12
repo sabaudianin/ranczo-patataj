@@ -4,13 +4,13 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const IMAGES = [
-  "/images/g7.avif",
-  "/images/palenisko.avif",
-  "/images/g2.avif",
-  "/images/theLama.avif",
-  "/images/g3.avif",
-  "/images/g5.avif",
-  "/images/lamawest.jpg",
+  "/images/alpaki-spacer-dzieci-mazowieckie.avif",
+  "/images/imprezy-integracyjne-ranczo-patataj.avif",
+  "/images/szkoly-przedszkola-spotkania-ze-zwierzetami.avif",
+  "/images/lamy-ranczo-patataj-jastrzebia-stara.avif",
+  "/images/zajecia-ze-zwierzetami-mazowieckie.avif",
+  "/images/sala-zabaw-ranczo-patataj-mogielnica.avif",
+  "/images/alpaki-dla-dzieci-mazowieckie.jpg",
 ];
 
 const SLOTS = [

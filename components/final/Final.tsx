@@ -83,7 +83,7 @@ export const Final = () => {
         <p className="py-4 max-w-3xl mx-auto font-special md:text-xl text-white font-bold text-center">
           Przyjedź do nas i znajdź chwilę dla siebie.
         </p>
-        <div className="relative h-60 md:h-96 w-full bg-[url('/images/koza.avif')] bg-cover bg-center flex items-center justify-center">
+        <div className="relative h-60 md:h-96 w-full bg-[url('/images/ranczo-mogielnica-kolo-warszawy.avif')] bg-cover bg-center flex items-center justify-center">
           <div className="absolute bg-black/40 w-full h-full"></div>
           <span className="absolute bottom-0 block font-special md:text-xl text-white font-bold text-center max-w-3xl  rounded p-2">
             Wystarczy chwila wśród zwierząt i zieleni, by poczuć jak napięcie

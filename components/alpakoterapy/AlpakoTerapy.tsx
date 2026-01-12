@@ -47,7 +47,6 @@ export const AlpakoTerapy = () => {
         viewport={{ once: true, amount: 0.3 }}
         className="grid md:grid-cols-2 gap-6 md:gap-10 items-center"
       >
-        {/* LEWA KOLUMNA – TEKST */}
         <div className="text-center md:text-left font-special md:text-xl">
           <motion.div
             variants={item}
@@ -98,7 +97,7 @@ export const AlpakoTerapy = () => {
           className="relative w-full aspect-[4/3] md:aspect-[3/4] max-h-[420px] mx-auto p-2 "
         >
           <Image
-            src="/images/lamastar.avif"
+            src="/images/slodka-alpaka-ranczo-patataj.avif"
             fill
             alt="Alpaka na Ranczo Patataj podczas zajęć alpakoterapii w mazowieckim"
             sizes="(min-width: 768px) 50vw, 100vw"
