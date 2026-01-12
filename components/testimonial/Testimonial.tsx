@@ -147,7 +147,7 @@ export const Testimonial = () => {
 
       {/*Mobile*/}
       <div className=" md:hidden gap-4 flex overflow-x-auto snap-x snap-mandatory pb-4 -mx-4 px-4">
-        {OPINIONS.map((opinion, index) => (
+        {OPINIONS.map((opinion) => (
           <article
             key={opinion.name}
             className={`snap-center min-w-[260px] max-w-[280px]
@@ -189,8 +189,7 @@ export const Testimonial = () => {
 
               <span
                 itemProp="author"
-                className={`
-         font-medium italic tracking-wide
+                className={`font-medium italic tracking-wide
           
         `}
               >

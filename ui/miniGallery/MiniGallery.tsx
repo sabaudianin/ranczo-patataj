@@ -2,44 +2,44 @@ import Image from "next/image";
 
 const SLIDES = [
   {
-    src: "/images/stol.avif",
-    alt: "Ogród Zimowy",
+    src: "/images/imprezy-urodzinowe.avif",
+    alt: "Ogród Zimowy,",
   },
   {
-    src: "/images/ognisko.avif",
+    src: "/images/ognisko-ranczo-patataj.avif",
     alt: "Ognisko na dworze",
   },
   {
-    src: "/images/sala.avif",
+    src: "/images/warsztaty-kulinarne-mazowieckie.avif",
     alt: "Warszaty Kulinarne",
   },
   {
-    src: "/images/manual.avif",
+    src: "/images/warsztaty-manualne-dla-dzieci.avif",
     alt: "Warszaty Manualne",
   },
   {
-    src: "/images/lilo.avif",
+    src: "/images/imprezy-urodzinowe-niedaleko-warszawy.avif",
     alt: "Imprezy urodzinowe",
   },
 
   {
-    src: "/images/bryczka.avif",
+    src: "/images/przejadzki-bryczka-mazowieckie-mogielnica.avif",
     alt: "Przejażdzka bryczką",
   },
   {
-    src: "/images/plac.avif",
+    src: "/images/plac-zabaw-atrakcje-dla-dzieci.avif",
     alt: "Plac zabaw",
   },
   {
-    src: "/images/altana.avif",
+    src: "/images/rekreacja-na-zewnatrz-mogielnica-niedaleko-warszawy.avif",
     alt: "Altana na zewnątrz",
   },
   {
-    src: "/images/domBokNew.avif",
+    src: "/images/rustykalne-wnetrza-mazowieckie.avif",
     alt: "Zaciszna przestrzeń",
   },
   {
-    src: "/images/lamawest.jpg",
+    src: "/images/alpaki-dla-dzieci-mazowieckie.jpg",
     alt: "Wybieg dla zwierząt",
   },
 ];
@@ -70,18 +70,13 @@ export const MiniGallery = () => {
           className="overflow-hidden w-full overflow-x-auto overflow-y-hidden flex items-stretch snap-x snap-mandatory no-scrollbar touch-pan-x"
           aria-hidden="true"
         >
-          {/* gradient po lewej */}
-          {/* <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-amber-500/20 to-transparent z-10" /> */}
-          {/* gradient po prawej */}
-          {/* <div className="pointer-events-none absolute right-0 top-0 h-full w-20 md:w-40 bg-gradient-to-l from-amber-500/20 to-transparent z-10" /> */}
-
           <div className="flex scrollbar-none marquee-track">
             {[...SLIDES, ...SLIDES].map((card, index) => (
               <div
                 key={index}
                 className="mx-4 w-56 group"
               >
-                {/* POLAROIDOWA RAMKA */}
+                {/* POLAROID */}
                 <div className="relative h-[12rem] bg-[#fdf7e5] border border-neutral-300 rounded-sm shadow-lg shadow-black/40 p-3 pb-8 transform -rotate-2 group-hover:rotate-1 group-hover:-translate-y-1 group-hover:scale-95 transition-transform duration-300">
                   <div className="relative h-full overflow-hidden bg-neutral-900/70">
                     <Image
@@ -104,7 +99,6 @@ export const MiniGallery = () => {
             ))}
           </div>
         </div>
-        {/* <div className="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-amber-500/20  to-transparent" /> */}
       </div>
     </section>
   );

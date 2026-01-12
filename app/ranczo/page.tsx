@@ -65,9 +65,9 @@ export default function Ranczo() {
         </Card>
         <div className="relative w-full h-40 md:h-60 lg:h-96 text-center pt-4">
           <Image
-            src="/images/domBokNew.avif"
+            src="/images/rustykalne-wnetrza-mazowieckie.avif"
             fill
-            alt="Ranczo widok z ulicy"
+            alt="Ranczo widok z ulicy na sale na wynajm na imprezy rodzinne"
             className="rounded-xl object-cover"
             sizes="(min-width: 1024px) 80vw, 100vw"
           />
@@ -87,10 +87,10 @@ export default function Ranczo() {
             </p>
             <ul className="font-special text-sm md:text-base list-disc list-inside space-y-1">
               <Image
-                src="/avatar/brown.avif"
+                src="/avatar/alpaki-brazowe-na-ranczu-patataj.avif"
                 height={60}
                 width={60}
-                alt="Avatar brazowej alpaki"
+                alt="Alpaki na Ranczu koło Mogielnicy"
                 className="float-right md:float-left md:mr-2 h-auto w-auto"
               />
               <li>spędzić czas z alpakami, końmi i innymi zwierzętami,</li>
@@ -114,10 +114,10 @@ export default function Ranczo() {
             </p>
             <ul className="font-special text-sm md:text-base list-disc list-inside space-y-1">
               <Image
-                src="/avatar/black.avif"
+                src="/avatar/spotkania-z-alpakami-mazowieckie.avif"
                 height={90}
                 width={90}
-                alt="Avatar czarnej alpaki"
+                alt="Alpaki na Ranczu Patataj niedaleko Grójca"
                 className="float-left aspect-[3/4] mr-2 h-auto w-auto"
               />
               <li>pomaga redukować stres i napięcie,</li>
@@ -197,9 +197,9 @@ export default function Ranczo() {
 
         <div className="relative w-full h-40 md:h-80 lg:h-96 text-center my-8">
           <Image
-            src="/images/ranczoPalenisko.avif"
+            src="/images/imprezy-integracyjne-mogielnica.avif"
             fill
-            alt="Ranczo widok z ulicy"
+            alt="Ranczo widok z ulicy Jastrzębi Starej"
             className="mx-auto h-auto w-auto rounded-xl"
           />
         </div>
@@ -214,10 +214,10 @@ export default function Ranczo() {
           </h2>
           <ul className="font-special text-sm md:text-base list-disc list-inside space-y-1">
             <Image
-              src="/avatar/lamaFront.avif"
+              src="/avatar/lama-ranczo-patataj.avif"
               height={60}
               width={60}
-              alt="Avatar lamy z przodu"
+              alt="Lama na Ranczu Patataj, karmienie"
               className="float-right h-auto w-auto"
             />
             <li>
@@ -244,10 +244,10 @@ export default function Ranczo() {
         </article>
 
         <Image
-          src="/avatar/goat.avif"
+          src="/avatar/spotkania-ze-zwierzetami-mazowieckie.avif"
           height={100}
           width={100}
-          alt="Po prostu GOAT"
+          alt="Po prostu koza na ranczu Patataj"
           className="mx-auto h-auto w-auto"
         />
 
@@ -289,10 +289,10 @@ export default function Ranczo() {
           </div>
         </article>
         <Image
-          src="/avatar/hen.avif"
+          src="/avatar/przebywanie-wsrod-zwierzat-ranczo-patataj.avif"
           height={100}
           width={100}
-          alt="Biała Kura"
+          alt="Biała Kura na Ranczu Patataj w Jastrzębi Starej,koło Mogielnicy,niedaleko Grójca"
           className="mx-auto my-2 h-auto w-auto"
         />
       </section>

@@ -124,7 +124,6 @@ export const Atrakcje = () => {
               ${item.className}
             `}
           >
-            {/* akcent pod kartą */}
             <div className="pointer-events-none absolute inset-x-4 bottom-0 h-1 bg-gradient-to-r from-black/10 via-black/0 to-black/10 opacity-0 group-hover:opacity-100 blur-xl" />
 
             <div className="relative z-10">
