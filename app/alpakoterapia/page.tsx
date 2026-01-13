@@ -118,6 +118,7 @@ export default function Alpakoterapia() {
                 />
                 <span>Zadzwoń: {CONTACT.phoneDisplay}</span>
               </a>
+
               <a
                 href={MAILTO}
                 className=" underline underline-offset-2 hover:text-[var(--c-primary)] font-curier"
@@ -129,7 +130,7 @@ export default function Alpakoterapia() {
 
           <div className="relative w-full h-56 md:h-80 lg:h-96">
             <Image
-              src="/images/trioAlpak.avif"
+              src="/images/alpaki-na-ranczu-patataj-mazowieckie.avif"
               fill
               alt="Alpaki na wybiegu podczas zajęć alpakoterapii w Ranczo Patataj"
               className="rounded-2xl object-cover shadow-xl"
@@ -192,7 +193,7 @@ export default function Alpakoterapia() {
 
         <div className="relative w-full h-56 md:h-80 lg:h-96">
           <Image
-            src="/images/lamawest.jpg"
+            src="/images/alpaki-dla-dzieci-mazowieckie.jpg"
             fill
             alt="Alpaki na wybiegu podczas zajęć alpakoterapii w Ranczo Patataj"
             className="rounded-2xl object-cover shadow-xl"
@@ -251,7 +252,7 @@ export default function Alpakoterapia() {
         <div className="flex justify-center">
           <div className="relative w-full h-56 md:h-80  rounded-2xl">
             <Image
-              src="/images/tbrown.avif"
+              src="/images/alpaki-na-wybiegu-mazowieckie.avif"
               fill
               alt="Alpaki na wybiegu podczas zajęć alpakoterapii w Ranczo Patataj"
               className="rounded-2xl object-contain shadow-xl"
@@ -260,7 +261,7 @@ export default function Alpakoterapia() {
           </div>
           <div className="relative w-full h-56 md:h-80">
             <Image
-              src="/images/tblack.avif"
+              src="/images/alpaki-dla-dzieci-mogielnica.avif"
               fill
               alt="Alpaki na wybiegu podczas zajęć alpakoterapii w Ranczo Patataj"
               className="rounded-2xl object-contain shadow-xl"
@@ -328,7 +329,7 @@ export default function Alpakoterapia() {
 
         <div className="relative w-full h-56 md:h-80">
           <Image
-            src="/images/lamaClose.avif"
+            src="/images/alpaki-spotkania-karmienie-mazowieckie.avif"
             fill
             alt="Alpaki na wybiegu podczas zajęć alpakoterapii w Ranczo Patataj"
             className="rounded-2xl object-cover shadow-xl"
