@@ -144,8 +144,8 @@ export default function Contact() {
         </div>
         <div className="w-full relative h-40 rounded-2xl mt-8">
           <Image
-            src="/images/rancz.avif"
-            alt="Ranczo widok z ulicy"
+            src="/images/miejsce-na-impreze-firmowa-mazowieckie.avif"
+            alt="Ranczo widok z ulicy Jasztrzębi Starej koło Mogielnicy w mazowieckim"
             fill
             className="object-cover filter sepia-[0.6] contrast-125 brightness-90 saturate-75 rounded-2xl"
           />

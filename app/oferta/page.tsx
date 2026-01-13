@@ -305,9 +305,9 @@ export default function Oferta() {
         </div>
         <div className="relative w-full h-40 md:h-60 lg:h-96 text-center my-8">
           <Image
-            src="/images/salaGit.avif"
+            src="/images/ogrod-zewnetrzny-imprezy-ranczo-patataj.avif"
             fill
-            alt="Ranczo widok z ulicy"
+            alt="Ranczo Patataj widok na salę imprezową"
             className="rounded-xl object-cover"
             sizes="(min-width: 1024px) 80vw, 100vw"
           />

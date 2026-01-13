@@ -42,7 +42,7 @@ export const Hero: React.FC = () => {
             muted
             loop
             playsInline
-            poster="/images/trioAlpak.avif"
+            poster="/images/alpaki-na-ranczu-patataj-mazowieckie.avif"
             aria-hidden="true"
             tabIndex={-1}
           ></video>
