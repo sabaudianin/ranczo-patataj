@@ -19,7 +19,7 @@ export const Footer = () => {
 
       <meta
         itemProp="url"
-        content="https://twoja-domena.pl"
+        content="https://ranczopatataj.pl"
       />
       <div className="pointer-events-none absolute inset-x-4 top-0 h-px bg-gradient-to-r from-emerald-300/0 via-emerald-300/80 to-amber-300/0" />
       <div className="pointer-events-none absolute inset-x-4 bottom-0 h-px bg-gradient-to-r from-emerald-300/0 via-emerald-300/80 to-amber-300/0" />
