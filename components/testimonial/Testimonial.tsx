@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 import { Card } from "@/ui/card/Card";
-
+import { SITE } from "@/lib/seo/site";
 import { MagicText } from "@/ui/magicText/MagicText";
 
 type Opinion = {
@@ -87,7 +87,7 @@ export const Testimonial = () => {
         {OPINIONS.map((opinion, index) => (
           <motion.article
             key={opinion.name}
-            className={`relative p-4 flex flex-col gap-3 border border-amber-900/40 rounded-md bg-[#f7f0dc] shadow-[0_12px_30px_rgba(0,0,0,0.45)]  text-sm text-black ${opinion.font}`}
+            className={`relative p-4 flex flex-col gap-3 border border-amber-900/40 rounded-md bg-[#f7f0dc] shadow-[0_12px_30px_rgba(0,0,0,0.45)] text-sm text-black ${opinion.font}`}
             itemScope
             itemType="https://schema.org/Review"
             initial={{ opacity: 0, y: 20, scale: 0.96 }}
@@ -99,6 +99,20 @@ export const Testimonial = () => {
               delay: 0.08 * index,
             }}
           >
+            <div
+              itemProp="itemReviewed"
+              itemScope
+              itemType="https://schema.org/LocalBusiness"
+            >
+              <meta
+                itemProp="name"
+                content={SITE.legalName}
+              />
+              <meta
+                itemProp="url"
+                content={`${SITE.url}/`}
+              />
+            </div>
             <div className="flex-1 relative">
               <div className="float-right ml-3 mb-2">
                 <Image
@@ -133,12 +147,10 @@ export const Testimonial = () => {
 
               <span
                 itemProp="author"
-                className={`
-           font-medium italic tracking-wide
-          
-        `}
+                itemScope
+                itemType="https://schema.org/Person"
               >
-                {opinion.name}
+                <span itemProp="name">{opinion.name}</span>
               </span>
             </div>
           </motion.article>
@@ -146,15 +158,28 @@ export const Testimonial = () => {
       </div>
 
       {/*Mobile*/}
-      <div className=" md:hidden gap-4 flex overflow-x-auto snap-x snap-mandatory pb-4 -mx-4 px-4">
+      <div className="md:hidden gap-4 flex overflow-x-auto snap-x snap-mandatory pb-4 -mx-4 px-4">
         {OPINIONS.map((opinion) => (
           <article
             key={opinion.name}
-            className={`snap-center min-w-[260px] max-w-[280px]
-        flex-shrink-0    relative p-4 flex flex-col gap-3 border border-amber-900/40 rounded-md bg-[#f7f0dc] shadow-[0_12px_30px_rgba(0,0,0,0.45)]  text-sm text-black ${opinion.font}`}
+            className={`snap-center min-w-[260px] max-w-[280px] flex-shrink-0 relative p-4 flex flex-col gap-3 border border-amber-900/40 rounded-md bg-[#f7f0dc] shadow-[0_12px_30px_rgba(0,0,0,0.45)] text-sm text-black ${opinion.font}`}
             itemScope
             itemType="https://schema.org/Review"
           >
+            <div
+              itemProp="itemReviewed"
+              itemScope
+              itemType="https://schema.org/LocalBusiness"
+            >
+              <meta
+                itemProp="name"
+                content={SITE.legalName}
+              />
+              <meta
+                itemProp="url"
+                content={`${SITE.url}/`}
+              />
+            </div>
             <div className="flex-1 relative">
               <div className="float-right ml-3 mb-2">
                 <Image
@@ -189,11 +214,11 @@ export const Testimonial = () => {
 
               <span
                 itemProp="author"
-                className={`font-medium italic tracking-wide
-          
-        `}
+                itemScope
+                itemType="https://schema.org/Person"
+                className="font-medium italic tracking-wide"
               >
-                {opinion.name}
+                <span itemProp="name">{opinion.name}</span>
               </span>
             </div>
           </article>
