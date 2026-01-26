@@ -17,6 +17,7 @@ import { AlpakoTerapy } from "@/components/alpakoterapy/AlpakoTerapy";
 import { Atrakcje } from "../components/atrakcje/Atrakcje";
 import { Visit } from "@/components/visit/Visit";
 import { Hero } from "@/components/hero/Hero";
+import { SocialBar } from "@/components/socialbar/SocialBar";
 
 export const metadata: Metadata = {
   // Podstawowy tytuł strony głównej
@@ -131,6 +132,7 @@ export default function Home() {
       />
       <section className="relative px-2 pt-24 md:pt-0 pb-4 dark:bg-black bg-[var(--background)] mx-auto ">
         <Hero />
+        <SocialBar />
         <Atrakcje />
         <AlpakoTerapy />
         <MiniGallery />
