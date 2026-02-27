@@ -1,7 +1,7 @@
 "use client";
-
-import Image from "next/image";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import { motion, AnimatePresence } from "motion/react";
 
 const IMAGES = [
   "/images/alpaki-spacer-dzieci-mazowieckie.avif",
@@ -13,86 +13,65 @@ const IMAGES = [
   "/images/alpaki-dla-dzieci-mazowieckie.jpg",
 ];
 
-const SLOTS = [
-  {
-    // lewy
-    wrapperClass: "hidden",
-    imageClass: "hidden",
-  },
-  {
-    // lewy
-    wrapperClass: "hidden",
-    imageClass: "hidden",
-  },
-  {
-    // lewy
-    wrapperClass:
-      "relative overflow-hidden rounded md:block w-10 h-16 md:w-24 md:h-32",
-    imageClass: "object-cover",
-  },
-  {
-    // lewy środkowy
-    wrapperClass: "relative overflow-hidden rounded w-20 h-32 md:w-32 md:h-48",
-    imageClass: "object-cover",
-  },
-  {
-    // środkowy
-    wrapperClass: "relative overflow-hidden rounded w-20 h-40 md:w-40 md:h-60",
-    imageClass: "object-cover  carousel-fade",
-  },
-  {
-    // prawy środkowy
-    wrapperClass: "relative overflow-hidden rounded w-20 h-32 md:w-32 md:h-48",
-    imageClass: "object-cover ",
-  },
-  {
-    // prawy
-    wrapperClass:
-      "relative overflow-hidden rounded md:block w-10 h-16 md:w-24 md:h-32",
-    imageClass: "object-cover ",
-  },
-];
-
 export const MiniCarousel = () => {
-  const [offset, setOffset] = useState(0);
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(
-      () => setOffset((prev) => (prev + 1) % IMAGES.length),
-      3000
-    );
-    return () => clearInterval(interval);
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % IMAGES.length);
+    }, 4000);
+    return () => clearInterval(timer);
   }, []);
 
-  return (
-    <div
-      className=" mb-4"
-      aria-hidden="true"
-    >
-      {/* klucz powoduje ponowny mount ,animacja leci od nowa */}
-      <div
-        key={offset}
-        className="flex items-center justify-center gap-1"
-      >
-        {SLOTS.map((slot, index) => {
-          const imgIndex = (offset + index) % IMAGES.length;
-          const src = IMAGES[imgIndex];
+  // Logika wybierania 5 widocznych zdjęć
+  const getVisibleIndices = () => {
+    const indices = [];
+    for (let i = -2; i <= 2; i++) {
+      indices.push((index + i + IMAGES.length) % IMAGES.length);
+    }
+    return indices;
+  };
 
-          return (
-            <div
-              key={slot.wrapperClass + src}
-              className={`${slot.wrapperClass} relative shadow-md shadow-white/10`}
-            >
-              <Image
-                src={src}
-                alt="Galeria obrazków z rancza Patataj w mazowieckim niedaleko Warszawy,alpaki,ognisko,lama,plac zabaw, lamy, konie"
-                fill
-                sizes="80px"
-                className={slot.imageClass}
-              />
-            </div>
-          );
-        })}
+  return (
+    <div className="relative h-64 md:h-80 w-full flex items-center justify-center overflow-hidden py-10" aria-hidden="true">
+      <div className="flex items-center justify-center gap-2 md:gap-6">
+        <AnimatePresence mode="popLayout">
+          {getVisibleIndices().map((imgIdx, position) => {
+            // Stylizacja zależna od pozycji (0=lewy skrajny, 2=środek, 4=prawy skrajny)
+            const isCenter = position === 2;
+            const isInner = position === 1 || position === 3;
+
+            return (
+              <motion.div
+                key={IMAGES[imgIdx]}
+                layout
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{
+                  opacity: isInner ? 0.7 : isCenter ? 1 : 0.3,
+                  scale: isCenter ? 1.1 : isInner ? 0.9 : 0.7,
+                  zIndex: isCenter ? 30 : 10,
+                  rotate: isCenter ? 0 : position < 2 ? -5 : 5
+                }}
+                exit={{ opacity: 0, scale: 0.5 }}
+                transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
+                className={`
+                  relative shadow-2xl rounded-xl border-4 border-white dark:border-stone-800 bg-white
+                  ${isCenter ? "w-40 h-56 md:w-56 md:h-72" : isInner ? "w-28 h-40 md:w-36 md:h-52" : "hidden md:block w-20 h-28"}
+                `}
+              >
+                <Image
+                  src={IMAGES[imgIdx]}
+                  alt="Atrakcje Ranczo Patataj"
+                  fill
+                  className="object-cover rounded-sm"
+                  sizes="(max-width: 768px) 150px, 300px"
+                />
+                {/* Efekt starego zdjęcia dla bocznych slotów */}
+                {!isCenter && <div className="absolute inset-0 bg-stone-900/20 backdrop-sepia-[0.3]" />}
+              </motion.div>
+            );
+          })}
+        </AnimatePresence>
       </div>
     </div>
   );

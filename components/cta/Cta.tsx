@@ -1,85 +1,87 @@
+"use client";
 import { FaPhone } from "react-icons/fa";
 import { CONTACT, PHONETO } from "@/config/contact/Contact";
 import { BgSlider } from "@/ui/bgSlider/BgSlider";
+import { motion } from "motion/react";
 
 const SLIDES = [
   {
     src: "/images/lama-karmienie-mogielnica.avif",
-    alt: "Dzieci karmią lamę na Ranczo Patataj podczas zajęć edukacyjnych ze zwierzętami",
+    alt: "Dzieci karmią lamę na Ranczo Patataj",
     label: "Zabawa, która uczy. Edukacja, która inspiruje.",
   },
   {
     src: "/images/imprezy-urodzinowe-mogielnica-kolo-grojca.avif",
-    alt: "Impreza urodzinowa wśród zwierząt na Ranczo Patataj",
+    alt: "Impreza urodzinowa na Ranczo Patataj",
     label: "W sercu wiejskiej przygody.",
   },
   {
     src: "/images/lamy-konie-ranczo-patataj.avif",
-    alt: "Koń i lama na padoku w gospodarstwie edukacyjnym Ranczo Patataj",
+    alt: "Zwierzęta na padoku Ranczo Patataj",
     label: "Tworzymy wspomnienia.",
   },
   {
     src: "/images/alpaki-mogielnica-mazowieckie.avif",
-    alt: "Lama z bliska podczas wizyty na Ranczo Patataj",
+    alt: "Lama z bliska",
     label: "Poczuj bliskość zwierząt.",
-  },
-  {
-    src: "/images/miejsce-na-impreze-firmowa-mazowieckie.avif",
-    alt: "Ranczo Patataj widok gospodarstwa edukacyjnego z boku",
-    label: "Zrelaksuj się.",
-  },
-  {
-    src: "/images/ogrod-zewnetrzny-imprezy-ranczo-patataj.avif",
-    alt: "Ogród zimowy i sala warsztatowa na Ranczo Patataj w mazowieckim",
-    label: "Klimat, którego długo nie zapomnicie.",
   },
 ];
 
 export const Cta = () => {
   return (
     <section
-      className="relative w-full max-w-hd mx-auto py-4 "
+      className="relative w-full max-w-6xl mx-auto py-8 px-2"
       aria-labelledby="cta-heading"
-      role="region"
     >
-      <div className="relative z-10 flex flex-col md:p-6 text-center max-w-6xl mx-auto">
+      <div className="flex flex-col text-center space-y-6 mb-8">
+        {/* Nagłówek - Wysoki kontrast */}
         <h6
           id="cta-heading"
-          className="text-lg md:text-2xl font-ultra tracking-wider text-[var(--c-primary)]"
+          className="text-xl md:text-3xl font-ultra text-stone-900 dark:text-stone-50 leading-tight"
         >
-          Zarezerwuj termin wizyty w gospodarstwie edukacyjnym Ranczo Patataj
+          Zarezerwuj termin wizyty <br className="hidden md:block" />
+          <span className="text-amber-600 italic font-playwrite text-lg md:text-2xl">na naszym ranczu</span>
         </h6>
-        <div className="flex justify-center items-center p-2 py-4 ">
-          <a
+
+        {/* Przycisk Telefonu - Bardziej nowoczesny i "tapowalny" */}
+        <div className="flex justify-center">
+          <motion.a
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
             href={PHONETO}
-            className="inline-flex items-center gap-2  font-black md:text-xl px-4 py-4 hover:text-emerald-500 border rounded-2xl border-amber-300 transition-all duration focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] font-special"
-            aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
-            itemProp="telephone"
+            className="group relative inline-flex items-center gap-4 bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-5 rounded-2xl shadow-xl shadow-emerald-200 dark:shadow-none transition-all duration-300"
+            aria-label="Zadzwoń do Ranczo Patataj"
           >
-            <FaPhone
-              className="self-start animate-pulse"
-              aria-hidden="true"
-              focusable="false"
-            />
-            <span>{CONTACT.phoneDisplay}</span>
-          </a>
+            <div className="bg-emerald-500 group-hover:bg-white/20 p-2 rounded-lg transition-colors">
+              <FaPhone className="text-xl animate-[bounce_2s_infinite]" />
+            </div>
+            <div className="flex flex-col items-start leading-none">
+              <span className="text-[10px] uppercase tracking-widest font-ultra opacity-80 mb-1">Zadzwoń teraz</span>
+              <span className="font-curier text-xl md:text-2xl font-bold tracking-tighter">
+                {CONTACT.phoneDisplay}
+              </span>
+            </div>
+          </motion.a>
         </div>
 
-        <p className=" md:text-sm max-w-4xl mx-auto font-semibold font-curier text-left">
-          Zadzwoń, aby umówić wycieczkę szkolną, wizytę przedszkola, zajęcia
-          edukacyjne ze zwierzętami, alpakoterapię albo zarezerwować ranczo na
-          imprezę firmową, rodzinną lub wizytę grupową. Przyjmujemy grupy z
-          Warszawy, Grójca, Mogielnicy i całego Mazowsza.
+        {/* Opis - font-curier dla klimatu "maszynowego" */}
+        <p className="max-w-3xl mx-auto font-curier text-sm md:text-base text-stone-600 dark:text-stone-400 text-center leading-relaxed">
+          U nas zorganizujesz wycieczkę szkolną, alpakoterapię, urodziny lub event firmowy.
+          Zapraszamy gości z Warszawy, Grójca i całego Mazowsza.
         </p>
       </div>
+
+      {/* Slider jako separator wizualny */}
       <div
-        className="relative h-64 md:h-120 w-full overflow-hidden  aspect-[16/9] mt-4"
+        className="relative h-64 md:h-96 w-full overflow-hidden rounded-3xl border border-stone-100 dark:border-stone-800"
         aria-hidden="true"
       >
         <BgSlider
           slides={SLIDES}
-          className="absolute inset-0 w-full h-full shadow-xl"
+          className="h-full w-full object-cover"
         />
+        {/* Subtelny gradient, żeby slider nie był za jasny */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
       </div>
     </section>
   );

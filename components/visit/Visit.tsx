@@ -1,75 +1,70 @@
 "use client";
 import Image from "next/image";
 import { Card } from "@/ui/card/Card";
+import { motion } from "motion/react";
+
+const steps = [
+  "Po przyjeździe poznajecie naszą przestrzeń i zwierzęta w swoim tempie. To idealny moment na pierwsze zdjęcia i karmienie alpak.",
+  "Bierzecie udział w warsztatach lub zajęciach tematycznych. Program zawsze dopasowujemy do wieku grupy: od przedszkolaków po dorosłych.",
+  "Czas na odpoczynek, piknik lub ognisko. To kluczowy moment integracji dla klas szkolnych i rodzin w sercu Mazowsza.",
+  "Na koniec: relaks, przytulanie zwierząt i spokojne zakończenie dnia z dala od miejskiego zgiełku."
+];
 
 export const Visit = () => {
   return (
     <section
       id="jak-wyglada-wizyta"
       aria-labelledby="wizyta-title"
-      className="max-w-5xl mx-auto md:px-0 relative"
+      className="max-w-5xl mx-auto px-2 py-8"
     >
-      <Card>
-        <div className="text-center mb-6">
+      <Card className="border-none shadow-none bg-transparent">
+        <div className="text-center mb-8">
           <h6
             id="wizyta-title"
-            className="text-[var(--c-primary)] font-ultra tracking-wide text-base md:text-2xl"
+            className="text-stone-900 dark:text-stone-50 font-ultra text-xl md:text-3xl leading-tight"
           >
-            Jak wygląda wizyta w gospodarstwie edukacyjnym Ranczo Patataj?
+            Jak wygląda wizyta na Ranczo Patataj?
           </h6>
 
-          <p className="font-curier mt-2 max-w-2xl mx-auto">
-            Wizyta na Ranczo Patataj w Jastrzębi Starej koło Mogielnicy w
-            województwie mazowieckim jest zawsze dopasowana do Was niezależnie
-            od tego, czy przyjeżdżacie jako wycieczka szkolna, grupa z
-            przedszkola, rodzina czy zorganizowana grupa znajomych.
+          <p className="font-curier mt-4 max-w-2xl mx-auto text-sm md:text-base text-stone-600 dark:text-stone-400">
+            Wizyta u nas to nie sztywny grafik, a czas spędzony w rytmie natury.
+            Dopasowujemy się do potrzeb szkół, przedszkoli i rodzin.
           </p>
         </div>
 
-        <div className="font-curier  space-y-4">
-          <ul className="list-disc list-inside space-y-2">
-            <li>
-              Po przyjeździe poznajecie naszą przestrzeń i zwierzęta w swoim
-              tempie, z możliwością bliskiego kontaktu, rozmów, karmienia oraz
-              robienia zdjęć. To idealny początek wycieczki szkolnej lub
-              rodzinnej wizyty w gospodarstwie edukacyjnym.
-            </li>
+        <div className="grid md:grid-cols-2 gap-8 items-start">
+          {/* Lista kroków - czysty tekst, wysoki kontrast */}
+          <div className="space-y-6">
+            <ul className="space-y-4 font-curier text-sm md:text-base text-stone-800 dark:text-stone-200">
+              {steps.map((step, index) => (
+                <li key={index} className="flex gap-4">
+                  <span className="font-ultra text-amber-600 text-lg">{index + 1}.</span>
+                  <p className="pt-0.5">{step}</p>
+                </li>
+              ))}
+            </ul>
 
-            <li>
-              Bierzecie udział w wybranych aktywnościach, takich jak warsztaty,
-              spotkania ze zwierzętami, zajęcia tematyczne czy elementy
-              alpakoterapii. Program dopasowujemy do wieku i potrzeb grupy:
-              dzieci, młodzieży, dorosłych.
-            </li>
-
-            <li>
-              Jest czas na odpoczynek, piknik, ognisko lub swobodną chwilę na
-              świeżym powietrzu. To ważny moment integracji dla klasy, grupy
-              przedszkolnej, rodziny lub firmowego wyjazdu.
-            </li>
-
-            <li>
-              Na koniec zostaje to, co wielu lubi najbardziej: zabawa, relaks,
-              poprzytulanie alpak, bycie blisko natury i spokojne zakończenie
-              dnia z dala od miejskiego hałasu.
-            </li>
-          </ul>
-
-          <div className="relative w-full h-40 md:h-60 lg:h-96 text-center my-8 ">
-            <Image
-              src="/images/imprezy-integracyjne-mogielnica.avif"
-              fill
-              alt="Ranczo widok z ulicy"
-              className="object-cover rounded-xl"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
-            />
+            <p className="font-special text-amber-700 dark:text-amber-500 font-bold text-center md:text-left pt-4 border-t border-stone-100 dark:border-stone-800">
+              Program każdej wizyty układamy tak, aby był przyjemny i komfortowy dla każdego gościa.
+            </p>
           </div>
-          <p className="text-center pt-4">
-            Program każdej wizyty układamy tak, aby był przyjemny, spokojny i
-            komfortowy, zarówno dla dzieci jak i dorosłych. To świetna
-            propozycja na wycieczki szkolne, wizyty przedszkoli i rodzinne
-            atrakcje dla osób z Warszawy, Grójca, Mogielnicy i całego Mazowsza.
-          </p>
+
+          {/* Zdjęcie - czysta ramka bez zbędnych bajerów */}
+          <div className="relative group">
+            <div className="relative w-full aspect-video md:aspect-[4/5] overflow-hidden rounded-2xl shadow-lg shadow-black/5">
+              <Image
+                src="/images/imprezy-integracyjne-mogielnica.avif"
+                fill
+                alt="Ranczo Patataj - widok na gospodarstwo"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+            {/* Subtelny podpis pod zdjęciem */}
+            <p className="mt-3 text-right font-playwrite text-xs text-stone-400">
+              Nasza miejsce na piknik zawsze przygotowane...
+            </p>
+          </div>
         </div>
       </Card>
     </section>
