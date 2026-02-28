@@ -15,14 +15,14 @@ export const Hero: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-12 gap-8 items-center">
 
-          {/* LEWA STRONA: Tekst i Akcja */}
+
           <div className="lg:col-span-7 flex flex-col space-y-6 text-center lg:text-left ">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               className="space-y-2"
             >
-              <span className="font-ultra text-amber-600 text-xs md:text-sm uppercase tracking-[3px]">
+              <span className="font-ultra text-amber-500 uppercase tracking-[3px]">
                 Witaj w Jastrzębi Starej
               </span>
               <h1
@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
                 className="font-ultra text-3xl md:text-5xl lg:text-6xl text-stone-900 dark:text-stone-50 leading-tight"
               >
                 Ranczo Patataj <br />
-                <span className="font-playwrite text-2xl md:text-4xl lg:text-5xl text-emerald-700 dark:text-emerald-500 block mt-2">
+                <span className="font-curier text-2xl md:text-4xl lg:text-5xl text-emerald-700 dark:text-emerald-500 block mt-2">
                   gospodarstwo edukacyjne
                 </span>
               </h1>
@@ -40,10 +40,10 @@ export const Hero: React.FC = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="font-curier text-sm md:text-base text-stone-600 dark:text-stone-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
+              className="font-curier text-sm md:text-base text-stone-700 dark:text-stone-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
             >
               Miejsce, gdzie natura spotyka się z edukacją. Organizujemy
-              <span className="font-bold text-stone-800 dark:text-stone-200"> wycieczki szkolne, warsztaty i alpakoterapię </span>
+              <span className="text-stone-700 dark:text-stone-200 font-ultra"> wycieczki szkolne, warsztaty i alpakoterapię </span>
               zaledwie godzinę drogi od Warszawy. Poczuj spokój mazowieckiej wsi.
             </motion.p>
 
@@ -68,7 +68,7 @@ export const Hero: React.FC = () => {
             </motion.div>
           </div>
 
-          {/* PRAWA STRONA: Wideo w stylu "Vintage Frame" */}
+
           <div className="lg:col-span-5 order-1 lg:order-2">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
@@ -92,7 +92,7 @@ export const Hero: React.FC = () => {
                   <div className="absolute inset-0 bg-stone-900/10 pointer-events-none" />
                 </div>
 
-                <p className="absolute bottom-2 left-0 w-full text-center font-playwrite text-stone-400 text-sm md:text-base">
+                <p className="absolute bottom-2 left-0 w-full text-center font-cureir text-stone-400 text-sm md:text-base">
                   Nasze radosne alpaki
                 </p>
               </div>
@@ -101,7 +101,7 @@ export const Hero: React.FC = () => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 href={PHONETO}
-                className="absolute -bottom-8 -right-2 md:-right-4 flex items-center gap-3 px-5 py-3 bg-emerald-600 text-white rounded-xl shadow-xl font-curier font-bold text-sm md:text-base group"
+                className="absolute -bottom-8 -right-2 md:-right-4 flex items-center gap-3 px-5 py-3 bg-emerald-600/90 text-white rounded-xl shadow-xl font-curier font-bold text-sm md:text-base group"
               >
                 <FaPhone className="animate-bounce group-hover:animate-none" />
                 <span>{CONTACT.phoneDisplay}</span>
