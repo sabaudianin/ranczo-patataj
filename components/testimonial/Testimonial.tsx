@@ -83,7 +83,7 @@ export const Testimonial = () => {
       </motion.div>
 
       {/* DESKTOP */}
-      <div className="hidden md:grid gap-4 grid-cols-1 grid-cols-[repeat(auto-fit,minmax(260px,1fr))]">
+      <div className="hidden md:grid gap-4  grid-cols-[repeat(auto-fit,minmax(260px,1fr))]">
         {OPINIONS.map((opinion, index) => (
           <motion.article
             key={opinion.name}

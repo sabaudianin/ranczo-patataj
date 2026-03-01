@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
@@ -7,126 +8,128 @@ import { CONTACT, PHONETO, MAILTO } from "@/config/contact/Contact";
 export const Footer = () => {
   return (
     <footer
-      className="relative bg-[var(--c-primary)]/10 py-4 border border-[var(--c-primary)] rounded-t-2xl max-w-hd mx-auto shadow-[3px_0_9px_0_rgba(0,0,0,0.2)] dark:shadow-[0_3px_10px_0_rgba(255,255,255,0.2)] backdrop-blur-sm"
+      className="relative bg-ranczo-texture mt-12 py-10 border-t border-stone-200 dark:border-stone-600"
       aria-label="Stopka strony Ranczo Patataj"
       itemScope
       itemType="https://schema.org/LocalBusiness"
     >
-      <p className="text-center font-special font-semibold md:text-2xl">
-        {" "}
-        Ranczo Patataj - Gospodarstwo Edukacyjne
-      </p>
-
       <meta
+
         itemProp="url"
+
         content="https://ranczopatataj.pl"
+
       />
-      <div className="pointer-events-none absolute inset-x-4 top-0 h-px bg-gradient-to-r from-emerald-300/0 via-emerald-300/80 to-amber-300/0" />
-      <div className="pointer-events-none absolute inset-x-4 bottom-0 h-px bg-gradient-to-r from-emerald-300/0 via-emerald-300/80 to-amber-300/0" />
-      <div className="flex items-center justify-between md:justify-evenly items-center gap-4 px-3 py-8">
-        <div className="">
-          <a
-            href={PHONETO}
-            className="flex items-center gap-2 font-curier  hover:text-emerald-400  transition-all duration justify-start font-curier py-2"
-            aria-label="Zadzwoń, aby zarezerwować termin w Ranczo Patataj"
-          >
-            <FaPhone className="self-start animate-pulse text-emerald-500" />
-            <span itemProp="telephone">{CONTACT.phoneDisplay}</span>
-          </a>
-          <a
-            href={MAILTO}
-            className="flex items-center gap-2  hover:text-[var(--c-primary)] font-curier"
-          >
-            <MdAttachEmail className="self-end animate-pulse text-blue-500" />
-            <span itemProp="email">{CONTACT.email}</span>
-          </a>
-        </div>
+      <div className="max-w-6xl mx-auto px-4">
 
-        <div className="flex justify-between">
-          <a
-            href="https://www.instagram.com/ranczopatataj"
-            className="p-2"
-            aria-label="Profil Ranczo Patataj na Instagramie"
-            target="_blank"
-            rel="noopener noreferrer"
-            itemProp="sameAs"
-          >
-            <p
-              className="bg-[url('/icons/ig.avif')] w-8 h-8 md:h-12 md:w-12 bg-cover"
-              aria-hidden="true"
-            />{" "}
-          </a>
-          <a
-            href="https://www.facebook.com/PatatajRanczo/"
-            className="p-2"
-            aria-label="Profil Ranczo Patataj na Facebooku"
-            target="_blank"
-            rel="noopener noreferrer"
-            itemProp="sameAs"
-          >
-            <p
-              className="bg-[url('/icons/fb.avif')] w-8 h-8 md:h-12 md:w-12 bg-cover "
-              aria-hidden="true"
-            />{" "}
-          </a>
-        </div>
-      </div>
-      <iframe
-        id="mapa"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9896.215259306677!2d20.757111!3d51.677158!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4719059202a4e90f%3A0x6a1b2963fc94970!2sRanczo%20Patataj%20-%20Gospodarstwo%20Edukacyjne!5e0!3m2!1spl!2spl!4v1769445863524!5m2!1spl!2spl"
-        width="50%%"
-        height="140"
-        loading="lazy"
-        className="rounded hidden md:block mx-auto"
-        title="Mapa Dojazdu do Rancza Patataj"
-      ></iframe>
 
-      <Link href="/kontakt#mapa">
-        <address
-          className="text-center flex justify-center items-center gap-2 underline"
-          itemScope
-          itemType="https://schema.org/PostalAddress"
-        >
-          <FaLocationDot
-            className="text-red-400"
-            aria-hidden="true"
-          />
-          <p className="py-4">
-            <span itemProp="streetAddress">Jastrzębia Stara 9</span>,{" "}
-            <span itemProp="postalCode">05-640</span>{" "}
-            <span itemProp="addressLocality">Mogielnica</span>,{" "}
-            <span itemProp="addressCountry">Polska</span>
+        <div className="text-center ">
+          <p className="font-ultra text-xl md:text-3xl text-stone-900 dark:text-stone-50">
+            Ranczo Patataj
           </p>
-        </address>
-      </Link>
+          <p className="font-ultra text-emerald-700 dark:text-emerald-500 text-sm md:text-base">
+            Gospodarstwo Edukacyjne
+          </p>
+        </div>
 
-      <div className="text-[8px] text-center">
-        <p>
-          Strona wykorzystuje pliki cookies podmiotów trzecich (Google Maps).
-        </p>
-        <Link
-          href="/polityka"
-          className="underline "
-        >
-          Polityka prywatności
-        </Link>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start border-y border-stone-200/50 dark:border-stone-800/50 py-10">
+
+
+          <div className="flex flex-col items-center md:items-start space-y-4 ">
+            <h3 className="font-ultra text-xs uppercase tracking-widest text-stone-400">Kontakt</h3>
+            <a
+              href={PHONETO}
+              className="group flex items-center gap-3 font-curier text-stone-700 dark:text-stone-300 hover:text-emerald-600 transition-colors"
+            >
+              <div className="p-2 rounded-full bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600">
+                <FaPhone size={14} className="group-hover:animate-bounce" />
+              </div>
+              <span itemProp="telephone">{CONTACT.phoneDisplay}</span>
+            </a>
+            <a
+              href={MAILTO}
+              className="group flex items-center gap-3 font-curier text-stone-700 dark:text-stone-300 hover:text-emerald-600 transition-colors"
+            >
+              <div className="p-2 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-500">
+                <MdAttachEmail size={14} />
+              </div>
+              <span itemProp="email">{CONTACT.email}</span>
+            </a>
+          </div>
+
+
+          <div className="flex flex-col items-center space-y-4">
+            <h3 className="font-ultra text-xs uppercase tracking-widest text-stone-400">Lokalizacja</h3>
+            <Link href="/kontakt#mapa" className="group text-center">
+              <address
+                className="not-italic font-curier text-stone-700 dark:text-stone-300 group-hover:text-amber-600 transition-colors"
+                itemScope
+                itemType="https://schema.org/PostalAddress"
+              >
+                <div className="flex items-center justify-center gap-2 mb-2">
+                  <FaLocationDot className="text-amber-500" />
+                  <span itemProp="streetAddress">Jastrzębia Stara 9</span>
+                </div>
+                <p>
+                  <span itemProp="postalCode">05-640</span>{" "}
+                  <span itemProp="addressLocality">Mogielnica</span>
+                </p>
+              </address>
+            </Link>
+            <iframe
+              id="mapa-footer"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9896.215259306677!2d20.757111!3d51.677158!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4719059202a4e90f%3A0x6a1b2963fc94970!2sRanczo%20Patataj%20-%20Gospodarstwo%20Edukacyjne!5e0!3m2!1spl!2spl!4v1769445863524!5m2!1spl!2spl"
+              width="100%"
+              height="100"
+              loading="lazy"
+              className="rounded-xl hidden md:block"
+              title="Mapa dojazdu do Rancza Patataj"
+            ></iframe>
+          </div>
+
+
+          <div className="flex flex-col items-center md:items-end space-y-4">
+            <h3 className="font-ultra text-xs uppercase tracking-widest text-stone-400">Social Media</h3>
+            <div className="flex gap-8">
+              <a
+                href="https://www.instagram.com/ranczopatataj"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition-transform"
+              >
+                <div className="bg-[url('/icons/ig.avif')] w-10 h-10 bg-cover rounded-lg shadow-sm" />
+              </a>
+              <a
+                href="https://www.facebook.com/PatatajRanczo/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition-transform"
+              >
+                <div className="bg-[url('/icons/fb.avif')] w-10 h-10 bg-cover rounded-lg shadow-sm" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="pt-8 flex flex-col items-center space-y-4 text-[10px] font-curier text-stone-400 uppercase tracking-widest border-t border-emerald-600">
+          <div className="flex gap-6">
+            <span>© {new Date().getFullYear()} Ranczo Patataj</span>
+            <Link href="/polityka" className="hover:text-stone-900 dark:hover:text-stone-100 transition-colors underline">
+              Polityka prywatności
+            </Link>
+          </div>
+
+          <a
+            href="https://portfoliodev-hazel.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-emerald-500 transition-colors underline"
+          >
+            Design & Develop rafbob
+          </a>
+        </div>
       </div>
-
-      <hr className="text-[var(--c-primary)] mx-4 my-1" />
-      <p className="text-center">
-        © {new Date().getFullYear()} Ranczo Patataj. All rights reserved.
-      </p>
-      <p className="text-[.5rem] text-center py-2">
-        <a
-          href="https://portfoliodev-hazel.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Przejdź do portfolio twórcy strony - rafbob"
-        >
-          {" "}
-          Design &amp; Develop rafbob
-        </a>
-      </p>
     </footer>
   );
 };

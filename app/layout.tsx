@@ -66,7 +66,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={` ${ultra.variable} ${curier.variable} ${special.variable} ${playwrite.variable} antialiased`}
+        className={` ${ultra.variable} ${curier.variable} ${special.variable} ${playwrite.variable} antialiased bg-ranczo-texture`}
       >
         <Navbar />
 

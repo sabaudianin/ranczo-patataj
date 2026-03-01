@@ -41,12 +41,12 @@ export const Features = () => {
     <section
       id="features"
       aria-labelledby="features-heading"
-      className="mx-auto max-w-7xl px-4 py-8 "
+      className="mx-auto max-w-7xl px-1 py-8 "
       role="region"
     >
       <motion.h6
         id="features-heading"
-        className="text-center font-ultra text-2xl md:text-3xl text-[var(--c-primary)] mb-8"
+        className="text-center font-ultra text-2xl md:text-3xl text-(--c-primary) mb-8"
         initial={{ opacity: 0, x: -100, scale: 0.2 }}
         whileInView={{ opacity: 1, x: 0, scale: 1 }}
         viewport={{ once: true, margin: "-50px" }}
@@ -62,7 +62,7 @@ export const Features = () => {
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.45, ease: "easeOut", delay: 0.1 }}
       >
-        <Card className="md:text-base mb-12 break-words leading-relaxed  text-left md:text-justify hyphens-auto">
+        <Card className="md:text-base mb-12 wrap-break-words leading-relaxed  text-left md:text-justify hyphens-auto">
           Gospodarstwo edukacyjne blisko Warszawy, w którym dzieci i dorośli
           poznają zwierzęta z bliska - alpaki, lamy, konie, kozy, kury, pawie i
           wiele więcej. Wszystko to podczas wycieczek szkolnych, wizyt
@@ -121,8 +121,8 @@ export const Features = () => {
                     />
 
                     {/* lekko brudne / przydymione brzegi */}
-                    <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,0,0,0.25)_0,_transparent_60%)] mix-blend-multiply" />
-                    <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,_transparent_40%,_rgba(0,0,0,0.6))] mix-blend-multiply" />
+                    <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(0,0,0,0.25)_0,transparent_60%)] mix-blend-multiply" />
+                    <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,transparent_40%,rgba(0,0,0,0.6))] mix-blend-multiply" />
                     {/* drobne ziarno */}
                     <div className="pointer-events-none absolute inset-0 opacity-40 mix-blend-soft-light " />
                   </div>

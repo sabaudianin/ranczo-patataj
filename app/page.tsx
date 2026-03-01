@@ -130,7 +130,7 @@ export default function Home() {
           __html: JSON.stringify(localBusinessJsonLd),
         }}
       />
-      <section className="relative px-2 pt-24 md:pt-0 pb-4 dark:bg-black bg-[var(--background)] mx-auto ">
+      <section className="relative px-2 pt-8 pb-4 mx-auto">
         <Hero />
         <SocialBar />
         <Atrakcje />

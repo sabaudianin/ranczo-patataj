@@ -1,33 +1,41 @@
 export const SocialBar = () => {
   return (
-    <div className="flex justify-center items-center gap-12 pb-3">
-      {" "}
-      <a
-        href="https://www.instagram.com/ranczopatataj"
-        className=" focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] rounded-full"
-        aria-label="Profil Ranczo Patataj na Instagramie"
-        target="_blank"
-        rel="noopener noreferrer"
-        itemProp="sameAs"
-      >
-        <span
-          className="block bg-[url('/icons/ig.avif')] w-8 h-8 md:w-10 md:h-10 bg-cover hover:scale-105 duration-200 transition"
-          aria-hidden="true"
-        />{" "}
-      </a>
-      <a
-        href="https://www.facebook.com/PatatajRanczo/"
-        className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--c-primary)] rounded-full"
-        aria-label="Profil Ranczo Patataj na Facebooku"
-        target="_blank"
-        rel="noopener noreferrer"
-        itemProp="sameAs"
-      >
-        <span
-          className="block bg-[url('/icons/fb.avif')] w-8 h-8 md:w-10 md:h-10 bg-cover hover:scale-105 duration-200 transition"
-          aria-hidden="true"
-        />{" "}
-      </a>
-    </div>
+    <section
+      className="flex items-center justify-center gap-4 pt-8 flex-wrap"
+      aria-label="Media społecznościowe Ranczo Patataj"
+    >
+      <span className="text-center font-ultra text-xs uppercase tracking-widest text-stone-400 group-hover:text-stone-600 transition-colors">Sprawdź aktualności na naszych social mediach.</span>
+      {[
+        {
+          href: "https://www.instagram.com/ranczopatataj",
+          label: "Instagram",
+          iconClass: "bg-[url('/icons/ig.avif')]"
+        },
+        {
+          href: "https://www.facebook.com/PatatajRanczo/",
+          label: "Facebook",
+          iconClass: "bg-[url('/icons/fb.avif')]"
+        }
+      ].map((social) => (
+        <a
+          key={social.label}
+
+          href={social.href}
+          className="group flex flex-col items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded-xl p-2"
+          aria-label={`Profil Ranczo Patataj na ${social.label}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div
+            className={`${social.iconClass} w-12 h-12 md:w-14 md:h-14 bg-cover shadow-lg rounded-2xl group-hover:shadow-emerald-200/50 transition-shadow`}
+            aria-hidden="true"
+          />
+          <span className="font-ultra text-xs uppercase tracking-widest text-stone-400 group-hover:text-stone-600 transition-colors">
+            {social.label}
+          </span>
+        </a>
+      ))}
+
+    </section>
   );
 };
