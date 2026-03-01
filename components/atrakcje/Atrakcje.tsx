@@ -72,7 +72,7 @@ const ATTRACTIONS = [
   {
     icon: "🎉",
     title: "Każdego rodzaju przyjęcia.",
-    description: "Imprezy szyte na miarę Twoich marzeń.",
+    description: "Imprezy szyte na miarę Twoich potrzeb.",
     className: "lg:col-span-2 bg-sky-300/50 border border-sky-500",
     font: "font-curier"
   }

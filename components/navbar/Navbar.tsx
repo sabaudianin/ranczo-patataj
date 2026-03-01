@@ -107,7 +107,7 @@ export const Navbar: React.FC = () => {
                       <Link
                         href={link.href}
                         onClick={() => setIsOpen(false)}
-                        className={`block font-ultra text-2xl py-2 ${active ? "text-emerald-700" : "text-color-background"
+                        className={`block font-ultra text-2xl py-2 ${active ? "text-emerald-500" : "text-color-background"
                           }`}
                       >
                         {link.label}

@@ -40,7 +40,7 @@ export const Cta = () => {
           className="text-xl md:text-3xl font-ultra text-stone-900 dark:text-stone-50 leading-tight"
         >
           Zarezerwuj termin wizyty <br className="hidden md:block" />
-          <span className="text-amber-600 italic font-playwrite text-lg md:text-2xl">na naszym ranczu</span>
+          <span className="text-amber-600 italic font-ultra text-lg md:text-2xl">na naszym ranczu</span>
         </h6>
 
 
@@ -49,14 +49,14 @@ export const Cta = () => {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             href={PHONETO}
-            className="group relative inline-flex items-center gap-4 bg-emerald-600/90 hover:bg-emerald-700 text-white/90 px-8 py-5 rounded-2xl shadow-xl shadow-emerald-200 dark:shadow-none transition-all duration-300"
+            className="group relative inline-flex items-center gap-4 bg-emerald-600/90 hover:bg-emerald-700 text-white/90 px-8 py-2 rounded-2xl shadow-xl shadow-emerald-200 dark:shadow-none transition-all duration-300"
             aria-label="Zadzwoń do Ranczo Patataj"
           >
-            <div className="bg-emerald-500 group-hover:bg-white/20 p-2 rounded-lg transition-colors">
-              <FaPhone className="text-xl animate-[bounce_2s_infinite]" />
+            <div className="rounded-full bg-emerald-500 group-hover:bg-white/20 p-4  transition-colors">
+              <FaPhone className="text-xl animate-bounce" />
             </div>
             <div className="flex flex-col items-start leading-none">
-              <span className="text-xs uppercase tracking-widest font-ultra  mb-1">Zadzwoń teraz</span>
+              <span className="text-xs uppercase tracking-widest font-ultra text-center">Zadzwoń </span>
               <span className="font-curier text-xl md:text-2xl font-bold tracking-tighter">
                 {CONTACT.phoneDisplay}
               </span>
