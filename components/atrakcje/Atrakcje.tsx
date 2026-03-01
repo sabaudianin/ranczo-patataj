@@ -51,28 +51,28 @@ const ATTRACTIONS = [
   {
     icon: "🌿",
     title: "Spotkania z alpakami",
-    description: "Alpaki, lamy, konie i kucyki. Idealna atrakcja dla szkół i rodzin.",
+    description: "Alpaki, lamy, konie, kury, paw, koza. Przejażdżki bryczką, relaks na świeżym powietrzu. Idealna atrakcja dla szkół i rodzin.",
     className: "lg:col-span-2 lg:row-span-2 bg-emerald-300/50 border border-emerald-500",
     font: "font-ultra"
   },
   {
     icon: "🎨",
     title: "Warsztaty",
-    description: "Kulinarne i manualne. Edukacja przez zabawę.",
+    description: "Kulinarne i manualne. Alpakoterapia oraz edukacja przez zabawę.",
     className: "bg-red-300/50 border border-red-500",
     font: "font-special"
   },
   {
     icon: "🔥",
     title: "Ogniska",
-    description: "Wspólne pieczenie i integracja na powietrzu.",
+    description: "Piknik, ognisko, gry i zabawy, integracja na powietrzu.",
     className: "bg-orange-100/50 border border-orange-500",
     font: "font-curier"
   },
   {
     icon: "🎉",
     title: "Każdego rodzaju przyjęcia.",
-    description: "Imprezy szyte na miarę Twoich potrzeb.",
+    description: "Imprezy szyte na miarę Twoich potrzeb. Dwie odzielne sale, altana, przeszklony taras z widokiem na ogród i zwierzęta.",
     className: "lg:col-span-2 bg-sky-300/50 border border-sky-500",
     font: "font-curier"
   }
@@ -109,18 +109,18 @@ export const Atrakcje = () => {
             whileHover={{ scale: 1.02, rotate: idx % 2 === 0 ? 1 : -1 }}
             className={`
               p-4 rounded-2xl shadow-xl shadow-black/5 
-              flex flex-col justify-between border border-stone-200/50
+              flex flex-col justify-center items-center border border-stone-200/50
               ${item.className}`}
           >
-            <div>
-              <span className="text-4xl block mb-4">{item.icon}</span>
-              <h3 className={` text-xl mb-3   font-ultra`}>
-                {item.title}
-              </h3>
-              <p className="font-curier text-sm ">
-                {item.description}
-              </p>
-            </div>
+
+            <span className="text-4xl block mb-4">{item.icon}</span>
+            <h3 className={` text-xl mb-3 font-ultra`}>
+              {item.title}
+            </h3>
+            <p className="font-curier text-sm">
+              {item.description}
+            </p>
+
           </motion.article>
         ))}
       </div>

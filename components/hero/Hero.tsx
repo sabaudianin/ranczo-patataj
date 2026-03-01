@@ -8,7 +8,7 @@ import { CONTACT, PHONETO } from "@/config/contact/Contact";
 export const Hero: React.FC = () => {
   return (
     <section
-      className="relative w-full pb-8 md:py-12 overflow-hidden"
+      className="relative w-full pb-8 pt-4 md:py-12 overflow-hidden"
       aria-labelledby="hero-heading"
       role="banner"
     >
@@ -22,15 +22,15 @@ export const Hero: React.FC = () => {
               animate={{ opacity: 1, x: 0 }}
               className="space-y-2"
             >
-              <span className="font-ultra text-amber-500 uppercase tracking-[3px]">
+              <span className="font-ultra text-amber-600 uppercase tracking-[3px]">
                 Witaj w Jastrzębi Starej
               </span>
               <h1
                 id="hero-heading"
-                className="font-ultra text-3xl md:text-5xl lg:text-6xl text-stone-900 dark:text-stone-50 leading-tight"
+                className="pt-3 font-ultra text-3xl md:text-5xl lg:text-6xl text-stone-900 dark:text-stone-50 leading-tight"
               >
                 Ranczo Patataj <br />
-                <span className="font-curier text-2xl md:text-4xl lg:text-5xl text-emerald-700 dark:text-emerald-500 block mt-2">
+                <span className="font-curier text-2xl md:text-4xl lg:text-5xl text-emerald-700 dark:text-emerald-500 block">
                   gospodarstwo edukacyjne
                 </span>
               </h1>
@@ -42,26 +42,26 @@ export const Hero: React.FC = () => {
               transition={{ delay: 0.2 }}
               className="font-curier text-sm md:text-base text-stone-700 dark:text-stone-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
             >
-              Miejsce, gdzie natura spotyka się z edukacją. Organizujemy
-              <span className="text-stone-700 dark:text-stone-200 font-ultra"> wycieczki szkolne, warsztaty i alpakoterapię </span>
-              zaledwie godzinę drogi od Warszawy. Poczuj spokój mazowieckiej wsi.
+              Miejsce gdzie natura spotyka się z edukacją. Organizujemy
+              <span className="text-stone-700 dark:text-stone-200 font-ultra"> wycieczki szkolne, grupowe, alpakoterapię, warsztaty oraz imprezy okolicznościowe. </span>
+              Zaledwie godzinę drogi od Warszawy. Poczuj spokój mazowieckiej wsi.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 pt-4 items-center lg:items-start"
+              className="flex flex-col sm:flex-row justify-center gap-4 pt-4 items-center lg:items-start"
             >
               <Link
                 href="/oferta"
-                className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-amber-500/70 text-white font-ultra text-xs md:text-sm hover:bg-amber-800/60 transition-all shadow-lg"
+                className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-amber-600 text-white/90 font-ultra text-xs md:text-sm hover:bg-amber-800/60 transition-all shadow-lg"
               >
                 ZOBACZ OFERTĘ
               </Link>
               <Link
                 href="/ranczo"
-                className="w-full sm:w-auto px-8 py-4 rounded-2xl border-2 bg-stone-100 border-stone-200 text-stone-900 font-ultra text-xs md:text-sm hover:border-amber-400 transition-all"
+                className="w-full sm:w-auto px-8 py-4 rounded-2xl border-2 bg-stone-200 border-stone-200 text-stone-900 font-ultra text-xs md:text-sm hover:border-amber-400 transition-all"
               >
                 POZNAJ RANCZO
               </Link>

@@ -62,7 +62,7 @@ export const Visit = () => {
             </div>
 
             <p className="mt-3 text-right font-playwrite text-xs">
-              Nasza miejsce na piknik zawsze przygotowane...
+              Nasza miejsce na piknik czeka na was ...
             </p>
           </div>
         </div>

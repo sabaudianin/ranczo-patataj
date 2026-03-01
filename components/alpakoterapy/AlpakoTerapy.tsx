@@ -40,7 +40,7 @@ export const AlpakoTerapy = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
-          className="tracking-widest text-amber-600 text-lg md:text-xl font-playwrite"
+          className="tracking-widest text-amber-600 text-lg md:text-xl font-ultra"
         >
           - Nie znacie alpakoterapii? <br /> -Nasze alpaki są w tym najlepsze!
         </motion.p>
@@ -58,7 +58,7 @@ export const AlpakoTerapy = () => {
             <Card className="p-4 bg-white/60 dark:bg-stone-900/60 border-none shadow-sm">
               <h5 className="font-ultra text-amber-700 mb-2 uppercase tracking-tighter">Czym jest alpakoterapia?</h5>
               <p className="font-curier text-sm md:text-base leading-relaxed text-stone-700 dark:text-stone-300">
-                To naturalna forma wsparcia emocjonalnego i wyciszenia. Na Ranczo Patataj
+                To naturalna forma wsparcia emocjonalnego i wyciszenia. U nas na Ranczu Patataj
                 spotkania z alpakami pomagają się zrelaksować, otworzyć i poczuć bezpiecznie
                 każdemu, niezależnie od wieku.
               </p>

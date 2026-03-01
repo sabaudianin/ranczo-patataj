@@ -19,7 +19,7 @@ export const MiniCarousel = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % IMAGES.length);
-    }, 4000);
+    }, 3000);
     return () => clearInterval(timer);
   }, []);
 
@@ -66,7 +66,7 @@ export const MiniCarousel = () => {
                   className="object-cover rounded-sm"
                   sizes="(max-width: 768px) 150px, 300px"
                 />
-                {/* Efekt starego zdjęcia dla bocznych slotów */}
+                {/*stare zdjęcia -sloty- */}
                 {!isCenter && <div className="absolute inset-0 bg-stone-900/20 backdrop-sepia-[0.3]" />}
               </motion.div>
             );

@@ -85,5 +85,5 @@ body {
 
 .animate-pan-video {
   /* 20 sekund zapewnia bardzo powolny, kojący ruch */
-  animation: pan-video 20s ease-in-out infinite;
+  animation: pan-video 16s ease-in-out infinite;
 }

@@ -90,7 +90,7 @@ export const Footer = () => {
 
           <div className="flex flex-col items-center md:items-end space-y-4">
             <h3 className="font-ultra text-xs uppercase tracking-widest text-stone-400">Social Media</h3>
-            <div className="flex gap-4">
+            <div className="flex gap-8">
               <a
                 href="https://www.instagram.com/ranczopatataj"
                 target="_blank"
@@ -112,19 +112,19 @@ export const Footer = () => {
         </div>
 
 
-        <div className="pt-8 flex flex-col items-center space-y-4 text-[10px] font-curier text-stone-400 uppercase tracking-widest border-t-1 border-emerald-600">
+        <div className="pt-8 flex flex-col items-center space-y-4 text-[10px] font-curier text-stone-400 uppercase tracking-widest border-t border-emerald-600">
           <div className="flex gap-6">
-            <Link href="/polityka" className="hover:text-stone-900 dark:hover:text-stone-100 transition-colors">
+            <span>© {new Date().getFullYear()} Ranczo Patataj</span>
+            <Link href="/polityka" className="hover:text-stone-900 dark:hover:text-stone-100 transition-colors underline">
               Polityka prywatności
             </Link>
-            <span>© {new Date().getFullYear()} Ranczo Patataj</span>
           </div>
 
           <a
             href="https://portfoliodev-hazel.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-emerald-500 transition-colors "
+            className="hover:text-emerald-500 transition-colors underline"
           >
             Design & Develop rafbob
           </a>
