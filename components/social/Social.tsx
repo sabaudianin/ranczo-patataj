@@ -5,15 +5,15 @@ import { motion } from "motion/react";
 
 export const Social = () => {
   return (
-    <section className="mx-auto max-w-6xl px-2 py-8 space-y-10">
-      <Card className="!p-6 md:!p-10 border-none bg-stone-50/50 dark:bg-stone-900/30">
+    <section className="mx-auto max-w-6xl py-8 space-y-10">
+      <Card className=" border-none bg-stone-50/50 dark:bg-stone-900/30">
         <div className="flex flex-col items-center text-center space-y-4">
           <h6 className="font-ultra text-xl md:text-3xl text-stone-900 dark:text-stone-50">
             Zostańmy w kontakcie!
           </h6>
 
           <p className="font-curier text-sm md:text-base max-w-2xl text-stone-600 dark:text-stone-400">
-            Zobacz, co aktualnie dzieje się w naszym gospodarstwie – od nowych
+            Zobacz, co aktualnie dzieje się w naszym gospodarstwie - od nowych
             urodzin alpak po relacje z wycieczek szkolnych i ognisk.
             Promocje i wydarzenia ogłaszamy najpierw tutaj:
           </p>
@@ -57,7 +57,7 @@ export const Social = () => {
         </div>
       </Card>
 
-      {/* Finalne zaproszenie pod kartą */}
+
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

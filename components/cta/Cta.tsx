@@ -30,11 +30,11 @@ const SLIDES = [
 export const Cta = () => {
   return (
     <section
-      className="relative w-full max-w-6xl mx-auto py-8 px-2"
+      className="relative w-full max-w-6xl mx-auto py-4"
       aria-labelledby="cta-heading"
     >
       <div className="flex flex-col text-center space-y-6 mb-8">
-        {/* Nagłówek - Wysoki kontrast */}
+
         <h6
           id="cta-heading"
           className="text-xl md:text-3xl font-ultra text-stone-900 dark:text-stone-50 leading-tight"
@@ -43,20 +43,20 @@ export const Cta = () => {
           <span className="text-amber-600 italic font-playwrite text-lg md:text-2xl">na naszym ranczu</span>
         </h6>
 
-        {/* Przycisk Telefonu - Bardziej nowoczesny i "tapowalny" */}
+
         <div className="flex justify-center">
           <motion.a
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             href={PHONETO}
-            className="group relative inline-flex items-center gap-4 bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-5 rounded-2xl shadow-xl shadow-emerald-200 dark:shadow-none transition-all duration-300"
+            className="group relative inline-flex items-center gap-4 bg-emerald-600/90 hover:bg-emerald-700 text-white/90 px-8 py-5 rounded-2xl shadow-xl shadow-emerald-200 dark:shadow-none transition-all duration-300"
             aria-label="Zadzwoń do Ranczo Patataj"
           >
             <div className="bg-emerald-500 group-hover:bg-white/20 p-2 rounded-lg transition-colors">
               <FaPhone className="text-xl animate-[bounce_2s_infinite]" />
             </div>
             <div className="flex flex-col items-start leading-none">
-              <span className="text-[10px] uppercase tracking-widest font-ultra opacity-80 mb-1">Zadzwoń teraz</span>
+              <span className="text-xs uppercase tracking-widest font-ultra  mb-1">Zadzwoń teraz</span>
               <span className="font-curier text-xl md:text-2xl font-bold tracking-tighter">
                 {CONTACT.phoneDisplay}
               </span>
@@ -64,14 +64,14 @@ export const Cta = () => {
           </motion.a>
         </div>
 
-        {/* Opis - font-curier dla klimatu "maszynowego" */}
+
         <p className="max-w-3xl mx-auto font-curier text-sm md:text-base text-stone-600 dark:text-stone-400 text-center leading-relaxed">
           U nas zorganizujesz wycieczkę szkolną, alpakoterapię, urodziny lub event firmowy.
           Zapraszamy gości z Warszawy, Grójca i całego Mazowsza.
         </p>
       </div>
 
-      {/* Slider jako separator wizualny */}
+
       <div
         className="relative h-64 md:h-96 w-full overflow-hidden rounded-3xl border border-stone-100 dark:border-stone-800"
         aria-hidden="true"
@@ -80,8 +80,8 @@ export const Cta = () => {
           slides={SLIDES}
           className="h-full w-full object-cover"
         />
-        {/* Subtelny gradient, żeby slider nie był za jasny */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+
+        <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
       </div>
     </section>
   );

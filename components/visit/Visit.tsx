@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Card } from "@/ui/card/Card";
-import { motion } from "motion/react";
+
 
 const steps = [
   "Po przyjeździe poznajecie naszą przestrzeń i zwierzęta w swoim tempie. To idealny moment na pierwsze zdjęcia i karmienie alpak.",
@@ -15,7 +15,7 @@ export const Visit = () => {
     <section
       id="jak-wyglada-wizyta"
       aria-labelledby="wizyta-title"
-      className="max-w-5xl mx-auto px-2 py-8"
+      className="max-w-5xl mx-auto py-8"
     >
       <Card className="border-none shadow-none bg-transparent">
         <div className="text-center mb-8">
@@ -33,7 +33,7 @@ export const Visit = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 items-start">
-          {/* Lista kroków - czysty tekst, wysoki kontrast */}
+
           <div className="space-y-6">
             <ul className="space-y-4 font-curier text-sm md:text-base text-stone-800 dark:text-stone-200">
               {steps.map((step, index) => (
@@ -49,9 +49,9 @@ export const Visit = () => {
             </p>
           </div>
 
-          {/* Zdjęcie - czysta ramka bez zbędnych bajerów */}
+
           <div className="relative group">
-            <div className="relative w-full aspect-video md:aspect-[4/5] overflow-hidden rounded-2xl shadow-lg shadow-black/5">
+            <div className="relative w-full aspect-video md:aspect-4/5 overflow-hidden rounded-2xl shadow-lg shadow-black/5">
               <Image
                 src="/images/imprezy-integracyjne-mogielnica.avif"
                 fill
@@ -60,8 +60,8 @@ export const Visit = () => {
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
-            {/* Subtelny podpis pod zdjęciem */}
-            <p className="mt-3 text-right font-playwrite text-xs text-stone-400">
+
+            <p className="mt-3 text-right font-playwrite text-xs">
               Nasza miejsce na piknik zawsze przygotowane...
             </p>
           </div>

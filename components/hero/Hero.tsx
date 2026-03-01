@@ -8,7 +8,7 @@ import { CONTACT, PHONETO } from "@/config/contact/Contact";
 export const Hero: React.FC = () => {
   return (
     <section
-      className="relative w-full pb-8 md:py-12 overflow-hidden px-2"
+      className="relative w-full pb-8 md:py-12 overflow-hidden"
       aria-labelledby="hero-heading"
       role="banner"
     >
@@ -55,7 +55,7 @@ export const Hero: React.FC = () => {
             >
               <Link
                 href="/oferta"
-                className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-stone-500 text-white font-ultra text-xs md:text-sm hover:bg-black transition-all shadow-lg"
+                className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-amber-500/70 text-white font-ultra text-xs md:text-sm hover:bg-amber-800/60 transition-all shadow-lg"
               >
                 ZOBACZ OFERTĘ
               </Link>
@@ -92,8 +92,8 @@ export const Hero: React.FC = () => {
                   <div className="absolute inset-0 bg-stone-900/10 pointer-events-none" />
                 </div>
 
-                <p className="absolute bottom-2 left-0 w-full text-center font-cureir text-stone-400 text-sm md:text-base">
-                  Nasze radosne alpaki
+                <p className="absolute bottom-2 left-0 w-full text-center font-curier text-stone-500 text-sm md:text-base">
+                  Nasze radosne trio alpak
                 </p>
               </div>
 
@@ -101,7 +101,7 @@ export const Hero: React.FC = () => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 href={PHONETO}
-                className="absolute -bottom-8 -right-2 md:-right-4 flex items-center gap-3 px-5 py-3 bg-emerald-600/90 text-white rounded-xl shadow-xl font-curier font-bold text-sm md:text-base group"
+                className="absolute -bottom-8 right-4 md:-right-4 flex items-center gap-3 px-5 py-3 bg-emerald-600/90 text-white rounded-xl shadow-xl font-curier font-bold text-sm md:text-base group"
               >
                 <FaPhone className="animate-bounce group-hover:animate-none" />
                 <span>{CONTACT.phoneDisplay}</span>

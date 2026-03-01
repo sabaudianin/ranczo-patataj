@@ -1,9 +1,10 @@
 export const SocialBar = () => {
   return (
     <section
-      className="flex items-center justify-center gap-10 pt-4"
+      className="flex items-center justify-center gap-4 pt-8 flex-wrap"
       aria-label="Media społecznościowe Ranczo Patataj"
     >
+      <span className="text-center font-ultra text-xs uppercase tracking-widest text-stone-400 group-hover:text-stone-600 transition-colors">Sprawdź aktualności na naszych social mediach.</span>
       {[
         {
           href: "https://www.instagram.com/ranczopatataj",
@@ -29,11 +30,12 @@ export const SocialBar = () => {
             className={`${social.iconClass} w-12 h-12 md:w-14 md:h-14 bg-cover shadow-lg rounded-2xl group-hover:shadow-emerald-200/50 transition-shadow`}
             aria-hidden="true"
           />
-          <span className="font-ultra text-[10px] uppercase tracking-widest text-stone-400 group-hover:text-stone-600 transition-colors">
+          <span className="font-ultra text-xs uppercase tracking-widest text-stone-400 group-hover:text-stone-600 transition-colors">
             {social.label}
           </span>
         </a>
       ))}
+
     </section>
   );
 };

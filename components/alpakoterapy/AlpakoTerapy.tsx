@@ -23,9 +23,9 @@ export const AlpakoTerapy = () => {
     <section
       id="alpakoterapia"
       aria-labelledby="alpakoterapia-title"
-      className="max-w-6xl mx-auto py-8 md:py-16 px-2 relative"
+      className="max-w-6xl mx-auto py-4 md:py-16 relative"
     >
-      {/* Nagłówek w stylu "Odręcznym" */}
+
       <div className="mb-10 text-center">
         <motion.h4
           id="alpakoterapia-title"
@@ -40,9 +40,9 @@ export const AlpakoTerapy = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
-          className="font-playwrite text-amber-600 text-lg md:text-xl"
+          className="tracking-widest text-amber-600 text-lg md:text-xl font-playwrite"
         >
-          - Nie znacie alpakoterapii? Nasze alpaki są w tym najlepsze!
+          - Nie znacie alpakoterapii? <br /> -Nasze alpaki są w tym najlepsze!
         </motion.p>
       </div>
 
@@ -87,18 +87,18 @@ export const AlpakoTerapy = () => {
           <motion.div variants={item}>
             <Card className="p-4 bg-stone-100/40 dark:bg-stone-800/40 border-dashed border-stone-300 dark:border-stone-700 shadow-none">
               <p className="font-curier text-xs md:text-sm italic text-stone-500">
-                Idealna forma relaksu dla szkół, przedszkoli i rodzin z całego Mazowsza.
+                Idealna forma relaksu dla szkół, przedszkoli i rodzin z całego Mazowsza. Przyjedźcie i zrelaksujcie się całą swoją firmą.
               </p>
             </Card>
           </motion.div>
         </div>
 
-        {/* Sekcja Foto - Efekt Polaroid Premium */}
+
         <motion.div
           variants={item}
           className="relative group p-2"
         >
-          <div className="relative aspect-[3/4] max-h-[500px] w-full bg-white p-3 pb-12 shadow-2xl rotate-2 group-hover:rotate-0 transition-transform duration-500 border border-stone-200">
+          <div className="relative aspect-3/4 max-h-[500px] w-full bg-white p-3 pb-12 shadow-2xl rotate-2 group-hover:rotate-0 transition-transform duration-500 border border-stone-200">
             <div className="relative h-full w-full overflow-hidden rounded-sm bg-stone-100">
               <Image
                 src="/images/slodka-alpaka-ranczo-patataj.avif"
@@ -109,13 +109,11 @@ export const AlpakoTerapy = () => {
               />
               <div className="absolute inset-0 shadow-[inner_0_0_40px_rgba(0,0,0,0.1)]" />
             </div>
-            {/* Tekst na dole polaroida */}
+
             <p className="absolute bottom-3 left-0 w-full text-center font-playwrite text-stone-400 text-lg">
               Nasza słodka terapeutka
             </p>
           </div>
-
-          {/* Ozdobna "taśma klejąca" w rogu */}
           <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-24 h-8 bg-white/40 backdrop-blur-sm -rotate-3 border border-white/50 z-20" />
         </motion.div>
       </motion.div>

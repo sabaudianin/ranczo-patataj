@@ -23,7 +23,7 @@ export const MiniCarousel = () => {
     return () => clearInterval(timer);
   }, []);
 
-  // Logika wybierania 5 widocznych zdjęć
+
   const getVisibleIndices = () => {
     const indices = [];
     for (let i = -2; i <= 2; i++) {
@@ -37,7 +37,7 @@ export const MiniCarousel = () => {
       <div className="flex items-center justify-center gap-2 md:gap-6">
         <AnimatePresence mode="popLayout">
           {getVisibleIndices().map((imgIdx, position) => {
-            // Stylizacja zależna od pozycji (0=lewy skrajny, 2=środek, 4=prawy skrajny)
+
             const isCenter = position === 2;
             const isInner = position === 1 || position === 3;
 
@@ -55,7 +55,7 @@ export const MiniCarousel = () => {
                 exit={{ opacity: 0, scale: 0.5 }}
                 transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
                 className={`
-                  relative shadow-2xl rounded-xl border-4 border-white dark:border-stone-800 bg-white
+                  relative shadow-2xl rounded-xl border-4
                   ${isCenter ? "w-40 h-56 md:w-56 md:h-72" : isInner ? "w-28 h-40 md:w-36 md:h-52" : "hidden md:block w-20 h-28"}
                 `}
               >

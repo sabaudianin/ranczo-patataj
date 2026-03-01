@@ -5,11 +5,11 @@ import { motion } from "motion/react";
 export const Poster = () => {
   return (
     <section
-      className="relative max-w-5xl mx-auto py-10 px-2"
+      className="relative max-w-5xl mx-auto py-10"
       aria-labelledby="schools-offer-heading"
     >
       <div className="relative overflow-hidden bg-stone-50 dark:bg-stone-900/40 border-2 border-dashed border-stone-300 dark:border-stone-700 rounded-3xl p-6 md:p-10 shadow-sm">
-        {/* Dekoracyjny element w tle */}
+
         <div className="absolute -top-6 -right-6 w-24 h-24 bg-amber-100 dark:bg-amber-900/20 rounded-full blur-3xl opacity-50" />
 
         <div className="relative z-10 flex flex-col items-center text-center">
@@ -22,7 +22,7 @@ export const Poster = () => {
           >
             Oferta dla szkół i przedszkoli <br className="hidden md:block" />
             <span className="text-emerald-700 dark:text-emerald-500 italic font-playwrite text-base md:text-xl">
-              – Edukacja przez bliskość natury –
+              - Edukacja przez bliskość natury -
             </span>
           </motion.h6>
 

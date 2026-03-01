@@ -53,7 +53,7 @@ export const MiniGallery = () => {
     >
       <h5
         id="mini-gallery-heading"
-        className="text-center text-base md:text-xl font-ultra tracking-wide text-[var(--c-primary)] mb-2"
+        className="text-center text-base md:text-xl font-ultra tracking-wide text-(--c-primary) mb-2"
       >
         Zobacz, jak wyglądają nasze niektóre atrakcje:
       </h5>
@@ -74,10 +74,10 @@ export const MiniGallery = () => {
             {[...SLIDES, ...SLIDES].map((card, index) => (
               <div
                 key={index}
-                className="mx-4 w-56 group"
+                className="mx-4 w-56 group py-4"
               >
                 {/* POLAROID */}
-                <div className="relative h-[12rem] bg-[#fdf7e5] border border-neutral-300 rounded-sm shadow-lg shadow-black/40 p-3 pb-8 transform -rotate-2 group-hover:rotate-1 group-hover:-translate-y-1 group-hover:scale-95 transition-transform duration-300">
+                <div className="relative h-48 bg-[#fdf7e5] border border-neutral-300 rounded-sm shadow-lg shadow-black/40 p-3 pb-8 transform -rotate-2 group-hover:rotate-1 group-hover:-translate-y-1 group-hover:scale-95 transition-transform duration-300">
                   <div className="relative h-full overflow-hidden bg-neutral-900/70">
                     <Image
                       src={card.src}
