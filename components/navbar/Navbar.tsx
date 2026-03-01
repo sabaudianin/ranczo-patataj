@@ -27,7 +27,7 @@ export const Navbar: React.FC = () => {
       </a>
 
 
-      <header className="fixed top-0 left-0 w-full z-50 bg-white/70 dark:bg-neutral-600/50 backdrop-blur-md border-b border-amber-500 dark:border-neutral-400 shadow-lg">
+      <header className="fixed top-0 left-0 w-full z-50 bg-white/70 dark:bg-neutral-600/50 backdrop-blur-md border-b-amber-100 dark:border-neutral-400 shadow-lg">
         <div className="max-w-6xl mx-auto px-2">
           <div className="flex justify-between items-center h-20 md:h-24">
             <Link href="/" className="relative z-50 group">
