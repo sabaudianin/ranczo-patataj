@@ -53,7 +53,7 @@ export const Visit = () => {
           <div className="relative group">
             <div className="relative w-full aspect-video md:aspect-square overflow-hidden rounded-2xl shadow-lg shadow-black/5">
               <Image
-                src="/images/imprezy-integracyjne-mogielnica.avif"
+                src="/images/imprezy-integracyjne-ranczo-patataj.avif"
                 fill
                 alt="Ranczo Patataj - widok na gospodarstwo"
                 className="object-cover object-right transition-transform duration-500 group-hover:scale-105 "
